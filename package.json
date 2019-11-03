@@ -1,20 +1,11 @@
 {
   "name": "mmorpg",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "dependencies": {
-    "express": "^4.17.1",
-    "socket.io": "^2.2.0"
-  },
-  "devDependencies": {},
+  "main": "index.js",
+  "repository": "git@github.com:valdirSalgueiro/mmorpg.git",
+  "author": "Valdir Salgueiro <valdir.salgueiro@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "nodemon public/server.js"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "start": "serve game"
+  }
 }

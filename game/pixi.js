@@ -1,6 +1,6 @@
 /*!
- * pixi.js - v5.1.5
- * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+ * pixi.js - v5.0.3
+ * Compiled Sun, 19 May 2019 19:07:10 UTC
  *
  * pixi.js is licensed under the MIT License.
  * http://www.opensource.org/licenses/mit-license
@@ -471,8 +471,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/polyfill - v5.1.0
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/polyfill - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/polyfill is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -630,13 +630,12 @@ var PIXI = (function (exports) {
 	}
 
 	var isMobile_min = createCommonjsModule(function (module) {
-	!function(e){var n=/iPhone/i,t=/iPod/i,r=/iPad/i,a=/\bAndroid(?:.+)Mobile\b/i,p=/Android/i,b=/\bAndroid(?:.+)SD4930UR\b/i,l=/\bAndroid(?:.+)(?:KF[A-Z]{2,4})\b/i,f=/Windows Phone/i,s=/\bWindows(?:.+)ARM\b/i,u=/BlackBerry/i,c=/BB10/i,h=/Opera Mini/i,v=/\b(CriOS|Chrome)(?:.+)Mobile/i,w=/Mobile(?:.+)Firefox\b/i;function m(e,i){return e.test(i)}function i(e){var i=e||("undefined"!=typeof navigator?navigator.userAgent:""),o=i.split("[FBAN");void 0!==o[1]&&(i=o[0]),void 0!==(o=i.split("Twitter"))[1]&&(i=o[0]);var d={apple:{phone:m(n,i)&&!m(f,i),ipod:m(t,i),tablet:!m(n,i)&&m(r,i)&&!m(f,i),device:(m(n,i)||m(t,i)||m(r,i))&&!m(f,i)},amazon:{phone:m(b,i),tablet:!m(b,i)&&m(l,i),device:m(b,i)||m(l,i)},android:{phone:!m(f,i)&&m(b,i)||!m(f,i)&&m(a,i),tablet:!m(f,i)&&!m(b,i)&&!m(a,i)&&(m(l,i)||m(p,i)),device:!m(f,i)&&(m(b,i)||m(l,i)||m(a,i)||m(p,i))||m(/\bokhttp\b/i,i)},windows:{phone:m(f,i),tablet:m(s,i),device:m(f,i)||m(s,i)},other:{blackberry:m(u,i),blackberry10:m(c,i),opera:m(h,i),firefox:m(w,i),chrome:m(v,i),device:m(u,i)||m(c,i)||m(h,i)||m(w,i)||m(v,i)}};return d.any=d.apple.device||d.android.device||d.windows.device||d.other.device,d.phone=d.apple.phone||d.android.phone||d.windows.phone,d.tablet=d.apple.tablet||d.android.tablet||d.windows.tablet,d}"undefined"!='object'&&module.exports&&"undefined"==typeof window?module.exports=i:"undefined"!='object'&&module.exports&&"undefined"!=typeof window?(module.exports=i(),module.exports.isMobile=i):"function"==typeof undefined&&undefined.amd?undefined([],e.isMobile=i()):e.isMobile=i();}(commonjsGlobal);
+	!function(e){var n=/iPhone/i,t=/iPod/i,r=/iPad/i,a=/\bAndroid(?:.+)Mobile\b/i,p=/Android/i,l=/\bAndroid(?:.+)SD4930UR\b/i,b=/\bAndroid(?:.+)(?:KF[A-Z]{2,4})\b/i,f=/Windows Phone/i,u=/\bWindows(?:.+)ARM\b/i,c=/BlackBerry/i,s=/BB10/i,v=/Opera Mini/i,h=/\b(CriOS|Chrome)(?:.+)Mobile/i,w=/\Mobile(?:.+)Firefox\b/i;function m(e,i){return e.test(i)}function i(e){var i=e||("undefined"!=typeof navigator?navigator.userAgent:""),o=i.split("[FBAN");void 0!==o[1]&&(i=o[0]),void 0!==(o=i.split("Twitter"))[1]&&(i=o[0]);var d={apple:{phone:m(n,i)&&!m(f,i),ipod:m(t,i),tablet:!m(n,i)&&m(r,i)&&!m(f,i),device:(m(n,i)||m(t,i)||m(r,i))&&!m(f,i)},amazon:{phone:m(l,i),tablet:!m(l,i)&&m(b,i),device:m(l,i)||m(b,i)},android:{phone:!m(f,i)&&m(l,i)||!m(f,i)&&m(a,i),tablet:!m(f,i)&&!m(l,i)&&!m(a,i)&&(m(b,i)||m(p,i)),device:!m(f,i)&&(m(l,i)||m(b,i)||m(a,i)||m(p,i))},windows:{phone:m(f,i),tablet:m(u,i),device:m(f,i)||m(u,i)},other:{blackberry:m(c,i),blackberry10:m(s,i),opera:m(v,i),firefox:m(w,i),chrome:m(h,i),device:m(c,i)||m(s,i)||m(v,i)||m(w,i)||m(h,i)}};return d.any=d.apple.device||d.android.device||d.windows.device||d.other.device,d.phone=d.apple.phone||d.android.phone||d.windows.phone,d.tablet=d.apple.tablet||d.android.tablet||d.windows.tablet,d}"undefined"!='object'&&module.exports&&"undefined"==typeof window?module.exports=i:"undefined"!='object'&&module.exports&&"undefined"!=typeof window?module.exports=i():"function"==typeof undefined&&undefined.amd?undefined([],e.isMobile=i()):e.isMobile=i();}(commonjsGlobal);
 	});
-	var isMobile_min_1 = isMobile_min.isMobile;
 
 	/*!
-	 * @pixi/settings - v5.1.3
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/settings - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/settings is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -717,7 +716,7 @@ var PIXI = (function (exports) {
 	 * @example
 	 * // Use the native window resolution as the default resolution
 	 * // will support high-density displays when rendering
-	 * PIXI.settings.RESOLUTION = window.devicePixelRatio;
+	 * PIXI.settings.RESOLUTION = window.devicePixelRatio.
 	 *
 	 * // Disable interpolation when scaling, will make texture be pixelated
 	 * PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
@@ -736,18 +735,6 @@ var PIXI = (function (exports) {
 	     * @default PIXI.MIPMAP_MODES.POW2
 	     */
 	    MIPMAP_TEXTURES: 1,
-
-	    /**
-	     * Default anisotropic filtering level of textures.
-	     * Usually from 0 to 16
-	     *
-	     * @static
-	     * @name ANISOTROPIC_LEVEL
-	     * @memberof PIXI.settings
-	     * @type {number}
-	     * @default 0
-	     */
-	    ANISOTROPIC_LEVEL: 0,
 
 	    /**
 	     * Default resolution / device pixel ratio of the renderer.
@@ -1413,7 +1400,7 @@ var PIXI = (function (exports) {
 
 	            // if this didn't work, try curing all small self-intersections locally
 	            } else if (pass === 1) {
-	                ear = cureLocalIntersections(filterPoints(ear), triangles, dim);
+	                ear = cureLocalIntersections(ear, triangles, dim);
 	                earcutLinked(ear, triangles, dim, minX, minY, invSize, 2);
 
 	            // as a last resort, try splitting the remaining polygon into two
@@ -1520,7 +1507,7 @@ var PIXI = (function (exports) {
 	        p = p.next;
 	    } while (p !== start);
 
-	    return filterPoints(p);
+	    return p;
 	}
 
 	// try splitting polygon into two and triangulate them independently
@@ -1613,7 +1600,7 @@ var PIXI = (function (exports) {
 
 	    if (!m) { return null; }
 
-	    if (hx === qx) { return m; } // hole touches outer segment; pick leftmost endpoint
+	    if (hx === qx) { return m.prev; } // hole touches outer segment; pick lower endpoint
 
 	    // look for points inside the triangle of hole point, segment intersection and endpoint;
 	    // if there are no points found, we have a valid connection;
@@ -1625,30 +1612,24 @@ var PIXI = (function (exports) {
 	        tanMin = Infinity,
 	        tan;
 
-	    p = m;
+	    p = m.next;
 
-	    do {
+	    while (p !== stop) {
 	        if (hx >= p.x && p.x >= mx && hx !== p.x &&
 	                pointInTriangle(hy < my ? hx : qx, hy, mx, my, hy < my ? qx : hx, hy, p.x, p.y)) {
 
 	            tan = Math.abs(hy - p.y) / (hx - p.x); // tangential
 
-	            if (locallyInside(p, hole) &&
-	                (tan < tanMin || (tan === tanMin && (p.x > m.x || (p.x === m.x && sectorContainsSector(m, p)))))) {
+	            if ((tan < tanMin || (tan === tanMin && p.x > m.x)) && locallyInside(p, hole)) {
 	                m = p;
 	                tanMin = tan;
 	            }
 	        }
 
 	        p = p.next;
-	    } while (p !== stop);
+	    }
 
 	    return m;
-	}
-
-	// whether sector in vertex m contains sector in vertex p in the same coordinates
-	function sectorContainsSector(m, p) {
-	    return area(m.prev, m, p.prev) < 0 && area(p.next, m, m.next) < 0;
 	}
 
 	// interlink polygon nodes in z-order
@@ -1760,10 +1741,8 @@ var PIXI = (function (exports) {
 
 	// check if a diagonal between two polygon nodes is valid (lies in polygon interior)
 	function isValidDiagonal(a, b) {
-	    return a.next.i !== b.i && a.prev.i !== b.i && !intersectsPolygon(a, b) && // dones't intersect other edges
-	           (locallyInside(a, b) && locallyInside(b, a) && middleInside(a, b) && // locally visible
-	            (area(a.prev, a, b.prev) || area(a, b.prev, b)) || // does not create opposite-facing sectors
-	            equals(a, b) && area(a.prev, a, a.next) > 0 && area(b.prev, b, b.next) > 0); // special zero-length case
+	    return a.next.i !== b.i && a.prev.i !== b.i && !intersectsPolygon(a, b) &&
+	           locallyInside(a, b) && locallyInside(b, a) && middleInside(a, b);
 	}
 
 	// signed area of a triangle
@@ -1778,28 +1757,10 @@ var PIXI = (function (exports) {
 
 	// check if two segments intersect
 	function intersects(p1, q1, p2, q2) {
-	    var o1 = sign(area(p1, q1, p2));
-	    var o2 = sign(area(p1, q1, q2));
-	    var o3 = sign(area(p2, q2, p1));
-	    var o4 = sign(area(p2, q2, q1));
-
-	    if (o1 !== o2 && o3 !== o4) { return true; } // general case
-
-	    if (o1 === 0 && onSegment(p1, p2, q1)) { return true; } // p1, q1 and p2 are collinear and p2 lies on p1q1
-	    if (o2 === 0 && onSegment(p1, q2, q1)) { return true; } // p1, q1 and q2 are collinear and q2 lies on p1q1
-	    if (o3 === 0 && onSegment(p2, p1, q2)) { return true; } // p2, q2 and p1 are collinear and p1 lies on p2q2
-	    if (o4 === 0 && onSegment(p2, q1, q2)) { return true; } // p2, q2 and q1 are collinear and q1 lies on p2q2
-
-	    return false;
-	}
-
-	// for collinear points p, q, r, check if point q lies on segment pr
-	function onSegment(p, q, r) {
-	    return q.x <= Math.max(p.x, r.x) && q.x >= Math.min(p.x, r.x) && q.y <= Math.max(p.y, r.y) && q.y >= Math.min(p.y, r.y);
-	}
-
-	function sign(num) {
-	    return num > 0 ? 1 : num < 0 ? -1 : 0;
+	    if ((equals(p1, q1) && equals(p2, q2)) ||
+	        (equals(p1, q2) && equals(p2, q1))) { return true; }
+	    return area(p1, q1, p2) > 0 !== area(p1, q1, q2) > 0 &&
+	           area(p2, q2, p1) > 0 !== area(p2, q2, q1) > 0;
 	}
 
 	// check if a polygon diagonal intersects any polygon segments
@@ -3417,8 +3378,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/constants - v5.1.0
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/constants - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/constants is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -3748,8 +3709,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/utils - v5.1.3
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/utils - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/utils is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -3767,21 +3728,8 @@ var PIXI = (function (exports) {
 	 */
 	settings.RETINA_PREFIX = /@([0-9\.]+)x/;
 
-	/**
-	 * Should the `failIfMajorPerformanceCaveat` flag be enabled as a context option used in the `isWebGLSupported` function.
-	 * For most scenarios this should be left as true, as otherwise the user may have a poor experience.
-	 * However, it can be useful to disable under certain scenarios, such as headless unit tests.
-	 *
-	 * @static
-	 * @name FAIL_IF_MAJOR_PERFORMANCE_CAVEAT
-	 * @memberof PIXI.settings
-	 * @type {boolean}
-	 * @default true
-	 */
-	settings.FAIL_IF_MAJOR_PERFORMANCE_CAVEAT = true;
-
 	var saidHello = false;
-	var VERSION = '5.1.5';
+	var VERSION = '5.0.3';
 
 	/**
 	 * Skips the hello message of renderers that are created after this is run.
@@ -3797,7 +3745,7 @@ var PIXI = (function (exports) {
 	/**
 	 * Logs out the version and renderer information for this running instance of PIXI.
 	 * If you don't want to see this message you can run `PIXI.utils.skipHello()` before
-	 * creating your renderer. Keep in mind that doing that will forever make you a jerk face.
+	 * creating your renderer. Keep in mind that doing that will forever makes you a jerk face.
 	 *
 	 * @static
 	 * @function sayHello
@@ -3850,10 +3798,7 @@ var PIXI = (function (exports) {
 	    {
 	        supported = (function supported()
 	        {
-	            var contextOptions = {
-	                stencil: true,
-	                failIfMajorPerformanceCaveat: settings.FAIL_IF_MAJOR_PERFORMANCE_CAVEAT,
-	            };
+	            var contextOptions = { stencil: true, failIfMajorPerformanceCaveat: true };
 
 	            try
 	            {
@@ -4117,38 +4062,32 @@ var PIXI = (function (exports) {
 	/**
 	 * Generic Mask Stack data structure
 	 *
-	 * @memberof PIXI.utils
+	 * @memberof PIXI
 	 * @function createIndicesForQuads
+	 * @private
 	 * @param {number} size - Number of quads
-	 * @param {Uint16Array|Uint32Array} [outBuffer] - Buffer for output, length has to be `6 * size`
-	 * @return {Uint16Array|Uint32Array} - Resulting index buffer
+	 * @return {Uint16Array} indices
 	 */
-	function createIndicesForQuads(size, outBuffer)
+	function createIndicesForQuads(size)
 	{
-	    if ( outBuffer === void 0 ) { outBuffer = null; }
-
 	    // the total number of indices in our array, there are 6 points per quad.
+
 	    var totalIndices = size * 6;
 
-	    outBuffer = outBuffer || new Uint16Array(totalIndices);
-
-	    if (outBuffer.length !== totalIndices)
-	    {
-	        throw new Error(("Out buffer length is incorrect, got " + (outBuffer.length) + " and expected " + totalIndices));
-	    }
+	    var indices = new Uint16Array(totalIndices);
 
 	    // fill the indices with the quads to draw
 	    for (var i = 0, j = 0; i < totalIndices; i += 6, j += 4)
 	    {
-	        outBuffer[i + 0] = j + 0;
-	        outBuffer[i + 1] = j + 1;
-	        outBuffer[i + 2] = j + 2;
-	        outBuffer[i + 3] = j + 0;
-	        outBuffer[i + 4] = j + 2;
-	        outBuffer[i + 5] = j + 3;
+	        indices[i + 0] = j + 0;
+	        indices[i + 1] = j + 1;
+	        indices[i + 2] = j + 2;
+	        indices[i + 3] = j + 0;
+	        indices[i + 4] = j + 2;
+	        indices[i + 5] = j + 3;
 	    }
 
-	    return outBuffer;
+	    return indices;
 	}
 
 	/**
@@ -4204,7 +4143,7 @@ var PIXI = (function (exports) {
 	 * @param {number} n - the number to check the sign of
 	 * @returns {number} 0 if `n` is 0, -1 if `n` is negative, 1 if `n` is positive
 	 */
-	function sign$1(n)
+	function sign(n)
 	{
 	    if (n === 0) { return 0; }
 
@@ -4216,7 +4155,7 @@ var PIXI = (function (exports) {
 	/**
 	 * Rounds to next power of two.
 	 *
-	 * @function nextPow2
+	 * @function isPow2
 	 * @memberof PIXI.utils
 	 * @param {number} v input value
 	 * @return {number}
@@ -4728,7 +4667,7 @@ var PIXI = (function (exports) {
 		removeItems: removeItems,
 		rgb2hex: rgb2hex,
 		sayHello: sayHello,
-		sign: sign$1,
+		sign: sign,
 		skipHello: skipHello,
 		string2hex: string2hex,
 		trimCanvas: trimCanvas,
@@ -4740,8 +4679,8 @@ var PIXI = (function (exports) {
 	});
 
 	/*!
-	 * @pixi/math - v5.1.0
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/math - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/math is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -5529,66 +5468,48 @@ var PIXI = (function (exports) {
 
 	Object.defineProperties( Matrix, staticAccessors );
 
-	// Your friendly neighbour https://en.wikipedia.org/wiki/Dihedral_group
-
-	/*
-	 * Transform matrix for operation n is:
-	 * | ux | vx |
-	 * | uy | vy |
-	 */
+	// Your friendly neighbour https://en.wikipedia.org/wiki/Dihedral_group of order 16
 
 	var ux = [1, 1, 0, -1, -1, -1, 0, 1, 1, 1, 0, -1, -1, -1, 0, 1];
 	var uy = [0, 1, 1, 1, 0, -1, -1, -1, 0, 1, 1, 1, 0, -1, -1, -1];
 	var vx = [0, -1, -1, -1, 0, 1, 1, 1, 0, 1, 1, 1, 0, -1, -1, -1];
 	var vy = [1, 1, 0, -1, -1, -1, 0, 1, -1, -1, 0, 1, 1, 1, 0, -1];
+	var tempMatrices = [];
 
-	/**
-	 * [Cayley Table]{@link https://en.wikipedia.org/wiki/Cayley_table}
-	 * for the composition of each rotation in the dihederal group D8.
-	 *
-	 * @type number[][]
-	 * @private
-	 */
-	var rotationCayley = [];
+	var mul = [];
 
-	/**
-	 * Matrices for each `GD8Symmetry` rotation.
-	 *
-	 * @type Matrix[]
-	 * @private
-	 */
-	var rotationMatrices = [];
+	function signum(x)
+	{
+	    if (x < 0)
+	    {
+	        return -1;
+	    }
+	    if (x > 0)
+	    {
+	        return 1;
+	    }
 
-	/*
-	 * Alias for {@code Math.sign}.
-	 */
-	var signum = Math.sign;
+	    return 0;
+	}
 
-	/*
-	 * Initializes `rotationCayley` and `rotationMatrices`. It is called
-	 * only once below.
-	 */
 	function init()
 	{
 	    for (var i = 0; i < 16; i++)
 	    {
 	        var row = [];
 
-	        rotationCayley.push(row);
+	        mul.push(row);
 
 	        for (var j = 0; j < 16; j++)
 	        {
-	            /* Multiplies rotation matrices i and j. */
 	            var _ux = signum((ux[i] * ux[j]) + (vx[i] * uy[j]));
 	            var _uy = signum((uy[i] * ux[j]) + (vy[i] * uy[j]));
 	            var _vx = signum((ux[i] * vx[j]) + (vx[i] * vy[j]));
 	            var _vy = signum((uy[i] * vx[j]) + (vy[i] * vy[j]));
 
-	            /* Finds rotation matrix matching the product and pushes it. */
 	            for (var k = 0; k < 16; k++)
 	            {
-	                if (ux[k] === _ux && uy[k] === _uy
-	                      && vx[k] === _vx && vy[k] === _vy)
+	                if (ux[k] === _ux && uy[k] === _uy && vx[k] === _vx && vy[k] === _vy)
 	                {
 	                    row.push(k);
 	                    break;
@@ -5602,261 +5523,77 @@ var PIXI = (function (exports) {
 	        var mat = new Matrix();
 
 	        mat.set(ux[i$1], uy[i$1], vx[i$1], vy[i$1], 0, 0);
-	        rotationMatrices.push(mat);
+	        tempMatrices.push(mat);
 	    }
 	}
 
 	init();
 
 	/**
-	 * @memberof PIXI
-	 * @typedef {number} GD8Symmetry
-	 * @see PIXI.GroupD8
-	 */
-
-	/**
-	 * Implements the dihedral group D8, which is similar to
-	 * [group D4]{@link http://mathworld.wolfram.com/DihedralGroupD4.html};
-	 * D8 is the same but with diagonals, and it is used for texture
-	 * rotations.
+	 * Implements Dihedral Group D_8, see [group D4]{@link http://mathworld.wolfram.com/DihedralGroupD4.html},
+	 * D8 is the same but with diagonals. Used for texture rotations.
 	 *
-	 * The directions the U- and V- axes after rotation
-	 * of an angle of `a: GD8Constant` are the vectors `(uX(a), uY(a))`
-	 * and `(vX(a), vY(a))`. These aren't necessarily unit vectors.
+	 * Vector xX(i), xY(i) is U-axis of sprite with rotation i
+	 * Vector yY(i), yY(i) is V-axis of sprite with rotation i
+	 * Rotations: 0 grad (0), 90 grad (2), 180 grad (4), 270 grad (6)
+	 * Mirrors: vertical (8), main diagonal (10), horizontal (12), reverse diagonal (14)
+	 * This is the small part of gameofbombs.com portal system. It works.
 	 *
-	 * **Origin:**<br>
-	 *  This is the small part of gameofbombs.com portal system. It works.
-	 *
-	 * @see PIXI.GroupD8.E
-	 * @see PIXI.GroupD8.SE
-	 * @see PIXI.GroupD8.S
-	 * @see PIXI.GroupD8.SW
-	 * @see PIXI.GroupD8.W
-	 * @see PIXI.GroupD8.NW
-	 * @see PIXI.GroupD8.N
-	 * @see PIXI.GroupD8.NE
 	 * @author Ivan @ivanpopelyshev
 	 * @class
 	 * @memberof PIXI
 	 */
 	var GroupD8 = {
-	    /**
-	     * | Rotation | Direction |
-	     * |----------|-----------|
-	     * | 0°       | East      |
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
 	    E: 0,
-
-	    /**
-	     * | Rotation | Direction |
-	     * |----------|-----------|
-	     * | 45°↻     | Southeast |
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
 	    SE: 1,
-
-	    /**
-	     * | Rotation | Direction |
-	     * |----------|-----------|
-	     * | 90°↻     | South     |
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
 	    S: 2,
-
-	    /**
-	     * | Rotation | Direction |
-	     * |----------|-----------|
-	     * | 135°↻    | Southwest |
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
 	    SW: 3,
-
-	    /**
-	     * | Rotation | Direction |
-	     * |----------|-----------|
-	     * | 180°     | West      |
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
 	    W: 4,
-
-	    /**
-	     * | Rotation    | Direction    |
-	     * |-------------|--------------|
-	     * | -135°/225°↻ | Northwest    |
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
 	    NW: 5,
-
-	    /**
-	     * | Rotation    | Direction    |
-	     * |-------------|--------------|
-	     * | -90°/270°↻  | North        |
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
 	    N: 6,
-
-	    /**
-	     * | Rotation    | Direction    |
-	     * |-------------|--------------|
-	     * | -45°/315°↻  | Northeast    |
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
 	    NE: 7,
-
-	    /**
-	     * Reflection about Y-axis.
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
 	    MIRROR_VERTICAL: 8,
-
-	    /**
-	     * Reflection about the main diagonal.
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
-	    MAIN_DIAGONAL: 10,
-
-	    /**
-	     * Reflection about X-axis.
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
 	    MIRROR_HORIZONTAL: 12,
-
-	    /**
-	     * Reflection about reverse diagonal.
-	     *
-	     * @constant {PIXI.GD8Symmetry}
-	     */
-	    REVERSE_DIAGONAL: 14,
-
-	    /**
-	     * @memberof PIXI.GroupD8
-	     * @param {PIXI.GD8Symmetry} ind - sprite rotation angle.
-	     * @return {PIXI.GD8Symmetry} The X-component of the U-axis
-	     *    after rotating the axes.
-	     */
 	    uX: function (ind) { return ux[ind]; },
-
-	    /**
-	     * @memberof PIXI.GroupD8
-	     * @param {PIXI.GD8Symmetry} ind - sprite rotation angle.
-	     * @return {PIXI.GD8Symmetry} The Y-component of the U-axis
-	     *    after rotating the axes.
-	     */
 	    uY: function (ind) { return uy[ind]; },
-
-	    /**
-	     * @memberof PIXI.GroupD8
-	     * @param {PIXI.GD8Symmetry} ind - sprite rotation angle.
-	     * @return {PIXI.GD8Symmetry} The X-component of the V-axis
-	     *    after rotating the axes.
-	     */
 	    vX: function (ind) { return vx[ind]; },
-
-	    /**
-	     * @memberof PIXI.GroupD8
-	     * @param {PIXI.GD8Symmetry} ind - sprite rotation angle.
-	     * @return {PIXI.GD8Symmetry} The Y-component of the V-axis
-	     *    after rotating the axes.
-	     */
 	    vY: function (ind) { return vy[ind]; },
-
-	    /**
-	     * @memberof PIXI.GroupD8
-	     * @param {PIXI.GD8Symmetry} rotation - symmetry whose opposite
-	     *   is needed. Only rotations have opposite symmetries while
-	     *   reflections don't.
-	     * @return {PIXI.GD8Symmetry} The opposite symmetry of `rotation`
-	     */
 	    inv: function (rotation) {
-	        if (rotation & 8)// true only if between 8 & 15 (reflections)
+	        if (rotation & 8)
 	        {
-	            return rotation & 15;// or rotation % 16
+	            return rotation & 15;
 	        }
 
-	        return (-rotation) & 7;// or (8 - rotation) % 8
+	        return (-rotation) & 7;
 	    },
+	    add: function (rotationSecond, rotationFirst) { return mul[rotationSecond][rotationFirst]; },
+	    sub: function (rotationSecond, rotationFirst) { return mul[rotationSecond][GroupD8.inv(rotationFirst)]; },
 
 	    /**
-	     * Composes the two D8 operations.
-	     *
-	     * Taking `^` as reflection:
-	     *
-	     * |       | E=0 | S=2 | W=4 | N=6 | E^=8 | S^=10 | W^=12 | N^=14 |
-	     * |-------|-----|-----|-----|-----|------|-------|-------|-------|
-	     * | E=0   | E   | S   | W   | N   | E^   | S^    | W^    | N^    |
-	     * | S=2   | S   | W   | N   | E   | S^   | W^    | N^    | E^    |
-	     * | W=4   | W   | N   | E   | S   | W^   | N^    | E^    | S^    |
-	     * | N=6   | N   | E   | S   | W   | N^   | E^    | S^    | W^    |
-	     * | E^=8  | E^  | N^  | W^  | S^  | E    | N     | W     | S     |
-	     * | S^=10 | S^  | E^  | N^  | W^  | S    | E     | N     | W     |
-	     * | W^=12 | W^  | S^  | E^  | N^  | W    | S     | E     | N     |
-	     * | N^=14 | N^  | W^  | S^  | E^  | N    | W     | S     | E     |
-	     *
-	     * [This is a Cayley table]{@link https://en.wikipedia.org/wiki/Cayley_table}
-	     * @memberof PIXI.GroupD8
-	     * @param {PIXI.GD8Symmetry} rotationSecond - Second operation, which
-	     *   is the row in the above cayley table.
-	     * @param {PIXI.GD8Symmetry} rotationFirst - First operation, which
-	     *   is the column in the above cayley table.
-	     * @return {PIXI.GD8Symmetry} Composed operation
-	     */
-	    add: function (rotationSecond, rotationFirst) { return (
-	        rotationCayley[rotationSecond][rotationFirst]
-	    ); },
-
-	    /**
-	     * Reverse of `add`.
-	     *
-	     * @memberof PIXI.GroupD8
-	     * @param {PIXI.GD8Symmetry} rotationSecond - Second operation
-	     * @param {PIXI.GD8Symmetry} rotationFirst - First operation
-	     * @return {PIXI.GD8Symmetry} Result
-	     */
-	    sub: function (rotationSecond, rotationFirst) { return (
-	        rotationCayley[rotationSecond][GroupD8.inv(rotationFirst)]
-	    ); },
-
-	    /**
-	     * Adds 180 degrees to rotation, which is a commutative
-	     * operation.
+	     * Adds 180 degrees to rotation. Commutative operation.
 	     *
 	     * @memberof PIXI.GroupD8
 	     * @param {number} rotation - The number to rotate.
-	     * @returns {number} Rotated number
+	     * @returns {number} rotated number
 	     */
 	    rotate180: function (rotation) { return rotation ^ 4; },
 
 	    /**
-	     * Checks if the rotation angle is vertical, i.e. south
-	     * or north. It doesn't work for reflections.
+	     * Direction of main vector can be horizontal, vertical or diagonal.
+	     * Some objects work with vertical directions different.
 	     *
 	     * @memberof PIXI.GroupD8
-	     * @param {PIXI.GD8Symmetry} rotation - The number to check.
+	     * @param {number} rotation - The number to check.
 	     * @returns {boolean} Whether or not the direction is vertical
 	     */
-	    isVertical: function (rotation) { return (rotation & 3) === 2; }, // rotation % 4 === 2
+	    isVertical: function (rotation) { return (rotation & 3) === 2; },
 
 	    /**
-	     * Approximates the vector `V(dx,dy)` into one of the
-	     * eight directions provided by `GroupD8`.
-	     *
 	     * @memberof PIXI.GroupD8
-	     * @param {number} dx - X-component of the vector
-	     * @param {number} dy - Y-component of the vector
-	     * @return {PIXI.GD8Symmetry} Approximation of the vector into
-	     *  one of the eight symmetries.
+	     * @param {number} dx - TODO
+	     * @param {number} dy - TODO
+	     *
+	     * @return {number} TODO
 	     */
 	    byDirection: function (dx, dy) {
 	        if (Math.abs(dx) * 2 <= Math.abs(dy))
@@ -5899,7 +5636,7 @@ var PIXI = (function (exports) {
 	     *
 	     * @memberof PIXI.GroupD8
 	     * @param {PIXI.Matrix} matrix - sprite world matrix
-	     * @param {PIXI.GD8Symmetry} rotation - The rotation factor to use.
+	     * @param {number} rotation - The rotation factor to use.
 	     * @param {number} tx - sprite anchoring
 	     * @param {number} ty - sprite anchoring
 	     */
@@ -5908,7 +5645,7 @@ var PIXI = (function (exports) {
 	        if ( ty === void 0 ) { ty = 0; }
 
 	        // Packer used "rotation", we use "inv(rotation)"
-	        var mat = rotationMatrices[GroupD8.inv(rotation)];
+	        var mat = tempMatrices[GroupD8.inv(rotation)];
 
 	        mat.tx = tx;
 	        mat.ty = ty;
@@ -5925,14 +5662,14 @@ var PIXI = (function (exports) {
 	var Transform = function Transform()
 	{
 	    /**
-	     * The world transformation matrix.
+	     * The global matrix transform. It can be swapped temporarily by some functions like getLocalBounds()
 	     *
 	     * @member {PIXI.Matrix}
 	     */
 	    this.worldTransform = new Matrix();
 
 	    /**
-	     * The local transformation matrix.
+	     * The local matrix transform
 	     *
 	     * @member {PIXI.Matrix}
 	     */
@@ -5966,82 +5703,17 @@ var PIXI = (function (exports) {
 	     */
 	    this.skew = new ObservablePoint(this.updateSkew, this, 0, 0);
 
-	    /**
-	     * The rotation amount.
-	     *
-	     * @protected
-	     * @member {number}
-	     */
 	    this._rotation = 0;
 
-	    /**
-	     * The X-coordinate value of the normalized local X axis,
-	     * the first column of the local transformation matrix without a scale.
-	     *
-	     * @protected
-	     * @member {number}
-	     */
-	    this._cx = 1;
+	    this._cx = 1; // cos rotation + skewY;
+	    this._sx = 0; // sin rotation + skewY;
+	    this._cy = 0; // cos rotation + Math.PI/2 - skewX;
+	    this._sy = 1; // sin rotation + Math.PI/2 - skewX;
 
-	    /**
-	     * The Y-coordinate value of the normalized local X axis,
-	     * the first column of the local transformation matrix without a scale.
-	     *
-	     * @protected
-	     * @member {number}
-	     */
-	    this._sx = 0;
-
-	    /**
-	     * The X-coordinate value of the normalized local Y axis,
-	     * the second column of the local transformation matrix without a scale.
-	     *
-	     * @protected
-	     * @member {number}
-	     */
-	    this._cy = 0;
-
-	    /**
-	     * The Y-coordinate value of the normalized local Y axis,
-	     * the second column of the local transformation matrix without a scale.
-	     *
-	     * @protected
-	     * @member {number}
-	     */
-	    this._sy = 1;
-
-	    /**
-	     * The locally unique ID of the local transform.
-	     *
-	     * @protected
-	     * @member {number}
-	     */
 	    this._localID = 0;
-
-	    /**
-	     * The locally unique ID of the local transform
-	     * used to calculate the current local transformation matrix.
-	     *
-	     * @protected
-	     * @member {number}
-	     */
 	    this._currentLocalID = 0;
 
-	    /**
-	     * The locally unique ID of the world transform.
-	     *
-	     * @protected
-	     * @member {number}
-	     */
 	    this._worldID = 0;
-
-	    /**
-	     * The locally unique ID of the parent's world transform
-	     * used to calculate the current world transformation matrix.
-	     *
-	     * @protected
-	     * @member {number}
-	     */
 	    this._parentID = 0;
 	};
 
@@ -6050,7 +5722,7 @@ var PIXI = (function (exports) {
 	/**
 	 * Called when a value changes.
 	 *
-	 * @protected
+	 * @private
 	 */
 	Transform.prototype.onChange = function onChange ()
 	{
@@ -6058,9 +5730,9 @@ var PIXI = (function (exports) {
 	};
 
 	/**
-	 * Called when the skew or the rotation changes.
+	 * Called when skew or rotation changes
 	 *
-	 * @protected
+	 * @private
 	 */
 	Transform.prototype.updateSkew = function updateSkew ()
 	{
@@ -6073,7 +5745,7 @@ var PIXI = (function (exports) {
 	};
 
 	/**
-	 * Updates the local transformation matrix.
+	 * Updates only local matrix
 	 */
 	Transform.prototype.updateLocalTransform = function updateLocalTransform ()
 	{
@@ -6097,9 +5769,9 @@ var PIXI = (function (exports) {
 	};
 
 	/**
-	 * Updates the local and the world transformation matrices.
+	 * Updates the values of the object and applies the parent's transform.
 	 *
-	 * @param {PIXI.Transform} parentTransform - The parent transform
+	 * @param {PIXI.Transform} parentTransform - The transform of the parent of this object
 	 */
 	Transform.prototype.updateTransform = function updateTransform (parentTransform)
 	{
@@ -6173,23 +5845,7 @@ var PIXI = (function (exports) {
 
 	Object.defineProperties( Transform.prototype, prototypeAccessors$1$1 );
 
-	/**
-	 * A default (identity) transform
-	 *
-	 * @static
-	 * @constant
-	 * @member {PIXI.Transform}
-	 */
 	Transform.IDENTITY = new Transform();
-
-	/**
-	 * Size object, contains width and height
-	 *
-	 * @memberof PIXI
-	 * @typedef {object} ISize
-	 * @property {number} width - Width component
-	 * @property {number} height - Height component
-	 */
 
 	/**
 	 * Rectangle object is an area defined by its position, as indicated by its top-left corner
@@ -6837,8 +6493,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/display - v5.1.3
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/display - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/display is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -7338,7 +6994,7 @@ var PIXI = (function (exports) {
 	        /**
 	         * The original, cached mask of the object.
 	         *
-	         * @member {PIXI.Graphics|PIXI.Sprite|null}
+	         * @member {PIXI.Graphics|PIXI.Sprite}
 	         * @protected
 	         */
 	        this._mask = null;
@@ -7474,7 +7130,6 @@ var PIXI = (function (exports) {
 	        if (this._boundsID !== this._lastBoundsID)
 	        {
 	            this.calculateBounds();
-	            this._lastBoundsID = this._boundsID;
 	        }
 
 	        if (!rect)
@@ -7907,7 +7562,7 @@ var PIXI = (function (exports) {
 	     * sprite.mask = graphics;
 	     * @todo At the moment, PIXI.CanvasRenderer doesn't support PIXI.Sprite as mask.
 	     *
-	     * @member {PIXI.Graphics|PIXI.Sprite|null}
+	     * @member {PIXI.Graphics|PIXI.Sprite}
 	     */
 	    prototypeAccessors.mask.get = function ()
 	    {
@@ -7936,13 +7591,7 @@ var PIXI = (function (exports) {
 	    return DisplayObject;
 	}(eventemitter3));
 
-	/**
-	 * DisplayObject default updateTransform, does not update children of container.
-	 * Will crash if there's no parent element.
-	 *
-	 * @memberof PIXI.DisplayObject#
-	 * @function displayObjectUpdateTransform
-	 */
+	// performance increase to avoid using call.. (10x faster)
 	DisplayObject.prototype.displayObjectUpdateTransform = DisplayObject.prototype.updateTransform;
 
 	function sortChildren(a, b)
@@ -8448,7 +8097,7 @@ var PIXI = (function (exports) {
 	        }
 
 	        // do a quick check to see if this element has a mask or a filter.
-	        if (this._mask || (this.filters && this.filters.length))
+	        if (this._mask || this.filters)
 	        {
 	            this.renderAdvanced(renderer);
 	        }
@@ -8632,8 +8281,8 @@ var PIXI = (function (exports) {
 	Container.prototype.containerUpdateTransform = Container.prototype.updateTransform;
 
 	/*!
-	 * @pixi/accessibility - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/accessibility - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/accessibility is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -9171,8 +8820,6 @@ var PIXI = (function (exports) {
 	    var interactionManager = this.renderer.plugins.interaction;
 
 	    interactionManager.dispatchEvent(e.target.displayObject, 'click', interactionManager.eventData);
-	    interactionManager.dispatchEvent(e.target.displayObject, 'pointertap', interactionManager.eventData);
-	    interactionManager.dispatchEvent(e.target.displayObject, 'tap', interactionManager.eventData);
 	};
 
 	/**
@@ -9269,8 +8916,8 @@ var PIXI = (function (exports) {
 	});
 
 	/*!
-	 * @pixi/runner - v5.1.1
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/runner - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/runner is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -9320,7 +8967,6 @@ var PIXI = (function (exports) {
 	{
 	    this.items = [];
 	    this._name = name;
-	    this._aliasCount = 0;
 	};
 
 	var prototypeAccessors$3 = { empty: { configurable: true },name: { configurable: true } };
@@ -9340,28 +8986,12 @@ var PIXI = (function (exports) {
 	        var name = ref.name;
 	        var items = ref.items;
 
-	    this._aliasCount++;
-
 	    for (var i = 0, len = items.length; i < len; i++)
 	    {
 	        items[i][name](a0, a1, a2, a3, a4, a5, a6, a7);
 	    }
 
-	    if (items === this.items)
-	    {
-	        this._aliasCount--;
-	    }
-
 	    return this;
-	};
-
-	Runner.prototype.ensureNonAliasedItems = function ensureNonAliasedItems ()
-	{
-	    if (this._aliasCount > 0 && this.items.length > 1)
-	    {
-	        this._aliasCount = 0;
-	        this.items = this.items.slice(0);
-	    }
 	};
 
 	/**
@@ -9385,7 +9015,6 @@ var PIXI = (function (exports) {
 	{
 	    if (item[this._name])
 	    {
-	        this.ensureNonAliasedItems();
 	        this.remove(item);
 	        this.items.push(item);
 	    }
@@ -9403,7 +9032,6 @@ var PIXI = (function (exports) {
 
 	    if (index !== -1)
 	    {
-	        this.ensureNonAliasedItems();
 	        this.items.splice(index, 1);
 	    }
 
@@ -9424,7 +9052,6 @@ var PIXI = (function (exports) {
 	 */
 	Runner.prototype.removeAll = function removeAll ()
 	{
-	    this.ensureNonAliasedItems();
 	    this.items.length = 0;
 
 	    return this;
@@ -9481,8 +9108,8 @@ var PIXI = (function (exports) {
 	Runner.prototype.run = Runner.prototype.emit;
 
 	/*!
-	 * @pixi/ticker - v5.1.3
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/ticker - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/ticker is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -9825,15 +9452,6 @@ var PIXI = (function (exports) {
 	    this._protected = false;
 
 	    /**
-	     * The last time keyframe was executed.
-	     * Maintains a relatively fixed interval with the previous value.
-	     * @member {number}
-	     * @default -1
-	     * @private
-	     */
-	    this._lastFrame = -1;
-
-	    /**
 	     * Internal tick method bound to ticker instance.
 	     * This is because in early 2015, Function.bind
 	     * is still 60% slower in high performance scenarios.
@@ -9876,7 +9494,6 @@ var PIXI = (function (exports) {
 	    {
 	        // ensure callbacks get correct delta
 	        this.lastTime = performance.now();
-	        this._lastFrame = this.lastTime;
 	        this._requestId = requestAnimationFrame(this._tick);
 	    }
 	};
@@ -10124,19 +9741,13 @@ var PIXI = (function (exports) {
 
 	        elapsedMS *= this.speed;
 
-	        // If not enough time has passed, exit the function.
-	        // Get ready for next frame by setting _lastFrame, but based on _minElapsedMS
-	        // adjustment to ensure a relatively stable interval.
-	        if (this._minElapsedMS)
+	        // if not enough time has passed, exit the function.
+	        // We give an extra ms to elapsedMS for this check, because the nature of
+	        // request animation frame means that not all browsers will return precise values.
+	        // However, because rAF works based on v-sync, it's won't change the effective FPS.
+	        if (this._minElapsedMS && elapsedMS + 1 < this._minElapsedMS)
 	        {
-	            var delta = currentTime - this._lastFrame | 0;
-
-	            if (delta < this._minElapsedMS)
-	            {
-	                return;
-	            }
-
-	            this._lastFrame = currentTime - (delta % this._minElapsedMS);
+	            return;
 	        }
 
 	        this.deltaMS = elapsedMS;
@@ -10210,28 +9821,28 @@ var PIXI = (function (exports) {
 	};
 
 	/**
-	 * Manages the minimum amount of milliseconds required to
+	 * Manages the minimum amount of milliseconds allowed to
 	 * elapse between invoking {@link PIXI.Ticker#update}.
 	 * This will effect the measured value of {@link PIXI.Ticker#FPS}.
-	 * If it is set to `0`, then there is no limit; PixiJS will render as many frames as it can.
-	 * Otherwise it will be at least `minFPS`
+	 * When setting this property it is clamped to a value between
+	 * `1` and `TARGET_FPMS * 1000`.
 	 *
 	 * @member {number}
-	 * @default 0
+	 * @default 60
 	 */
 	prototypeAccessors$4.maxFPS.get = function ()
 	{
 	    if (this._minElapsedMS)
 	    {
-	        return Math.round(1000 / this._minElapsedMS);
+	        return 1000 / this._minElapsedMS;
 	    }
 
-	    return 0;
+	    return settings.TARGET_FPMS * 1000;
 	};
 
 	prototypeAccessors$4.maxFPS.set = function (fps)
 	{
-	    if (fps === 0)
+	    if (fps / 1000 >= settings.TARGET_FPMS)
 	    {
 	        this._minElapsedMS = 0;
 	    }
@@ -10240,7 +9851,10 @@ var PIXI = (function (exports) {
 	        // Max must be at least the minFPS
 	        var maxFPS = Math.max(this.minFPS, fps);
 
-	        this._minElapsedMS = 1 / (maxFPS / 1000);
+	        // Must be at least 1, but below 1 / settings.TARGET_FPMS
+	        var maxFPMS = Math.min(Math.max(1, maxFPS) / 1000, settings.TARGET_FPMS);
+
+	        this._minElapsedMS = 1 / maxFPMS;
 	    }
 	};
 
@@ -10433,8 +10047,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/core - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/core - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/core is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -10500,14 +10114,6 @@ var PIXI = (function (exports) {
 	     * @private
 	     */
 	    this.onUpdate = new Runner('update');
-
-	    /**
-	     * Handle internal errors, such as loading errors
-	     *
-	     * @member {Runner}
-	     * @private
-	     */
-	    this.onError = new Runner('onError', 1);
 	};
 
 	var prototypeAccessors$5 = { valid: { configurable: true },width: { configurable: true },height: { configurable: true } };
@@ -10521,7 +10127,6 @@ var PIXI = (function (exports) {
 	{
 	    this.onResize.add(baseTexture);
 	    this.onUpdate.add(baseTexture);
-	    this.onError.add(baseTexture);
 
 	    // Call a resize immediate if we already
 	    // have the width and height of the resource
@@ -10540,13 +10145,10 @@ var PIXI = (function (exports) {
 	{
 	    this.onResize.remove(baseTexture);
 	    this.onUpdate.remove(baseTexture);
-	    this.onError.remove(baseTexture);
 	};
 
 	/**
 	 * Trigger a resize event
-	 * @param {number} width X dimension
-	 * @param {number} height Y dimension
 	 */
 	Resource.prototype.resize = function resize (width, height)
 	{
@@ -10657,14 +10259,12 @@ var PIXI = (function (exports) {
 	{
 	    if (!this.destroyed)
 	    {
-	        this.destroyed = true;
-	        this.dispose();
-	        this.onError.removeAll();
-	        this.onError = null;
 	        this.onResize.removeAll();
 	        this.onResize = null;
 	        this.onUpdate.removeAll();
 	        this.onUpdate = null;
+	        this.destroyed = true;
+	        this.dispose();
 	    }
 	};
 
@@ -10690,15 +10290,6 @@ var PIXI = (function (exports) {
 	         * @readonly
 	         */
 	        this.source = source;
-
-	        /**
-	         * If set to `true`, will force `texImage2D` over `texSubImage2D` for uploading.
-	         * Certain types of media (e.g. video) using `texImage2D` is more performant.
-	         * @member {boolean}
-	         * @default false
-	         * @private
-	         */
-	        this.noSubImage = false;
 	    }
 
 	    if ( Resource ) { BaseImageResource.__proto__ = Resource; }
@@ -10742,10 +10333,7 @@ var PIXI = (function (exports) {
 
 	        gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, baseTexture.premultiplyAlpha);
 
-	        if (!this.noSubImage
-	            && baseTexture.target === gl.TEXTURE_2D
-	            && glTexture.width === width
-	            && glTexture.height === height)
+	        if (baseTexture.target === gl.TEXTURE_2D && glTexture.width === width && glTexture.height === height)
 	        {
 	            gl.texSubImage2D(gl.TEXTURE_2D, 0, 0, 0, baseTexture.format, baseTexture.type, source);
 	        }
@@ -10815,16 +10403,6 @@ var PIXI = (function (exports) {
 	        }
 
 	        BaseImageResource.call(this, source);
-
-	        // FireFox 68, and possibly other versions, seems like setting the HTMLImageElement#width and #height
-	        // to non-zero values before its loading completes if images are in a cache.
-	        // Because of this, need to set the `_width` and the `_height` to zero to avoid uploading incomplete images.
-	        // Please refer to the issue #5968 (https://github.com/pixijs/pixi.js/issues/5968).
-	        if (!source.complete && !!this._width && !!this._height)
-	        {
-	            this._width = 0;
-	            this._height = 0;
-	        }
 
 	        /**
 	         * URL of the image source
@@ -10940,7 +10518,6 @@ var PIXI = (function (exports) {
 	            else
 	            {
 	                source.onload = completed;
-	                source.onerror = function (event) { return this$1.onError.run(event); };
 	            }
 	        });
 
@@ -11051,9 +10628,6 @@ var PIXI = (function (exports) {
 	     */
 	    ImageResource.prototype.dispose = function dispose ()
 	    {
-	        this.source.onload = null;
-	        this.source.onerror = null;
-
 	        BaseImageResource.prototype.dispose.call(this);
 
 	        if (this.bitmap)
@@ -11114,10 +10688,10 @@ var PIXI = (function (exports) {
 	 *        or any other resource that can be auto-detected. If not resource is
 	 *        detected, it's assumed to be an ImageResource.
 	 * @param {object} [options] - Pass-through options to use for Resource
-	 * @param {number} [options.width] - Width of BufferResource or SVG rasterization
-	 * @param {number} [options.height] - Height of BufferResource or SVG rasterization
+	 * @param {number} [options.width] - BufferResource's width
+	 * @param {number} [options.height] - BufferResource's height
 	 * @param {boolean} [options.autoLoad=true] - Image, SVG and Video flag to start loading
-	 * @param {number} [options.scale=1] - SVG source scale. Overridden by width, height
+	 * @param {number} [options.scale=1] - SVG source scale
 	 * @param {boolean} [options.createBitmap=PIXI.settings.CREATE_IMAGE_BITMAP] - Image option to create Bitmap object
 	 * @param {boolean} [options.crossorigin=true] - Image and Video option to set crossOrigin
 	 * @param {boolean} [options.autoPlay=true] - Video option to start playing video immediately
@@ -11229,15 +10803,26 @@ var PIXI = (function (exports) {
 	            glTexture.width = baseTexture.width;
 	            glTexture.height = baseTexture.height;
 
+	            var internalFormat = baseTexture.format;
+
+	            // guess sized format by type and format
+	            // https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texImage2D
+	            if (renderer.context.webGLVersion === 2
+	                && baseTexture.type === renderer.gl.FLOAT
+	                && baseTexture.format === renderer.gl.RGBA)
+	            {
+	                internalFormat = renderer.gl.RGBA32F;
+	            }
+
 	            gl.texImage2D(
 	                baseTexture.target,
 	                0,
-	                glTexture.internalFormat,
+	                internalFormat,
 	                baseTexture.width,
 	                baseTexture.height,
 	                0,
 	                baseTexture.format,
-	                glTexture.type,
+	                baseTexture.type,
 	                this.data
 	            );
 	        }
@@ -11290,7 +10875,6 @@ var PIXI = (function (exports) {
 	 *        into a Resource.
 	 * @param {Object} [options] - Collection of options
 	 * @param {PIXI.MIPMAP_MODES} [options.mipmap=PIXI.settings.MIPMAP_TEXTURES] - If mipmapping is enabled for texture
-	 * @param {number} [options.anisotropicLevel=PIXI.settings.ANISOTROPIC_LEVEL] - Anisotropic filtering level of texture
 	 * @param {PIXI.WRAP_MODES} [options.wrapMode=PIXI.settings.WRAP_MODE] - Wrap mode for textures
 	 * @param {PIXI.SCALE_MODES} [options.scaleMode=PIXI.settings.SCALE_MODE] - Default scale mode, linear, nearest
 	 * @param {PIXI.FORMATS} [options.format=PIXI.FORMATS.RGBA] - GL format type
@@ -11299,7 +10883,6 @@ var PIXI = (function (exports) {
 	 * @param {boolean} [options.premultiplyAlpha=true] - Pre multiply the image alpha
 	 * @param {number} [options.width=0] - Width of the texture
 	 * @param {number} [options.height=0] - Height of the texture
-	 * @param {number} [options.resolution] - Resolution of the base texture
 	 * @param {object} [options.resourceOptions] - Optional resource options,
 	 *        see {@link PIXI.resources.autoDetectResource autoDetectResource}
 	 */
@@ -11315,7 +10898,6 @@ var PIXI = (function (exports) {
 
 	        var premultiplyAlpha = options.premultiplyAlpha;
 	        var mipmap = options.mipmap;
-	        var anisotropicLevel = options.anisotropicLevel;
 	        var scaleMode = options.scaleMode;
 	        var width = options.width;
 	        var height = options.height;
@@ -11364,14 +10946,6 @@ var PIXI = (function (exports) {
 	         * @default PIXI.settings.MIPMAP_TEXTURES
 	         */
 	        this.mipmap = mipmap !== undefined ? mipmap : settings.MIPMAP_TEXTURES;
-
-	        /**
-	         * Anisotropic filtering level of texture
-	         *
-	         * @member {number}
-	         * @default PIXI.settings.ANISOTROPIC_LEVEL
-	         */
-	        this.anisotropicLevel = anisotropicLevel !== undefined ? anisotropicLevel : settings.ANISOTROPIC_LEVEL;
 
 	        /**
 	         * How the texture wraps
@@ -11456,9 +11030,8 @@ var PIXI = (function (exports) {
 
 	        /**
 	         * Used by TextureSystem to only update texture to the GPU when needed.
-	         * Please call `update()` to increment it.
 	         *
-	         * @readonly
+	         * @protected
 	         * @member {number}
 	         */
 	        this.dirtyId = 0;
@@ -11533,7 +11106,6 @@ var PIXI = (function (exports) {
 	         * @protected
 	         * @event PIXI.BaseTexture#error
 	         * @param {PIXI.BaseTexture} baseTexture - Resource errored.
-	         * @param {ErrorEvent} event - Load error event.
 	         */
 
 	        /**
@@ -11542,6 +11114,14 @@ var PIXI = (function (exports) {
 	         * @protected
 	         * @event PIXI.BaseTexture#loaded
 	         * @param {PIXI.BaseTexture} baseTexture - Resource loaded.
+	         */
+
+	        /**
+	         * Fired when BaseTexture is destroyed.
+	         *
+	         * @protected
+	         * @event PIXI.BaseTexture#error
+	         * @param {PIXI.BaseTexture} baseTexture - Resource errored.
 	         */
 
 	        /**
@@ -11578,7 +11158,7 @@ var PIXI = (function (exports) {
 	     */
 	    prototypeAccessors.realWidth.get = function ()
 	    {
-	        return Math.ceil((this.width * this.resolution) - 1e-4);
+	        return this.width * this.resolution;
 	    };
 
 	    /**
@@ -11589,7 +11169,7 @@ var PIXI = (function (exports) {
 	     */
 	    prototypeAccessors.realHeight.get = function ()
 	    {
-	        return Math.ceil((this.height * this.resolution) - 1e-4);
+	        return this.height * this.resolution;
 	    };
 
 	    /**
@@ -11745,16 +11325,6 @@ var PIXI = (function (exports) {
 	            this.dirtyStyleId++;
 	            this.emit('update', this);
 	        }
-	    };
-
-	    /**
-	     * Handle errors with resources.
-	     * @private
-	     * @param {ErrorEvent} event - Error event emitted.
-	     */
-	    BaseTexture.prototype.onError = function onError (event)
-	    {
-	        this.emit('error', this, event);
 	    };
 
 	    /**
@@ -12200,10 +11770,6 @@ var PIXI = (function (exports) {
 	}(Resource));
 
 	/**
-	 * @interface OffscreenCanvas
-	 */
-
-	/**
 	 * Resource type for HTMLCanvasElement.
 	 * @class
 	 * @extends PIXI.resources.BaseImageResource
@@ -12221,15 +11787,7 @@ var PIXI = (function (exports) {
 
 	    CanvasResource.test = function test (source)
 	    {
-	        var OffscreenCanvas = window.OffscreenCanvas;
-
-	        // Check for browsers that don't yet support OffscreenCanvas
-	        if (OffscreenCanvas && source instanceof OffscreenCanvas)
-	        {
-	            return true;
-	        }
-
-	        return source instanceof HTMLCanvasElement;
+	        return (source instanceof HTMLCanvasElement);
 	    };
 
 	    return CanvasResource;
@@ -12333,9 +11891,7 @@ var PIXI = (function (exports) {
 	 * @memberof PIXI.resources
 	 * @param {string} source - Base64 encoded SVG element or URL for SVG file.
 	 * @param {object} [options] - Options to use
-	 * @param {number} [options.scale=1] Scale to apply to SVG. Overridden by...
-	 * @param {number} [options.width] Rasterize SVG this wide. Aspect ratio preserved if height not specified.
-	 * @param {number} [options.height] Rasterize SVG this high. Aspect ratio preserved if width not specified.
+	 * @param {number} [options.scale=1] Scale to apply to SVG.
 	 * @param {boolean} [options.autoLoad=true] Start loading right away.
 	 */
 	var SVGResource = /*@__PURE__*/(function (BaseImageResource) {
@@ -12344,8 +11900,6 @@ var PIXI = (function (exports) {
 	        options = options || {};
 
 	        BaseImageResource.call(this, document.createElement('canvas'));
-	        this._width = 0;
-	        this._height = 0;
 
 	        /**
 	         * Base64 encoded SVG element or URL for SVG file
@@ -12355,25 +11909,11 @@ var PIXI = (function (exports) {
 	        this.svg = source;
 
 	        /**
-	         * The source scale to apply when rasterizing on load
+	         * The source scale to apply to render
 	         * @readonly
 	         * @member {number}
 	         */
 	        this.scale = options.scale || 1;
-
-	        /**
-	         * A width override for rasterization on load
-	         * @readonly
-	         * @member {number}
-	         */
-	        this._overrideWidth = options.width;
-
-	        /**
-	         * A height override for rasterization on load
-	         * @readonly
-	         * @member {number}
-	         */
-	        this._overrideHeight = options.height;
 
 	        /**
 	         * Call when completely loaded
@@ -12381,13 +11921,6 @@ var PIXI = (function (exports) {
 	         * @member {function}
 	         */
 	        this._resolve = null;
-
-	        /**
-	         * Cross origin value to use
-	         * @private
-	         * @member {boolean|string}
-	         */
-	        this._crossorigin = options.crossorigin;
 
 	        /**
 	         * Promise when loading
@@ -12426,58 +11959,122 @@ var PIXI = (function (exports) {
 	            // Convert SVG inline string to data-uri
 	            if ((/^\<svg/).test(this$1.svg.trim()))
 	            {
-	                if (!btoa)
-	                {
-	                    throw new Error('Your browser doesn\'t support base64 conversions.');
-	                }
-	                this$1.svg = "data:image/svg+xml;base64," + (btoa(unescape(encodeURIComponent(this$1.svg))));
+	                this$1.svg = "data:image/svg+xml;utf8," + (this$1.svg);
 	            }
 
-	            this$1._loadSvg();
+	            // Checks if `source` is an SVG image and whether it's
+	            // loaded via a URL or a data URI. Then calls
+	            // `_loadDataUri` or `_loadXhr`.
+	            var dataUri = decomposeDataUri(this$1.svg);
+
+	            if (dataUri)
+	            {
+	                this$1._loadDataUri(dataUri);
+	            }
+	            else
+	            {
+	                // We got an URL, so we need to do an XHR to check the svg size
+	                this$1._loadXhr();
+	            }
 	        });
 
 	        return this._load;
 	    };
 
 	    /**
-	     * Loads an SVG image from `imageUrl` or `data URL`.
+	     * Reads an SVG string from data URI and then calls `_loadString`.
+	     *
+	     * @param {string} dataUri - The data uri to load from.
+	     */
+	    SVGResource.prototype._loadDataUri = function _loadDataUri (dataUri)
+	    {
+	        var svgString;
+
+	        if (dataUri.encoding === 'base64')
+	        {
+	            if (!atob)
+	            {
+	                throw new Error('Your browser doesn\'t support base64 conversions.');
+	            }
+	            svgString = atob(dataUri.data);
+	        }
+	        else
+	        {
+	            svgString = dataUri.data;
+	        }
+
+	        this._loadString(svgString);
+	    };
+
+	    /**
+	     * Loads an SVG string from `imageUrl` using XHR and then calls `_loadString`.
 	     *
 	     * @private
 	     */
-	    SVGResource.prototype._loadSvg = function _loadSvg ()
+	    SVGResource.prototype._loadXhr = function _loadXhr ()
 	    {
 	        var this$1 = this;
 
+	        var svgXhr = new XMLHttpRequest();
+
+	        // This throws error on IE, so SVG Document can't be used
+	        // svgXhr.responseType = 'document';
+
+	        // This is not needed since we load the svg as string (breaks IE too)
+	        // but overrideMimeType() can be used to force the response to be parsed as XML
+	        // svgXhr.overrideMimeType('image/svg+xml');
+
+	        svgXhr.onload = function () {
+	            if (svgXhr.readyState !== svgXhr.DONE || svgXhr.status !== 200)
+	            {
+	                throw new Error('Failed to load SVG using XHR.');
+	            }
+
+	            this$1._loadString(svgXhr.response);
+	        };
+
+	        // svgXhr.onerror = () => this.emit('error', this);
+
+	        svgXhr.open('GET', this.svg, true);
+	        svgXhr.send();
+	    };
+
+	    /**
+	     * Loads texture using an SVG string. The original SVG Image is stored as `origSource` and the
+	     * created canvas is the new `source`. The SVG is scaled using `sourceScale`. Called by
+	     * `_loadXhr` or `_loadDataUri`.
+	     *
+	     * @private
+	     * @param  {string} svgString SVG source as string
+	     *
+	     * @fires loaded
+	     */
+	    SVGResource.prototype._loadString = function _loadString (svgString)
+	    {
+	        var this$1 = this;
+
+	        var svgSize = SVGResource.getSize(svgString);
+
 	        var tempImage = new Image();
 
-	        BaseImageResource.crossOrigin(tempImage, this.svg, this._crossorigin);
-	        tempImage.src = this.svg;
+	        tempImage.src = "data:image/svg+xml," + svgString;
 
-	        tempImage.onerror = function (event) {
-	            tempImage.onerror = null;
-	            this$1.onError.run(event);
+	        tempImage.onerror = function () {
+	            throw new Error(("Unable to load image from: " + (tempImage.src)));
 	        };
 
 	        tempImage.onload = function () {
-	            var svgWidth = tempImage.width;
-	            var svgHeight = tempImage.height;
+	            var svgWidth = svgSize.width;
+	            var svgHeight = svgSize.height;
 
 	            if (!svgWidth || !svgHeight)
 	            {
 	                throw new Error('The SVG image must have width and height defined (in pixels), canvas API needs them.');
 	            }
 
-	            // Set render size
-	            var width = svgWidth * this$1.scale;
-	            var height = svgHeight * this$1.scale;
-
-	            if (this$1._overrideWidth || this$1._overrideHeight)
-	            {
-	                width = this$1._overrideWidth || this$1._overrideHeight / svgHeight * svgWidth;
-	                height = this$1._overrideHeight || this$1._overrideWidth / svgWidth * svgHeight;
-	            }
-	            width = Math.round(width);
-	            height = Math.round(height);
+	            // Scale realWidth and realHeight
+	            var width = Math.round(svgWidth * this$1.scale);
+	            var height = Math.round(svgHeight * this$1.scale);
 
 	            // Create a canvas element
 	            var canvas = this$1.source;
@@ -12497,11 +12094,20 @@ var PIXI = (function (exports) {
 	    };
 
 	    /**
+	     * Typedef for Size object.
+	     *
+	     * @memberof PIXI.resources.SVGResource
+	     * @typedef {object} Size
+	     * @property {number} width - Width component
+	     * @property {number} height - Height component
+	     */
+
+	    /**
 	     * Get size from an svg string using regexp.
 	     *
 	     * @method
 	     * @param {string} svgString - a serialized svg element
-	     * @return {PIXI.ISize} image extension
+	     * @return {PIXI.resources.SVGResource.Size} image extension
 	     */
 	    SVGResource.getSize = function getSize (svgString)
 	    {
@@ -12525,7 +12131,6 @@ var PIXI = (function (exports) {
 	    {
 	        BaseImageResource.prototype.dispose.call(this);
 	        this._resolve = null;
-	        this._crossorigin = null;
 	    };
 
 	    /**
@@ -12540,9 +12145,7 @@ var PIXI = (function (exports) {
 	        // url file extension is SVG
 	        return extension === 'svg'
 	            // source is SVG data-uri
-	            || (typeof source === 'string' && source.indexOf('data:image/svg+xml;base64') === 0)
-	            // source is SVG inline
-	            || (typeof source === 'string' && source.indexOf('<svg') === 0);
+	            || (typeof source === 'string' && source.indexOf('data:image/svg+xml') === 0);
 	    };
 
 	    return SVGResource;
@@ -12580,8 +12183,6 @@ var PIXI = (function (exports) {
 	        {
 	            var videoElement = document.createElement('video');
 
-	            // workaround for https://github.com/pixijs/pixi.js/issues/5996
-	            videoElement.setAttribute('preload', 'auto');
 	            videoElement.setAttribute('webkit-playsinline', '');
 	            videoElement.setAttribute('playsinline', '');
 
@@ -12620,7 +12221,6 @@ var PIXI = (function (exports) {
 
 	        BaseImageResource.call(this, source);
 
-	        this.noSubImage = true;
 	        this._autoUpdate = true;
 	        this._isAutoUpdating = false;
 	        this._updateFPS = options.updateFPS || 0;
@@ -12652,7 +12252,6 @@ var PIXI = (function (exports) {
 
 	        // Bind for listeners
 	        this._onCanPlay = this._onCanPlay.bind(this);
-	        this._onError = this._onError.bind(this);
 
 	        if (options.autoLoad !== false)
 	        {
@@ -12719,7 +12318,6 @@ var PIXI = (function (exports) {
 	        {
 	            source.addEventListener('canplay', this._onCanPlay);
 	            source.addEventListener('canplaythrough', this._onCanPlay);
-	            source.addEventListener('error', this._onError, true);
 	        }
 	        else
 	        {
@@ -12740,17 +12338,6 @@ var PIXI = (function (exports) {
 	        });
 
 	        return this._load;
-	    };
-
-	    /**
-	     * Handle video error events.
-	     *
-	     * @private
-	     */
-	    VideoResource.prototype._onError = function _onError ()
-	    {
-	        this.source.removeEventListener('error', this._onError, true);
-	        this.onError.run(event);
 	    };
 
 	    /**
@@ -12858,7 +12445,6 @@ var PIXI = (function (exports) {
 
 	        if (this.source)
 	        {
-	            this.source.removeEventListener('error', this._onError, true);
 	            this.source.pause();
 	            this.source.src = '';
 	            this.source.load();
@@ -12942,33 +12528,8 @@ var PIXI = (function (exports) {
 	 */
 	VideoResource.TYPES = ['mp4', 'm4v', 'webm', 'ogg', 'ogv', 'h264', 'avi', 'mov'];
 
-	/**
-	 * Resource type for ImageBitmap.
-	 * @class
-	 * @extends PIXI.resources.BaseImageResource
-	 * @memberof PIXI.resources
-	 * @param {ImageBitmap} source - Image element to use
-	 */
-	var ImageBitmapResource = /*@__PURE__*/(function (BaseImageResource) {
-	    function ImageBitmapResource () {
-	        BaseImageResource.apply(this, arguments);
-	    }
-
-	    if ( BaseImageResource ) { ImageBitmapResource.__proto__ = BaseImageResource; }
-	    ImageBitmapResource.prototype = Object.create( BaseImageResource && BaseImageResource.prototype );
-	    ImageBitmapResource.prototype.constructor = ImageBitmapResource;
-
-	    ImageBitmapResource.test = function test (source)
-	    {
-	        return !!window.createImageBitmap && source instanceof ImageBitmap;
-	    };
-
-	    return ImageBitmapResource;
-	}(BaseImageResource));
-
 	INSTALLED.push(
 	    ImageResource,
-	    ImageBitmapResource,
 	    CanvasResource,
 	    VideoResource,
 	    SVGResource,
@@ -12985,7 +12546,6 @@ var PIXI = (function (exports) {
 	    CanvasResource: CanvasResource,
 	    CubeResource: CubeResource,
 	    ImageResource: ImageResource,
-	    ImageBitmapResource: ImageBitmapResource,
 	    SVGResource: SVGResource,
 	    VideoResource: VideoResource,
 	    Resource: Resource,
@@ -13007,6 +12567,18 @@ var PIXI = (function (exports) {
 	     * @member {PIXI.Renderer}
 	     */
 	    this.renderer = renderer;
+
+	    this.renderer.runners.contextChange.add(this);
+	};
+
+	/**
+	 * Generic method called when there is a WebGL context change.
+	 *
+	 * @param {WebGLRenderingContext} gl new webgl context
+	 */
+	System.prototype.contextChange = function contextChange (gl) // eslint-disable-line no-unused-vars
+	{
+	    // do some codes init!
 	};
 
 	/**
@@ -13014,6 +12586,7 @@ var PIXI = (function (exports) {
 	 */
 	System.prototype.destroy = function destroy ()
 	{
+	    this.renderer.runners.contextChange.remove(this);
 	    this.renderer = null;
 	};
 
@@ -13311,7 +12884,8 @@ var PIXI = (function (exports) {
 	        this.clearColor = [0, 0, 0, 0];
 
 	        this.framebuffer = new Framebuffer(this.width * this.resolution, this.height * this.resolution)
-	            .addColorTexture(0, this);
+	            .addColorTexture(0, this)
+	            .enableStencil();
 
 	        // TODO - could this be added the systems?
 
@@ -13370,22 +12944,15 @@ var PIXI = (function (exports) {
 	        BaseTexture.prototype.destroy.call(this, true);
 
 	        this.framebuffer = null;
+
+	        this.renderer = null;
 	    };
 
 	    return BaseRenderTexture;
 	}(BaseTexture));
 
 	/**
-	 * Stores a texture's frame in UV coordinates, in
-	 * which everything lies in the rectangle `[(0,0), (1,0),
-	 * (1,1), (0,1)]`.
-	 *
-	 * | Corner       | Coordinates |
-	 * |--------------|-------------|
-	 * | Top-Left     | `(x0,y0)`   |
-	 * | Top-Right    | `(x1,y1)`   |
-	 * | Bottom-Right | `(x2,y2)`   |
-	 * | Bottom-Left  | `(x3,y3)`   |
+	 * A standard object to store the Uvs of a texture
 	 *
 	 * @class
 	 * @protected
@@ -13393,60 +12960,16 @@ var PIXI = (function (exports) {
 	 */
 	var TextureUvs = function TextureUvs()
 	{
-	    /**
-	     * X-component of top-left corner `(x0,y0)`.
-	     *
-	     * @member {number}
-	     */
 	    this.x0 = 0;
-
-	    /**
-	     * Y-component of top-left corner `(x0,y0)`.
-	     *
-	     * @member {number}
-	     */
 	    this.y0 = 0;
 
-	    /**
-	     * X-component of top-right corner `(x1,y1)`.
-	     *
-	     * @member {number}
-	     */
 	    this.x1 = 1;
-
-	    /**
-	     * Y-component of top-right corner `(x1,y1)`.
-	     *
-	     * @member {number}
-	     */
 	    this.y1 = 0;
 
-	    /**
-	     * X-component of bottom-right corner `(x2,y2)`.
-	     *
-	     * @member {number}
-	     */
 	    this.x2 = 1;
-
-	    /**
-	     * Y-component of bottom-right corner `(x2,y2)`.
-	     *
-	     * @member {number}
-	     */
 	    this.y2 = 1;
 
-	    /**
-	     * X-component of bottom-left corner `(x3,y3)`.
-	     *
-	     * @member {number}
-	     */
 	    this.x3 = 0;
-
-	    /**
-	     * Y-component of bottom-right corner `(x3,y3)`.
-	     *
-	     * @member {number}
-	     */
 	    this.y3 = 1;
 
 	    this.uvsFloat32 = new Float32Array(8);
@@ -13710,7 +13233,7 @@ var PIXI = (function (exports) {
 	    Texture.prototype = Object.create( EventEmitter && EventEmitter.prototype );
 	    Texture.prototype.constructor = Texture;
 
-	    var prototypeAccessors = { resolution: { configurable: true },frame: { configurable: true },rotate: { configurable: true },width: { configurable: true },height: { configurable: true } };
+	    var prototypeAccessors = { frame: { configurable: true },rotate: { configurable: true },width: { configurable: true },height: { configurable: true } };
 
 	    /**
 	     * Updates this texture on the gpu.
@@ -14006,17 +13529,6 @@ var PIXI = (function (exports) {
 	    };
 
 	    /**
-	     * Returns resolution of baseTexture
-	     *
-	     * @member {number}
-	     * @readonly
-	     */
-	    prototypeAccessors.resolution.get = function ()
-	    {
-	        return this.baseTexture.resolution;
-	    };
-
-	    /**
 	     * The frame specifies the region of the base texture that this texture uses.
 	     * Please call `updateUvs()` after you change coordinates of `frame` manually.
 	     *
@@ -14147,7 +13659,7 @@ var PIXI = (function (exports) {
 	removeAllHandlers(Texture.EMPTY.baseTexture);
 
 	/**
-	 * A white texture of 16x16 size, used for graphics and other things
+	 * A white texture of 10x10 size, used for graphics and other things
 	 * Can not be destroyed.
 	 *
 	 * @static
@@ -14163,9 +13675,6 @@ var PIXI = (function (exports) {
 	 *
 	 * __Hint__: All DisplayObjects (i.e. Sprites) that render to a RenderTexture should be preloaded
 	 * otherwise black rectangles will be drawn instead.
-	 *
-	 * __Hint-2__: The actual memory allocation will happen on first render.
-	 * You shouldn't create renderTextures each frame just to delete them after, try to reuse them.
 	 *
 	 * A RenderTexture takes a snapshot of any Display Object given to its render method. For example:
 	 *
@@ -14243,10 +13752,8 @@ var PIXI = (function (exports) {
 	        this.valid = true;
 
 	        /**
-	         * Stores `sourceFrame` when this texture is inside current filter stack.
-	         * You can read it inside filters.
-	         *
-	         * @readonly
+	         * FilterSystem temporary storage
+	         * @protected
 	         * @member {PIXI.Rectangle}
 	         */
 	        this.filterFrame = null;
@@ -14342,206 +13849,6 @@ var PIXI = (function (exports) {
 
 	    return RenderTexture;
 	}(Texture));
-
-	/**
-	 * Experimental!
-	 *
-	 * Texture pool, used by FilterSystem and plugins
-	 * Stores collection of temporary pow2 or screen-sized renderTextures
-	 *
-	 * If you use custom RenderTexturePool for your filters, you can use methods
-	 * `getFilterTexture` and `returnFilterTexture` same as in
-	 *
-	 * @class
-	 * @memberof PIXI
-	 */
-	var RenderTexturePool = function RenderTexturePool(textureOptions)
-	{
-	    this.texturePool = {};
-	    this.textureOptions = textureOptions || {};
-	    /**
-	     * Allow renderTextures of the same size as screen, not just pow2
-	     *
-	     * Automatically sets to true after `setScreenSize`
-	     *
-	     * @member {boolean}
-	     * @default false
-	     */
-	    this.enableFullScreen = false;
-
-	    this._pixelsWidth = 0;
-	    this._pixelsHeight = 0;
-	};
-
-	/**
-	 * creates of texture with params that were specified in pool constructor
-	 *
-	 * @param {number} realWidth width of texture in pixels
-	 * @param {number} realHeight height of texture in pixels
-	 * @returns {RenderTexture}
-	 */
-	RenderTexturePool.prototype.createTexture = function createTexture (realWidth, realHeight)
-	{
-	    var baseRenderTexture = new BaseRenderTexture(Object.assign({
-	        width: realWidth,
-	        height: realHeight,
-	        resolution: 1,
-	    }, this.textureOptions));
-
-	    return new RenderTexture(baseRenderTexture);
-	};
-
-	/**
-	 * Gets a Power-of-Two render texture or fullScreen texture
-	 *
-	 * @protected
-	 * @param {number} minWidth - The minimum width of the render texture in real pixels.
-	 * @param {number} minHeight - The minimum height of the render texture in real pixels.
-	 * @param {number} [resolution=1] - The resolution of the render texture.
-	 * @return {PIXI.RenderTexture} The new render texture.
-	 */
-	RenderTexturePool.prototype.getOptimalTexture = function getOptimalTexture (minWidth, minHeight, resolution)
-	{
-	        if ( resolution === void 0 ) { resolution = 1; }
-
-	    var key = RenderTexturePool.SCREEN_KEY;
-
-	    minWidth *= resolution;
-	    minHeight *= resolution;
-
-	    if (!this.enableFullScreen || minWidth !== this._pixelsWidth || minHeight !== this._pixelsHeight)
-	    {
-	        minWidth = nextPow2(minWidth);
-	        minHeight = nextPow2(minHeight);
-	        key = ((minWidth & 0xFFFF) << 16) | (minHeight & 0xFFFF);
-	    }
-
-	    if (!this.texturePool[key])
-	    {
-	        this.texturePool[key] = [];
-	    }
-
-	    var renderTexture = this.texturePool[key].pop();
-
-	    if (!renderTexture)
-	    {
-	        renderTexture = this.createTexture(minWidth, minHeight);
-	    }
-
-	    renderTexture.filterPoolKey = key;
-	    renderTexture.setResolution(resolution);
-
-	    return renderTexture;
-	};
-
-	/**
-	 * Gets extra texture of the same size as input renderTexture
-	 *
-	 * `getFilterTexture(input, 0.5)` or `getFilterTexture(0.5, input)`
-	 *
-	 * @param {PIXI.RenderTexture} input renderTexture from which size and resolution will be copied
-	 * @param {number} [resolution] override resolution of the renderTexture
-	 *  It overrides, it does not multiply
-	 * @returns {PIXI.RenderTexture}
-	 */
-	RenderTexturePool.prototype.getFilterTexture = function getFilterTexture (input, resolution)
-	{
-	    var filterTexture = this.getOptimalTexture(input.width, input.height, resolution || input.resolution);
-
-	    filterTexture.filterFrame = input.filterFrame;
-
-	    return filterTexture;
-	};
-
-	/**
-	 * Place a render texture back into the pool.
-	 * @param {PIXI.RenderTexture} renderTexture - The renderTexture to free
-	 */
-	RenderTexturePool.prototype.returnTexture = function returnTexture (renderTexture)
-	{
-	    var key = renderTexture.filterPoolKey;
-
-	    renderTexture.filterFrame = null;
-	    this.texturePool[key].push(renderTexture);
-	};
-
-	/**
-	 * Alias for returnTexture, to be compliant with FilterSystem interface
-	 * @param {PIXI.RenderTexture} renderTexture - The renderTexture to free
-	 */
-	RenderTexturePool.prototype.returnFilterTexture = function returnFilterTexture (renderTexture)
-	{
-	    this.returnTexture(renderTexture);
-	};
-
-	/**
-	 * Clears the pool
-	 *
-	 * @param {boolean} [destroyTextures=true] destroy all stored textures
-	 */
-	RenderTexturePool.prototype.clear = function clear (destroyTextures)
-	{
-	    destroyTextures = destroyTextures !== false;
-	    if (destroyTextures)
-	    {
-	        for (var i in this.texturePool)
-	        {
-	            var textures = this.texturePool[i];
-
-	            if (textures)
-	            {
-	                for (var j = 0; j < textures.length; j++)
-	                {
-	                    textures[j].destroy(true);
-	                }
-	            }
-	        }
-	    }
-
-	    this.texturePool = {};
-	};
-
-	/**
-	 * If screen size was changed, drops all screen-sized textures,
-	 * sets new screen size, sets `enableFullScreen` to true
-	 *
-	 * Size is measured in pixels, `renderer.view` can be passed here, not `renderer.screen`
-	 *
-	 * @param {PIXI.ISize} size - Initial size of screen
-	 */
-	RenderTexturePool.prototype.setScreenSize = function setScreenSize (size)
-	{
-	    if (size.width === this._pixelsWidth
-	        && size.height === this._pixelsHeight)
-	    {
-	        return;
-	    }
-
-	    var screenKey = RenderTexturePool.SCREEN_KEY;
-	    var textures = this.texturePool[screenKey];
-
-	    this.enableFullScreen = size.width > 0 && size.height > 0;
-
-	    if (textures)
-	    {
-	        for (var j = 0; j < textures.length; j++)
-	        {
-	            textures[j].destroy(true);
-	        }
-	    }
-	    this.texturePool[screenKey] = [];
-
-	    this._pixelsWidth = size.width;
-	    this._pixelsHeight = size.height;
-	};
-
-	/**
-	 * Key that is used to store fullscreen renderTextures in a pool
-	 *
-	 * @static
-	 * @const {string}
-	 */
-	RenderTexturePool.SCREEN_KEY = 'screen';
 
 	/* eslint-disable max-len */
 
@@ -14822,18 +14129,15 @@ var PIXI = (function (exports) {
 
 	    this.instanced = false;
 
-	    /**
-	     * Number of instances in this geometry, pass it to `GeometrySystem.draw()`
-	     * @member {number}
-	     * @default 1
-	     */
 	    this.instanceCount = 1;
+
+	    this._size = null;
 
 	    this.disposeRunner = new Runner('disposeGeometry', 2);
 
 	    /**
 	     * Count of existing (not destroyed) meshes that reference this geometry
-	     * @member {number}
+	     * @member {boolean}
 	     */
 	    this.refCount = 0;
 	};
@@ -14843,7 +14147,7 @@ var PIXI = (function (exports) {
 	* Adds an attribute to the geometry
 	*
 	* @param {String} id - the name of the attribute (matching up to a shader)
-	* @param {PIXI.Buffer|number[]} [buffer] the buffer that holds the data of the attribute . You can also provide an Array and a buffer will be created from it.
+	* @param {PIXI.Buffer} [buffer] the buffer that holds the data of the attribute . You can also provide an Array and a buffer will be created from it.
 	* @param {Number} [size=0] the size of the attribute. If you have 2 floats per vertex (eg position x and y) this would be 2
 	* @param {Boolean} [normalized=false] should the data be normalized.
 	* @param {Number} [type=PIXI.TYPES.FLOAT] what type of number is the attribute. Check {PIXI.TYPES} to see the ones available
@@ -14929,7 +14233,7 @@ var PIXI = (function (exports) {
 	* Adds an index buffer to the geometry
 	* The index buffer contains integers, three for each triangle in the geometry, which reference the various attribute buffers (position, colour, UV coordinates, other UV coordinates, normal, …). There is only ONE index buffer.
 	*
-	* @param {PIXI.Buffer|number[]} [buffer] the buffer that holds the data of the index buffer. You can also provide an Array and a buffer will be created from it.
+	* @param {PIXI.Buffer} [buffer] the buffer that holds the data of the index buffer. You can also provide an Array and a buffer will be created from it.
 	* @return {PIXI.Geometry} returns self, useful for chaining.
 	*/
 	Geometry.prototype.addIndex = function addIndex (buffer)
@@ -15223,7 +14527,6 @@ var PIXI = (function (exports) {
 	 *
 	 * @class
 	 * @memberof PIXI
-	 * @extends PIXI.Geometry
 	 */
 	var QuadUv = /*@__PURE__*/(function (Geometry) {
 	    function QuadUv()
@@ -15457,6 +14760,8 @@ var PIXI = (function (exports) {
 	    this.renderTexture = null;
 	};
 
+	var screenKey = 'screen';
+
 	/**
 	 * System plugin to the renderer to manage the filters.
 	 *
@@ -15480,9 +14785,7 @@ var PIXI = (function (exports) {
 	         * stores a bunch of PO2 textures used for filtering
 	         * @member {Object}
 	         */
-	        this.texturePool = new RenderTexturePool();
-
-	        this.texturePool.setScreenSize(renderer.view);
+	        this.texturePool = {};
 
 	        /**
 	         * a pool for storing filter states, save us creating new ones each tick
@@ -15733,7 +15036,7 @@ var PIXI = (function (exports) {
 	        // because it does at the moment cos of global uniforms.
 	        // they need to get resynced
 
-	        renderer.state.set(filter.state);
+	        renderer.state.setState(filter.state);
 	        renderer.shader.bind(filter);
 
 	        if (filter.legacy)
@@ -15780,15 +15083,28 @@ var PIXI = (function (exports) {
 
 	    /**
 	     * Destroys this Filter System.
+	     *
+	     * @param {boolean} [contextLost=false] context was lost, do not free shaders
+	     *
 	     */
-	    FilterSystem.prototype.destroy = function destroy ()
+	    FilterSystem.prototype.destroy = function destroy (contextLost)
 	    {
-	        // Those textures has to be destroyed by RenderTextureSystem or FramebufferSystem
-	        this.texturePool.clear(false);
+	        if ( contextLost === void 0 ) { contextLost = false; }
+
+	        if (!contextLost)
+	        {
+	            this.emptyPool();
+	        }
+	        else
+	        {
+	            this.texturePool = {};
+	        }
 	    };
 
 	    /**
 	     * Gets a Power-of-Two render texture or fullScreen texture
+	     *
+	     * TODO move to a separate class could be on renderer?
 	     *
 	     * @protected
 	     * @param {number} minWidth - The minimum width of the render texture in real pixels.
@@ -15800,32 +15116,55 @@ var PIXI = (function (exports) {
 	    {
 	        if ( resolution === void 0 ) { resolution = 1; }
 
-	        return this.texturePool.getOptimalTexture(minWidth, minHeight, resolution);
+	        var key = screenKey;
+
+	        minWidth *= resolution;
+	        minHeight *= resolution;
+
+	        if (minWidth !== this._pixelsWidth || minHeight !== this._pixelsHeight)
+	        {
+	            minWidth = nextPow2(minWidth);
+	            minHeight = nextPow2(minHeight);
+	            key = ((minWidth & 0xFFFF) << 16) | (minHeight & 0xFFFF);
+	        }
+
+	        if (!this.texturePool[key])
+	        {
+	            this.texturePool[key] = [];
+	        }
+
+	        var renderTexture = this.texturePool[key].pop();
+
+	        if (!renderTexture)
+	        {
+	            // temporary bypass cache..
+	            // internally - this will cause a texture to be bound..
+	            renderTexture = RenderTexture.create({
+	                width: minWidth / resolution,
+	                height: minHeight / resolution,
+	                resolution: resolution,
+	            });
+	        }
+
+	        renderTexture.filterPoolKey = key;
+	        renderTexture.setResolution(resolution);
+
+	        return renderTexture;
 	    };
 
 	    /**
 	     * Gets extra render texture to use inside current filter
-	     * To be compliant with older filters, you can use params in any order
 	     *
-	     * @param {PIXI.RenderTexture} [input] renderTexture from which size and resolution will be copied
-	     * @param {number} [resolution] override resolution of the renderTexture
+	     * @param {number} resolution resolution of the renderTexture
 	     * @returns {PIXI.RenderTexture}
 	     */
-	    FilterSystem.prototype.getFilterTexture = function getFilterTexture (input, resolution)
+	    FilterSystem.prototype.getFilterTexture = function getFilterTexture (resolution)
 	    {
-	        if (typeof input === 'number')
-	        {
-	            var swap = input;
+	        var rt = this.activeState.renderTexture;
 
-	            input = resolution;
-	            resolution = swap;
-	        }
+	        var filterTexture = this.getOptimalFilterTexture(rt.width, rt.height, resolution || rt.baseTexture.resolution);
 
-	        input = input || this.activeState.renderTexture;
-
-	        var filterTexture = this.texturePool.getOptimalTexture(input.width, input.height, resolution || input.resolution);
-
-	        filterTexture.filterFrame = input.filterFrame;
+	        filterTexture.filterFrame = rt.filterFrame;
 
 	        return filterTexture;
 	    };
@@ -15837,94 +15176,105 @@ var PIXI = (function (exports) {
 	     */
 	    FilterSystem.prototype.returnFilterTexture = function returnFilterTexture (renderTexture)
 	    {
-	        this.texturePool.returnTexture(renderTexture);
+	        var key = renderTexture.filterPoolKey;
+
+	        renderTexture.filterFrame = null;
+	        this.texturePool[key].push(renderTexture);
 	    };
 
 	    /**
 	     * Empties the texture pool.
+	     *
 	     */
 	    FilterSystem.prototype.emptyPool = function emptyPool ()
 	    {
-	        this.texturePool.clear(true);
+	        for (var i in this.texturePool)
+	        {
+	            var textures = this.texturePool[i];
+
+	            if (textures)
+	            {
+	                for (var j = 0; j < textures.length; j++)
+	                {
+	                    textures[j].destroy(true);
+	                }
+	            }
+	        }
+
+	        this.texturePool = {};
 	    };
 
-	    /**
-	     * calls `texturePool.resize()`, affects fullScreen renderTextures
-	     */
 	    FilterSystem.prototype.resize = function resize ()
 	    {
-	        this.texturePool.setScreenSize(this.renderer.view);
+	        var textures = this.texturePool[screenKey];
+
+	        if (textures)
+	        {
+	            for (var j = 0; j < textures.length; j++)
+	            {
+	                textures[j].destroy(true);
+	            }
+	        }
+	        this.texturePool[screenKey] = [];
+
+	        this._pixelsWidth = this.renderer.view.width;
+	        this._pixelsHeight = this.renderer.view.height;
 	    };
 
 	    return FilterSystem;
 	}(System));
 
 	/**
-	 * Base for a common object renderer that can be used as a
-	 * system renderer plugin.
+	 * Base for a common object renderer that can be used as a system renderer plugin.
 	 *
 	 * @class
 	 * @extends PIXI.System
 	 * @memberof PIXI
 	 */
-	var ObjectRenderer = function ObjectRenderer(renderer)
-	{
+	var ObjectRenderer = /*@__PURE__*/(function (System) {
+	    function ObjectRenderer () {
+	        System.apply(this, arguments);
+	    }
+
+	    if ( System ) { ObjectRenderer.__proto__ = System; }
+	    ObjectRenderer.prototype = Object.create( System && System.prototype );
+	    ObjectRenderer.prototype.constructor = ObjectRenderer;
+
+	    ObjectRenderer.prototype.start = function start ()
+	    {
+	        // set the shader..
+	    };
+
 	    /**
-	     * The renderer this manager works for.
+	     * Stops the renderer
 	     *
-	     * @member {PIXI.Renderer}
 	     */
-	    this.renderer = renderer;
-	};
+	    ObjectRenderer.prototype.stop = function stop ()
+	    {
+	        this.flush();
+	    };
 
-	/**
-	 * Stub method that should be used to empty the current
-	 * batch by rendering objects now.
-	 */
-	ObjectRenderer.prototype.flush = function flush ()
-	{
-	    // flush!
-	};
+	    /**
+	     * Stub method for rendering content and emptying the current batch.
+	     *
+	     */
+	    ObjectRenderer.prototype.flush = function flush ()
+	    {
+	        // flush!
+	    };
 
-	/**
-	 * Generic destruction method that frees all resources. This
-	 * should be called by subclasses.
-	 */
-	ObjectRenderer.prototype.destroy = function destroy ()
-	{
-	    this.renderer = null;
-	};
+	    /**
+	     * Renders an object
+	     *
+	     * @param {PIXI.DisplayObject} object - The object to render.
+	     */
+	    ObjectRenderer.prototype.render = function render (object) // eslint-disable-line no-unused-vars
+	    {
+	        // render the object
+	    };
 
-	/**
-	 * Stub method that initializes any state required before
-	 * rendering starts. It is different from the `prerender`
-	 * signal, which occurs every frame, in that it is called
-	 * whenever an object requests _this_ renderer specifically.
-	 */
-	ObjectRenderer.prototype.start = function start ()
-	{
-	    // set the shader..
-	};
-
-	/**
-	 * Stops the renderer. It should free up any state and
-	 * become dormant.
-	 */
-	ObjectRenderer.prototype.stop = function stop ()
-	{
-	    this.flush();
-	};
-
-	/**
-	 * Keeps the object to render. It doesn't have to be
-	 * rendered immediately.
-	 *
-	 * @param {PIXI.DisplayObject} object - The object to render.
-	 */
-	ObjectRenderer.prototype.render = function render (object) // eslint-disable-line no-unused-vars
-	{
-	    // render the object
-	};
+	    return ObjectRenderer;
+	}(System));
 
 	/**
 	 * System plugin to the renderer to manage batching.
@@ -16043,7 +15393,6 @@ var PIXI = (function (exports) {
 	         * @property {OES_texture_float} floatTexture - WebGL v1 extension
 	         * @property {WEBGL_lose_context} loseContext - WebGL v1 extension
 	         * @property {OES_vertex_array_object} vertexArrayObject - WebGL v1 extension
-	         * @property {EXT_texture_filter_anisotropic} anisotropicFiltering - WebGL v1 and v2 extension
 	         */
 	        this.extensions = {};
 
@@ -16078,8 +15427,6 @@ var PIXI = (function (exports) {
 	    ContextSystem.prototype.contextChange = function contextChange (gl)
 	    {
 	        this.gl = gl;
-	        this.renderer.gl = gl;
-	        this.renderer.CONTEXT_UID = CONTEXT_UID++;
 
 	        // restore a context if it was previously lost
 	        if (gl.isContextLost() && gl.getExtension('WEBGL_lose_context'))
@@ -16175,28 +15522,15 @@ var PIXI = (function (exports) {
 	            Object.assign(this.extensions, {
 	                drawBuffers: gl.getExtension('WEBGL_draw_buffers'),
 	                depthTexture: gl.getExtension('WEBKIT_WEBGL_depth_texture'),
+	                floatTexture: gl.getExtension('OES_texture_float'),
 	                loseContext: gl.getExtension('WEBGL_lose_context'),
 	                vertexArrayObject: gl.getExtension('OES_vertex_array_object')
 	                    || gl.getExtension('MOZ_OES_vertex_array_object')
 	                    || gl.getExtension('WEBKIT_OES_vertex_array_object'),
-	                anisotropicFiltering: gl.getExtension('EXT_texture_filter_anisotropic'),
-	                uint32ElementIndex: gl.getExtension('OES_element_index_uint'),
-	                // Floats and half-floats
-	                floatTexture: gl.getExtension('OES_texture_float'),
-	                floatTextureLinear: gl.getExtension('OES_texture_float_linear'),
-	                textureHalfFloat: gl.getExtension('OES_texture_half_float'),
-	                textureHalfFloatLinear: gl.getExtension('OES_texture_half_float_linear'),
 	            });
 	        }
-	        else if (this.webGLVersion === 2)
-	        {
-	            Object.assign(this.extensions, {
-	                anisotropicFiltering: gl.getExtension('EXT_texture_filter_anisotropic'),
-	                // Floats and half-floats
-	                colorBufferFloat: gl.getExtension('EXT_color_buffer_float'),
-	                floatTextureLinear: gl.getExtension('OES_texture_float_linear'),
-	            });
-	        }
+
+	        // we don't use any specific WebGL 2 ones yet!
 	    };
 
 	    /**
@@ -16640,12 +15974,13 @@ var PIXI = (function (exports) {
 
 	            gl.bindRenderbuffer(gl.RENDERBUFFER, fbo.stencil);
 
-	            gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_STENCIL, framebuffer.width, framebuffer.height);
 	            // TODO.. this is depth AND stencil?
 	            if (!framebuffer.depthTexture)
 	            { // you can't have both, so one should take priority if enabled
 	                gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.DEPTH_STENCIL_ATTACHMENT, gl.RENDERBUFFER, fbo.stencil);
 	            }
+	            gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_STENCIL, framebuffer.width, framebuffer.height);
+	            // fbo.enableStencil();
 	        }
 	    };
 
@@ -16695,47 +16030,10 @@ var PIXI = (function (exports) {
 
 	        this.managedFramebuffers = [];
 
-	        for (var i = 0; i < list.length; i++)
+	        for (var i = 0; i < list.count; i++)
 	        {
 	            this.disposeFramebuffer(list[i], contextLost);
 	        }
-	    };
-
-	    /**
-	     * Forcing creation of stencil buffer for current framebuffer, if it wasn't done before.
-	     * Used by MaskSystem, when its time to use stencil mask for Graphics element.
-	     *
-	     * Its an alternative for public lazy `framebuffer.enableStencil`, in case we need stencil without rebind.
-	     *
-	     * @private
-	     */
-	    FramebufferSystem.prototype.forceStencil = function forceStencil ()
-	    {
-	        var framebuffer = this.current;
-
-	        if (!framebuffer)
-	        {
-	            return;
-	        }
-
-	        var fbo = framebuffer.glFramebuffers[this.CONTEXT_UID];
-
-	        if (!fbo || fbo.stencil)
-	        {
-	            return;
-	        }
-	        framebuffer.enableStencil();
-
-	        var w = framebuffer.width;
-	        var h = framebuffer.height;
-	        var gl = this.gl;
-	        var stencil = gl.createRenderbuffer();
-
-	        gl.bindRenderbuffer(gl.RENDERBUFFER, stencil);
-	        gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_STENCIL, w, h);
-
-	        fbo.stencil = stencil;
-	        gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.DEPTH_STENCIL_ATTACHMENT, gl.RENDERBUFFER, stencil);
 	    };
 
 	    /**
@@ -16794,13 +16092,6 @@ var PIXI = (function (exports) {
 	        this.hasInstance = true;
 
 	        /**
-	         * `true` if support `gl.UNSIGNED_INT` in `gl.drawElements` or `gl.drawElementsInstanced`
-	         * @member {boolean}
-	         * @readonly
-	         */
-	        this.canUseUInt32ElementIndex = false;
-
-	        /**
 	         * A cache of currently bound buffer,
 	         * contains only two members with keys ARRAY_BUFFER and ELEMENT_ARRAY_BUFFER
 	         * @member {Object.<number, PIXI.Buffer>}
@@ -16835,7 +16126,6 @@ var PIXI = (function (exports) {
 	        this.disposeAll(true);
 
 	        var gl = this.gl = this.renderer.gl;
-	        var context = this.renderer.context;
 
 	        this.CONTEXT_UID = this.renderer.CONTEXT_UID;
 
@@ -16892,15 +16182,13 @@ var PIXI = (function (exports) {
 	                this.hasInstance = false;
 	            }
 	        }
-
-	        this.canUseUInt32ElementIndex = context.webGLVersion === 2 || !!context.extensions.uint32ElementIndex;
 	    };
 
 	    /**
 	     * Binds geometry so that is can be drawn. Creating a Vao if required
-	     *
+	     * @protected
 	     * @param {PIXI.Geometry} geometry instance of geometry to bind
-	     * @param {PIXI.Shader} [shader] instance of shader to use vao for
+	     * @param {PIXI.Shader} shader instance of shader to bind
 	     */
 	    GeometrySystem.prototype.bind = function bind (geometry, shader)
 	    {
@@ -17356,27 +16644,15 @@ var PIXI = (function (exports) {
 
 	        if (geometry.indexBuffer)
 	        {
-	            var byteSize = geometry.indexBuffer.data.BYTES_PER_ELEMENT;
-	            var glType = byteSize === 2 ? gl.UNSIGNED_SHORT : gl.UNSIGNED_INT;
-
-	            if (byteSize === 2 || (byteSize === 4 && this.canUseUInt32ElementIndex))
+	            if (geometry.instanced)
 	            {
-	                if (geometry.instanced)
-	                {
-	                    /* eslint-disable max-len */
-	                    gl.drawElementsInstanced(type, size || geometry.indexBuffer.data.length, glType, (start || 0) * byteSize, instanceCount || 1);
-	                    /* eslint-enable max-len */
-	                }
-	                else
-	                {
-	                    /* eslint-disable max-len */
-	                    gl.drawElements(type, size || geometry.indexBuffer.data.length, glType, (start || 0) * byteSize);
-	                    /* eslint-enable max-len */
-	                }
+	                /* eslint-disable max-len */
+	                gl.drawElementsInstanced(type, size || geometry.indexBuffer.data.length, gl.UNSIGNED_SHORT, (start || 0) * 2, instanceCount || 1);
+	                /* eslint-enable max-len */
 	            }
 	            else
 	            {
-	                console.warn('unsupported index buffer type: uint32');
+	                gl.drawElements(type, size || geometry.indexBuffer.data.length, gl.UNSIGNED_SHORT, (start || 0) * 2);
 	            }
 	        }
 	        else if (geometry.instanced)
@@ -17567,8 +16843,7 @@ var PIXI = (function (exports) {
 	    return array;
 	}
 
-	var unknownContext = {};
-	var context = unknownContext;
+	var context = null;
 
 	/**
 	 * returns a little WebGL context to use for program inspection.
@@ -17579,7 +16854,7 @@ var PIXI = (function (exports) {
 	 */
 	function getTestContext()
 	{
-	    if (context === unknownContext || context.isContextLost())
+	    if (!context)
 	    {
 	        var canvas = document.createElement('canvas');
 
@@ -17598,7 +16873,7 @@ var PIXI = (function (exports) {
 	            if (!gl)
 	            {
 	                // fail, not able to get a context
-	                gl = null;
+	                throw new Error('This browser does not support WebGL. Try using the canvas renderer');
 	            }
 	            else
 	            {
@@ -17608,6 +16883,8 @@ var PIXI = (function (exports) {
 	        }
 
 	        context = gl;
+
+	        return gl;
 	    }
 
 	    return context;
@@ -18228,11 +17505,6 @@ var PIXI = (function (exports) {
 	 */
 	var Shader = function Shader(program, uniforms)
 	{
-	    /**
-	     * Program that the shader uses
-	     *
-	     * @member {PIXI.Program}
-	     */
 	    this.program = program;
 
 	    // lets see whats been passed in
@@ -18453,7 +17725,7 @@ var PIXI = (function (exports) {
 	 * The blend mode to be applied when this state is set. Apply a value of `PIXI.BLEND_MODES.NORMAL` to reset the blend mode.
 	 * Setting this mode to anything other than NO_BLEND will automatically switch blending on.
 	 *
-	 * @member {number}
+	 * @member {boolean}
 	 * @default PIXI.BLEND_MODES.NORMAL
 	 * @see PIXI.BLEND_MODES
 	 */
@@ -18800,27 +18072,10 @@ var PIXI = (function (exports) {
 	{
 	    this._texture = texture;
 
-	    /**
-	     * Matrix operation that converts texture region coords to texture coords
-	     * @member {PIXI.Matrix}
-	     * @readonly
-	     */
 	    this.mapCoord = new Matrix();
 
-	    /**
-	     * Clamp region for normalized coords, left-top pixel center in xy , bottom-right in zw.
-	     * Calculated based on clampOffset.
-	     * @member {Float32Array}
-	     * @readonly
-	     */
 	    this.uClampFrame = new Float32Array(4);
 
-	    /**
-	     * Normalized clamp offset.
-	     * Calculated based on clampOffset.
-	     * @member {Float32Array}
-	     * @readonly
-	     */
 	    this.uClampOffset = new Float32Array(2);
 
 	    /**
@@ -19302,10 +18557,8 @@ var PIXI = (function (exports) {
 	    StencilSystem.prototype.setMaskStack = function setMaskStack (stencilMaskStack)
 	    {
 	        var gl = this.renderer.gl;
-	        var curStackLen = this.stencilMaskStack.length;
 
-	        this.stencilMaskStack = stencilMaskStack;
-	        if (stencilMaskStack.length !== curStackLen)
+	        if (stencilMaskStack.length !== this.stencilMaskStack.length)
 	        {
 	            if (stencilMaskStack.length === 0)
 	            {
@@ -19314,9 +18567,10 @@ var PIXI = (function (exports) {
 	            else
 	            {
 	                gl.enable(gl.STENCIL_TEST);
-	                this._useCurrent();
 	            }
 	        }
+
+	        this.stencilMaskStack = stencilMaskStack;
 	    };
 
 	    /**
@@ -19331,8 +18585,6 @@ var PIXI = (function (exports) {
 
 	        if (prevMaskCount === 0)
 	        {
-	            // force use stencil texture in current framebuffer
-	            this.renderer.framebuffer.forceStencil();
 	            gl.enable(gl.STENCIL_TEST);
 	        }
 
@@ -19610,9 +18862,9 @@ var PIXI = (function (exports) {
 
 	    /**
 	     * Bind the current render texture
-	     * @param {PIXI.RenderTexture} [renderTexture] - RenderTexture to bind, by default its `null`, the screen
-	     * @param {PIXI.Rectangle} [sourceFrame] - part of screen that is mapped to the renderTexture
-	     * @param {PIXI.Rectangle} [destinationFrame] - part of renderTexture, by default it has the same size as sourceFrame
+	     * @param {PIXI.RenderTexture} renderTexture
+	     * @param {PIXI.Rectangle} sourceFrame
+	     * @param {PIXI.Rectangle} destinationFrame
 	     */
 	    RenderTextureSystem.prototype.bind = function bind (renderTexture, sourceFrame, destinationFrame)
 	    {
@@ -19824,7 +19076,6 @@ var PIXI = (function (exports) {
 	    ShaderSystem.prototype.contextChange = function contextChange (gl)
 	    {
 	        this.gl = gl;
-	        this.reset();
 	    };
 
 	    /**
@@ -20031,7 +19282,7 @@ var PIXI = (function (exports) {
 	    // TODO - premultiply alpha would be different.
 	    // add a boolean for that!
 	    array[BLEND_MODES.NORMAL] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
-	    array[BLEND_MODES.ADD] = [gl.ONE, gl.ONE];
+	    array[BLEND_MODES.ADD] = [gl.ONE, gl.DST_ALPHA, gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
 	    array[BLEND_MODES.MULTIPLY] = [gl.DST_COLOR, gl.ONE_MINUS_SRC_ALPHA, gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
 	    array[BLEND_MODES.SCREEN] = [gl.ONE, gl.ONE_MINUS_SRC_COLOR, gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
 	    array[BLEND_MODES.OVERLAY] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
@@ -20051,7 +19302,7 @@ var PIXI = (function (exports) {
 
 	    // not-premultiplied blend modes
 	    array[BLEND_MODES.NORMAL_NPM] = [gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA, gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
-	    array[BLEND_MODES.ADD_NPM] = [gl.SRC_ALPHA, gl.ONE, gl.ONE, gl.ONE];
+	    array[BLEND_MODES.ADD_NPM] = [gl.SRC_ALPHA, gl.DST_ALPHA, gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
 	    array[BLEND_MODES.SCREEN_NPM] = [gl.SRC_ALPHA, gl.ONE_MINUS_SRC_COLOR, gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
 
 	    // composite operations
@@ -20164,7 +19415,7 @@ var PIXI = (function (exports) {
 
 	        this.blendModes = mapWebGLBlendModesToPixi(gl);
 
-	        this.set(this.defaultState);
+	        this.setState(this.defaultState);
 
 	        this.reset();
 	    };
@@ -20174,7 +19425,7 @@ var PIXI = (function (exports) {
 	     *
 	     * @param {*} state - The state to set.
 	     */
-	    StateSystem.prototype.set = function set (state)
+	    StateSystem.prototype.setState = function setState (state)
 	    {
 	        state = state || this.defaultState;
 
@@ -20248,8 +19499,6 @@ var PIXI = (function (exports) {
 	     */
 	    StateSystem.prototype.setOffset = function setOffset (value)
 	    {
-	        this.updateCheck(StateSystem.checkPolygonOffset, value);
-
 	        this.gl[value ? 'enable' : 'disable'](this.gl.POLYGON_OFFSET_FILL);
 	    };
 
@@ -20382,19 +19631,6 @@ var PIXI = (function (exports) {
 	        system.setBlendMode(state.blendMode);
 	    };
 
-	    /**
-	     * A private little wrapper function that we call to check the polygon offset.
-	     *
-	     * @static
-	     * @private
-	     * @param {PIXI.StateSystem} System  the System to perform the state check on
-	     * @param {PIXI.State} state  the state that the blendMode will pulled from
-	     */
-	    StateSystem.checkPolygonOffset = function checkPolygonOffset (system, state)
-	    {
-	        system.setPolygonOffset(state.polygonOffset, 0);
-	    };
-
 	    return StateSystem;
 	}(System));
 
@@ -20433,7 +19669,7 @@ var PIXI = (function (exports) {
 	        this.maxIdle = settings.GC_MAX_IDLE;
 
 	        /**
-	         * Maximum number of item to check
+	         * Maximum number of itesm to check
 	         * @member {number}
 	         * @see PIXI.settings.GC_MAX_CHECK_COUNT
 	         */
@@ -20550,16 +19786,7 @@ var PIXI = (function (exports) {
 	     */
 	    this.texture = texture;
 
-	    /**
-	     * Width of texture that was used in texImage2D
-	     * @member {number}
-	     */
 	    this.width = -1;
-
-	    /**
-	     * Height of texture that was used in texImage2D
-	     * @member {number}
-	     */
 	    this.height = -1;
 
 	    /**
@@ -20585,18 +19812,6 @@ var PIXI = (function (exports) {
 	     * @member {number}
 	     */
 	    this.wrapMode = 33071;
-
-	    /**
-	     * Type copied from baseTexture
-	     * @member {number}
-	     */
-	    this.type = 6408;
-
-	    /**
-	     * Type copied from baseTexture
-	     * @member {number}
-	     */
-	    this.internalFormat = 5121;
 	};
 
 	/**
@@ -20832,34 +20047,6 @@ var PIXI = (function (exports) {
 	        return glTexture;
 	    };
 
-	    TextureSystem.prototype.initTextureType = function initTextureType (texture, glTexture)
-	    {
-	        glTexture.internalFormat = texture.format;
-	        glTexture.type = texture.type;
-	        if (this.webGLVersion !== 2)
-	        {
-	            return;
-	        }
-	        var gl = this.renderer.gl;
-
-	        if (texture.type === gl.FLOAT
-	            && texture.format === gl.RGBA)
-	        {
-	            glTexture.internalFormat = gl.RGBA32F;
-	        }
-	        // that's WebGL1 HALF_FLOAT_OES
-	        // we have to convert it to WebGL HALF_FLOAT
-	        if (texture.type === TYPES.HALF_FLOAT)
-	        {
-	            glTexture.type = gl.HALF_FLOAT;
-	        }
-	        if (glTexture.type === gl.HALF_FLOAT
-	            && texture.format === gl.RGBA)
-	        {
-	            glTexture.internalFormat = gl.RGBA16F;
-	        }
-	    };
-
 	    /**
 	     * Update a texture
 	     *
@@ -20869,15 +20056,7 @@ var PIXI = (function (exports) {
 	    TextureSystem.prototype.updateTexture = function updateTexture (texture)
 	    {
 	        var glTexture = texture._glTextures[this.CONTEXT_UID];
-
-	        if (!glTexture)
-	        {
-	            return;
-	        }
-
 	        var renderer = this.renderer;
-
-	        this.initTextureType(texture, glTexture);
 
 	        if (texture.resource && texture.resource.upload(renderer, texture, glTexture))
 	        { ; }
@@ -20896,12 +20075,12 @@ var PIXI = (function (exports) {
 	                glTexture.height = height;
 
 	                gl.texImage2D(texture.target, 0,
-	                    glTexture.internalFormat,
+	                    texture.format,
 	                    width,
 	                    height,
 	                    0,
 	                    texture.format,
-	                    glTexture.type,
+	                    texture.type,
 	                    null);
 	            }
 	        }
@@ -21009,15 +20188,6 @@ var PIXI = (function (exports) {
 	            /* eslint-disable max-len */
 	            gl.texParameteri(texture.target, gl.TEXTURE_MIN_FILTER, texture.scaleMode ? gl.LINEAR_MIPMAP_LINEAR : gl.NEAREST_MIPMAP_NEAREST);
 	            /* eslint-disable max-len */
-
-	            var anisotropicExt = this.renderer.context.extensions.anisotropicFiltering;
-
-	            if (anisotropicExt && texture.anisotropicLevel > 0 && texture.scaleMode === SCALE_MODES.LINEAR)
-	            {
-	                var level = Math.min(texture.anisotropicLevel, gl.getParameter(anisotropicExt.MAX_TEXTURE_MAX_ANISOTROPY_EXT));
-
-	                gl.texParameterf(texture.target, anisotropicExt.TEXTURE_MAX_ANISOTROPY_EXT, level);
-	            }
 	        }
 	        else
 	        {
@@ -21278,7 +20448,7 @@ var PIXI = (function (exports) {
 	     * @param {number} resolution - The resolution / device pixel ratio of the texture being generated.
 	     * @param {PIXI.Rectangle} [region] - The region of the displayObject, that shall be rendered,
 	     *        if no region is specified, defaults to the local bounds of the displayObject.
-	     * @return {PIXI.RenderTexture} A texture of the graphics object.
+	     * @return {PIXI.Texture} A texture of the graphics object.
 	     */
 	    AbstractRenderer.prototype.generateTexture = function generateTexture (displayObject, scaleMode, resolution, region)
 	    {
@@ -21397,14 +20567,8 @@ var PIXI = (function (exports) {
 	         */
 	        this.type = RENDERER_TYPE.WEBGL;
 
-	        /**
-	         * WebGL context, set by the contextSystem (this.context)
-	         *
-	         * @readonly
-	         * @member {WebGLRenderingContext}
-	         */
+	        // this will be set by the contextSystem (this.context)
 	        this.gl = null;
-
 	        this.CONTEXT_UID = 0;
 
 	        // TODO legacy!
@@ -21748,11 +20912,6 @@ var PIXI = (function (exports) {
 	    {
 	        this.runners.destroy.run();
 
-	        for (var r in this.runners)
-	        {
-	            this.runners[r].destroy();
-	        }
-
 	        // call base destroy
 	        AbstractRenderer.prototype.destroy.call(this, removeView);
 
@@ -21854,895 +21013,6 @@ var PIXI = (function (exports) {
 	}(BaseTexture));
 
 	/**
-	 * Used by the batcher to draw batches.
-	 * Each one of these contains all information required to draw a bound geometry.
-	 *
-	 * @class
-	 * @memberof PIXI
-	 */
-	var BatchDrawCall = function BatchDrawCall()
-	{
-	    this.textures = [];
-	    this.ids = [];
-	    this.blend = 0;
-	    this.textureCount = 0;
-	    this.start = 0;
-	    this.size = 0;
-	    this.type = 4;
-	};
-
-	/**
-	 * Flexible wrapper around `ArrayBuffer` that also provides
-	 * typed array views on demand.
-	 *
-	 * @class
-	 * @memberof PIXI
-	 */
-	var ViewableBuffer = function ViewableBuffer(size)
-	{
-	    /**
-	     * Underlying `ArrayBuffer` that holds all the data
-	     * and is of capacity `size`.
-	     *
-	     * @member {ArrayBuffer}
-	     */
-	    this.rawBinaryData = new ArrayBuffer(size);
-
-	    /**
-	     * View on the raw binary data as a `Uint32Array`.
-	     *
-	     * @member {Uint32Array}
-	     */
-	    this.uint32View = new Uint32Array(this.rawBinaryData);
-
-	    /**
-	     * View on the raw binary data as a `Float32Array`.
-	     *
-	     * @member {Float32Array}
-	     */
-	    this.float32View = new Float32Array(this.rawBinaryData);
-	};
-
-	var prototypeAccessors$5$1 = { int8View: { configurable: true },uint8View: { configurable: true },int16View: { configurable: true },uint16View: { configurable: true },int32View: { configurable: true } };
-
-	/**
-	 * View on the raw binary data as a `Int8Array`.
-	 *
-	 * @member {Int8Array}
-	 */
-	prototypeAccessors$5$1.int8View.get = function ()
-	{
-	    if (!this._int8View)
-	    {
-	        this._int8View = new Int8Array(this.rawBinaryData);
-	    }
-
-	    return this._int8View;
-	};
-
-	/**
-	 * View on the raw binary data as a `Uint8Array`.
-	 *
-	 * @member {Uint8Array}
-	 */
-	prototypeAccessors$5$1.uint8View.get = function ()
-	{
-	    if (!this._uint8View)
-	    {
-	        this._uint8View = new Uint8Array(this.rawBinaryData);
-	    }
-
-	    return this._uint8View;
-	};
-
-	/**
-	 * View on the raw binary data as a `Int16Array`.
-	 *
-	 * @member {Int16Array}
-	 */
-	prototypeAccessors$5$1.int16View.get = function ()
-	{
-	    if (!this._int16View)
-	    {
-	        this._int16View = new Int16Array(this.rawBinaryData);
-	    }
-
-	    return this._int16View;
-	};
-
-	/**
-	 * View on the raw binary data as a `Uint16Array`.
-	 *
-	 * @member {Uint16Array}
-	 */
-	prototypeAccessors$5$1.uint16View.get = function ()
-	{
-	    if (!this._uint16View)
-	    {
-	        this._uint16View = new Uint16Array(this.rawBinaryData);
-	    }
-
-	    return this._uint16View;
-	};
-
-	/**
-	 * View on the raw binary data as a `Int32Array`.
-	 *
-	 * @member {Int32Array}
-	 */
-	prototypeAccessors$5$1.int32View.get = function ()
-	{
-	    if (!this._int32View)
-	    {
-	        this._int32View = new Int32Array(this.rawBinaryData);
-	    }
-
-	    return this._int32View;
-	};
-
-	/**
-	 * Returns the view of the given type.
-	 *
-	 * @param {string} type - One of `int8`, `uint8`, `int16`,
-	 *`uint16`, `int32`, `uint32`, and `float32`.
-	 * @return {object} typed array of given type
-	 */
-	ViewableBuffer.prototype.view = function view (type)
-	{
-	    return this[(type + "View")];
-	};
-
-	/**
-	 * Destroys all buffer references. Do not use after calling
-	 * this.
-	 */
-	ViewableBuffer.prototype.destroy = function destroy ()
-	{
-	    this.rawBinaryData = null;
-	    this._int8View = null;
-	    this._uint8View = null;
-	    this._int16View = null;
-	    this._uint16View = null;
-	    this._int32View = null;
-	    this.uint32View = null;
-	    this.float32View = null;
-	};
-
-	ViewableBuffer.sizeOf = function sizeOf (type)
-	{
-	    switch (type)
-	    {
-	        case 'int8':
-	        case 'uint8':
-	            return 1;
-	        case 'int16':
-	        case 'uint16':
-	            return 2;
-	        case 'int32':
-	        case 'uint32':
-	        case 'float32':
-	            return 4;
-	        default:
-	            throw new Error((type + " isn't a valid view type"));
-	    }
-	};
-
-	Object.defineProperties( ViewableBuffer.prototype, prototypeAccessors$5$1 );
-
-	/**
-	 * Renderer dedicated to drawing and batching sprites.
-	 *
-	 * This is the default batch renderer. It buffers objects
-	 * with texture-based geometries and renders them in
-	 * batches. It uploads multiple textures to the GPU to
-	 * reduce to the number of draw calls.
-	 *
-	 * @class
-	 * @protected
-	 * @memberof PIXI
-	 * @extends PIXI.ObjectRenderer
-	 */
-	var AbstractBatchRenderer = /*@__PURE__*/(function (ObjectRenderer) {
-	    function AbstractBatchRenderer(renderer)
-	    {
-	        ObjectRenderer.call(this, renderer);
-
-	        /**
-	         * This is used to generate a shader that can
-	         * color each vertex based on a `aTextureId`
-	         * attribute that points to an texture in `uSampler`.
-	         *
-	         * This enables the objects with different textures
-	         * to be drawn in the same draw call.
-	         *
-	         * You can customize your shader by creating your
-	         * custom shader generator.
-	         *
-	         * @member {PIXI.BatchShaderGenerator}
-	         * @protected
-	         */
-	        this.shaderGenerator = null;
-
-	        /**
-	         * The class that represents the geometry of objects
-	         * that are going to be batched with this.
-	         *
-	         * @member {object}
-	         * @default PIXI.BatchGeometry
-	         * @protected
-	         */
-	        this.geometryClass = null;
-
-	        /**
-	         * Size of data being buffered per vertex in the
-	         * attribute buffers (in floats). By default, the
-	         * batch-renderer plugin uses 6:
-	         *
-	         * | aVertexPosition | 2 |
-	         * |-----------------|---|
-	         * | aTextureCoords  | 2 |
-	         * | aColor          | 1 |
-	         * | aTextureId      | 1 |
-	         *
-	         * @member {number}
-	         * @readonly
-	         */
-	        this.vertexSize = null;
-
-	        /**
-	         * The WebGL state in which this renderer will work.
-	         *
-	         * @member {PIXI.State}
-	         * @readonly
-	         */
-	        this.state = State.for2d();
-
-	        /**
-	         * The number of bufferable objects before a flush
-	         * occurs automatically.
-	         *
-	         * @member {number}
-	         * @default settings.SPRITE_MAX_TEXTURES
-	         */
-	        this.size = 2000 * 4;// settings.SPRITE_BATCH_SIZE, 2000 is a nice balance between mobile/desktop
-
-	        /**
-	         * Total count of all vertices used by the currently
-	         * buffered objects.
-	         *
-	         * @member {number}
-	         * @private
-	         */
-	        this._vertexCount = 0;
-
-	        /**
-	         * Total count of all indices used by the currently
-	         * buffered objects.
-	         *
-	         * @member {number}
-	         * @private
-	         */
-	        this._indexCount = 0;
-
-	        /**
-	         * Buffer of objects that are yet to be rendered.
-	         *
-	         * @member {PIXI.DisplayObject[]}
-	         * @private
-	         */
-	        this._bufferedElements = [];
-
-	        /**
-	         * Number of elements that are buffered and are
-	         * waiting to be flushed.
-	         *
-	         * @member {number}
-	         * @private
-	         */
-	        this._bufferSize = 0;
-
-	        /**
-	         * This shader is generated by `this.shaderGenerator`.
-	         *
-	         * It is generated specifically to handle the required
-	         * number of textures being batched together.
-	         *
-	         * @member {PIXI.Shader}
-	         * @protected
-	         */
-	        this._shader = null;
-
-	        /**
-	         * Pool of `this.geometryClass` geometry objects
-	         * that store buffers. They are used to pass data
-	         * to the shader on each draw call.
-	         *
-	         * These are never re-allocated again, unless a
-	         * context change occurs; however, the pool may
-	         * be expanded if required.
-	         *
-	         * @member {PIXI.Geometry[]}
-	         * @private
-	         * @see PIXI.AbstractBatchRenderer.contextChange
-	         */
-	        this._packedGeometries = [];
-
-	        /**
-	         * Size of `this._packedGeometries`. It can be expanded
-	         * if more than `this._packedGeometryPoolSize` flushes
-	         * occur in a single frame.
-	         *
-	         * @member {number}
-	         * @private
-	         */
-	        this._packedGeometryPoolSize = 2;
-
-	        /**
-	         * A flush may occur multiple times in a single
-	         * frame. On iOS devices or when
-	         * `settings.CAN_UPLOAD_SAME_BUFFER` is false, the
-	         * batch renderer does not upload data to the same
-	         * `WebGLBuffer` for performance reasons.
-	         *
-	         * This is the index into `packedGeometries` that points to
-	         * geometry holding the most recent buffers.
-	         *
-	         * @member {number}
-	         * @private
-	         */
-	        this._flushId = 0;
-
-	        /**
-	         * Pool of `BatchDrawCall` objects that `flush` used
-	         * to create "batches" of the objects being rendered.
-	         *
-	         * These are never re-allocated again.
-	         *
-	         * @member BatchDrawCall[]
-	         * @private
-	         */
-	        this._drawCalls = [];
-
-	        for (var k = 0; k < this.size / 4; k++)
-	        { // initialize the draw-calls pool to max size.
-	            this._drawCalls[k] = new BatchDrawCall();
-	        }
-
-	        /**
-	         * Pool of `ViewableBuffer` objects that are sorted in
-	         * order of increasing size. The flush method uses
-	         * the buffer with the least size above the amount
-	         * it requires. These are used for passing attributes.
-	         *
-	         * The first buffer has a size of 8; each subsequent
-	         * buffer has double capacity of its previous.
-	         *
-	         * @member {PIXI.ViewableBuffer}
-	         * @private
-	         * @see PIXI.AbstractBatchRenderer#getAttributeBuffer
-	         */
-	        this._aBuffers = {};
-
-	        /**
-	         * Pool of `Uint16Array` objects that are sorted in
-	         * order of increasing size. The flush method uses
-	         * the buffer with the least size above the amount
-	         * it requires. These are used for passing indices.
-	         *
-	         * The first buffer has a size of 12; each subsequent
-	         * buffer has double capacity of its previous.
-	         *
-	         * @member {Uint16Array[]}
-	         * @private
-	         * @see PIXI.AbstractBatchRenderer#getIndexBuffer
-	         */
-	        this._iBuffers = {};
-
-	        /**
-	         * Maximum number of textures that can be uploaded to
-	         * the GPU under the current context. It is initialized
-	         * properly in `this.contextChange`.
-	         *
-	         * @member {number}
-	         * @see PIXI.AbstractBatchRenderer#contextChange
-	         * @readonly
-	         */
-	        this.MAX_TEXTURES = 1;
-
-	        this.renderer.on('prerender', this.onPrerender, this);
-	        renderer.runners.contextChange.add(this);
-	    }
-
-	    if ( ObjectRenderer ) { AbstractBatchRenderer.__proto__ = ObjectRenderer; }
-	    AbstractBatchRenderer.prototype = Object.create( ObjectRenderer && ObjectRenderer.prototype );
-	    AbstractBatchRenderer.prototype.constructor = AbstractBatchRenderer;
-
-	    /**
-	     * Handles the `contextChange` signal.
-	     *
-	     * It calculates `this.MAX_TEXTURES` and allocating the
-	     * packed-geometry object pool.
-	     */
-	    AbstractBatchRenderer.prototype.contextChange = function contextChange ()
-	    {
-	        var gl = this.renderer.gl;
-
-	        if (settings.PREFER_ENV === ENV.WEBGL_LEGACY)
-	        {
-	            this.MAX_TEXTURES = 1;
-	        }
-	        else
-	        {
-	            // step 1: first check max textures the GPU can handle.
-	            this.MAX_TEXTURES = Math.min(
-	                gl.getParameter(gl.MAX_TEXTURE_IMAGE_UNITS),
-	                settings.SPRITE_MAX_TEXTURES);
-
-	            // step 2: check the maximum number of if statements the shader can have too..
-	            this.MAX_TEXTURES = checkMaxIfStatementsInShader(
-	                this.MAX_TEXTURES, gl);
-	        }
-
-	        this._shader = this.shaderGenerator.generateShader(this.MAX_TEXTURES);
-
-	        // we use the second shader as the first one depending on your browser
-	        // may omit aTextureId as it is not used by the shader so is optimized out.
-	        for (var i = 0; i < this._packedGeometryPoolSize; i++)
-	        {
-	            /* eslint-disable max-len */
-	            this._packedGeometries[i] = new (this.geometryClass)();
-	        }
-	    };
-
-	    /**
-	     * Handles the `prerender` signal.
-	     *
-	     * It ensures that flushes start from the first geometry
-	     * object again.
-	     */
-	    AbstractBatchRenderer.prototype.onPrerender = function onPrerender ()
-	    {
-	        this._flushId = 0;
-	    };
-
-	    /**
-	     * Buffers the "batchable" object. It need not be rendered
-	     * immediately.
-	     *
-	     * @param {PIXI.Sprite} sprite - the sprite to render when
-	     *    using this spritebatch
-	     */
-	    AbstractBatchRenderer.prototype.render = function render (element)
-	    {
-	        if (!element._texture.valid)
-	        {
-	            return;
-	        }
-
-	        if (this._vertexCount + (element.vertexData.length / 2) > this.size)
-	        {
-	            this.flush();
-	        }
-
-	        this._vertexCount += element.vertexData.length / 2;
-	        this._indexCount += element.indices.length;
-	        this._bufferedElements[this._bufferSize++] = element;
-	    };
-
-	    /**
-	     * Renders the content _now_ and empties the current batch.
-	     */
-	    AbstractBatchRenderer.prototype.flush = function flush ()
-	    {
-	        if (this._vertexCount === 0)
-	        {
-	            return;
-	        }
-
-	        var attributeBuffer = this.getAttributeBuffer(this._vertexCount);
-	        var indexBuffer = this.getIndexBuffer(this._indexCount);
-	        var gl = this.renderer.gl;
-
-	        var ref = this;
-	        var elements = ref._bufferedElements;
-	        var drawCalls = ref._drawCalls;
-	        var MAX_TEXTURES = ref.MAX_TEXTURES;
-	        var packedGeometries = ref._packedGeometries;
-	        var vertexSize = ref.vertexSize;
-
-	        var touch = this.renderer.textureGC.count;
-
-	        var index = 0;
-	        var _indexCount = 0;
-
-	        var nextTexture;
-	        var currentTexture;
-	        var textureCount = 0;
-
-	        var currentGroup = drawCalls[0];
-	        var groupCount = 0;
-
-	        var blendMode = -1;// blend-mode of previous element/sprite/object!
-
-	        currentGroup.textureCount = 0;
-	        currentGroup.start = 0;
-	        currentGroup.blend = blendMode;
-
-	        var TICK = ++BaseTexture._globalBatch;
-	        var i;
-
-	        for (i = 0; i < this._bufferSize; ++i)
-	        {
-	            var sprite = elements[i];
-
-	            elements[i] = null;
-	            nextTexture = sprite._texture.baseTexture;
-
-	            var spriteBlendMode = premultiplyBlendMode[
-	                nextTexture.premultiplyAlpha ? 1 : 0][sprite.blendMode];
-
-	            if (blendMode !== spriteBlendMode)
-	            {
-	                blendMode = spriteBlendMode;
-
-	                // force the batch to break!
-	                currentTexture = null;
-	                textureCount = MAX_TEXTURES;
-	                TICK++;
-	            }
-
-	            if (currentTexture !== nextTexture)
-	            {
-	                currentTexture = nextTexture;
-
-	                if (nextTexture._batchEnabled !== TICK)
-	                {
-	                    if (textureCount === MAX_TEXTURES)
-	                    {
-	                        TICK++;
-
-	                        textureCount = 0;
-
-	                        currentGroup.size = _indexCount - currentGroup.start;
-
-	                        currentGroup = drawCalls[groupCount++];
-	                        currentGroup.textureCount = 0;
-	                        currentGroup.blend = blendMode;
-	                        currentGroup.start = _indexCount;
-	                    }
-
-	                    nextTexture.touched = touch;
-	                    nextTexture._batchEnabled = TICK;
-	                    nextTexture._id = textureCount;
-
-	                    currentGroup.textures[currentGroup.textureCount++] = nextTexture;
-	                    textureCount++;
-	                }
-	            }
-
-	            this.packInterleavedGeometry(sprite, attributeBuffer,
-	                indexBuffer, index, _indexCount);
-
-	            // push a graphics..
-	            index += (sprite.vertexData.length / 2) * vertexSize;
-	            _indexCount += sprite.indices.length;
-	        }
-
-	        BaseTexture._globalBatch = TICK;
-	        currentGroup.size = _indexCount - currentGroup.start;
-
-	        if (!settings.CAN_UPLOAD_SAME_BUFFER)
-	        { /* Usually on iOS devices, where the browser doesn't
-	            like uploads to the same buffer in a single frame. */
-	            if (this._packedGeometryPoolSize <= this._flushId)
-	            {
-	                this._packedGeometryPoolSize++;
-	                packedGeometries[this._flushId] = new (this.geometryClass)();
-	            }
-
-	            packedGeometries[this._flushId]._buffer.update(attributeBuffer.rawBinaryData, 0);
-	            packedGeometries[this._flushId]._indexBuffer.update(indexBuffer, 0);
-
-	            this.renderer.geometry.bind(packedGeometries[this._flushId]);
-	            this.renderer.geometry.updateBuffers();
-	            this._flushId++;
-	        }
-	        else
-	        {
-	            // lets use the faster option, always use buffer number 0
-	            packedGeometries[this._flushId]._buffer.update(attributeBuffer.rawBinaryData, 0);
-	            packedGeometries[this._flushId]._indexBuffer.update(indexBuffer, 0);
-
-	            this.renderer.geometry.updateBuffers();
-	        }
-
-	        var textureSystem = this.renderer.texture;
-	        var stateSystem = this.renderer.state;
-
-	        // Upload textures and do the draw calls
-	        for (i = 0; i < groupCount; i++)
-	        {
-	            var group = drawCalls[i];
-	            var groupTextureCount = group.textureCount;
-
-	            for (var j = 0; j < groupTextureCount; j++)
-	            {
-	                textureSystem.bind(group.textures[j], j);
-	                group.textures[j] = null;
-	            }
-
-	            stateSystem.setBlendMode(group.blend);
-	            gl.drawElements(group.type, group.size, gl.UNSIGNED_SHORT, group.start * 2);
-	        }
-
-	        // reset elements for the next flush
-	        this._bufferSize = 0;
-	        this._vertexCount = 0;
-	        this._indexCount = 0;
-	    };
-
-	    /**
-	     * Starts a new sprite batch.
-	     */
-	    AbstractBatchRenderer.prototype.start = function start ()
-	    {
-	        this.renderer.state.set(this.state);
-
-	        this.renderer.shader.bind(this._shader);
-
-	        if (settings.CAN_UPLOAD_SAME_BUFFER)
-	        {
-	            // bind buffer #0, we don't need others
-	            this.renderer.geometry.bind(this._packedGeometries[this._flushId]);
-	        }
-	    };
-
-	    /**
-	     * Stops and flushes the current batch.
-	     */
-	    AbstractBatchRenderer.prototype.stop = function stop ()
-	    {
-	        this.flush();
-	    };
-
-	    /**
-	     * Destroys this `AbstractBatchRenderer`. It cannot be used again.
-	     */
-	    AbstractBatchRenderer.prototype.destroy = function destroy ()
-	    {
-	        for (var i = 0; i < this._packedGeometryPoolSize; i++)
-	        {
-	            if (this._packedGeometries[i])
-	            {
-	                this._packedGeometries[i].destroy();
-	            }
-	        }
-
-	        this.renderer.off('prerender', this.onPrerender, this);
-
-	        this._aBuffers = null;
-	        this._iBuffers = null;
-	        this._packedGeometries = null;
-	        this._drawCalls = null;
-
-	        if (this._shader)
-	        {
-	            this._shader.destroy();
-	            this._shader = null;
-	        }
-
-	        ObjectRenderer.prototype.destroy.call(this);
-	    };
-
-	    /**
-	     * Fetches an attribute buffer from `this._aBuffers` that
-	     * can hold atleast `size` floats.
-	     *
-	     * @param {number} size - minimum capacity required
-	     * @return {ViewableBuffer} - buffer than can hold atleast `size` floats
-	     * @private
-	     */
-	    AbstractBatchRenderer.prototype.getAttributeBuffer = function getAttributeBuffer (size)
-	    {
-	        // 8 vertices is enough for 2 quads
-	        var roundedP2 = nextPow2(Math.ceil(size / 8));
-	        var roundedSizeIndex = log2(roundedP2);
-	        var roundedSize = roundedP2 * 8;
-
-	        if (this._aBuffers.length <= roundedSizeIndex)
-	        {
-	            this._iBuffers.length = roundedSizeIndex + 1;
-	        }
-
-	        var buffer = this._aBuffers[roundedSize];
-
-	        if (!buffer)
-	        {
-	            this._aBuffers[roundedSize] = buffer = new ViewableBuffer(roundedSize * this.vertexSize * 4);
-	        }
-
-	        return buffer;
-	    };
-
-	    /**
-	     * Fetches an index buffer from `this._iBuffers` that can
-	     * has atleast `size` capacity.
-	     *
-	     * @param {number} size - minimum required capacity
-	     * @return {Uint16Array} - buffer that can fit `size`
-	     *    indices.
-	     * @private
-	     */
-	    AbstractBatchRenderer.prototype.getIndexBuffer = function getIndexBuffer (size)
-	    {
-	        // 12 indices is enough for 2 quads
-	        var roundedP2 = nextPow2(Math.ceil(size / 12));
-	        var roundedSizeIndex = log2(roundedP2);
-	        var roundedSize = roundedP2 * 12;
-
-	        if (this._iBuffers.length <= roundedSizeIndex)
-	        {
-	            this._iBuffers.length = roundedSizeIndex + 1;
-	        }
-
-	        var buffer = this._iBuffers[roundedSizeIndex];
-
-	        if (!buffer)
-	        {
-	            this._iBuffers[roundedSizeIndex] = buffer = new Uint16Array(roundedSize);
-	        }
-
-	        return buffer;
-	    };
-
-	    /**
-	     * Takes the four batching parameters of `element`, interleaves
-	     * and pushes them into the batching attribute/index buffers given.
-	     *
-	     * It uses these properties: `vertexData` `uvs`, `textureId` and
-	     * `indicies`. It also uses the "tint" of the base-texture, if
-	     * present.
-	     *
-	     * @param {PIXI.Sprite} element - element being rendered
-	     * @param {PIXI.ViewableBuffer} attributeBuffer - attribute buffer.
-	     * @param {Uint16Array} indexBuffer - index buffer
-	     * @param {number} aIndex - number of floats already in the attribute buffer
-	     * @param {number} iIndex - number of indices already in `indexBuffer`
-	     */
-	    AbstractBatchRenderer.prototype.packInterleavedGeometry = function packInterleavedGeometry (element, attributeBuffer, indexBuffer, aIndex, iIndex)
-	    {
-	        var uint32View = attributeBuffer.uint32View;
-	        var float32View = attributeBuffer.float32View;
-
-	        var packedVertices = aIndex / this.vertexSize;
-	        var uvs = element.uvs;
-	        var indicies = element.indices;
-	        var vertexData = element.vertexData;
-	        var textureId = element._texture.baseTexture._id;
-
-	        var alpha = Math.min(element.worldAlpha, 1.0);
-	        var argb = (alpha < 1.0
-	          && element._texture.baseTexture.premultiplyAlpha)
-	            ? premultiplyTint(element._tintRGB, alpha)
-	            : element._tintRGB + (alpha * 255 << 24);
-
-	        // lets not worry about tint! for now..
-	        for (var i = 0; i < vertexData.length; i += 2)
-	        {
-	            float32View[aIndex++] = vertexData[i];
-	            float32View[aIndex++] = vertexData[i + 1];
-	            float32View[aIndex++] = uvs[i];
-	            float32View[aIndex++] = uvs[i + 1];
-	            uint32View[aIndex++] = argb;
-	            float32View[aIndex++] = textureId;
-	        }
-
-	        for (var i$1 = 0; i$1 < indicies.length; i$1++)
-	        {
-	            indexBuffer[iIndex++] = packedVertices + indicies[i$1];
-	        }
-	    };
-
-	    return AbstractBatchRenderer;
-	}(ObjectRenderer));
-
-	/**
-	 * Helper that generates batching multi-texture shader. Use it with your new BatchRenderer
-	 *
-	 * @class
-	 * @memberof PIXI
-	 */
-	var BatchShaderGenerator = function BatchShaderGenerator(vertexSrc, fragTemplate)
-	{
-	    /**
-	     * Reference to the vertex shader source.
-	     *
-	     * @member {string}
-	     */
-	    this.vertexSrc = vertexSrc;
-
-	    /**
-	     * Reference to the fragement shader template. Must contain "%count%" and "%forloop%".
-	     *
-	     * @member {string}
-	     */
-	    this.fragTemplate = fragTemplate;
-
-	    this.programCache = {};
-	    this.defaultGroupCache = {};
-
-	    if (fragTemplate.indexOf('%count%') < 0)
-	    {
-	        throw new Error('Fragment template must contain "%count%".');
-	    }
-
-	    if (fragTemplate.indexOf('%forloop%') < 0)
-	    {
-	        throw new Error('Fragment template must contain "%forloop%".');
-	    }
-	};
-
-	BatchShaderGenerator.prototype.generateShader = function generateShader (maxTextures)
-	{
-	    if (!this.programCache[maxTextures])
-	    {
-	        var sampleValues = new Int32Array(maxTextures);
-
-	        for (var i = 0; i < maxTextures; i++)
-	        {
-	            sampleValues[i] = i;
-	        }
-
-	        this.defaultGroupCache[maxTextures] = UniformGroup.from({ uSamplers: sampleValues }, true);
-
-	        var fragmentSrc = this.fragTemplate;
-
-	        fragmentSrc = fragmentSrc.replace(/%count%/gi, ("" + maxTextures));
-	        fragmentSrc = fragmentSrc.replace(/%forloop%/gi, this.generateSampleSrc(maxTextures));
-
-	        this.programCache[maxTextures] = new Program(this.vertexSrc, fragmentSrc);
-	    }
-
-	    var uniforms = {
-	        tint: new Float32Array([1, 1, 1, 1]),
-	        translationMatrix: new Matrix(),
-	        default: this.defaultGroupCache[maxTextures],
-	    };
-
-	    return new Shader(this.programCache[maxTextures], uniforms);
-	};
-
-	BatchShaderGenerator.prototype.generateSampleSrc = function generateSampleSrc (maxTextures)
-	{
-	    var src = '';
-
-	    src += '\n';
-	    src += '\n';
-
-	    for (var i = 0; i < maxTextures; i++)
-	    {
-	        if (i > 0)
-	        {
-	            src += '\nelse ';
-	        }
-
-	        if (i < maxTextures - 1)
-	        {
-	            src += "if(vTextureId < " + i + ".5)";
-	        }
-
-	        src += '\n{';
-	        src += "\n\tcolor = texture2D(uSamplers[" + i + "], vTextureCoord);";
-	        src += '\n}';
-	    }
-
-	    src += '\n';
-	    src += '\n';
-
-	    return src;
-	};
-
-	/**
 	 * Geometry used to batch standard PIXI content (e.g. Mesh, Sprite, Graphics objects).
 	 *
 	 * @class
@@ -22785,83 +21055,661 @@ var PIXI = (function (exports) {
 	    return BatchGeometry;
 	}(Geometry));
 
-	var defaultVertex$2 = "precision highp float;\nattribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\nattribute vec4 aColor;\nattribute float aTextureId;\n\nuniform mat3 projectionMatrix;\nuniform mat3 translationMatrix;\nuniform vec4 tint;\n\nvarying vec2 vTextureCoord;\nvarying vec4 vColor;\nvarying float vTextureId;\n\nvoid main(void){\n    gl_Position = vec4((projectionMatrix * translationMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n\n    vTextureCoord = aTextureCoord;\n    vTextureId = aTextureId;\n    vColor = aColor * tint;\n}\n";
-
-	var defaultFragment$2 = "varying vec2 vTextureCoord;\nvarying vec4 vColor;\nvarying float vTextureId;\nuniform sampler2D uSamplers[%count%];\n\nvoid main(void){\n    vec4 color;\n    %forloop%\n    gl_FragColor = color * vColor;\n}\n";
-
 	/**
+	 * Used by the batcher to draw batches.
+	 * Each one of these contains all information required to draw a bound geometry.
+	 *
 	 * @class
 	 * @memberof PIXI
-	 * @hideconstructor
 	 */
-	var BatchPluginFactory = function BatchPluginFactory () {};
-
-	var staticAccessors$1$1 = { defaultVertexSrc: { configurable: true },defaultFragmentTemplate: { configurable: true } };
-
-	BatchPluginFactory.create = function create (options)
+	var BatchDrawCall = function BatchDrawCall()
 	{
-	    var ref = Object.assign({
-	        vertex: defaultVertex$2,
-	        fragment: defaultFragment$2,
-	        geometryClass: BatchGeometry,
-	        vertexSize: 6,
-	    }, options);
-	        var vertex = ref.vertex;
-	        var fragment = ref.fragment;
-	        var vertexSize = ref.vertexSize;
-	        var geometryClass = ref.geometryClass;
+	    this.textures = [];
+	    this.ids = [];
+	    this.blend = 0;
+	    this.textureCount = 0;
+	    this.start = 0;
+	    this.size = 0;
+	    this.type = 4;
+	};
 
-	    return /*@__PURE__*/(function (AbstractBatchRenderer) {
-	            function BatchPlugin(renderer)
+	/**
+	 * Used by the BatchRenderer
+	 *
+	 * @class
+	 * @memberof PIXI
+	 */
+	var BatchBuffer = function BatchBuffer(size)
+	{
+	    this.vertices = new ArrayBuffer(size);
+
+	    /**
+	     * View on the vertices as a Float32Array for positions
+	     *
+	     * @member {Float32Array}
+	     */
+	    this.float32View = new Float32Array(this.vertices);
+
+	    /**
+	     * View on the vertices as a Uint32Array for uvs
+	     *
+	     * @member {Float32Array}
+	     */
+	    this.uint32View = new Uint32Array(this.vertices);
+	};
+
+	/**
+	 * Destroys the buffer.
+	 *
+	 */
+	BatchBuffer.prototype.destroy = function destroy ()
+	{
+	    this.vertices = null;
+	    this.float32View = null;
+	    this.uint32View = null;
+	};
+
+	var vertex$1 = "precision highp float;\nattribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\nattribute vec4 aColor;\nattribute float aTextureId;\n\nuniform mat3 projectionMatrix;\nuniform mat3 translationMatrix;\nuniform vec4 tint;\n\nvarying vec2 vTextureCoord;\nvarying vec4 vColor;\nvarying float vTextureId;\n\nvoid main(void){\n    gl_Position = vec4((projectionMatrix * translationMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n\n    vTextureCoord = aTextureCoord;\n    vTextureId = aTextureId;\n    vColor = aColor * tint;\n}\n";
+
+	var fragTemplate$1 = [
+	    'varying vec2 vTextureCoord;',
+	    'varying vec4 vColor;',
+	    'varying float vTextureId;',
+	    'uniform sampler2D uSamplers[%count%];',
+
+	    'void main(void){',
+	    'vec4 color;',
+	    '%forloop%',
+	    'gl_FragColor = color * vColor;',
+	    '}' ].join('\n');
+
+	var defaultGroupCache = {};
+	var programCache = {};
+
+	function generateMultiTextureShader(gl, maxTextures)
+	{
+	    if (!programCache[maxTextures])
+	    {
+	        var sampleValues = new Int32Array(maxTextures);
+
+	        for (var i = 0; i < maxTextures; i++)
 	        {
-	            AbstractBatchRenderer.call(this, renderer);
-
-	            this.shaderGenerator = new BatchShaderGenerator(vertex, fragment);
-	            this.geometryClass = geometryClass;
-	            this.vertexSize = vertexSize;
+	            sampleValues[i] = i;
 	        }
 
-	            if ( AbstractBatchRenderer ) { BatchPlugin.__proto__ = AbstractBatchRenderer; }
-	            BatchPlugin.prototype = Object.create( AbstractBatchRenderer && AbstractBatchRenderer.prototype );
-	            BatchPlugin.prototype.constructor = BatchPlugin;
+	        defaultGroupCache[maxTextures] = UniformGroup.from({ uSamplers: sampleValues }, true);
 
-	            return BatchPlugin;
-	        }(AbstractBatchRenderer));
-	};
+	        var fragmentSrc = fragTemplate$1;
+
+	        fragmentSrc = fragmentSrc.replace(/%count%/gi, maxTextures);
+	        fragmentSrc = fragmentSrc.replace(/%forloop%/gi, generateSampleSrc(maxTextures));
+
+	        programCache[maxTextures] = new Program(vertex$1, fragmentSrc);
+	    }
+
+	    var uniforms = {
+	        tint: new Float32Array([1, 1, 1, 1]),
+	        translationMatrix: new Matrix(),
+	        default: defaultGroupCache[maxTextures],
+	    };
+
+	    var shader = new Shader(programCache[maxTextures], uniforms);
+
+	    return shader;
+	}
+
+	function generateSampleSrc(maxTextures)
+	{
+	    var src = '';
+
+	    src += '\n';
+	    src += '\n';
+
+	    for (var i = 0; i < maxTextures; i++)
+	    {
+	        if (i > 0)
+	        {
+	            src += '\nelse ';
+	        }
+
+	        if (i < maxTextures - 1)
+	        {
+	            src += "if(vTextureId < " + i + ".5)";
+	        }
+
+	        src += '\n{';
+	        src += "\n\tcolor = texture2D(uSamplers[" + i + "], vTextureCoord);";
+	        src += '\n}';
+	    }
+
+	    src += '\n';
+	    src += '\n';
+
+	    return src;
+	}
 
 	/**
-	 * The default vertex shader source
+	 * Renderer dedicated to drawing and batching sprites.
 	 *
-	 * @static
-	 * @type {string}
-	 * @constant
+	 * @class
+	 * @protected
+	 * @memberof PIXI
+	 * @extends PIXI.ObjectRenderer
 	 */
-	staticAccessors$1$1.defaultVertexSrc.get = function ()
-	{
-	    return defaultVertex$2;
-	};
+	var BatchRenderer = /*@__PURE__*/(function (ObjectRenderer) {
+	    function BatchRenderer(renderer)
+	    {
+	        ObjectRenderer.call(this, renderer);
 
-	/**
-	 * The default fragment shader source
-	 *
-	 * @static
-	 * @type {string}
-	 * @constant
-	 */
-	staticAccessors$1$1.defaultFragmentTemplate.get = function ()
-	{
-	    return defaultFragment$2;
-	};
+	        /**
+	         * Number of values sent in the vertex buffer.
+	         * aVertexPosition(2), aTextureCoord(1), aColor(1), aTextureId(1) = 5
+	         *
+	         * @member {number}
+	         */
+	        this.vertSize = 6;
 
-	Object.defineProperties( BatchPluginFactory, staticAccessors$1$1 );
+	        /**
+	         * The size of the vertex information in bytes.
+	         *
+	         * @member {number}
+	         */
+	        this.vertByteSize = this.vertSize * 4;
 
-	// Setup the default BatchRenderer plugin, this is what
-	// we'll actually export at the root level
-	var BatchRenderer = BatchPluginFactory.create();
+	        /**
+	         * The number of images in the SpriteRenderer before it flushes.
+	         *
+	         * @member {number}
+	         */
+	        this.size = 2000 * 4;// settings.SPRITE_BATCH_SIZE; // 2000 is a nice balance between mobile / desktop
+
+	        this.currentSize = 0;
+	        this.currentIndexSize = 0;
+
+	        // the total number of bytes in our batch
+	        // let numVerts = this.size * 4 * this.vertByteSize;
+
+	        this.attributeBuffers = {};
+	        this.aBuffers = {};
+	        this.iBuffers = {};
+
+	        //     this.defualtSpriteIndexBuffer = new Buffer(createIndicesForQuads(this.size), true, true);
+
+	        /**
+	         * Holds the defualt indices of the geometry (quads) to draw
+	         *
+	         * @member {Uint16Array}
+	         */
+	        // const indicies = createIndicesForQuads(this.size);
+
+	        //  this.defaultQuadIndexBuffer = new Buffer(indicies, true, true);
+
+	        this.onlySprites = false;
+
+	        /**
+	         * The default shaders that is used if a sprite doesn't have a more specific one.
+	         * there is a shader for each number of textures that can be rendered.
+	         * These shaders will also be generated on the fly as required.
+	         * @member {PIXI.Shader[]}
+	         */
+	        this.shader = null;
+
+	        this.currentIndex = 0;
+	        this.groups = [];
+
+	        for (var k = 0; k < this.size / 4; k++)
+	        {
+	            this.groups[k] = new BatchDrawCall();
+	        }
+
+	        this.elements = [];
+
+	        this.vaos = [];
+
+	        this.vaoMax = 2;
+	        this.vertexCount = 0;
+
+	        this.renderer.on('prerender', this.onPrerender, this);
+	        this.state = State.for2d();
+	    }
+
+	    if ( ObjectRenderer ) { BatchRenderer.__proto__ = ObjectRenderer; }
+	    BatchRenderer.prototype = Object.create( ObjectRenderer && ObjectRenderer.prototype );
+	    BatchRenderer.prototype.constructor = BatchRenderer;
+
+	    /**
+	     * Sets up the renderer context and necessary buffers.
+	     */
+	    BatchRenderer.prototype.contextChange = function contextChange ()
+	    {
+	        var gl = this.renderer.gl;
+
+	        if (settings.PREFER_ENV === ENV.WEBGL_LEGACY)
+	        {
+	            this.MAX_TEXTURES = 1;
+	        }
+	        else
+	        {
+	            // step 1: first check max textures the GPU can handle.
+	            this.MAX_TEXTURES = Math.min(gl.getParameter(gl.MAX_TEXTURE_IMAGE_UNITS), settings.SPRITE_MAX_TEXTURES);
+
+	            // step 2: check the maximum number of if statements the shader can have too..
+	            this.MAX_TEXTURES = checkMaxIfStatementsInShader(this.MAX_TEXTURES, gl);
+	        }
+
+	        // generate generateMultiTextureProgram, may be a better move?
+	        this.shader = generateMultiTextureShader(gl, this.MAX_TEXTURES);
+
+	        // we use the second shader as the first one depending on your browser may omit aTextureId
+	        // as it is not used by the shader so is optimized out.
+	        for (var i = 0; i < this.vaoMax; i++)
+	        {
+	            /* eslint-disable max-len */
+	            this.vaos[i] = new BatchGeometry();
+	        }
+	    };
+
+	    /**
+	     * Called before the renderer starts rendering.
+	     *
+	     */
+	    BatchRenderer.prototype.onPrerender = function onPrerender ()
+	    {
+	        this.vertexCount = 0;
+	    };
+
+	    /**
+	     * Renders the sprite object.
+	     *
+	     * @param {PIXI.Sprite} sprite - the sprite to render when using this spritebatch
+	     */
+	    BatchRenderer.prototype.render = function render (element)
+	    {
+	        if (!element._texture.valid)
+	        {
+	            return;
+	        }
+
+	        if (this.currentSize + (element.vertexData.length / 2) > this.size)
+	        {
+	            this.flush();
+	        }
+
+	        this.elements[this.currentIndex++] = element;
+
+	        this.currentSize += element.vertexData.length / 2;
+	        this.currentIndexSize += element.indices.length;
+	    };
+
+	    BatchRenderer.prototype.getIndexBuffer = function getIndexBuffer (size)
+	    {
+	        // 12 indices is enough for 2 quads
+	        var roundedP2 = nextPow2(Math.ceil(size / 12));
+	        var roundedSizeIndex = log2(roundedP2);
+	        var roundedSize = roundedP2 * 12;
+
+	        if (this.iBuffers.length <= roundedSizeIndex)
+	        {
+	            this.iBuffers.length = roundedSizeIndex + 1;
+	        }
+
+	        var buffer = this.iBuffers[roundedSizeIndex];
+
+	        if (!buffer)
+	        {
+	            this.iBuffers[roundedSizeIndex] = buffer = new Uint16Array(roundedSize);
+	        }
+
+	        return buffer;
+	    };
+
+	    BatchRenderer.prototype.getAttributeBuffer = function getAttributeBuffer (size)
+	    {
+	        // 8 vertices is enough for 2 quads
+	        var roundedP2 = nextPow2(Math.ceil(size / 8));
+	        var roundedSizeIndex = log2(roundedP2);
+	        var roundedSize = roundedP2 * 8;
+
+	        if (this.aBuffers.length <= roundedSizeIndex)
+	        {
+	            this.iBuffers.length = roundedSizeIndex + 1;
+	        }
+
+	        var buffer = this.aBuffers[roundedSize];
+
+	        if (!buffer)
+	        {
+	            this.aBuffers[roundedSize] = buffer = new BatchBuffer(roundedSize * this.vertByteSize);
+	        }
+
+	        return buffer;
+	    };
+
+	    /**
+	     * Renders the content and empties the current batch.
+	     *
+	     */
+	    BatchRenderer.prototype.flush = function flush ()
+	    {
+	        if (this.currentSize === 0)
+	        {
+	            return;
+	        }
+
+	        var gl = this.renderer.gl;
+	        var MAX_TEXTURES = this.MAX_TEXTURES;
+
+	        var buffer = this.getAttributeBuffer(this.currentSize);
+	        var indexBuffer = this.getIndexBuffer(this.currentIndexSize);
+
+	        var elements = this.elements;
+	        var groups = this.groups;
+
+	        var float32View = buffer.float32View;
+	        var uint32View = buffer.uint32View;
+
+	        var touch = this.renderer.textureGC.count;
+
+	        var index = 0;
+	        var indexCount = 0;
+	        var nextTexture;
+	        var currentTexture;
+	        var groupCount = 0;
+
+	        var textureCount = 0;
+	        var currentGroup = groups[0];
+
+	        var blendMode = -1;// premultiplyBlendMode[elements[0]._texture.baseTexture.premultiplyAlpha ? 0 : ][elements[0].blendMode];
+
+	        currentGroup.textureCount = 0;
+	        currentGroup.start = 0;
+	        currentGroup.blend = blendMode;
+
+	        var TICK = ++BaseTexture._globalBatch;
+
+	        var i;
+
+	        for (i = 0; i < this.currentIndex; ++i)
+	        {
+	            // upload the sprite elements...
+	            // they have all ready been calculated so we just need to push them into the buffer.
+
+	            var sprite = elements[i];
+
+	            elements[i] = null;
+
+	            nextTexture = sprite._texture.baseTexture;
+
+	            var spriteBlendMode = premultiplyBlendMode[nextTexture.premultiplyAlpha ? 1 : 0][sprite.blendMode];
+
+	            if (blendMode !== spriteBlendMode)
+	            {
+	                blendMode = spriteBlendMode;
+
+	                // force the batch to break!
+	                currentTexture = null;
+	                textureCount = MAX_TEXTURES;
+	                TICK++;
+	            }
+
+	            if (currentTexture !== nextTexture)
+	            {
+	                currentTexture = nextTexture;
+
+	                if (nextTexture._batchEnabled !== TICK)
+	                {
+	                    if (textureCount === MAX_TEXTURES)
+	                    {
+	                        TICK++;
+
+	                        textureCount = 0;
+
+	                        currentGroup.size = indexCount - currentGroup.start;
+
+	                        currentGroup = groups[groupCount++];
+	                        currentGroup.textureCount = 0;
+	                        currentGroup.blend = blendMode;
+	                        currentGroup.start = indexCount;
+	                    }
+
+	                    nextTexture.touched = touch;
+	                    nextTexture._batchEnabled = TICK;
+	                    nextTexture._id = textureCount;
+
+	                    currentGroup.textures[currentGroup.textureCount++] = nextTexture;
+	                    textureCount++;
+	                }
+	            }
+
+	            this.packGeometry(sprite, float32View, uint32View, indexBuffer, index, indexCount);// argb, nextTexture._id, float32View, uint32View, indexBuffer, index, indexCount);
+
+	            // push a graphics..
+	            index += (sprite.vertexData.length / 2) * this.vertSize;
+	            indexCount += sprite.indices.length;
+	        }
+
+	        BaseTexture._globalBatch = TICK;
+
+	        currentGroup.size = indexCount - currentGroup.start;
+
+	        //        this.indexBuffer.update();
+
+	        if (!settings.CAN_UPLOAD_SAME_BUFFER)
+	        {
+	            // this is still needed for IOS performance..
+	            // it really does not like uploading to the same buffer in a single frame!
+	            if (this.vaoMax <= this.vertexCount)
+	            {
+	                this.vaoMax++;
+	                /* eslint-disable max-len */
+	                this.vaos[this.vertexCount] = new BatchGeometry();
+	            }
+
+	            this.vaos[this.vertexCount]._buffer.update(buffer.vertices, 0);
+	            this.vaos[this.vertexCount]._indexBuffer.update(indexBuffer, 0);
+
+	            //   this.vertexBuffers[this.vertexCount].update(buffer.vertices, 0);
+	            this.renderer.geometry.bind(this.vaos[this.vertexCount]);
+
+	            this.renderer.geometry.updateBuffers();
+
+	            this.vertexCount++;
+	        }
+	        else
+	        {
+	            // lets use the faster option, always use buffer number 0
+	            this.vaos[this.vertexCount]._buffer.update(buffer.vertices, 0);
+	            this.vaos[this.vertexCount]._indexBuffer.update(indexBuffer, 0);
+
+	            //   if (true)// this.spriteOnly)
+	            // {
+	            // this.vaos[this.vertexCount].indexBuffer = this.defualtSpriteIndexBuffer;
+	            // this.vaos[this.vertexCount].buffers[1] = this.defualtSpriteIndexBuffer;
+	            // }
+
+	            this.renderer.geometry.updateBuffers();
+	        }
+
+	        //   this.renderer.state.set(this.state);
+
+	        var textureSystem = this.renderer.texture;
+	        var stateSystem = this.renderer.state;
+	        // e.log(groupCount);
+	        // / render the groups..
+
+	        for (i = 0; i < groupCount; i++)
+	        {
+	            var group = groups[i];
+	            var groupTextureCount = group.textureCount;
+
+	            for (var j = 0; j < groupTextureCount; j++)
+	            {
+	                textureSystem.bind(group.textures[j], j);
+	                group.textures[j] = null;
+	            }
+
+	            // this.state.blendMode = group.blend;
+	            // this.state.blend = true;
+
+	            // this.renderer.state.setState(this.state);
+	            // set the blend mode..
+	            stateSystem.setBlendMode(group.blend);
+
+	            gl.drawElements(group.type, group.size, gl.UNSIGNED_SHORT, group.start * 2);
+	        }
+
+	        // reset elements for the next flush
+	        this.currentIndex = 0;
+	        this.currentSize = 0;
+	        this.currentIndexSize = 0;
+	    };
+
+	    BatchRenderer.prototype.packGeometry = function packGeometry (element, float32View, uint32View, indexBuffer, index, indexCount)
+	    {
+	        var p = index / this.vertSize;// float32View.length / 6 / 2;
+	        var uvs = element.uvs;
+	        var indicies = element.indices;// geometry.getIndex().data;// indicies;
+	        var vertexData = element.vertexData;
+	        var textureId = element._texture.baseTexture._id;
+
+	        var alpha = Math.min(element.worldAlpha, 1.0);
+
+	        var argb = alpha < 1.0 && element._texture.baseTexture.premultiplyAlpha ? premultiplyTint(element._tintRGB, alpha)
+	            : element._tintRGB + (alpha * 255 << 24);
+
+	        // lets not worry about tint! for now..
+	        for (var i = 0; i < vertexData.length; i += 2)
+	        {
+	            float32View[index++] = vertexData[i];
+	            float32View[index++] = vertexData[i + 1];
+	            float32View[index++] = uvs[i];
+	            float32View[index++] = uvs[i + 1];
+	            uint32View[index++] = argb;
+	            float32View[index++] = textureId;
+	        }
+
+	        for (var i$1 = 0; i$1 < indicies.length; i$1++)
+	        {
+	            indexBuffer[indexCount++] = p + indicies[i$1];
+	        }
+	    };
+	    /*
+	    renderQuad(vertexData, uvs, argb, textureId, float32View, uint32View, indexBuffer, index, indexCount)
+	    {
+	        const p = index / 6;
+
+	        float32View[index++] = vertexData[0];
+	        float32View[index++] = vertexData[1];
+	        float32View[index++] = uvs.x0;
+	        float32View[index++] = uvs.y0;
+	        uint32View[index++] = argb;
+	        float32View[index++] = textureId;
+
+	        float32View[index++] = vertexData[2];
+	        float32View[index++] = vertexData[3];
+	        float32View[index++] = uvs.x1;
+	        float32View[index++] = uvs.y1;
+	        uint32View[index++] = argb;
+	        float32View[index++] = textureId;
+
+	        float32View[index++] = vertexData[4];
+	        float32View[index++] = vertexData[5];
+	        float32View[index++] = uvs.x2;
+	        float32View[index++] = uvs.y2;
+	        uint32View[index++] = argb;
+	        float32View[index++] = textureId;
+
+	        float32View[index++] = vertexData[6];
+	        float32View[index++] = vertexData[7];
+	        float32View[index++] = uvs.x3;
+	        float32View[index++] = uvs.y3;
+	        uint32View[index++] = argb;
+	        float32View[index++] = textureId;
+
+	        indexBuffer[indexCount++] = p + 0;
+	        indexBuffer[indexCount++] = p + 1;
+	        indexBuffer[indexCount++] = p + 2;
+	        indexBuffer[indexCount++] = p + 0;
+	        indexBuffer[indexCount++] = p + 2;
+	        indexBuffer[indexCount++] = p + 3;
+	    }
+	*/
+	    /**
+	     * Starts a new sprite batch.
+	     */
+	    BatchRenderer.prototype.start = function start ()
+	    {
+	        this.renderer.state.setState(this.state);
+
+	        this.renderer.shader.bind(this.shader);
+
+	        if (settings.CAN_UPLOAD_SAME_BUFFER)
+	        {
+	            // bind buffer #0, we don't need others
+	            this.renderer.geometry.bind(this.vaos[this.vertexCount]);
+	        }
+	    };
+
+	    /**
+	     * Stops and flushes the current batch.
+	     *
+	     */
+	    BatchRenderer.prototype.stop = function stop ()
+	    {
+	        this.flush();
+	    };
+
+	    /**
+	     * Destroys the SpriteRenderer.
+	     *
+	     */
+	    BatchRenderer.prototype.destroy = function destroy ()
+	    {
+	        for (var i = 0; i < this.vaoMax; i++)
+	        {
+	            // if (this.vertexBuffers[i])
+	            // {
+	            //     this.vertexBuffers[i].destroy();
+	            // }
+	            if (this.vaos[i])
+	            {
+	                this.vaos[i].destroy();
+	            }
+	        }
+
+	        if (this.indexBuffer)
+	        {
+	            this.indexBuffer.destroy();
+	        }
+
+	        this.renderer.off('prerender', this.onPrerender, this);
+
+	        if (this.shader)
+	        {
+	            this.shader.destroy();
+	            this.shader = null;
+	        }
+
+	        // this.vertexBuffers = null;
+	        this.vaos = null;
+	        this.indexBuffer = null;
+	        this.indices = null;
+	        this.sprites = null;
+
+	        // for (let i = 0; i < this.buffers.length; ++i)
+	        // {
+	        //     this.buffers[i].destroy();
+	        // }
+
+	        ObjectRenderer.prototype.destroy.call(this);
+	    };
+
+	    return BatchRenderer;
+	}(ObjectRenderer));
 
 	/*!
-	 * @pixi/extract - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/extract - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/extract is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -22973,8 +21821,8 @@ var PIXI = (function (exports) {
 	        renderer.renderTexture.bind(null);
 	    }
 
-	    var width = Math.floor(frame.width * resolution);
-	    var height = Math.floor(frame.height * resolution);
+	    var width = frame.width * resolution;
+	    var height = frame.height * resolution;
 
 	    var canvasBuffer = new CanvasRenderTarget(width, height, 1);
 
@@ -22996,7 +21844,7 @@ var PIXI = (function (exports) {
 	    // add the pixels to the canvas
 	    var canvasData = canvasBuffer.context.getImageData(0, 0, width, height);
 
-	    Extract.arrayPostDivide(webglPixels, canvasData.data);
+	    canvasData.data.set(webglPixels);
 
 	    canvasBuffer.context.putImageData(canvasData, 0, 0);
 
@@ -23022,7 +21870,7 @@ var PIXI = (function (exports) {
 	 *
 	 * @param {PIXI.DisplayObject|PIXI.RenderTexture} target - A displayObject or renderTexture
 	 *  to convert. If left empty will use the main renderer
-	 * @return {Uint8Array} One-dimensional array containing the pixel data of the entire texture
+	 * @return {Uint8ClampedArray} One-dimensional array containing the pixel data of the entire texture
 	 */
 	Extract.prototype.pixels = function pixels (target)
 	{
@@ -23087,8 +21935,6 @@ var PIXI = (function (exports) {
 	        renderTexture.destroy(true);
 	    }
 
-	    Extract.arrayPostDivide(webglPixels, webglPixels);
-
 	    return webglPixels;
 	};
 
@@ -23102,41 +21948,13 @@ var PIXI = (function (exports) {
 	    this.renderer = null;
 	};
 
-	/**
-	 * Takes premultiplied pixel data and produces regular pixel data
-	 *
-	 * @private
-	 * @param pixels {number[] | Uint8Array | Uint8ClampedArray} array of pixel data
-	 * @param out {number[] | Uint8Array | Uint8ClampedArray} output array
-	 */
-	Extract.arrayPostDivide = function arrayPostDivide (pixels, out)
-	{
-	    for (var i = 0; i < pixels.length; i += 4)
-	    {
-	        var alpha = out[i + 3] = pixels[i + 3];
-
-	        if (alpha !== 0)
-	        {
-	            out[i] = Math.round(Math.min(pixels[i] * 255.0 / alpha, 255.0));
-	            out[i + 1] = Math.round(Math.min(pixels[i + 1] * 255.0 / alpha, 255.0));
-	            out[i + 2] = Math.round(Math.min(pixels[i + 2] * 255.0 / alpha, 255.0));
-	        }
-	        else
-	        {
-	            out[i] = pixels[i];
-	            out[i + 1] = pixels[i + 1];
-	            out[i + 2] = pixels[i + 2];
-	        }
-	    }
-	};
-
 	var extract_es = ({
 		Extract: Extract
 	});
 
 	/*!
-	 * @pixi/interaction - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/interaction - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/interaction is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -23349,32 +22167,11 @@ var PIXI = (function (exports) {
 	var InteractionEvent = function InteractionEvent()
 	{
 	    /**
-	     * Whether this event will continue propagating in the tree.
-	     *
-	     * Remaining events for the {@link stopsPropagatingAt} object
-	     * will still be dispatched.
+	     * Whether this event will continue propagating in the tree
 	     *
 	     * @member {boolean}
 	     */
 	    this.stopped = false;
-
-	    /**
-	     * At which object this event stops propagating.
-	     *
-	     * @private
-	     * @member {PIXI.DisplayObject}
-	     */
-	    this.stopsPropagatingAt = null;
-
-	    /**
-	     * Whether we already reached the element we want to
-	     * stop propagating at. This is important for delayed events,
-	     * where we start over deeper in the tree again.
-	     *
-	     * @private
-	     * @member {boolean}
-	     */
-	    this.stopPropagationHint = false;
 
 	    /**
 	     * The object which caused this event to be dispatched.
@@ -23413,8 +22210,6 @@ var PIXI = (function (exports) {
 	InteractionEvent.prototype.stopPropagation = function stopPropagation ()
 	{
 	    this.stopped = true;
-	    this.stopPropagationHint = true;
-	    this.stopsPropagatingAt = this.currentTarget;
 	};
 
 	/**
@@ -23423,8 +22218,6 @@ var PIXI = (function (exports) {
 	InteractionEvent.prototype.reset = function reset ()
 	{
 	    this.stopped = false;
-	    this.stopsPropagatingAt = null;
-	    this.stopPropagationHint = false;
 	    this.currentTarget = null;
 	    this.target = null;
 	};
@@ -23559,30 +22352,6 @@ var PIXI = (function (exports) {
 	});
 
 	/**
-	 * Interface for classes that represent a hit area.
-	 *
-	 * It is implemented by the following classes:
-	 * - {@link PIXI.Circle}
-	 * - {@link PIXI.Ellipse}
-	 * - {@link PIXI.Polygon}
-	 * - {@link PIXI.RoundedRectangle}
-	 *
-	 * @interface IHitArea
-	 * @memberof PIXI
-	 */
-
-	/**
-	 * Checks whether the x and y coordinates given are contained within this area
-	 *
-	 * @method
-	 * @name contains
-	 * @memberof PIXI.IHitArea#
-	 * @param {number} x - The X coordinate of the point to test
-	 * @param {number} y - The Y coordinate of the point to test
-	 * @return {boolean} Whether the x/y coordinates are within this area
-	 */
-
-	/**
 	 * Default property values of interactive objects
 	 * Used by {@link PIXI.interaction.InteractionManager} to automatically give all DisplayObjects these properties
 	 *
@@ -23632,7 +22401,7 @@ var PIXI = (function (exports) {
 	     * const sprite = new PIXI.Sprite(texture);
 	     * sprite.interactive = true;
 	     * sprite.hitArea = new PIXI.Rectangle(0, 0, 100, 100);
-	     * @member {PIXI.IHitArea}
+	     * @member {PIXI.Rectangle|PIXI.Circle|PIXI.Ellipse|PIXI.Polygon|PIXI.RoundedRectangle}
 	     * @memberof PIXI.DisplayObject#
 	     */
 	    hitArea: null,
@@ -23939,14 +22708,6 @@ var PIXI = (function (exports) {
 	         * @default 1
 	         */
 	        this.resolution = 1;
-
-	        /**
-	         * Delayed pointer events. Used to guarantee correct ordering of over/out events.
-	         *
-	         * @private
-	         * @member {Array}
-	         */
-	        this.delayedEvents = [];
 
 	        /**
 	         * Fired when a pointer device button (usually a mouse left-button) is pressed on the display
@@ -24382,7 +23143,7 @@ var PIXI = (function (exports) {
 	     * other DOM elements on top of the renderers Canvas element. With this you'll be bale to delegate
 	     * another DOM element to receive those events.
 	     *
-	     * @param {HTMLElement} element - the DOM element which will receive mouse and touch events.
+	     * @param {HTMLCanvasElement} element - the DOM element which will receive mouse and touch events.
 	     * @param {number} [resolution=1] - The resolution / device pixel ratio of the new element (relative to the canvas).
 	     */
 	    InteractionManager.prototype.setTargetElement = function setTargetElement (element, resolution)
@@ -24577,6 +23338,8 @@ var PIXI = (function (exports) {
 	        }
 
 	        this.setCursorMode(this.cursor);
+
+	        // TODO
 	    };
 
 	    /**
@@ -24633,9 +23396,7 @@ var PIXI = (function (exports) {
 	     */
 	    InteractionManager.prototype.dispatchEvent = function dispatchEvent (displayObject, eventString, eventData)
 	    {
-	        // Even if the event was stopped, at least dispatch any remaining events
-	        // for the same display object.
-	        if (!eventData.stopPropagationHint || displayObject === eventData.stopsPropagatingAt)
+	        if (!eventData.stopped)
 	        {
 	            eventData.currentTarget = displayObject;
 	            eventData.type = eventString;
@@ -24647,20 +23408,6 @@ var PIXI = (function (exports) {
 	                displayObject[eventString](eventData);
 	            }
 	        }
-	    };
-
-	    /**
-	     * Puts a event on a queue to be dispatched later. This is used to guarantee correct
-	     * ordering of over/out events.
-	     *
-	     * @param {PIXI.Container|PIXI.Sprite|PIXI.TilingSprite} displayObject - the display object in question
-	     * @param {string} eventString - the name of the event (e.g, mousedown)
-	     * @param {object} eventData - the event data object
-	     * @private
-	     */
-	    InteractionManager.prototype.delayDispatchEvent = function delayDispatchEvent (displayObject, eventString, eventData)
-	    {
-	        this.delayedEvents.push({ displayObject: displayObject, eventString: eventString, eventData: eventData });
 	    };
 
 	    /**
@@ -24706,11 +23453,9 @@ var PIXI = (function (exports) {
 	     *  interactionEvent, displayObject and hit will be passed to the function
 	     * @param {boolean} [hitTest] - this indicates if the objects inside should be hit test against the point
 	     * @param {boolean} [interactive] - Whether the displayObject is interactive
-	     * @param {boolean} [skipDelayed] - Whether to process delayed events before returning. This is
-	     *  used to avoid processing them too early during recursive calls.
 	     * @return {boolean} returns true if the displayObject hit the point
 	     */
-	    InteractionManager.prototype.processInteractive = function processInteractive (interactionEvent, displayObject, func, hitTest, interactive, skipDelayed)
+	    InteractionManager.prototype.processInteractive = function processInteractive (interactionEvent, displayObject, func, hitTest, interactive)
 	    {
 	        if (!displayObject || !displayObject.visible)
 	        {
@@ -24785,7 +23530,7 @@ var PIXI = (function (exports) {
 	                var child = children[i];
 
 	                // time to get recursive.. if this function will return if something is hit..
-	                var childHit = this.processInteractive(interactionEvent, child, func, hitTest, interactiveParent, true);
+	                var childHit = this.processInteractive(interactionEvent, child, func, hitTest, interactiveParent);
 
 	                if (childHit)
 	                {
@@ -24847,35 +23592,6 @@ var PIXI = (function (exports) {
 	                {
 	                    func(interactionEvent, displayObject, !!hit);
 	                }
-	            }
-	        }
-
-	        var delayedEvents = this.delayedEvents;
-
-	        if (delayedEvents.length && !skipDelayed)
-	        {
-	            // Reset the propagation hint, because we start deeper in the tree again.
-	            interactionEvent.stopPropagationHint = false;
-
-	            var delayedLen = delayedEvents.length;
-
-	            this.delayedEvents = [];
-
-	            for (var i$1 = 0; i$1 < delayedLen; i$1++)
-	            {
-	                var ref = delayedEvents[i$1];
-	                var displayObject$1 = ref.displayObject;
-	                var eventString = ref.eventString;
-	                var eventData = ref.eventData;
-
-	                // When we reach the object we wanted to stop propagating at,
-	                // set the propagation hint.
-	                if (eventData.stopsPropagatingAt === displayObject$1)
-	                {
-	                    eventData.stopPropagationHint = true;
-	                }
-
-	                this.dispatchEvent(displayObject$1, eventString, eventData);
 	            }
 	        }
 
@@ -25214,8 +23930,14 @@ var PIXI = (function (exports) {
 
 	            interactionEvent.data.originalEvent = originalEvent;
 
-	            this.processInteractive(interactionEvent, this.renderer._lastObjectRendered, this.processPointerMove, true);
+	            var interactive = event.pointerType === 'touch' ? this.moveWhenInside : true;
 
+	            this.processInteractive(
+	                interactionEvent,
+	                this.renderer._lastObjectRendered,
+	                this.processPointerMove,
+	                interactive
+	            );
 	            this.emit('pointermove', interactionEvent);
 	            if (event.pointerType === 'touch') { this.emit('touchmove', interactionEvent); }
 	            if (event.pointerType === 'mouse' || event.pointerType === 'pen') { this.emit('mousemove', interactionEvent); }
@@ -25332,10 +24054,10 @@ var PIXI = (function (exports) {
 	            if (!trackingData.over)
 	            {
 	                trackingData.over = true;
-	                this.delayDispatchEvent(displayObject, 'pointerover', interactionEvent);
+	                this.dispatchEvent(displayObject, 'pointerover', interactionEvent);
 	                if (isMouse)
 	                {
-	                    this.delayDispatchEvent(displayObject, 'mouseover', interactionEvent);
+	                    this.dispatchEvent(displayObject, 'mouseover', interactionEvent);
 	                }
 	            }
 
@@ -25597,8 +24319,8 @@ var PIXI = (function (exports) {
 	});
 
 	/*!
-	 * @pixi/graphics - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/graphics - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/graphics is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -25936,7 +24658,6 @@ var PIXI = (function (exports) {
 	{
 	    var shape = graphicsData.shape;
 	    var points = graphicsData.points || shape.points.slice();
-	    var eps = graphicsGeometry.closePointEps;
 
 	    if (points.length === 0)
 	    {
@@ -25958,8 +24679,7 @@ var PIXI = (function (exports) {
 	    var firstPoint = new Point(points[0], points[1]);
 	    var lastPoint = new Point(points[points.length - 2], points[points.length - 1]);
 	    var closedShape = shape.type !== SHAPES.POLY || shape.closeStroke;
-	    var closedPath = Math.abs(firstPoint.x - lastPoint.x) < eps
-	        && Math.abs(firstPoint.y - lastPoint.y) < eps;
+	    var closedPath = firstPoint.x === lastPoint.x && firstPoint.y === lastPoint.y;
 
 	    // if the first point is the last point - gonna have issues :)
 	    if (closedShape)
@@ -26152,9 +24872,7 @@ var PIXI = (function (exports) {
 	{
 	    var i = 0;
 
-	    var shape = graphicsData.shape;
-	    var points = graphicsData.points || shape.points;
-	    var closedShape = shape.type !== SHAPES.POLY || shape.closeStroke;
+	    var points = graphicsData.points || graphicsData.shape.points;
 
 	    if (points.length === 0) { return; }
 
@@ -26162,22 +24880,22 @@ var PIXI = (function (exports) {
 	    var indices = graphicsGeometry.indices;
 	    var length = points.length / 2;
 
-	    var startIndex = verts.length / 2;
-	    var currentIndex = startIndex;
-
-	    verts.push(points[0], points[1]);
+	    var indexStart = verts.length / 2;
+	    // sort color
 
 	    for (i = 1; i < length; i++)
 	    {
-	        verts.push(points[i * 2], points[(i * 2) + 1]);
-	        indices.push(currentIndex, currentIndex + 1);
+	        var p1x = points[(i - 1) * 2];
+	        var p1y = points[((i - 1) * 2) + 1];
 
-	        currentIndex++;
-	    }
+	        var p2x = points[i * 2];
+	        var p2y = points[(i * 2) + 1];
 
-	    if (closedShape)
-	    {
-	        indices.push(currentIndex, startIndex);
+	        verts.push(p1x, p1y);
+
+	        verts.push(p2x, p2y);
+
+	        indices.push(indexStart++, indexStart++);
 	    }
 	}
 
@@ -26442,7 +25160,6 @@ var PIXI = (function (exports) {
 
 	var BATCH_POOL = [];
 	var DRAW_CALL_POOL = [];
-	var tmpPoint = new Point();
 
 	/**
 	 * Map of fill commands for each shape type.
@@ -26489,9 +25206,9 @@ var PIXI = (function (exports) {
 	        BatchGeometry.call(this);
 
 	        /**
-	         * An array of points to draw, 2 numbers per point
+	         * An array of points to draw
 	         *
-	         * @member {number[]}
+	         * @member {PIXI.Point[]}
 	         * @protected
 	         */
 	        this.points = [];
@@ -26537,7 +25254,8 @@ var PIXI = (function (exports) {
 	        this.graphicsData = [];
 
 	        /**
-	         * Used to detect if the graphics object has changed.
+	         * Used to detect if the graphics object has changed. If this is set to true then the graphics
+	         * object will be recalculated.
 	         *
 	         * @member {number}
 	         * @protected
@@ -26561,7 +25279,7 @@ var PIXI = (function (exports) {
 	        this.cacheDirty = -1;
 
 	        /**
-	         * Used to detect if we cleared the graphicsData.
+	         * Used to detect if we clear the graphics WebGL data.
 	         *
 	         * @member {number}
 	         * @default 0
@@ -26587,7 +25305,7 @@ var PIXI = (function (exports) {
 	        this.batches = [];
 
 	        /**
-	         * Index of the last batched shape in the stack of calls.
+	         * Index of the current last shape in the stack of calls.
 	         *
 	         * @member {number}
 	         * @protected
@@ -26623,14 +25341,6 @@ var PIXI = (function (exports) {
 	        this.indicesUint16 = null;
 
 	        this.uvsFloat32 = null;
-
-	        /**
-	         * Minimal distance between points that are considered different.
-	         * Affects line tesselation.
-	         *
-	         * @member {number}
-	         */
-	        this.closePointEps = 1e-4;
 	    }
 
 	    if ( BatchGeometry ) { GraphicsGeometry.__proto__ = BatchGeometry; }
@@ -26657,44 +25367,6 @@ var PIXI = (function (exports) {
 	    };
 
 	    /**
-	     * Call if you changed graphicsData manually.
-	     * Empties all batch buffers.
-	     */
-	    GraphicsGeometry.prototype.invalidate = function invalidate ()
-	    {
-	        this.boundsDirty = -1;
-	        this.dirty++;
-	        this.batchDirty++;
-	        this.shapeIndex = 0;
-
-	        this.points.length = 0;
-	        this.colors.length = 0;
-	        this.uvs.length = 0;
-	        this.indices.length = 0;
-	        this.textureIds.length = 0;
-
-	        for (var i = 0; i < this.drawCalls.length; i++)
-	        {
-	            this.drawCalls[i].textures.length = 0;
-	            DRAW_CALL_POOL.push(this.drawCalls[i]);
-	        }
-
-	        this.drawCalls.length = 0;
-
-	        for (var i$1 = 0; i$1 < this.batches.length; i$1++)
-	        {
-	            var batch =  this.batches[i$1];
-
-	            batch.start = 0;
-	            batch.attribStart = 0;
-	            batch.style = null;
-	            BATCH_POOL.push(batch);
-	        }
-
-	        this.batches.length = 0;
-	    };
-
-	    /**
 	     * Clears the graphics that were drawn to this Graphics object, and resets fill and line style settings.
 	     *
 	     * @return {PIXI.GraphicsGeometry} This GraphicsGeometry object. Good for chaining method calls
@@ -26703,9 +25375,38 @@ var PIXI = (function (exports) {
 	    {
 	        if (this.graphicsData.length > 0)
 	        {
-	            this.invalidate();
+	            this.boundsDirty = -1;
+	            this.dirty++;
 	            this.clearDirty++;
+	            this.batchDirty++;
 	            this.graphicsData.length = 0;
+	            this.shapeIndex = 0;
+
+	            this.points.length = 0;
+	            this.colors.length = 0;
+	            this.uvs.length = 0;
+	            this.indices.length = 0;
+	            this.textureIds.length = 0;
+
+	            for (var i = 0; i < this.drawCalls.length; i++)
+	            {
+	                this.drawCalls[i].textures.length = 0;
+	                DRAW_CALL_POOL.push(this.drawCalls[i]);
+	            }
+
+	            this.drawCalls.length = 0;
+
+	            for (var i$1 = 0; i$1 < this.batches.length; i$1++)
+	            {
+	                var batch =  this.batches[i$1];
+
+	                batch.start = 0;
+	                batch.attribStart = 0;
+	                batch.style = null;
+	                BATCH_POOL.push(batch);
+	            }
+
+	            this.batches.length = 0;
 	        }
 
 	        return this;
@@ -26754,7 +25455,7 @@ var PIXI = (function (exports) {
 
 	        this.dirty++;
 
-	        return this;
+	        return data;
 	    };
 
 	    /**
@@ -26820,16 +25521,7 @@ var PIXI = (function (exports) {
 	            // only deal with fills..
 	            if (data.shape)
 	            {
-	                if (data.matrix)
-	                {
-	                    data.matrix.applyInverse(point, tmpPoint);
-	                }
-	                else
-	                {
-	                    tmpPoint.copyFrom(point);
-	                }
-
-	                if (data.shape.contains(tmpPoint.x, tmpPoint.y))
+	                if (data.shape.contains(point.x, point.y))
 	                {
 	                    if (data.holes)
 	                    {
@@ -26837,7 +25529,7 @@ var PIXI = (function (exports) {
 	                        {
 	                            var hole = data.holes[i$1];
 
-	                            if (hole.shape.contains(tmpPoint.x, tmpPoint.y))
+	                            if (hole.shape.contains(point.x, point.y))
 	                            {
 	                                return false;
 	                            }
@@ -26855,16 +25547,12 @@ var PIXI = (function (exports) {
 	    /**
 	     * Generates intermediate batch data. Either gets converted to drawCalls
 	     * or used to convert to batch objects directly by the Graphics object.
+	     * @protected
 	     */
 	    GraphicsGeometry.prototype.updateBatches = function updateBatches ()
 	    {
 	        if (this.dirty === this.cacheDirty) { return; }
-	        if (this.graphicsData.length === 0)
-	        {
-	            this.batchable = true;
-
-	            return;
-	        }
+	        if (this.graphicsData.length === 0) { return; }
 
 	        if (this.dirty !== this.cacheDirty)
 	        {
@@ -26881,22 +25569,20 @@ var PIXI = (function (exports) {
 
 	        var uvs = this.uvs;
 
-	        var batchPart = null;
-	        var currentTexture = null;
-	        var currentColor = 0;
-	        var currentNative = false;
+	        var batchPart = this.batches.pop()
+	            || BATCH_POOL.pop()
+	            || new BatchPart();
 
-	        if (this.batches.length > 0)
-	        {
-	            batchPart = this.batches[this.batches.length - 1];
+	        batchPart.style = batchPart.style
+	            || this.graphicsData[0].fillStyle
+	            || this.graphicsData[0].lineStyle;
 
-	            var style = batchPart.style;
+	        var currentTexture = batchPart.style.texture.baseTexture;
+	        var currentColor = batchPart.style.color + batchPart.style.alpha;
 
-	            currentTexture = style.texture.baseTexture;
-	            currentColor = style.color + style.alpha;
-	            currentNative = !!style.native;
-	        }
+	        this.batches.push(batchPart);
 
+	        // TODO - this can be simplified
 	        for (var i$1 = this.shapeIndex; i$1 < this.graphicsData.length; i$1++)
 	        {
 	            this.shapeIndex++;
@@ -26917,42 +25603,37 @@ var PIXI = (function (exports) {
 
 	            for (var j = 0; j < 2; j++)
 	            {
-	                var style$1 = (j === 0) ? fillStyle : lineStyle;
+	                var style = (j === 0) ? fillStyle : lineStyle;
 
-	                if (!style$1.visible) { continue; }
+	                if (!style.visible) { continue; }
 
-	                var nextTexture = style$1.texture.baseTexture;
+	                var nextTexture = style.texture.baseTexture;
 
-	                var index$1 = this.indices.length;
-	                var attribIndex = this.points.length / 2;
-
-	                // close batch if style is different
-	                if (batchPart
-	                    && (currentTexture !== nextTexture
-	                    || currentColor !== (style$1.color + style$1.alpha)
-	                    || currentNative !== !!style$1.native))
+	                if (currentTexture !== nextTexture || (style.color + style.alpha) !== currentColor)
 	                {
+	                    // TODO use a const
+	                    nextTexture.wrapMode = 10497;
+	                    currentTexture = nextTexture;
+	                    currentColor = style.color + style.alpha;
+
+	                    var index$1 = this.indices.length;
+	                    var attribIndex = this.points.length / 2;
+
 	                    batchPart.size = index$1 - batchPart.start;
 	                    batchPart.attribSize = attribIndex - batchPart.attribStart;
 
 	                    if (batchPart.size > 0)
 	                    {
-	                        batchPart = null;
-	                    }
-	                }
-	                // spawn new batch if its first batch or previous was closed
-	                if (!batchPart)
-	                {
-	                    batchPart = BATCH_POOL.pop() || new BatchPart();
-	                    this.batches.push(batchPart);
-	                    nextTexture.wrapMode = WRAP_MODES.REPEAT;
-	                    currentTexture = nextTexture;
-	                    currentColor = style$1.color + style$1.alpha;
-	                    currentNative = style$1.native;
+	                        batchPart = BATCH_POOL.pop() || new BatchPart();
 
-	                    batchPart.style = style$1;
+	                        this.batches.push(batchPart);
+	                    }
+
+	                    batchPart.style = style;
 	                    batchPart.start = index$1;
 	                    batchPart.attribStart = attribIndex;
+
+	                    // TODO add this to the render part..
 	                }
 
 	                var start = this.points.length / 2;
@@ -26982,21 +25663,12 @@ var PIXI = (function (exports) {
 
 	                var size = (this.points.length / 2) - start;
 
-	                this.addUvs(this.points, uvs, style$1.texture, start, size, style$1.matrix);
+	                this.addUvs(this.points, uvs, style.texture, start, size, style.matrix);
 	            }
 	        }
 
 	        var index = this.indices.length;
 	        var attrib = this.points.length / 2;
-
-	        if (!batchPart)
-	        {
-	            // there are no visible styles in GraphicsData
-	            // its possible that someone wants Graphics just for the bounds
-	            this.batchable = true;
-
-	            return;
-	        }
 
 	        batchPart.size = index - batchPart.start;
 	        batchPart.attribSize = attrib - batchPart.attribStart;
@@ -27099,7 +25771,7 @@ var PIXI = (function (exports) {
 
 	            var nextTexture = style.texture.baseTexture;
 
-	            if (native !== !!style.native)
+	            if (native !== style.native)
 	            {
 	                native = style.native;
 	                drawMode = native ? DRAW_MODES.LINES : DRAW_MODES.TRIANGLES;
@@ -27439,7 +26111,7 @@ var PIXI = (function (exports) {
 	    /**
 	     * Modify uvs array according to position of texture region
 	     * Does not work with rotated or trimmed textures
-	     * @param {number[]} uvs array
+	     * @param {number} uvs array
 	     * @param {PIXI.Texture} texture region
 	     * @param {number} start starting index for uvs
 	     * @param {number} size how many points to adjust
@@ -27868,8 +26540,8 @@ var PIXI = (function (exports) {
 
 	var temp = new Float32Array(3);
 
-	// a default shaders map used by graphics..
-	var DEFAULT_SHADERS = {};
+	// a default shader used by graphics..
+	var defaultShader = null;
 
 	/**
 	 * The Graphics class contains methods used to draw primitive shapes such as lines, circles and
@@ -27997,14 +26669,6 @@ var PIXI = (function (exports) {
 	        this._transformID = -1;
 	        this.batchDirty = -1;
 
-	        /**
-	         * Renderer plugin for batching
-	         *
-	         * @member {string}
-	         * @default 'batch'
-	         */
-	        this.pluginName = 'batch';
-
 	        // Set default
 	        this.tint = 0xFFFFFF;
 	        this.blendMode = BLEND_MODES.NORMAL;
@@ -28092,7 +26756,7 @@ var PIXI = (function (exports) {
 	     * @param {number} [width=0] - width of the line to draw, will update the objects stored style
 	     * @param {number} [color=0] - color of the line to draw, will update the objects stored style
 	     * @param {number} [alpha=1] - alpha of the line to draw, will update the objects stored style
-	     * @param {number} [alignment=0.5] - alignment of the line to draw, (0 = inner, 0.5 = middle, 1 = outter)
+	     * @param {number} [alignment=1] - alignment of the line to draw, (0 = inner, 0.5 = middle, 1 = outter)
 	     * @param {boolean} [native=false] - If true the lines will be draw using LINES instead of TRIANGLE_STRIP
 	     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
 	     */
@@ -28332,8 +26996,8 @@ var PIXI = (function (exports) {
 	     *
 	     * "borrowed" from https://code.google.com/p/fxcanvas/ - thanks google!
 	     *
-	     * @param {number} x1 - The x-coordinate of the first tangent point of the arc
-	     * @param {number} y1 - The y-coordinate of the first tangent point of the arc
+	     * @param {number} x1 - The x-coordinate of the beginning of the arc
+	     * @param {number} y1 - The y-coordinate of the beginning of the arc
 	     * @param {number} x2 - The x-coordinate of the end of the arc
 	     * @param {number} y2 - The y-coordinate of the end of the arc
 	     * @param {number} radius - The radius of the arc
@@ -28403,7 +27067,6 @@ var PIXI = (function (exports) {
 
 	        var startX = cx + (Math.cos(startAngle) * radius);
 	        var startY = cy + (Math.sin(startAngle) * radius);
-	        var eps = this.geometry.closePointEps;
 
 	        // If the currentPath exists, take its points. Otherwise call `moveTo` to start a path.
 	        var points = this.currentPath ? this.currentPath.points : null;
@@ -28416,7 +27079,7 @@ var PIXI = (function (exports) {
 	            var xDiff = Math.abs(points[points.length - 2] - startX);
 	            var yDiff = Math.abs(points[points.length - 1] - startY);
 
-	            if (xDiff < eps && yDiff < eps)
+	            if (xDiff < 0.001 && yDiff < 0.001)
 	            { ; }
 	            else
 	            {
@@ -28662,12 +27325,11 @@ var PIXI = (function (exports) {
 	    Graphics.prototype.clear = function clear ()
 	    {
 	        this.geometry.clear();
-	        this._lineStyle.reset();
-	        this._fillStyle.reset();
 
 	        this._matrix = null;
 	        this._holeMode = false;
 	        this.currentPath = null;
+	        this._spriteRect = null;
 
 	        return this;
 	    };
@@ -28707,198 +27369,143 @@ var PIXI = (function (exports) {
 	        {
 	            if (this.batchDirty !== geometry.batchDirty)
 	            {
-	                this._populateBatches();
+	                this.batches = [];
+	                this.batchTint = -1;
+	                this._transformID = -1;
+	                this.batchDirty = geometry.batchDirty;
+
+	                this.vertexData = new Float32Array(geometry.points);
+
+	                var blendMode = this.blendMode;
+
+	                for (var i = 0; i < geometry.batches.length; i++)
+	                {
+	                    var gI = geometry.batches[i];
+
+	                    var color = gI.style.color;
+
+	                    //        + (alpha * 255 << 24);
+
+	                    var vertexData = new Float32Array(this.vertexData.buffer,
+	                        gI.attribStart * 4 * 2,
+	                        gI.attribSize * 2);
+
+	                    var uvs = new Float32Array(geometry.uvsFloat32.buffer,
+	                        gI.attribStart * 4 * 2,
+	                        gI.attribSize * 2);
+
+	                    var indices = new Uint16Array(geometry.indicesUint16.buffer,
+	                        gI.start * 2,
+	                        gI.size);
+
+	                    var batch = {
+	                        vertexData: vertexData,
+	                        blendMode: blendMode,
+	                        indices: indices,
+	                        uvs: uvs,
+	                        _batchRGB: hex2rgb(color),
+	                        _tintRGB: color,
+	                        _texture: gI.style.texture,
+	                        alpha: gI.style.alpha,
+	                        worldAlpha: 1 };
+
+	                    this.batches[i] = batch;
+	                }
 	            }
 
-	            this._renderBatched(renderer);
+	            renderer.batch.setObjectRenderer(renderer.plugins.batch);
+
+	            if (this.batches.length)
+	            {
+	                this.calculateVertices();
+	                this.calculateTints();
+
+	                for (var i$1 = 0; i$1 < this.batches.length; i$1++)
+	                {
+	                    var batch$1 = this.batches[i$1];
+
+	                    batch$1.worldAlpha = this.worldAlpha * batch$1.alpha;
+
+	                    renderer.plugins.batch.render(batch$1);
+	                }
+	            }
 	        }
 	        else
 	        {
 	            // no batching...
 	            renderer.batch.flush();
 
-	            this._renderDirect(renderer);
-	        }
-	    };
-
-	    /**
-	     * Populating batches for rendering
-	     *
-	     * @protected
-	     */
-	    Graphics.prototype._populateBatches = function _populateBatches ()
-	    {
-	        var geometry = this.geometry;
-	        var blendMode = this.blendMode;
-
-	        this.batches = [];
-	        this.batchTint = -1;
-	        this._transformID = -1;
-	        this.batchDirty = geometry.batchDirty;
-
-	        this.vertexData = new Float32Array(geometry.points);
-
-	        for (var i = 0, l = geometry.batches.length; i < l; i++)
-	        {
-	            var gI = geometry.batches[i];
-	            var color = gI.style.color;
-	            var vertexData = new Float32Array(this.vertexData.buffer,
-	                gI.attribStart * 4 * 2,
-	                gI.attribSize * 2);
-
-	            var uvs = new Float32Array(geometry.uvsFloat32.buffer,
-	                gI.attribStart * 4 * 2,
-	                gI.attribSize * 2);
-
-	            var indices = new Uint16Array(geometry.indicesUint16.buffer,
-	                gI.start * 2,
-	                gI.size);
-
-	            var batch = {
-	                vertexData: vertexData,
-	                blendMode: blendMode,
-	                indices: indices,
-	                uvs: uvs,
-	                _batchRGB: hex2rgb(color),
-	                _tintRGB: color,
-	                _texture: gI.style.texture,
-	                alpha: gI.style.alpha,
-	                worldAlpha: 1 };
-
-	            this.batches[i] = batch;
-	        }
-	    };
-
-	    /**
-	     * Renders the batches using the BathedRenderer plugin
-	     *
-	     * @protected
-	     * @param {PIXI.Renderer} renderer - The renderer
-	     */
-	    Graphics.prototype._renderBatched = function _renderBatched (renderer)
-	    {
-	        if (!this.batches.length)
-	        {
-	            return;
-	        }
-
-	        renderer.batch.setObjectRenderer(renderer.plugins[this.pluginName]);
-
-	        this.calculateVertices();
-	        this.calculateTints();
-
-	        for (var i = 0, l = this.batches.length; i < l; i++)
-	        {
-	            var batch = this.batches[i];
-
-	            batch.worldAlpha = this.worldAlpha * batch.alpha;
-
-	            renderer.plugins[this.pluginName].render(batch);
-	        }
-	    };
-
-	    /**
-	     * Renders the graphics direct
-	     *
-	     * @protected
-	     * @param {PIXI.Renderer} renderer - The renderer
-	     */
-	    Graphics.prototype._renderDirect = function _renderDirect (renderer)
-	    {
-	        var shader = this._resolveDirectShader(renderer);
-
-	        var geometry = this.geometry;
-	        var tint = this.tint;
-	        var worldAlpha = this.worldAlpha;
-	        var uniforms = shader.uniforms;
-	        var drawCalls = geometry.drawCalls;
-
-	        // lets set the transfomr
-	        uniforms.translationMatrix = this.transform.worldTransform;
-
-	        // and then lets set the tint..
-	        uniforms.tint[0] = (((tint >> 16) & 0xFF) / 255) * worldAlpha;
-	        uniforms.tint[1] = (((tint >> 8) & 0xFF) / 255) * worldAlpha;
-	        uniforms.tint[2] = ((tint & 0xFF) / 255) * worldAlpha;
-	        uniforms.tint[3] = worldAlpha;
-
-	        // the first draw call, we can set the uniforms of the shader directly here.
-
-	        // this means that we can tack advantage of the sync function of pixi!
-	        // bind and sync uniforms..
-	        // there is a way to optimise this..
-	        renderer.shader.bind(shader);
-	        renderer.geometry.bind(geometry, shader);
-
-	        // set state..
-	        renderer.state.set(this.state);
-
-	        // then render the rest of them...
-	        for (var i = 0, l = drawCalls.length; i < l; i++)
-	        {
-	            this._renderDrawCallDirect(renderer, geometry.drawCalls[i]);
-	        }
-	    };
-
-	    /**
-	     * Renders specific DrawCall
-	     *
-	     * @param {PIXI.Renderer} renderer
-	     * @param {PIXI.BatchDrawCall} drawCall
-	     */
-	    Graphics.prototype._renderDrawCallDirect = function _renderDrawCallDirect (renderer, drawCall)
-	    {
-	        var groupTextureCount = drawCall.textureCount;
-
-	        for (var j = 0; j < groupTextureCount; j++)
-	        {
-	            renderer.texture.bind(drawCall.textures[j], j);
-	        }
-
-	        renderer.geometry.draw(drawCall.type, drawCall.size, drawCall.start);
-	    };
-
-	    /**
-	     * Resolves shader for direct rendering
-	     *
-	     * @protected
-	     * @param {PIXI.Renderer} renderer - The renderer
-	     */
-	    Graphics.prototype._resolveDirectShader = function _resolveDirectShader (renderer)
-	    {
-	        var shader = this.shader;
-
-	        var pluginName = this.pluginName;
-
-	        if (!shader)
-	        {
-	            // if there is no shader here, we can use the default shader.
-	            // and that only gets created if we actually need it..
-	            // but may be more than one plugins for graphics
-	            if (!DEFAULT_SHADERS[pluginName])
+	            if (!this.shader)
 	            {
-	                var sampleValues = new Int32Array(16);
-
-	                for (var i = 0; i < 16; i++)
+	                // if there is no shader here, we can use the default shader.
+	                // and that only gets created if we actually need it..
+	                if (!defaultShader)
 	                {
-	                    sampleValues[i] = i;
+	                    var sampleValues = new Int32Array(16);
+
+	                    for (var i$2 = 0; i$2 < 16; i$2++)
+	                    {
+	                        sampleValues[i$2] = i$2;
+	                    }
+
+	                    var uniforms = {
+	                        tint: new Float32Array([1, 1, 1, 1]),
+	                        translationMatrix: new Matrix(),
+	                        default: UniformGroup.from({ uSamplers: sampleValues }, true),
+	                    };
+
+	                    // we can bbase default shader of the batch renderers program
+	                    var program =  renderer.plugins.batch.shader.program;
+
+	                    defaultShader = new Shader(program, uniforms);
 	                }
 
-	                var uniforms = {
-	                    tint: new Float32Array([1, 1, 1, 1]),
-	                    translationMatrix: new Matrix(),
-	                    default: UniformGroup.from({ uSamplers: sampleValues }, true),
-	                };
-
-	                var program = renderer.plugins[pluginName]._shader.program;
-
-	                DEFAULT_SHADERS[pluginName] = new Shader(program, uniforms);
+	                this.shader = defaultShader;
 	            }
 
-	            shader = DEFAULT_SHADERS[pluginName];
-	        }
+	            var uniforms$1 = this.shader.uniforms;
 
-	        return shader;
+	            // lets set the transfomr
+	            uniforms$1.translationMatrix = this.transform.worldTransform;
+
+	            var tint = this.tint;
+	            var wa = this.worldAlpha;
+
+	            // and then lets set the tint..
+	            uniforms$1.tint[0] = (((tint >> 16) & 0xFF) / 255) * wa;
+	            uniforms$1.tint[1] = (((tint >> 8) & 0xFF) / 255) * wa;
+	            uniforms$1.tint[2] = ((tint & 0xFF) / 255) * wa;
+	            uniforms$1.tint[3] = wa;
+
+	            // the first draw call, we can set the uniforms of the shader directly here.
+
+	            // this means that we can tack advantage of the sync function of pixi!
+	            // bind and sync uniforms..
+	            // there is a way to optimise this..
+	            renderer.shader.bind(this.shader);
+
+	            // then render it
+	            renderer.geometry.bind(geometry, this.shader);
+
+	            // set state..
+	            renderer.state.setState(this.state);
+
+	            // then render the rest of them...
+	            for (var i$3 = 0; i$3 < geometry.drawCalls.length; i$3++)
+	            {
+	                var drawCall = geometry.drawCalls[i$3];
+
+	                var groupTextureCount = drawCall.textureCount;
+
+	                for (var j = 0; j < groupTextureCount; j++)
+	                {
+	                    renderer.texture.bind(drawCall.textures[j], j);
+	                }
+
+	                // bind the geometry...
+	                renderer.geometry.draw(drawCall.type, drawCall.size, drawCall.start);
+	            }
+	        }
 	    };
 
 	    /**
@@ -29107,8 +27714,8 @@ var PIXI = (function (exports) {
 	Graphics._TEMP_POINT = new Point();
 
 	/*!
-	 * @pixi/sprite - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/sprite - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/sprite is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -29123,7 +27730,7 @@ var PIXI = (function (exports) {
 	 * A sprite can be created directly from an image like this:
 	 *
 	 * ```js
-	 * let sprite = PIXI.Sprite.from('assets/image.png');
+	 * let sprite = new PIXI.Sprite.from('assets/image.png');
 	 * ```
 	 *
 	 * The more efficient way to create sprites is using a {@link PIXI.Spritesheet},
@@ -29149,20 +27756,14 @@ var PIXI = (function (exports) {
 	        Container.call(this);
 
 	        /**
-	         * The anchor point defines the normalized coordinates
-	         * in the texture that map to the position of this
-	         * sprite.
+	         * The anchor sets the origin point of the texture.
+	         * The default is 0,0 or taken from the {@link PIXI.Texture#defaultAnchor|Texture}
+	         * passed to the constructor. A value of 0,0 means the texture's origin is the top left.
+	         * Setting the anchor to 0.5,0.5 means the texture's origin is centered.
+	         * Setting the anchor to 1,1 would mean the texture's origin point will be the bottom right corner.
+	         * Note: Updating the {@link PIXI.Texture#defaultAnchor} after a Texture is
+	         * created does _not_ update the Sprite's anchor values.
 	         *
-	         * By default, this is `(0,0)` (or `texture.defaultAnchor`
-	         * if you have modified that), which means the position
-	         * `(x,y)` of this `Sprite` will be the top-left corner.
-	         *
-	         * Note: Updating `texture.defaultAnchor` after
-	         * constructing a `Sprite` does _not_ update its anchor.
-	         *
-	         * {@link https://docs.cocos2d-x.org/cocos2d-x/en/sprites/manipulation.html}
-	         *
-	         * @default `texture.defaultAnchor`
 	         * @member {PIXI.ObservablePoint}
 	         * @private
 	         */
@@ -29225,22 +27826,14 @@ var PIXI = (function (exports) {
 	        this.shader = null;
 
 	        /**
-	         * Cached tint value so we can tell when the tint is changed.
-	         * Value is used for 2d CanvasRenderer.
+	         * An internal cached value of the tint.
 	         *
-	         * @protected
+	         * @private
 	         * @member {number}
 	         * @default 0xFFFFFF
 	         */
-	        this._cachedTint = 0xFFFFFF;
+	        this.cachedTint = 0xFFFFFF;
 
-	        /**
-	         * this is used to store the uvs data of the sprite, assigned at the same time
-	         * as the vertexData in calculateVertices()
-	         *
-	         * @private
-	         * @member {Float32Array}
-	         */
 	        this.uvs = null;
 
 	        // call texture setter
@@ -29279,7 +27872,7 @@ var PIXI = (function (exports) {
 	         * Allows to customize the rendering process without overriding '_render' & '_renderCanvas' methods.
 	         *
 	         * @member {string}
-	         * @default 'batch'
+	         * @default 'sprite'
 	         */
 	        this.pluginName = 'batch';
 
@@ -29313,17 +27906,18 @@ var PIXI = (function (exports) {
 	    {
 	        this._textureID = -1;
 	        this._textureTrimmedID = -1;
-	        this._cachedTint = 0xFFFFFF;
+	        this.cachedTint = 0xFFFFFF;
 
+	        this.uvs = this._texture._uvs.uvsFloat32;
 	        // so if _width is 0 then width was not set..
 	        if (this._width)
 	        {
-	            this.scale.x = sign$1(this.scale.x) * this._width / this._texture.orig.width;
+	            this.scale.x = sign(this.scale.x) * this._width / this._texture.orig.width;
 	        }
 
 	        if (this._height)
 	        {
-	            this.scale.y = sign$1(this.scale.y) * this._height / this._texture.orig.height;
+	            this.scale.y = sign(this.scale.y) * this._height / this._texture.orig.height;
 	        }
 	    };
 
@@ -29348,12 +27942,6 @@ var PIXI = (function (exports) {
 	        if (this._transformID === this.transform._worldID && this._textureID === texture._updateID)
 	        {
 	            return;
-	        }
-
-	        // update texture UV here, because base texture can be changed without calling `_onTextureUpdate`
-	        if (this._textureID !== texture._updateID)
-	        {
-	            this.uvs = this._texture._uvs.uvsFloat32;
 	        }
 
 	        this._transformID = this.transform._worldID;
@@ -29624,7 +28212,7 @@ var PIXI = (function (exports) {
 	    {
 	        var texture = (source instanceof Texture)
 	            ? source
-	            : Texture.from(source, options);
+	            : new Texture.from(source, options);
 
 	        return new Sprite(texture);
 	    };
@@ -29664,7 +28252,7 @@ var PIXI = (function (exports) {
 
 	    prototypeAccessors.width.set = function (value) // eslint-disable-line require-jsdoc
 	    {
-	        var s = sign$1(this.scale.x) || 1;
+	        var s = sign(this.scale.x) || 1;
 
 	        this.scale.x = s * value / this._texture.orig.width;
 	        this._width = value;
@@ -29682,7 +28270,7 @@ var PIXI = (function (exports) {
 
 	    prototypeAccessors.height.set = function (value) // eslint-disable-line require-jsdoc
 	    {
-	        var s = sign$1(this.scale.y) || 1;
+	        var s = sign(this.scale.y) || 1;
 
 	        this.scale.y = s * value / this._texture.orig.height;
 	        this._height = value;
@@ -29752,7 +28340,7 @@ var PIXI = (function (exports) {
 	        }
 
 	        this._texture = value || Texture.EMPTY;
-	        this._cachedTint = 0xFFFFFF;
+	        this.cachedTint = 0xFFFFFF;
 
 	        this._textureID = -1;
 	        this._textureTrimmedID = -1;
@@ -29777,8 +28365,8 @@ var PIXI = (function (exports) {
 	}(Container));
 
 	/*!
-	 * @pixi/text - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/text - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/text is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -31259,19 +29847,7 @@ var PIXI = (function (exports) {
 	 * @private
 	 */
 
-	var canvas = (function () {
-	    try
-	    {
-	        // OffscreenCanvas2D measureText can be up to 40% faster.
-	        var c = new OffscreenCanvas(0, 0);
-
-	        return c.getContext('2d') ? c : document.createElement('canvas');
-	    }
-	    catch (ex)
-	    {
-	        return document.createElement('canvas');
-	    }
-	})();
+	var canvas = document.createElement('canvas');
 
 	canvas.width = canvas.height = 10;
 
@@ -31535,6 +30111,7 @@ var PIXI = (function (exports) {
 	        context.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
 	        context.font = this._font;
+	        context.strokeStyle = style.stroke;
 	        context.lineWidth = style.strokeThickness;
 	        context.textBaseline = style.textBaseline;
 	        context.lineJoin = style.lineJoin;
@@ -31543,87 +30120,59 @@ var PIXI = (function (exports) {
 	        var linePositionX;
 	        var linePositionY;
 
-	        // require 2 passes if a shadow; the first to draw the drop shadow, the second to draw the text
-	        var passesCount = style.dropShadow ? 2 : 1;
-
-	        // For v4, we drew text at the colours of the drop shadow underneath the normal text. This gave the correct zIndex,
-	        // but features such as alpha and shadowblur did not look right at all, since we were using actual text as a shadow.
-	        //
-	        // For v5.0.0, we moved over to just use the canvas API for drop shadows, which made them look much nicer and more
-	        // visually please, but now because the stroke is drawn and then the fill, drop shadows would appear on both the fill
-	        // and the stroke; and fill drop shadows would appear over the top of the stroke.
-	        //
-	        // For v5.1.1, the new route is to revert to v4 style of drawing text first to get the drop shadows underneath normal
-	        // text, but instead drawing text in the correct location, we'll draw it off screen (-paddingY), and then adjust the
-	        // drop shadow so only that appears on screen (+paddingY). Now we'll have the correct draw order of the shadow
-	        // beneath the text, whilst also having the proper text shadow styling.
-	        for (var i = 0; i < passesCount; ++i)
+	        if (style.dropShadow)
 	        {
-	            var isShadowPass = style.dropShadow && i === 0;
-	            var dsOffsetText = isShadowPass ? height * 2 : 0; // we only want the drop shadow, so put text way off-screen
-	            var dsOffsetShadow = dsOffsetText * this.resolution;
+	            var dropShadowColor = style.dropShadowColor;
+	            var rgb = hex2rgb(typeof dropShadowColor === 'number' ? dropShadowColor : string2hex(dropShadowColor));
 
-	            if (isShadowPass)
+	            context.shadowColor = "rgba(" + (rgb[0] * 255) + "," + (rgb[1] * 255) + "," + (rgb[2] * 255) + "," + (style.dropShadowAlpha) + ")";
+	            context.shadowBlur = style.dropShadowBlur;
+	            context.shadowOffsetX = Math.cos(style.dropShadowAngle) * style.dropShadowDistance;
+	            context.shadowOffsetY = Math.sin(style.dropShadowAngle) * style.dropShadowDistance;
+	        }
+	        else
+	        {
+	            context.shadowColor = 0;
+	            context.shadowBlur = 0;
+	            context.shadowOffsetX = 0;
+	            context.shadowOffsetY = 0;
+	        }
+
+	        // set canvas text styles
+	        context.fillStyle = this._generateFillStyle(style, lines);
+
+	        // draw lines line by line
+	        for (var i = 0; i < lines.length; i++)
+	        {
+	            linePositionX = style.strokeThickness / 2;
+	            linePositionY = ((style.strokeThickness / 2) + (i * lineHeight)) + fontProperties.ascent;
+
+	            if (style.align === 'right')
 	            {
-	                // On Safari, text with gradient and drop shadows together do not position correctly
-	                // if the scale of the canvas is not 1: https://bugs.webkit.org/show_bug.cgi?id=197689
-	                // Therefore we'll set the styles to be a plain black whilst generating this drop shadow
-	                context.fillStyle = 'black';
-	                context.strokeStyle = 'black';
-
-	                var dropShadowColor = style.dropShadowColor;
-	                var rgb = hex2rgb(typeof dropShadowColor === 'number' ? dropShadowColor : string2hex(dropShadowColor));
-
-	                context.shadowColor = "rgba(" + (rgb[0] * 255) + "," + (rgb[1] * 255) + "," + (rgb[2] * 255) + "," + (style.dropShadowAlpha) + ")";
-	                context.shadowBlur = style.dropShadowBlur;
-	                context.shadowOffsetX = Math.cos(style.dropShadowAngle) * style.dropShadowDistance;
-	                context.shadowOffsetY = (Math.sin(style.dropShadowAngle) * style.dropShadowDistance) + dsOffsetShadow;
+	                linePositionX += maxLineWidth - lineWidths[i];
 	            }
-	            else
+	            else if (style.align === 'center')
 	            {
-	                // set canvas text styles
-	                context.fillStyle = this._generateFillStyle(style, lines);
-	                context.strokeStyle = style.stroke;
-
-	                context.shadowColor = 0;
-	                context.shadowBlur = 0;
-	                context.shadowOffsetX = 0;
-	                context.shadowOffsetY = 0;
+	                linePositionX += (maxLineWidth - lineWidths[i]) / 2;
 	            }
 
-	            // draw lines line by line
-	            for (var i$1 = 0; i$1 < lines.length; i$1++)
+	            if (style.stroke && style.strokeThickness)
 	            {
-	                linePositionX = style.strokeThickness / 2;
-	                linePositionY = ((style.strokeThickness / 2) + (i$1 * lineHeight)) + fontProperties.ascent;
+	                this.drawLetterSpacing(
+	                    lines[i],
+	                    linePositionX + style.padding,
+	                    linePositionY + style.padding,
+	                    true
+	                );
+	            }
 
-	                if (style.align === 'right')
-	                {
-	                    linePositionX += maxLineWidth - lineWidths[i$1];
-	                }
-	                else if (style.align === 'center')
-	                {
-	                    linePositionX += (maxLineWidth - lineWidths[i$1]) / 2;
-	                }
-
-	                if (style.stroke && style.strokeThickness)
-	                {
-	                    this.drawLetterSpacing(
-	                        lines[i$1],
-	                        linePositionX + style.padding,
-	                        linePositionY + style.padding - dsOffsetText,
-	                        true
-	                    );
-	                }
-
-	                if (style.fill)
-	                {
-	                    this.drawLetterSpacing(
-	                        lines[i$1],
-	                        linePositionX + style.padding,
-	                        linePositionY + style.padding - dsOffsetText
-	                    );
-	                }
+	            if (style.fill)
+	            {
+	                this.drawLetterSpacing(
+	                    lines[i],
+	                    linePositionX + style.padding,
+	                    linePositionY + style.padding
+	                );
 	            }
 	        }
 
@@ -31671,8 +30220,6 @@ var PIXI = (function (exports) {
 	        // https://medium.com/@giltayar/iterating-over-emoji-characters-the-es6-way-f06e4589516
 	        // https://github.com/orling/grapheme-splitter
 	        var stringArray = Array.from ? Array.from(text) : text.split('');
-	        var previousWidth = this.context.measureText(text).width;
-	        var currentWidth = 0;
 
 	        for (var i = 0; i < stringArray.length; ++i)
 	        {
@@ -31686,9 +30233,7 @@ var PIXI = (function (exports) {
 	            {
 	                this.context.fillText(currentChar, currentPosition, y);
 	            }
-	            currentWidth = this.context.measureText(text.substring(i + 1)).width;
-	            currentPosition += previousWidth - currentWidth + letterSpacing;
-	            previousWidth = currentWidth;
+	            currentPosition += this.context.measureText(currentChar).width + letterSpacing;
 	        }
 	    };
 
@@ -31718,8 +30263,8 @@ var PIXI = (function (exports) {
 	        var padding = style.trim ? 0 : style.padding;
 	        var baseTexture = texture.baseTexture;
 
-	        texture.trim.width = texture._frame.width = Math.ceil(canvas.width / this._resolution);
-	        texture.trim.height = texture._frame.height = Math.ceil(canvas.height / this._resolution);
+	        texture.trim.width = texture._frame.width = canvas.width / this._resolution;
+	        texture.trim.height = texture._frame.height = canvas.height / this._resolution;
 	        texture.trim.x = -padding;
 	        texture.trim.y = -padding;
 
@@ -31737,10 +30282,9 @@ var PIXI = (function (exports) {
 	    /**
 	     * Renders the object using the WebGL renderer
 	     *
-	     * @private
 	     * @param {PIXI.Renderer} renderer - The renderer
 	     */
-	    Text.prototype._render = function _render (renderer)
+	    Text.prototype.render = function render (renderer)
 	    {
 	        if (this._autoResolution && this._resolution !== renderer.resolution)
 	        {
@@ -31750,7 +30294,26 @@ var PIXI = (function (exports) {
 
 	        this.updateText(true);
 
-	        Sprite.prototype._render.call(this, renderer);
+	        Sprite.prototype.render.call(this, renderer);
+	    };
+
+	    /**
+	     * Renders the object using the Canvas renderer
+	     *
+	     * @private
+	     * @param {PIXI.CanvasRenderer} renderer - The renderer
+	     */
+	    Text.prototype._renderCanvas = function _renderCanvas (renderer)
+	    {
+	        if (this._autoResolution && this._resolution !== renderer.resolution)
+	        {
+	            this._resolution = renderer.resolution;
+	            this.dirty = true;
+	        }
+
+	        this.updateText(true);
+
+	        Sprite.prototype._renderCanvas.call(this, renderer);
 	    };
 
 	    /**
@@ -31801,10 +30364,6 @@ var PIXI = (function (exports) {
 	        {
 	            return style.fill;
 	        }
-	        else if (style.fill.length === 1)
-	        {
-	            return style.fill[0];
-	        }
 
 	        // the gradient will be evenly spaced out according to how large the array is.
 	        // ['#FF0000', '#00FF00', '#0000FF'] would created stops at 0.25, 0.5 and 0.75
@@ -31813,8 +30372,8 @@ var PIXI = (function (exports) {
 	        var currentIteration;
 	        var stop;
 
-	        var width = Math.ceil(this.canvas.width / this._resolution);
-	        var height = Math.ceil(this.canvas.height / this._resolution);
+	        var width = this.canvas.width / this._resolution;
+	        var height = this.canvas.height / this._resolution;
 
 	        // make a copy of the style settings, so we can manipulate them later
 	        var fill = style.fill.slice();
@@ -31940,7 +30499,7 @@ var PIXI = (function (exports) {
 	    {
 	        this.updateText(true);
 
-	        var s = sign$1(this.scale.x) || 1;
+	        var s = sign(this.scale.x) || 1;
 
 	        this.scale.x = s * value / this._texture.orig.width;
 	        this._width = value;
@@ -31962,7 +30521,7 @@ var PIXI = (function (exports) {
 	    {
 	        this.updateText(true);
 
-	        var s = sign$1(this.scale.y) || 1;
+	        var s = sign(this.scale.y) || 1;
 
 	        this.scale.y = s * value / this._texture.orig.height;
 	        this._height = value;
@@ -32048,8 +30607,8 @@ var PIXI = (function (exports) {
 	}(Sprite));
 
 	/*!
-	 * @pixi/prepare - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/prepare - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/prepare is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -32115,7 +30674,7 @@ var PIXI = (function (exports) {
 	 *
 	 * @example
 	 * // Create a sprite
-	 * const sprite = PIXI.Sprite.from('something.png');
+	 * const sprite = new PIXI.Sprite.from('something.png');
 	 *
 	 * // Load object into GPU
 	 * app.renderer.plugins.prepare.upload(sprite, () => {
@@ -32637,7 +31196,7 @@ var PIXI = (function (exports) {
 	        // reuploads the texture without need for preparing it again
 	        if (!item._glTextures[renderer.CONTEXT_UID])
 	        {
-	            renderer.texture.bind(item);
+	            renderer.textureManager.updateTexture(item);
 	        }
 
 	        return true;
@@ -32739,8 +31298,8 @@ var PIXI = (function (exports) {
 	});
 
 	/*!
-	 * @pixi/app - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/app - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/app is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -32843,7 +31402,7 @@ var PIXI = (function (exports) {
 	 * @param {boolean} [stageOptions.baseTexture=false] - Only used for child Sprites if stageOptions.children is set
 	 *  to true. Should it destroy the base texture of the child sprite
 	 */
-	Application.prototype.destroy = function destroy (removeView, stageOptions)
+	Application.prototype.destroy = function destroy (removeView)
 	{
 	        var this$1 = this;
 
@@ -32856,7 +31415,7 @@ var PIXI = (function (exports) {
 	        plugin.destroy.call(this$1);
 	    });
 
-	    this.stage.destroy(stageOptions);
+	    this.stage.destroy();
 	    this.stage = null;
 
 	    this.renderer.destroy(removeView);
@@ -32962,37 +31521,6 @@ var PIXI = (function (exports) {
 	};
 
 	Application.registerPlugin(ResizePlugin);
-
-	'use strict';
-
-	var parseUri = function parseURI (str, opts) {
-	  opts = opts || {};
-
-	  var o = {
-	    key: ['source', 'protocol', 'authority', 'userInfo', 'user', 'password', 'host', 'port', 'relative', 'path', 'directory', 'file', 'query', 'anchor'],
-	    q: {
-	      name: 'queryKey',
-	      parser: /(?:^|&)([^&=]*)=?([^&]*)/g
-	    },
-	    parser: {
-	      strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,
-	      loose: /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/
-	    }
-	  };
-
-	  var m = o.parser[opts.strictMode ? 'strict' : 'loose'].exec(str);
-	  var uri = {};
-	  var i = 14;
-
-	  while (i--) { uri[o.key[i]] = m[i] || ''; }
-
-	  uri[o.q.name] = {};
-	  uri[o.key[12]].replace(o.q.parser, function ($0, $1, $2) {
-	    if ($1) { uri[o.q.name][$1] = $2; }
-	  });
-
-	  return uri
-	};
 
 	var miniSignals = createCommonjsModule(function (module, exports) {
 	'use strict';
@@ -33164,17 +31692,45 @@ var PIXI = (function (exports) {
 	module.exports = exports['default'];
 	});
 
-	var Signal = unwrapExports(miniSignals);
+	var miniSignals$1 = unwrapExports(miniSignals);
 
-	/*!
-	 * resource-loader - v3.0.1
-	 * https://github.com/pixijs/pixi-sound
-	 * Compiled Tue, 02 Jul 2019 14:06:18 UTC
-	 *
-	 * resource-loader is licensed under the MIT license.
-	 * http://www.opensource.org/licenses/mit-license
-	 */
+	'use strict';
 
+	var parseUri = function parseURI (str, opts) {
+	  opts = opts || {};
+
+	  var o = {
+	    key: ['source', 'protocol', 'authority', 'userInfo', 'user', 'password', 'host', 'port', 'relative', 'path', 'directory', 'file', 'query', 'anchor'],
+	    q: {
+	      name: 'queryKey',
+	      parser: /(?:^|&)([^&=]*)=?([^&]*)/g
+	    },
+	    parser: {
+	      strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,
+	      loose: /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/
+	    }
+	  };
+
+	  var m = o.parser[opts.strictMode ? 'strict' : 'loose'].exec(str);
+	  var uri = {};
+	  var i = 14;
+
+	  while (i--) { uri[o.key[i]] = m[i] || ''; }
+
+	  uri[o.q.name] = {};
+	  uri[o.key[12]].replace(o.q.parser, function ($0, $1, $2) {
+	    if ($1) { uri[o.q.name][$1] = $2; }
+	  });
+
+	  return uri
+	};
+
+	var async = createCommonjsModule(function (module, exports) {
+	'use strict';
+
+	exports.__esModule = true;
+	exports.eachSeries = eachSeries;
+	exports.queue = queue;
 	/**
 	 * Smaller version of the async library constructs.
 	 *
@@ -33188,43 +31744,40 @@ var PIXI = (function (exports) {
 	 * @function
 	 * @memberof async
 	 */
-	function _noop() {}
-	/* empty */
+	function _noop() {} /* empty */
 
 	/**
 	 * Iterates an array in series.
 	 *
 	 * @memberof async
-	 * @function eachSeries
 	 * @param {Array.<*>} array - Array to iterate.
 	 * @param {function} iterator - Function to call for each element.
 	 * @param {function} callback - Function to call when done, or on error.
 	 * @param {boolean} [deferNext=false] - Break synchronous each loop by calling next with a setTimeout of 1.
 	 */
-
-
 	function eachSeries(array, iterator, callback, deferNext) {
-	  var i = 0;
-	  var len = array.length;
+	    var i = 0;
+	    var len = array.length;
 
-	  (function next(err) {
-	    if (err || i === len) {
-	      if (callback) {
-	        callback(err);
-	      }
+	    (function next(err) {
+	        if (err || i === len) {
+	            if (callback) {
+	                callback(err);
+	            }
 
-	      return;
-	    }
+	            return;
+	        }
 
-	    if (deferNext) {
-	      setTimeout(function () {
-	        iterator(array[i++], next);
-	      }, 1);
-	    } else {
-	      iterator(array[i++], next);
-	    }
-	  })();
+	        if (deferNext) {
+	            setTimeout(function () {
+	                iterator(array[i++], next);
+	            }, 1);
+	        } else {
+	            iterator(array[i++], next);
+	        }
+	    })();
 	}
+
 	/**
 	 * Ensures a function is only called once.
 	 *
@@ -33233,230 +31786,206 @@ var PIXI = (function (exports) {
 	 * @param {function} fn - The function to wrap.
 	 * @return {function} The wrapping function.
 	 */
-
 	function onlyOnce(fn) {
-	  return function onceWrapper() {
-	    if (fn === null) {
-	      throw new Error('Callback was already called.');
-	    }
+	    return function onceWrapper() {
+	        if (fn === null) {
+	            throw new Error('Callback was already called.');
+	        }
 
-	    var callFn = fn;
-	    fn = null;
-	    callFn.apply(this, arguments);
-	  };
+	        var callFn = fn;
+
+	        fn = null;
+	        callFn.apply(this, arguments);
+	    };
 	}
+
 	/**
 	 * Async queue implementation,
 	 *
 	 * @memberof async
-	 * @function queue
 	 * @param {function} worker - The worker function to call for each task.
 	 * @param {number} concurrency - How many workers to run in parrallel.
 	 * @return {*} The async queue object.
 	 */
-
-
 	function queue(worker, concurrency) {
-	  if (concurrency == null) {
-	    // eslint-disable-line no-eq-null,eqeqeq
-	    concurrency = 1;
-	  } else if (concurrency === 0) {
-	    throw new Error('Concurrency must not be zero');
-	  }
-
-	  var workers = 0;
-	  var q = {
-	    _tasks: [],
-	    concurrency: concurrency,
-	    saturated: _noop,
-	    unsaturated: _noop,
-	    buffer: concurrency / 4,
-	    empty: _noop,
-	    drain: _noop,
-	    error: _noop,
-	    started: false,
-	    paused: false,
-	    push: function push(data, callback) {
-	      _insert(data, false, callback);
-	    },
-	    kill: function kill() {
-	      workers = 0;
-	      q.drain = _noop;
-	      q.started = false;
-	      q._tasks = [];
-	    },
-	    unshift: function unshift(data, callback) {
-	      _insert(data, true, callback);
-	    },
-	    process: function process() {
-	      while (!q.paused && workers < q.concurrency && q._tasks.length) {
-	        var task = q._tasks.shift();
-
-	        if (q._tasks.length === 0) {
-	          q.empty();
-	        }
-
-	        workers += 1;
-
-	        if (workers === q.concurrency) {
-	          q.saturated();
-	        }
-
-	        worker(task.data, onlyOnce(_next(task)));
-	      }
-	    },
-	    length: function length() {
-	      return q._tasks.length;
-	    },
-	    running: function running() {
-	      return workers;
-	    },
-	    idle: function idle() {
-	      return q._tasks.length + workers === 0;
-	    },
-	    pause: function pause() {
-	      if (q.paused === true) {
-	        return;
-	      }
-
-	      q.paused = true;
-	    },
-	    resume: function resume() {
-	      if (q.paused === false) {
-	        return;
-	      }
-
-	      q.paused = false; // Need to call q.process once per concurrent
-	      // worker to preserve full concurrency after pause
-
-	      for (var w = 1; w <= q.concurrency; w++) {
-	        q.process();
-	      }
-	    }
-	  };
-
-	  function _insert(data, insertAtFront, callback) {
-	    if (callback != null && typeof callback !== 'function') {
-	      // eslint-disable-line no-eq-null,eqeqeq
-	      throw new Error('task callback must be a function');
-	    }
-
-	    q.started = true;
-
-	    if (data == null && q.idle()) {
-	      // eslint-disable-line no-eq-null,eqeqeq
-	      // call drain immediately if there are no tasks
-	      setTimeout(function () {
-	        return q.drain();
-	      }, 1);
-	      return;
-	    }
-
-	    var item = {
-	      data: data,
-	      callback: typeof callback === 'function' ? callback : _noop
-	    };
-
-	    if (insertAtFront) {
-	      q._tasks.unshift(item);
-	    } else {
-	      q._tasks.push(item);
-	    }
-
-	    setTimeout(function () {
-	      return q.process();
-	    }, 1);
-	  }
-
-	  function _next(task) {
-	    return function next() {
-	      workers -= 1;
-	      task.callback.apply(task, arguments);
-
-	      if (arguments[0] != null) {
+	    if (concurrency == null) {
 	        // eslint-disable-line no-eq-null,eqeqeq
-	        q.error(arguments[0], task.data);
-	      }
+	        concurrency = 1;
+	    } else if (concurrency === 0) {
+	        throw new Error('Concurrency must not be zero');
+	    }
 
-	      if (workers <= q.concurrency - q.buffer) {
-	        q.unsaturated();
-	      }
+	    var workers = 0;
+	    var q = {
+	        _tasks: [],
+	        concurrency: concurrency,
+	        saturated: _noop,
+	        unsaturated: _noop,
+	        buffer: concurrency / 4,
+	        empty: _noop,
+	        drain: _noop,
+	        error: _noop,
+	        started: false,
+	        paused: false,
+	        push: function push(data, callback) {
+	            _insert(data, false, callback);
+	        },
+	        kill: function kill() {
+	            workers = 0;
+	            q.drain = _noop;
+	            q.started = false;
+	            q._tasks = [];
+	        },
+	        unshift: function unshift(data, callback) {
+	            _insert(data, true, callback);
+	        },
+	        process: function process() {
+	            while (!q.paused && workers < q.concurrency && q._tasks.length) {
+	                var task = q._tasks.shift();
 
-	      if (q.idle()) {
-	        q.drain();
-	      }
+	                if (q._tasks.length === 0) {
+	                    q.empty();
+	                }
 
-	      q.process();
+	                workers += 1;
+
+	                if (workers === q.concurrency) {
+	                    q.saturated();
+	                }
+
+	                worker(task.data, onlyOnce(_next(task)));
+	            }
+	        },
+	        length: function length() {
+	            return q._tasks.length;
+	        },
+	        running: function running() {
+	            return workers;
+	        },
+	        idle: function idle() {
+	            return q._tasks.length + workers === 0;
+	        },
+	        pause: function pause() {
+	            if (q.paused === true) {
+	                return;
+	            }
+
+	            q.paused = true;
+	        },
+	        resume: function resume() {
+	            if (q.paused === false) {
+	                return;
+	            }
+
+	            q.paused = false;
+
+	            // Need to call q.process once per concurrent
+	            // worker to preserve full concurrency after pause
+	            for (var w = 1; w <= q.concurrency; w++) {
+	                q.process();
+	            }
+	        }
 	    };
-	  }
 
-	  return q;
+	    function _insert(data, insertAtFront, callback) {
+	        if (callback != null && typeof callback !== 'function') {
+	            // eslint-disable-line no-eq-null,eqeqeq
+	            throw new Error('task callback must be a function');
+	        }
+
+	        q.started = true;
+
+	        if (data == null && q.idle()) {
+	            // eslint-disable-line no-eq-null,eqeqeq
+	            // call drain immediately if there are no tasks
+	            setTimeout(function () {
+	                return q.drain();
+	            }, 1);
+
+	            return;
+	        }
+
+	        var item = {
+	            data: data,
+	            callback: typeof callback === 'function' ? callback : _noop
+	        };
+
+	        if (insertAtFront) {
+	            q._tasks.unshift(item);
+	        } else {
+	            q._tasks.push(item);
+	        }
+
+	        setTimeout(function () {
+	            return q.process();
+	        }, 1);
+	    }
+
+	    function _next(task) {
+	        return function next() {
+	            workers -= 1;
+
+	            task.callback.apply(task, arguments);
+
+	            if (arguments[0] != null) {
+	                // eslint-disable-line no-eq-null,eqeqeq
+	                q.error(arguments[0], task.data);
+	            }
+
+	            if (workers <= q.concurrency - q.buffer) {
+	                q.unsaturated();
+	            }
+
+	            if (q.idle()) {
+	                q.drain();
+	            }
+
+	            q.process();
+	        };
+	    }
+
+	    return q;
 	}
 
-	var async = ({
-	    eachSeries: eachSeries,
-	    queue: queue
 	});
 
-	// a simple in-memory cache for resources
-	var cache = {};
-	/**
-	 * A simple in-memory cache for resource.
-	 *
-	 * @memberof middleware
-	 * @function caching
-	 * @example
-	 * import { Loader, middleware } from 'resource-loader';
-	 * const loader = new Loader();
-	 * loader.use(middleware.caching);
-	 * @param {Resource} resource - Current Resource
-	 * @param {function} next - Callback when complete
-	 */
+	var async$1 = unwrapExports(async);
+	var async_1 = async.eachSeries;
+	var async_2 = async.queue;
 
-	function caching(resource, next) {
-	  var _this = this;
+	var Resource_1 = createCommonjsModule(function (module, exports) {
+	'use strict';
 
-	  // if cached, then set data and complete the resource
-	  if (cache[resource.url]) {
-	    resource.data = cache[resource.url];
-	    resource.complete(); // marks resource load complete and stops processing before middlewares
-	  } // if not cached, wait for complete and store it in the cache.
-	  else {
-	      resource.onComplete.once(function () {
-	        return cache[_this.url] = _this.data;
-	      });
-	    }
+	exports.__esModule = true;
+	exports.Resource = undefined;
 
-	  next();
-	}
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) { descriptor.writable = true; } Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) { defineProperties(Constructor.prototype, protoProps); } if (staticProps) { defineProperties(Constructor, staticProps); } return Constructor; }; }();
 
-	function _defineProperties(target, props) {
-	  for (var i = 0; i < props.length; i++) {
-	    var descriptor = props[i];
-	    descriptor.enumerable = descriptor.enumerable || false;
-	    descriptor.configurable = true;
-	    if ("value" in descriptor) { descriptor.writable = true; }
-	    Object.defineProperty(target, descriptor.key, descriptor);
-	  }
-	}
 
-	function _createClass(Constructor, protoProps, staticProps) {
-	  if (protoProps) { _defineProperties(Constructor.prototype, protoProps); }
-	  if (staticProps) { _defineProperties(Constructor, staticProps); }
-	  return Constructor;
-	}
 
+	var _parseUri2 = _interopRequireDefault(parseUri);
+
+
+
+	var _miniSignals2 = _interopRequireDefault(miniSignals);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	// tests if CORS is supported in XHR, if not we need to use XDR
 	var useXdr = !!(window.XDomainRequest && !('withCredentials' in new XMLHttpRequest()));
-	var tempAnchor$1 = null; // some status constants
+	var tempAnchor = null;
 
+	// some status constants
 	var STATUS_NONE = 0;
 	var STATUS_OK = 200;
 	var STATUS_EMPTY = 204;
 	var STATUS_IE_BUG_EMPTY = 1223;
-	var STATUS_TYPE_OK = 2; // noop
+	var STATUS_TYPE_OK = 2;
 
-	function _noop$1() {}
-	/* empty */
+	// noop
+	function _noop() {} /* empty */
 
 	/**
 	 * Manages the state and loading of a resource and all child resources.
@@ -33464,996 +31993,1041 @@ var PIXI = (function (exports) {
 	 * @class
 	 */
 
-
-	var Resource$1 =
-	/*#__PURE__*/
-	function () {
-	  /**
-	   * Sets the load type to be used for a specific extension.
-	   *
-	   * @static
-	   * @param {string} extname - The extension to set the type for, e.g. "png" or "fnt"
-	   * @param {Resource.LOAD_TYPE} loadType - The load type to set it to.
-	   */
-	  Resource.setExtensionLoadType = function setExtensionLoadType(extname, loadType) {
-	    setExtMap(Resource._loadTypeMap, extname, loadType);
-	  }
-	  /**
-	   * Sets the load type to be used for a specific extension.
-	   *
-	   * @static
-	   * @param {string} extname - The extension to set the type for, e.g. "png" or "fnt"
-	   * @param {Resource.XHR_RESPONSE_TYPE} xhrType - The xhr type to set it to.
-	   */
-	  ;
-
-	  Resource.setExtensionXhrType = function setExtensionXhrType(extname, xhrType) {
-	    setExtMap(Resource._xhrTypeMap, extname, xhrType);
-	  }
-	  /**
-	   * @param {string} name - The name of the resource to load.
-	   * @param {string|string[]} url - The url for this resource, for audio/video loads you can pass
-	   *      an array of sources.
-	   * @param {object} [options] - The options for the load.
-	   * @param {string|boolean} [options.crossOrigin] - Is this request cross-origin? Default is to
-	   *      determine automatically.
-	   * @param {number} [options.timeout=0] - A timeout in milliseconds for the load. If the load takes
-	   *      longer than this time it is cancelled and the load is considered a failure. If this value is
-	   *      set to `0` then there is no explicit timeout.
-	   * @param {Resource.LOAD_TYPE} [options.loadType=Resource.LOAD_TYPE.XHR] - How should this resource
-	   *      be loaded?
-	   * @param {Resource.XHR_RESPONSE_TYPE} [options.xhrType=Resource.XHR_RESPONSE_TYPE.DEFAULT] - How
-	   *      should the data being loaded be interpreted when using XHR?
-	   * @param {Resource.IMetadata} [options.metadata] - Extra configuration for middleware and the Resource object.
-	   */
-	  ;
-
-	  function Resource(name, url, options) {
-	    if (typeof name !== 'string' || typeof url !== 'string') {
-	      throw new Error('Both name and url are required for constructing a resource.');
-	    }
-
-	    options = options || {};
+	var Resource = exports.Resource = function () {
 	    /**
-	     * The state flags of this resource.
+	     * Sets the load type to be used for a specific extension.
 	     *
-	     * @private
-	     * @member {number}
+	     * @static
+	     * @param {string} extname - The extension to set the type for, e.g. "png" or "fnt"
+	     * @param {Resource.LOAD_TYPE} loadType - The load type to set it to.
 	     */
+	    Resource.setExtensionLoadType = function setExtensionLoadType(extname, loadType) {
+	        setExtMap(Resource._loadTypeMap, extname, loadType);
+	    };
 
-	    this._flags = 0; // set data url flag, needs to be set early for some _determineX checks to work.
-
-	    this._setFlag(Resource.STATUS_FLAGS.DATA_URL, url.indexOf('data:') === 0);
 	    /**
-	     * The name of this resource.
+	     * Sets the load type to be used for a specific extension.
 	     *
-	     * @readonly
-	     * @member {string}
+	     * @static
+	     * @param {string} extname - The extension to set the type for, e.g. "png" or "fnt"
+	     * @param {Resource.XHR_RESPONSE_TYPE} xhrType - The xhr type to set it to.
 	     */
 
 
-	    this.name = name;
+	    Resource.setExtensionXhrType = function setExtensionXhrType(extname, xhrType) {
+	        setExtMap(Resource._xhrTypeMap, extname, xhrType);
+	    };
+
 	    /**
-	     * The url used to load this resource.
-	     *
-	     * @readonly
-	     * @member {string}
+	     * @param {string} name - The name of the resource to load.
+	     * @param {string|string[]} url - The url for this resource, for audio/video loads you can pass
+	     *      an array of sources.
+	     * @param {object} [options] - The options for the load.
+	     * @param {string|boolean} [options.crossOrigin] - Is this request cross-origin? Default is to
+	     *      determine automatically.
+	     * @param {number} [options.timeout=0] - A timeout in milliseconds for the load. If the load takes
+	     *      longer than this time it is cancelled and the load is considered a failure. If this value is
+	     *      set to `0` then there is no explicit timeout.
+	     * @param {Resource.LOAD_TYPE} [options.loadType=Resource.LOAD_TYPE.XHR] - How should this resource
+	     *      be loaded?
+	     * @param {Resource.XHR_RESPONSE_TYPE} [options.xhrType=Resource.XHR_RESPONSE_TYPE.DEFAULT] - How
+	     *      should the data being loaded be interpreted when using XHR?
+	     * @param {Resource.IMetadata} [options.metadata] - Extra configuration for middleware and the Resource object.
 	     */
 
-	    this.url = url;
-	    /**
-	     * The extension used to load this resource.
-	     *
-	     * @readonly
-	     * @member {string}
-	     */
 
-	    this.extension = this._getExtension();
-	    /**
-	     * The data that was loaded by the resource.
-	     *
-	     * @member {any}
-	     */
+	    function Resource(name, url, options) {
+	        _classCallCheck(this, Resource);
 
-	    this.data = null;
-	    /**
-	     * Is this request cross-origin? If unset, determined automatically.
-	     *
-	     * @member {string}
-	     */
-
-	    this.crossOrigin = options.crossOrigin === true ? 'anonymous' : options.crossOrigin;
-	    /**
-	     * A timeout in milliseconds for the load. If the load takes longer than this time
-	     * it is cancelled and the load is considered a failure. If this value is set to `0`
-	     * then there is no explicit timeout.
-	     *
-	     * @member {number}
-	     */
-
-	    this.timeout = options.timeout || 0;
-	    /**
-	     * The method of loading to use for this resource.
-	     *
-	     * @member {Resource.LOAD_TYPE}
-	     */
-
-	    this.loadType = options.loadType || this._determineLoadType();
-	    /**
-	     * The type used to load the resource via XHR. If unset, determined automatically.
-	     *
-	     * @member {string}
-	     */
-
-	    this.xhrType = options.xhrType;
-	    /**
-	     * Extra info for middleware, and controlling specifics about how the resource loads.
-	     *
-	     * Note that if you pass in a `loadElement`, the Resource class takes ownership of it.
-	     * Meaning it will modify it as it sees fit.
-	     *
-	     * @member {Resource.IMetadata}
-	     */
-
-	    this.metadata = options.metadata || {};
-	    /**
-	     * The error that occurred while loading (if any).
-	     *
-	     * @readonly
-	     * @member {Error}
-	     */
-
-	    this.error = null;
-	    /**
-	     * The XHR object that was used to load this resource. This is only set
-	     * when `loadType` is `Resource.LOAD_TYPE.XHR`.
-	     *
-	     * @readonly
-	     * @member {XMLHttpRequest}
-	     */
-
-	    this.xhr = null;
-	    /**
-	     * The child resources this resource owns.
-	     *
-	     * @readonly
-	     * @member {Resource[]}
-	     */
-
-	    this.children = [];
-	    /**
-	     * The resource type.
-	     *
-	     * @readonly
-	     * @member {Resource.TYPE}
-	     */
-
-	    this.type = Resource.TYPE.UNKNOWN;
-	    /**
-	     * The progress chunk owned by this resource.
-	     *
-	     * @readonly
-	     * @member {number}
-	     */
-
-	    this.progressChunk = 0;
-	    /**
-	     * The `dequeue` method that will be used a storage place for the async queue dequeue method
-	     * used privately by the loader.
-	     *
-	     * @private
-	     * @member {function}
-	     */
-
-	    this._dequeue = _noop$1;
-	    /**
-	     * Used a storage place for the on load binding used privately by the loader.
-	     *
-	     * @private
-	     * @member {function}
-	     */
-
-	    this._onLoadBinding = null;
-	    /**
-	     * The timer for element loads to check if they timeout.
-	     *
-	     * @private
-	     * @member {number}
-	     */
-
-	    this._elementTimer = 0;
-	    /**
-	     * The `complete` function bound to this resource's context.
-	     *
-	     * @private
-	     * @member {function}
-	     */
-
-	    this._boundComplete = this.complete.bind(this);
-	    /**
-	     * The `_onError` function bound to this resource's context.
-	     *
-	     * @private
-	     * @member {function}
-	     */
-
-	    this._boundOnError = this._onError.bind(this);
-	    /**
-	     * The `_onProgress` function bound to this resource's context.
-	     *
-	     * @private
-	     * @member {function}
-	     */
-
-	    this._boundOnProgress = this._onProgress.bind(this);
-	    /**
-	     * The `_onTimeout` function bound to this resource's context.
-	     *
-	     * @private
-	     * @member {function}
-	     */
-
-	    this._boundOnTimeout = this._onTimeout.bind(this); // xhr callbacks
-
-	    this._boundXhrOnError = this._xhrOnError.bind(this);
-	    this._boundXhrOnTimeout = this._xhrOnTimeout.bind(this);
-	    this._boundXhrOnAbort = this._xhrOnAbort.bind(this);
-	    this._boundXhrOnLoad = this._xhrOnLoad.bind(this);
-	    /**
-	     * Dispatched when the resource beings to load.
-	     *
-	     * The callback looks like {@link Resource.OnStartSignal}.
-	     *
-	     * @member {Signal<Resource.OnStartSignal>}
-	     */
-
-	    this.onStart = new Signal();
-	    /**
-	     * Dispatched each time progress of this resource load updates.
-	     * Not all resources types and loader systems can support this event
-	     * so sometimes it may not be available. If the resource
-	     * is being loaded on a modern browser, using XHR, and the remote server
-	     * properly sets Content-Length headers, then this will be available.
-	     *
-	     * The callback looks like {@link Resource.OnProgressSignal}.
-	     *
-	     * @member {Signal<Resource.OnProgressSignal>}
-	     */
-
-	    this.onProgress = new Signal();
-	    /**
-	     * Dispatched once this resource has loaded, if there was an error it will
-	     * be in the `error` property.
-	     *
-	     * The callback looks like {@link Resource.OnCompleteSignal}.
-	     *
-	     * @member {Signal<Resource.OnCompleteSignal>}
-	     */
-
-	    this.onComplete = new Signal();
-	    /**
-	     * Dispatched after this resource has had all the *after* middleware run on it.
-	     *
-	     * The callback looks like {@link Resource.OnCompleteSignal}.
-	     *
-	     * @member {Signal<Resource.OnCompleteSignal>}
-	     */
-
-	    this.onAfterMiddleware = new Signal();
-	  }
-	  /**
-	   * When the resource starts to load.
-	   *
-	   * @memberof Resource
-	   * @callback OnStartSignal
-	   * @param {Resource} resource - The resource that the event happened on.
-	   */
-
-	  /**
-	   * When the resource reports loading progress.
-	   *
-	   * @memberof Resource
-	   * @callback OnProgressSignal
-	   * @param {Resource} resource - The resource that the event happened on.
-	   * @param {number} percentage - The progress of the load in the range [0, 1].
-	   */
-
-	  /**
-	   * When the resource finishes loading.
-	   *
-	   * @memberof Resource
-	   * @callback OnCompleteSignal
-	   * @param {Resource} resource - The resource that the event happened on.
-	   */
-
-	  /**
-	   * @memberof Resource
-	   * @typedef {object} IMetadata
-	   * @property {HTMLImageElement|HTMLAudioElement|HTMLVideoElement} [loadElement=null] - The
-	   *      element to use for loading, instead of creating one.
-	   * @property {boolean} [skipSource=false] - Skips adding source(s) to the load element. This
-	   *      is useful if you want to pass in a `loadElement` that you already added load sources to.
-	   * @property {string|string[]} [mimeType] - The mime type to use for the source element
-	   *      of a video/audio elment. If the urls are an array, you can pass this as an array as well
-	   *      where each index is the mime type to use for the corresponding url index.
-	   */
-
-	  /**
-	   * Stores whether or not this url is a data url.
-	   *
-	   * @readonly
-	   * @member {boolean}
-	   */
-
-
-	  var _proto = Resource.prototype;
-
-	  /**
-	   * Marks the resource as complete.
-	   *
-	   */
-	  _proto.complete = function complete() {
-	    this._clearEvents();
-
-	    this._finish();
-	  }
-	  /**
-	   * Aborts the loading of this resource, with an optional message.
-	   *
-	   * @param {string} message - The message to use for the error
-	   */
-	  ;
-
-	  _proto.abort = function abort(message) {
-	    // abort can be called multiple times, ignore subsequent calls.
-	    if (this.error) {
-	      return;
-	    } // store error
-
-
-	    this.error = new Error(message); // clear events before calling aborts
-
-	    this._clearEvents(); // abort the actual loading
-
-
-	    if (this.xhr) {
-	      this.xhr.abort();
-	    } else if (this.xdr) {
-	      this.xdr.abort();
-	    } else if (this.data) {
-	      // single source
-	      if (this.data.src) {
-	        this.data.src = Resource.EMPTY_GIF;
-	      } // multi-source
-	      else {
-	          while (this.data.firstChild) {
-	            this.data.removeChild(this.data.firstChild);
-	          }
-	        }
-	    } // done now.
-
-
-	    this._finish();
-	  }
-	  /**
-	   * Kicks off loading of this resource. This method is asynchronous.
-	   *
-	   * @param {Resource.OnCompleteSignal} [cb] - Optional callback to call once the resource is loaded.
-	   */
-	  ;
-
-	  _proto.load = function load(cb) {
-	    var _this = this;
-
-	    if (this.isLoading) {
-	      return;
-	    }
-
-	    if (this.isComplete) {
-	      if (cb) {
-	        setTimeout(function () {
-	          return cb(_this);
-	        }, 1);
-	      }
-
-	      return;
-	    } else if (cb) {
-	      this.onComplete.once(cb);
-	    }
-
-	    this._setFlag(Resource.STATUS_FLAGS.LOADING, true);
-
-	    this.onStart.dispatch(this); // if unset, determine the value
-
-	    if (this.crossOrigin === false || typeof this.crossOrigin !== 'string') {
-	      this.crossOrigin = this._determineCrossOrigin(this.url);
-	    }
-
-	    switch (this.loadType) {
-	      case Resource.LOAD_TYPE.IMAGE:
-	        this.type = Resource.TYPE.IMAGE;
-
-	        this._loadElement('image');
-
-	        break;
-
-	      case Resource.LOAD_TYPE.AUDIO:
-	        this.type = Resource.TYPE.AUDIO;
-
-	        this._loadSourceElement('audio');
-
-	        break;
-
-	      case Resource.LOAD_TYPE.VIDEO:
-	        this.type = Resource.TYPE.VIDEO;
-
-	        this._loadSourceElement('video');
-
-	        break;
-
-	      case Resource.LOAD_TYPE.XHR:
-	      /* falls through */
-
-	      default:
-	        if (useXdr && this.crossOrigin) {
-	          this._loadXdr();
-	        } else {
-	          this._loadXhr();
+	        if (typeof name !== 'string' || typeof url !== 'string') {
+	            throw new Error('Both name and url are required for constructing a resource.');
 	        }
 
-	        break;
-	    }
-	  }
-	  /**
-	   * Checks if the flag is set.
-	   *
-	   * @private
-	   * @param {number} flag - The flag to check.
-	   * @return {boolean} True if the flag is set.
-	   */
-	  ;
+	        options = options || {};
 
-	  _proto._hasFlag = function _hasFlag(flag) {
-	    return (this._flags & flag) !== 0;
-	  }
-	  /**
-	   * (Un)Sets the flag.
-	   *
-	   * @private
-	   * @param {number} flag - The flag to (un)set.
-	   * @param {boolean} value - Whether to set or (un)set the flag.
-	   */
-	  ;
+	        /**
+	         * The state flags of this resource.
+	         *
+	         * @private
+	         * @member {number}
+	         */
+	        this._flags = 0;
 
-	  _proto._setFlag = function _setFlag(flag, value) {
-	    this._flags = value ? this._flags | flag : this._flags & ~flag;
-	  }
-	  /**
-	   * Clears all the events from the underlying loading source.
-	   *
-	   * @private
-	   */
-	  ;
+	        // set data url flag, needs to be set early for some _determineX checks to work.
+	        this._setFlag(Resource.STATUS_FLAGS.DATA_URL, url.indexOf('data:') === 0);
 
-	  _proto._clearEvents = function _clearEvents() {
-	    clearTimeout(this._elementTimer);
+	        /**
+	         * The name of this resource.
+	         *
+	         * @readonly
+	         * @member {string}
+	         */
+	        this.name = name;
 
-	    if (this.data && this.data.removeEventListener) {
-	      this.data.removeEventListener('error', this._boundOnError, false);
-	      this.data.removeEventListener('load', this._boundComplete, false);
-	      this.data.removeEventListener('progress', this._boundOnProgress, false);
-	      this.data.removeEventListener('canplaythrough', this._boundComplete, false);
-	    }
+	        /**
+	         * The url used to load this resource.
+	         *
+	         * @readonly
+	         * @member {string}
+	         */
+	        this.url = url;
 
-	    if (this.xhr) {
-	      if (this.xhr.removeEventListener) {
-	        this.xhr.removeEventListener('error', this._boundXhrOnError, false);
-	        this.xhr.removeEventListener('timeout', this._boundXhrOnTimeout, false);
-	        this.xhr.removeEventListener('abort', this._boundXhrOnAbort, false);
-	        this.xhr.removeEventListener('progress', this._boundOnProgress, false);
-	        this.xhr.removeEventListener('load', this._boundXhrOnLoad, false);
-	      } else {
-	        this.xhr.onerror = null;
-	        this.xhr.ontimeout = null;
-	        this.xhr.onprogress = null;
-	        this.xhr.onload = null;
-	      }
-	    }
-	  }
-	  /**
-	   * Finalizes the load.
-	   *
-	   * @private
-	   */
-	  ;
+	        /**
+	         * The extension used to load this resource.
+	         *
+	         * @readonly
+	         * @member {string}
+	         */
+	        this.extension = this._getExtension();
 
-	  _proto._finish = function _finish() {
-	    if (this.isComplete) {
-	      throw new Error('Complete called again for an already completed resource.');
-	    }
+	        /**
+	         * The data that was loaded by the resource.
+	         *
+	         * @member {any}
+	         */
+	        this.data = null;
 
-	    this._setFlag(Resource.STATUS_FLAGS.COMPLETE, true);
+	        /**
+	         * Is this request cross-origin? If unset, determined automatically.
+	         *
+	         * @member {string}
+	         */
+	        this.crossOrigin = options.crossOrigin === true ? 'anonymous' : options.crossOrigin;
 
-	    this._setFlag(Resource.STATUS_FLAGS.LOADING, false);
+	        /**
+	         * A timeout in milliseconds for the load. If the load takes longer than this time
+	         * it is cancelled and the load is considered a failure. If this value is set to `0`
+	         * then there is no explicit timeout.
+	         *
+	         * @member {number}
+	         */
+	        this.timeout = options.timeout || 0;
 
-	    this.onComplete.dispatch(this);
-	  }
-	  /**
-	   * Loads this resources using an element that has a single source,
-	   * like an HTMLImageElement.
-	   *
-	   * @private
-	   * @param {string} type - The type of element to use.
-	   */
-	  ;
+	        /**
+	         * The method of loading to use for this resource.
+	         *
+	         * @member {Resource.LOAD_TYPE}
+	         */
+	        this.loadType = options.loadType || this._determineLoadType();
 
-	  _proto._loadElement = function _loadElement(type) {
-	    if (this.metadata.loadElement) {
-	      this.data = this.metadata.loadElement;
-	    } else if (type === 'image' && typeof window.Image !== 'undefined') {
-	      this.data = new Image();
-	    } else {
-	      this.data = document.createElement(type);
-	    }
+	        /**
+	         * The type used to load the resource via XHR. If unset, determined automatically.
+	         *
+	         * @member {string}
+	         */
+	        this.xhrType = options.xhrType;
 
-	    if (this.crossOrigin) {
-	      this.data.crossOrigin = this.crossOrigin;
-	    }
+	        /**
+	         * Extra info for middleware, and controlling specifics about how the resource loads.
+	         *
+	         * Note that if you pass in a `loadElement`, the Resource class takes ownership of it.
+	         * Meaning it will modify it as it sees fit.
+	         *
+	         * @member {Resource.IMetadata}
+	         */
+	        this.metadata = options.metadata || {};
 
-	    if (!this.metadata.skipSource) {
-	      this.data.src = this.url;
-	    }
+	        /**
+	         * The error that occurred while loading (if any).
+	         *
+	         * @readonly
+	         * @member {Error}
+	         */
+	        this.error = null;
 
-	    this.data.addEventListener('error', this._boundOnError, false);
-	    this.data.addEventListener('load', this._boundComplete, false);
-	    this.data.addEventListener('progress', this._boundOnProgress, false);
+	        /**
+	         * The XHR object that was used to load this resource. This is only set
+	         * when `loadType` is `Resource.LOAD_TYPE.XHR`.
+	         *
+	         * @readonly
+	         * @member {XMLHttpRequest}
+	         */
+	        this.xhr = null;
 
-	    if (this.timeout) {
-	      this._elementTimer = setTimeout(this._boundOnTimeout, this.timeout);
-	    }
-	  }
-	  /**
-	   * Loads this resources using an element that has multiple sources,
-	   * like an HTMLAudioElement or HTMLVideoElement.
-	   *
-	   * @private
-	   * @param {string} type - The type of element to use.
-	   */
-	  ;
+	        /**
+	         * The child resources this resource owns.
+	         *
+	         * @readonly
+	         * @member {Resource[]}
+	         */
+	        this.children = [];
 
-	  _proto._loadSourceElement = function _loadSourceElement(type) {
-	    if (this.metadata.loadElement) {
-	      this.data = this.metadata.loadElement;
-	    } else if (type === 'audio' && typeof window.Audio !== 'undefined') {
-	      this.data = new Audio();
-	    } else {
-	      this.data = document.createElement(type);
-	    }
+	        /**
+	         * The resource type.
+	         *
+	         * @readonly
+	         * @member {Resource.TYPE}
+	         */
+	        this.type = Resource.TYPE.UNKNOWN;
 
-	    if (this.data === null) {
-	      this.abort("Unsupported element: " + type);
-	      return;
-	    }
+	        /**
+	         * The progress chunk owned by this resource.
+	         *
+	         * @readonly
+	         * @member {number}
+	         */
+	        this.progressChunk = 0;
 
-	    if (this.crossOrigin) {
-	      this.data.crossOrigin = this.crossOrigin;
-	    }
+	        /**
+	         * The `dequeue` method that will be used a storage place for the async queue dequeue method
+	         * used privately by the loader.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._dequeue = _noop;
 
-	    if (!this.metadata.skipSource) {
-	      // support for CocoonJS Canvas+ runtime, lacks document.createElement('source')
-	      if (navigator.isCocoonJS) {
-	        this.data.src = Array.isArray(this.url) ? this.url[0] : this.url;
-	      } else if (Array.isArray(this.url)) {
-	        var mimeTypes = this.metadata.mimeType;
+	        /**
+	         * Used a storage place for the on load binding used privately by the loader.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._onLoadBinding = null;
 
-	        for (var i = 0; i < this.url.length; ++i) {
-	          this.data.appendChild(this._createSource(type, this.url[i], Array.isArray(mimeTypes) ? mimeTypes[i] : mimeTypes));
-	        }
-	      } else {
-	        var _mimeTypes = this.metadata.mimeType;
-	        this.data.appendChild(this._createSource(type, this.url, Array.isArray(_mimeTypes) ? _mimeTypes[0] : _mimeTypes));
-	      }
-	    }
+	        /**
+	         * The timer for element loads to check if they timeout.
+	         *
+	         * @private
+	         * @member {number}
+	         */
+	        this._elementTimer = 0;
 
-	    this.data.addEventListener('error', this._boundOnError, false);
-	    this.data.addEventListener('load', this._boundComplete, false);
-	    this.data.addEventListener('progress', this._boundOnProgress, false);
-	    this.data.addEventListener('canplaythrough', this._boundComplete, false);
-	    this.data.load();
+	        /**
+	         * The `complete` function bound to this resource's context.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._boundComplete = this.complete.bind(this);
 
-	    if (this.timeout) {
-	      this._elementTimer = setTimeout(this._boundOnTimeout, this.timeout);
-	    }
-	  }
-	  /**
-	   * Loads this resources using an XMLHttpRequest.
-	   *
-	   * @private
-	   */
-	  ;
+	        /**
+	         * The `_onError` function bound to this resource's context.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._boundOnError = this._onError.bind(this);
 
-	  _proto._loadXhr = function _loadXhr() {
-	    // if unset, determine the value
-	    if (typeof this.xhrType !== 'string') {
-	      this.xhrType = this._determineXhrType();
-	    }
+	        /**
+	         * The `_onProgress` function bound to this resource's context.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._boundOnProgress = this._onProgress.bind(this);
 
-	    var xhr = this.xhr = new XMLHttpRequest(); // set the request type and url
+	        /**
+	         * The `_onTimeout` function bound to this resource's context.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._boundOnTimeout = this._onTimeout.bind(this);
 
-	    xhr.open('GET', this.url, true);
-	    xhr.timeout = this.timeout; // load json as text and parse it ourselves. We do this because some browsers
-	    // *cough* safari *cough* can't deal with it.
+	        // xhr callbacks
+	        this._boundXhrOnError = this._xhrOnError.bind(this);
+	        this._boundXhrOnTimeout = this._xhrOnTimeout.bind(this);
+	        this._boundXhrOnAbort = this._xhrOnAbort.bind(this);
+	        this._boundXhrOnLoad = this._xhrOnLoad.bind(this);
 
-	    if (this.xhrType === Resource.XHR_RESPONSE_TYPE.JSON || this.xhrType === Resource.XHR_RESPONSE_TYPE.DOCUMENT) {
-	      xhr.responseType = Resource.XHR_RESPONSE_TYPE.TEXT;
-	    } else {
-	      xhr.responseType = this.xhrType;
-	    }
+	        /**
+	         * Dispatched when the resource beings to load.
+	         *
+	         * The callback looks like {@link Resource.OnStartSignal}.
+	         *
+	         * @member {Signal<Resource.OnStartSignal>}
+	         */
+	        this.onStart = new _miniSignals2.default();
 
-	    xhr.addEventListener('error', this._boundXhrOnError, false);
-	    xhr.addEventListener('timeout', this._boundXhrOnTimeout, false);
-	    xhr.addEventListener('abort', this._boundXhrOnAbort, false);
-	    xhr.addEventListener('progress', this._boundOnProgress, false);
-	    xhr.addEventListener('load', this._boundXhrOnLoad, false);
-	    xhr.send();
-	  }
-	  /**
-	   * Loads this resources using an XDomainRequest. This is here because we need to support IE9 (gross).
-	   *
-	   * @private
-	   */
-	  ;
+	        /**
+	         * Dispatched each time progress of this resource load updates.
+	         * Not all resources types and loader systems can support this event
+	         * so sometimes it may not be available. If the resource
+	         * is being loaded on a modern browser, using XHR, and the remote server
+	         * properly sets Content-Length headers, then this will be available.
+	         *
+	         * The callback looks like {@link Resource.OnProgressSignal}.
+	         *
+	         * @member {Signal<Resource.OnProgressSignal>}
+	         */
+	        this.onProgress = new _miniSignals2.default();
 
-	  _proto._loadXdr = function _loadXdr() {
-	    // if unset, determine the value
-	    if (typeof this.xhrType !== 'string') {
-	      this.xhrType = this._determineXhrType();
-	    }
+	        /**
+	         * Dispatched once this resource has loaded, if there was an error it will
+	         * be in the `error` property.
+	         *
+	         * The callback looks like {@link Resource.OnCompleteSignal}.
+	         *
+	         * @member {Signal<Resource.OnCompleteSignal>}
+	         */
+	        this.onComplete = new _miniSignals2.default();
 
-	    var xdr = this.xhr = new XDomainRequest(); // eslint-disable-line no-undef
-	    // XDomainRequest has a few quirks. Occasionally it will abort requests
-	    // A way to avoid this is to make sure ALL callbacks are set even if not used
-	    // More info here: http://stackoverflow.com/questions/15786966/xdomainrequest-aborts-post-on-ie-9
-
-	    xdr.timeout = this.timeout || 5000; // XDR needs a timeout value or it breaks in IE9
-
-	    xdr.onerror = this._boundXhrOnError;
-	    xdr.ontimeout = this._boundXhrOnTimeout;
-	    xdr.onprogress = this._boundOnProgress;
-	    xdr.onload = this._boundXhrOnLoad;
-	    xdr.open('GET', this.url, true); // Note: The xdr.send() call is wrapped in a timeout to prevent an
-	    // issue with the interface where some requests are lost if multiple
-	    // XDomainRequests are being sent at the same time.
-	    // Some info here: https://github.com/photonstorm/phaser/issues/1248
-
-	    setTimeout(function () {
-	      return xdr.send();
-	    }, 1);
-	  }
-	  /**
-	   * Creates a source used in loading via an element.
-	   *
-	   * @private
-	   * @param {string} type - The element type (video or audio).
-	   * @param {string} url - The source URL to load from.
-	   * @param {string} [mime] - The mime type of the video
-	   * @return {HTMLSourceElement} The source element.
-	   */
-	  ;
-
-	  _proto._createSource = function _createSource(type, url, mime) {
-	    if (!mime) {
-	      mime = type + "/" + this._getExtension(url);
+	        /**
+	         * Dispatched after this resource has had all the *after* middleware run on it.
+	         *
+	         * The callback looks like {@link Resource.OnCompleteSignal}.
+	         *
+	         * @member {Signal<Resource.OnCompleteSignal>}
+	         */
+	        this.onAfterMiddleware = new _miniSignals2.default();
 	    }
 
-	    var source = document.createElement('source');
-	    source.src = url;
-	    source.type = mime;
-	    return source;
-	  }
-	  /**
-	   * Called if a load errors out.
-	   *
-	   * @param {Event} event - The error event from the element that emits it.
-	   * @private
-	   */
-	  ;
+	    /**
+	     * When the resource starts to load.
+	     *
+	     * @memberof Resource
+	     * @callback OnStartSignal
+	     * @param {Resource} resource - The resource that the event happened on.
+	     */
 
-	  _proto._onError = function _onError(event) {
-	    this.abort("Failed to load element using: " + event.target.nodeName);
-	  }
-	  /**
-	   * Called if a load progress event fires for an element or xhr/xdr.
-	   *
-	   * @private
-	   * @param {XMLHttpRequestProgressEvent|Event} event - Progress event.
-	   */
-	  ;
+	    /**
+	     * When the resource reports loading progress.
+	     *
+	     * @memberof Resource
+	     * @callback OnProgressSignal
+	     * @param {Resource} resource - The resource that the event happened on.
+	     * @param {number} percentage - The progress of the load in the range [0, 1].
+	     */
 
-	  _proto._onProgress = function _onProgress(event) {
-	    if (event && event.lengthComputable) {
-	      this.onProgress.dispatch(this, event.loaded / event.total);
-	    }
-	  }
-	  /**
-	   * Called if a timeout event fires for an element.
-	   *
-	   * @private
-	   */
-	  ;
+	    /**
+	     * When the resource finishes loading.
+	     *
+	     * @memberof Resource
+	     * @callback OnCompleteSignal
+	     * @param {Resource} resource - The resource that the event happened on.
+	     */
 
-	  _proto._onTimeout = function _onTimeout() {
-	    this.abort("Load timed out.");
-	  }
-	  /**
-	   * Called if an error event fires for xhr/xdr.
-	   *
-	   * @private
-	   */
-	  ;
+	    /**
+	     * @memberof Resource
+	     * @typedef {object} IMetadata
+	     * @property {HTMLImageElement|HTMLAudioElement|HTMLVideoElement} [loadElement=null] - The
+	     *      element to use for loading, instead of creating one.
+	     * @property {boolean} [skipSource=false] - Skips adding source(s) to the load element. This
+	     *      is useful if you want to pass in a `loadElement` that you already added load sources to.
+	     * @property {string|string[]} [mimeType] - The mime type to use for the source element
+	     *      of a video/audio elment. If the urls are an array, you can pass this as an array as well
+	     *      where each index is the mime type to use for the corresponding url index.
+	     */
 
-	  _proto._xhrOnError = function _xhrOnError() {
-	    var xhr = this.xhr;
-	    this.abort(reqType(xhr) + " Request failed. Status: " + xhr.status + ", text: \"" + xhr.statusText + "\"");
-	  }
-	  /**
-	   * Called if an error event fires for xhr/xdr.
-	   *
-	   * @private
-	   */
-	  ;
-
-	  _proto._xhrOnTimeout = function _xhrOnTimeout() {
-	    var xhr = this.xhr;
-	    this.abort(reqType(xhr) + " Request timed out.");
-	  }
-	  /**
-	   * Called if an abort event fires for xhr/xdr.
-	   *
-	   * @private
-	   */
-	  ;
-
-	  _proto._xhrOnAbort = function _xhrOnAbort() {
-	    var xhr = this.xhr;
-	    this.abort(reqType(xhr) + " Request was aborted by the user.");
-	  }
-	  /**
-	   * Called when data successfully loads from an xhr/xdr request.
-	   *
-	   * @private
-	   * @param {XMLHttpRequestLoadEvent|Event} event - Load event
-	   */
-	  ;
-
-	  _proto._xhrOnLoad = function _xhrOnLoad() {
-	    var xhr = this.xhr;
-	    var text = '';
-	    var status = typeof xhr.status === 'undefined' ? STATUS_OK : xhr.status; // XDR has no `.status`, assume 200.
-	    // responseText is accessible only if responseType is '' or 'text' and on older browsers
-
-	    if (xhr.responseType === '' || xhr.responseType === 'text' || typeof xhr.responseType === 'undefined') {
-	      text = xhr.responseText;
-	    } // status can be 0 when using the `file://` protocol so we also check if a response is set.
-	    // If it has a response, we assume 200; otherwise a 0 status code with no contents is an aborted request.
+	    /**
+	     * Stores whether or not this url is a data url.
+	     *
+	     * @readonly
+	     * @member {boolean}
+	     */
 
 
-	    if (status === STATUS_NONE && (text.length > 0 || xhr.responseType === Resource.XHR_RESPONSE_TYPE.BUFFER)) {
-	      status = STATUS_OK;
-	    } // handle IE9 bug: http://stackoverflow.com/questions/10046972/msie-returns-status-code-of-1223-for-ajax-request
-	    else if (status === STATUS_IE_BUG_EMPTY) {
-	        status = STATUS_EMPTY;
-	      }
+	    /**
+	     * Marks the resource as complete.
+	     *
+	     */
+	    Resource.prototype.complete = function complete() {
+	        this._clearEvents();
+	        this._finish();
+	    };
 
-	    var statusType = status / 100 | 0;
+	    /**
+	     * Aborts the loading of this resource, with an optional message.
+	     *
+	     * @param {string} message - The message to use for the error
+	     */
 
-	    if (statusType === STATUS_TYPE_OK) {
-	      // if text, just return it
-	      if (this.xhrType === Resource.XHR_RESPONSE_TYPE.TEXT) {
-	        this.data = text;
-	        this.type = Resource.TYPE.TEXT;
-	      } // if json, parse into json object
-	      else if (this.xhrType === Resource.XHR_RESPONSE_TYPE.JSON) {
-	          try {
-	            this.data = JSON.parse(text);
-	            this.type = Resource.TYPE.JSON;
-	          } catch (e) {
-	            this.abort("Error trying to parse loaded json: " + e);
+
+	    Resource.prototype.abort = function abort(message) {
+	        // abort can be called multiple times, ignore subsequent calls.
+	        if (this.error) {
 	            return;
-	          }
-	        } // if xml, parse into an xml document or div element
-	        else if (this.xhrType === Resource.XHR_RESPONSE_TYPE.DOCUMENT) {
-	            try {
-	              if (window.DOMParser) {
-	                var domparser = new DOMParser();
-	                this.data = domparser.parseFromString(text, 'text/xml');
-	              } else {
-	                var div = document.createElement('div');
-	                div.innerHTML = text;
-	                this.data = div;
-	              }
+	        }
 
-	              this.type = Resource.TYPE.XML;
-	            } catch (e) {
-	              this.abort("Error trying to parse loaded xml: " + e);
-	              return;
+	        // store error
+	        this.error = new Error(message);
+
+	        // clear events before calling aborts
+	        this._clearEvents();
+
+	        // abort the actual loading
+	        if (this.xhr) {
+	            this.xhr.abort();
+	        } else if (this.xdr) {
+	            this.xdr.abort();
+	        } else if (this.data) {
+	            // single source
+	            if (this.data.src) {
+	                this.data.src = Resource.EMPTY_GIF;
 	            }
-	          } // other types just return the response
-	          else {
-	              this.data = xhr.response || text;
-	            }
-	    } else {
-	      this.abort("[" + xhr.status + "] " + xhr.statusText + ": " + xhr.responseURL);
-	      return;
-	    }
+	            // multi-source
+	            else {
+	                    while (this.data.firstChild) {
+	                        this.data.removeChild(this.data.firstChild);
+	                    }
+	                }
+	        }
 
-	    this.complete();
-	  }
-	  /**
-	   * Sets the `crossOrigin` property for this resource based on if the url
-	   * for this resource is cross-origin. If crossOrigin was manually set, this
-	   * function does nothing.
-	   *
-	   * @private
-	   * @param {string} url - The url to test.
-	   * @param {object} [loc=window.location] - The location object to test against.
-	   * @return {string} The crossOrigin value to use (or empty string for none).
-	   */
-	  ;
+	        // done now.
+	        this._finish();
+	    };
 
-	  _proto._determineCrossOrigin = function _determineCrossOrigin(url, loc) {
-	    // data: and javascript: urls are considered same-origin
-	    if (url.indexOf('data:') === 0) {
-	      return '';
-	    } // A sandboxed iframe without the 'allow-same-origin' attribute will have a special
-	    // origin designed not to match window.location.origin, and will always require
-	    // crossOrigin requests regardless of whether the location matches.
-
-
-	    if (window.origin !== window.location.origin) {
-	      return 'anonymous';
-	    } // default is window.location
-
-
-	    loc = loc || window.location;
-
-	    if (!tempAnchor$1) {
-	      tempAnchor$1 = document.createElement('a');
-	    } // let the browser determine the full href for the url of this resource and then
-	    // parse with the node url lib, we can't use the properties of the anchor element
-	    // because they don't work in IE9 :(
-
-
-	    tempAnchor$1.href = url;
-	    url = parseUri(tempAnchor$1.href, {
-	      strictMode: true
-	    });
-	    var samePort = !url.port && loc.port === '' || url.port === loc.port;
-	    var protocol = url.protocol ? url.protocol + ":" : ''; // if cross origin
-
-	    if (url.host !== loc.hostname || !samePort || protocol !== loc.protocol) {
-	      return 'anonymous';
-	    }
-
-	    return '';
-	  }
-	  /**
-	   * Determines the responseType of an XHR request based on the extension of the
-	   * resource being loaded.
-	   *
-	   * @private
-	   * @return {Resource.XHR_RESPONSE_TYPE} The responseType to use.
-	   */
-	  ;
-
-	  _proto._determineXhrType = function _determineXhrType() {
-	    return Resource._xhrTypeMap[this.extension] || Resource.XHR_RESPONSE_TYPE.TEXT;
-	  }
-	  /**
-	   * Determines the loadType of a resource based on the extension of the
-	   * resource being loaded.
-	   *
-	   * @private
-	   * @return {Resource.LOAD_TYPE} The loadType to use.
-	   */
-	  ;
-
-	  _proto._determineLoadType = function _determineLoadType() {
-	    return Resource._loadTypeMap[this.extension] || Resource.LOAD_TYPE.XHR;
-	  }
-	  /**
-	   * Extracts the extension (sans '.') of the file being loaded by the resource.
-	   *
-	   * @private
-	   * @return {string} The extension.
-	   */
-	  ;
-
-	  _proto._getExtension = function _getExtension() {
-	    var url = this.url;
-	    var ext = '';
-
-	    if (this.isDataUrl) {
-	      var slashIndex = url.indexOf('/');
-	      ext = url.substring(slashIndex + 1, url.indexOf(';', slashIndex));
-	    } else {
-	      var queryStart = url.indexOf('?');
-	      var hashStart = url.indexOf('#');
-	      var index = Math.min(queryStart > -1 ? queryStart : url.length, hashStart > -1 ? hashStart : url.length);
-	      url = url.substring(0, index);
-	      ext = url.substring(url.lastIndexOf('.') + 1);
-	    }
-
-	    return ext.toLowerCase();
-	  }
-	  /**
-	   * Determines the mime type of an XHR request based on the responseType of
-	   * resource being loaded.
-	   *
-	   * @private
-	   * @param {Resource.XHR_RESPONSE_TYPE} type - The type to get a mime type for.
-	   * @return {string} The mime type to use.
-	   */
-	  ;
-
-	  _proto._getMimeFromXhrType = function _getMimeFromXhrType(type) {
-	    switch (type) {
-	      case Resource.XHR_RESPONSE_TYPE.BUFFER:
-	        return 'application/octet-binary';
-
-	      case Resource.XHR_RESPONSE_TYPE.BLOB:
-	        return 'application/blob';
-
-	      case Resource.XHR_RESPONSE_TYPE.DOCUMENT:
-	        return 'application/xml';
-
-	      case Resource.XHR_RESPONSE_TYPE.JSON:
-	        return 'application/json';
-
-	      case Resource.XHR_RESPONSE_TYPE.DEFAULT:
-	      case Resource.XHR_RESPONSE_TYPE.TEXT:
-	      /* falls through */
-
-	      default:
-	        return 'text/plain';
-	    }
-	  };
-
-	  _createClass(Resource, [{
-	    key: "isDataUrl",
-	    get: function get() {
-	      return this._hasFlag(Resource.STATUS_FLAGS.DATA_URL);
-	    }
 	    /**
-	     * Describes if this resource has finished loading. Is true when the resource has completely
-	     * loaded.
+	     * Kicks off loading of this resource. This method is asynchronous.
 	     *
-	     * @readonly
-	     * @member {boolean}
+	     * @param {Resource.OnCompleteSignal} [cb] - Optional callback to call once the resource is loaded.
 	     */
 
-	  }, {
-	    key: "isComplete",
-	    get: function get() {
-	      return this._hasFlag(Resource.STATUS_FLAGS.COMPLETE);
-	    }
+
+	    Resource.prototype.load = function load(cb) {
+	        var _this = this;
+
+	        if (this.isLoading) {
+	            return;
+	        }
+
+	        if (this.isComplete) {
+	            if (cb) {
+	                setTimeout(function () {
+	                    return cb(_this);
+	                }, 1);
+	            }
+
+	            return;
+	        } else if (cb) {
+	            this.onComplete.once(cb);
+	        }
+
+	        this._setFlag(Resource.STATUS_FLAGS.LOADING, true);
+
+	        this.onStart.dispatch(this);
+
+	        // if unset, determine the value
+	        if (this.crossOrigin === false || typeof this.crossOrigin !== 'string') {
+	            this.crossOrigin = this._determineCrossOrigin(this.url);
+	        }
+
+	        switch (this.loadType) {
+	            case Resource.LOAD_TYPE.IMAGE:
+	                this.type = Resource.TYPE.IMAGE;
+	                this._loadElement('image');
+	                break;
+
+	            case Resource.LOAD_TYPE.AUDIO:
+	                this.type = Resource.TYPE.AUDIO;
+	                this._loadSourceElement('audio');
+	                break;
+
+	            case Resource.LOAD_TYPE.VIDEO:
+	                this.type = Resource.TYPE.VIDEO;
+	                this._loadSourceElement('video');
+	                break;
+
+	            case Resource.LOAD_TYPE.XHR:
+	            /* falls through */
+	            default:
+	                if (useXdr && this.crossOrigin) {
+	                    this._loadXdr();
+	                } else {
+	                    this._loadXhr();
+	                }
+	                break;
+	        }
+	    };
+
 	    /**
-	     * Describes if this resource is currently loading. Is true when the resource starts loading,
-	     * and is false again when complete.
+	     * Checks if the flag is set.
 	     *
-	     * @readonly
-	     * @member {boolean}
+	     * @private
+	     * @param {number} flag - The flag to check.
+	     * @return {boolean} True if the flag is set.
 	     */
 
-	  }, {
-	    key: "isLoading",
-	    get: function get() {
-	      return this._hasFlag(Resource.STATUS_FLAGS.LOADING);
-	    }
-	  }]);
 
-	  return Resource;
+	    Resource.prototype._hasFlag = function _hasFlag(flag) {
+	        return (this._flags & flag) !== 0;
+	    };
+
+	    /**
+	     * (Un)Sets the flag.
+	     *
+	     * @private
+	     * @param {number} flag - The flag to (un)set.
+	     * @param {boolean} value - Whether to set or (un)set the flag.
+	     */
+
+
+	    Resource.prototype._setFlag = function _setFlag(flag, value) {
+	        this._flags = value ? this._flags | flag : this._flags & ~flag;
+	    };
+
+	    /**
+	     * Clears all the events from the underlying loading source.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._clearEvents = function _clearEvents() {
+	        clearTimeout(this._elementTimer);
+
+	        if (this.data && this.data.removeEventListener) {
+	            this.data.removeEventListener('error', this._boundOnError, false);
+	            this.data.removeEventListener('load', this._boundComplete, false);
+	            this.data.removeEventListener('progress', this._boundOnProgress, false);
+	            this.data.removeEventListener('canplaythrough', this._boundComplete, false);
+	        }
+
+	        if (this.xhr) {
+	            if (this.xhr.removeEventListener) {
+	                this.xhr.removeEventListener('error', this._boundXhrOnError, false);
+	                this.xhr.removeEventListener('timeout', this._boundXhrOnTimeout, false);
+	                this.xhr.removeEventListener('abort', this._boundXhrOnAbort, false);
+	                this.xhr.removeEventListener('progress', this._boundOnProgress, false);
+	                this.xhr.removeEventListener('load', this._boundXhrOnLoad, false);
+	            } else {
+	                this.xhr.onerror = null;
+	                this.xhr.ontimeout = null;
+	                this.xhr.onprogress = null;
+	                this.xhr.onload = null;
+	            }
+	        }
+	    };
+
+	    /**
+	     * Finalizes the load.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._finish = function _finish() {
+	        if (this.isComplete) {
+	            throw new Error('Complete called again for an already completed resource.');
+	        }
+
+	        this._setFlag(Resource.STATUS_FLAGS.COMPLETE, true);
+	        this._setFlag(Resource.STATUS_FLAGS.LOADING, false);
+
+	        this.onComplete.dispatch(this);
+	    };
+
+	    /**
+	     * Loads this resources using an element that has a single source,
+	     * like an HTMLImageElement.
+	     *
+	     * @private
+	     * @param {string} type - The type of element to use.
+	     */
+
+
+	    Resource.prototype._loadElement = function _loadElement(type) {
+	        if (this.metadata.loadElement) {
+	            this.data = this.metadata.loadElement;
+	        } else if (type === 'image' && typeof window.Image !== 'undefined') {
+	            this.data = new Image();
+	        } else {
+	            this.data = document.createElement(type);
+	        }
+
+	        if (this.crossOrigin) {
+	            this.data.crossOrigin = this.crossOrigin;
+	        }
+
+	        if (!this.metadata.skipSource) {
+	            this.data.src = this.url;
+	        }
+
+	        this.data.addEventListener('error', this._boundOnError, false);
+	        this.data.addEventListener('load', this._boundComplete, false);
+	        this.data.addEventListener('progress', this._boundOnProgress, false);
+
+	        if (this.timeout) {
+	            this._elementTimer = setTimeout(this._boundOnTimeout, this.timeout);
+	        }
+	    };
+
+	    /**
+	     * Loads this resources using an element that has multiple sources,
+	     * like an HTMLAudioElement or HTMLVideoElement.
+	     *
+	     * @private
+	     * @param {string} type - The type of element to use.
+	     */
+
+
+	    Resource.prototype._loadSourceElement = function _loadSourceElement(type) {
+	        if (this.metadata.loadElement) {
+	            this.data = this.metadata.loadElement;
+	        } else if (type === 'audio' && typeof window.Audio !== 'undefined') {
+	            this.data = new Audio();
+	        } else {
+	            this.data = document.createElement(type);
+	        }
+
+	        if (this.data === null) {
+	            this.abort('Unsupported element: ' + type);
+
+	            return;
+	        }
+
+	        if (this.crossOrigin) {
+	            this.data.crossOrigin = this.crossOrigin;
+	        }
+
+	        if (!this.metadata.skipSource) {
+	            // support for CocoonJS Canvas+ runtime, lacks document.createElement('source')
+	            if (navigator.isCocoonJS) {
+	                this.data.src = Array.isArray(this.url) ? this.url[0] : this.url;
+	            } else if (Array.isArray(this.url)) {
+	                var mimeTypes = this.metadata.mimeType;
+
+	                for (var i = 0; i < this.url.length; ++i) {
+	                    this.data.appendChild(this._createSource(type, this.url[i], Array.isArray(mimeTypes) ? mimeTypes[i] : mimeTypes));
+	                }
+	            } else {
+	                var _mimeTypes = this.metadata.mimeType;
+
+	                this.data.appendChild(this._createSource(type, this.url, Array.isArray(_mimeTypes) ? _mimeTypes[0] : _mimeTypes));
+	            }
+	        }
+
+	        this.data.addEventListener('error', this._boundOnError, false);
+	        this.data.addEventListener('load', this._boundComplete, false);
+	        this.data.addEventListener('progress', this._boundOnProgress, false);
+	        this.data.addEventListener('canplaythrough', this._boundComplete, false);
+
+	        this.data.load();
+
+	        if (this.timeout) {
+	            this._elementTimer = setTimeout(this._boundOnTimeout, this.timeout);
+	        }
+	    };
+
+	    /**
+	     * Loads this resources using an XMLHttpRequest.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._loadXhr = function _loadXhr() {
+	        // if unset, determine the value
+	        if (typeof this.xhrType !== 'string') {
+	            this.xhrType = this._determineXhrType();
+	        }
+
+	        var xhr = this.xhr = new XMLHttpRequest();
+
+	        // set the request type and url
+	        xhr.open('GET', this.url, true);
+
+	        xhr.timeout = this.timeout;
+
+	        // load json as text and parse it ourselves. We do this because some browsers
+	        // *cough* safari *cough* can't deal with it.
+	        if (this.xhrType === Resource.XHR_RESPONSE_TYPE.JSON || this.xhrType === Resource.XHR_RESPONSE_TYPE.DOCUMENT) {
+	            xhr.responseType = Resource.XHR_RESPONSE_TYPE.TEXT;
+	        } else {
+	            xhr.responseType = this.xhrType;
+	        }
+
+	        xhr.addEventListener('error', this._boundXhrOnError, false);
+	        xhr.addEventListener('timeout', this._boundXhrOnTimeout, false);
+	        xhr.addEventListener('abort', this._boundXhrOnAbort, false);
+	        xhr.addEventListener('progress', this._boundOnProgress, false);
+	        xhr.addEventListener('load', this._boundXhrOnLoad, false);
+
+	        xhr.send();
+	    };
+
+	    /**
+	     * Loads this resources using an XDomainRequest. This is here because we need to support IE9 (gross).
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._loadXdr = function _loadXdr() {
+	        // if unset, determine the value
+	        if (typeof this.xhrType !== 'string') {
+	            this.xhrType = this._determineXhrType();
+	        }
+
+	        var xdr = this.xhr = new XDomainRequest(); // eslint-disable-line no-undef
+
+	        // XDomainRequest has a few quirks. Occasionally it will abort requests
+	        // A way to avoid this is to make sure ALL callbacks are set even if not used
+	        // More info here: http://stackoverflow.com/questions/15786966/xdomainrequest-aborts-post-on-ie-9
+	        xdr.timeout = this.timeout || 5000; // XDR needs a timeout value or it breaks in IE9
+
+	        xdr.onerror = this._boundXhrOnError;
+	        xdr.ontimeout = this._boundXhrOnTimeout;
+	        xdr.onprogress = this._boundOnProgress;
+	        xdr.onload = this._boundXhrOnLoad;
+
+	        xdr.open('GET', this.url, true);
+
+	        // Note: The xdr.send() call is wrapped in a timeout to prevent an
+	        // issue with the interface where some requests are lost if multiple
+	        // XDomainRequests are being sent at the same time.
+	        // Some info here: https://github.com/photonstorm/phaser/issues/1248
+	        setTimeout(function () {
+	            return xdr.send();
+	        }, 1);
+	    };
+
+	    /**
+	     * Creates a source used in loading via an element.
+	     *
+	     * @private
+	     * @param {string} type - The element type (video or audio).
+	     * @param {string} url - The source URL to load from.
+	     * @param {string} [mime] - The mime type of the video
+	     * @return {HTMLSourceElement} The source element.
+	     */
+
+
+	    Resource.prototype._createSource = function _createSource(type, url, mime) {
+	        if (!mime) {
+	            mime = type + '/' + this._getExtension(url);
+	        }
+
+	        var source = document.createElement('source');
+
+	        source.src = url;
+	        source.type = mime;
+
+	        return source;
+	    };
+
+	    /**
+	     * Called if a load errors out.
+	     *
+	     * @param {Event} event - The error event from the element that emits it.
+	     * @private
+	     */
+
+
+	    Resource.prototype._onError = function _onError(event) {
+	        this.abort('Failed to load element using: ' + event.target.nodeName);
+	    };
+
+	    /**
+	     * Called if a load progress event fires for an element or xhr/xdr.
+	     *
+	     * @private
+	     * @param {XMLHttpRequestProgressEvent|Event} event - Progress event.
+	     */
+
+
+	    Resource.prototype._onProgress = function _onProgress(event) {
+	        if (event && event.lengthComputable) {
+	            this.onProgress.dispatch(this, event.loaded / event.total);
+	        }
+	    };
+
+	    /**
+	     * Called if a timeout event fires for an element.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._onTimeout = function _onTimeout() {
+	        this.abort('Load timed out.');
+	    };
+
+	    /**
+	     * Called if an error event fires for xhr/xdr.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._xhrOnError = function _xhrOnError() {
+	        var xhr = this.xhr;
+
+	        this.abort(reqType(xhr) + ' Request failed. Status: ' + xhr.status + ', text: "' + xhr.statusText + '"');
+	    };
+
+	    /**
+	     * Called if an error event fires for xhr/xdr.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._xhrOnTimeout = function _xhrOnTimeout() {
+	        var xhr = this.xhr;
+
+	        this.abort(reqType(xhr) + ' Request timed out.');
+	    };
+
+	    /**
+	     * Called if an abort event fires for xhr/xdr.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._xhrOnAbort = function _xhrOnAbort() {
+	        var xhr = this.xhr;
+
+	        this.abort(reqType(xhr) + ' Request was aborted by the user.');
+	    };
+
+	    /**
+	     * Called when data successfully loads from an xhr/xdr request.
+	     *
+	     * @private
+	     * @param {XMLHttpRequestLoadEvent|Event} event - Load event
+	     */
+
+
+	    Resource.prototype._xhrOnLoad = function _xhrOnLoad() {
+	        var xhr = this.xhr;
+	        var text = '';
+	        var status = typeof xhr.status === 'undefined' ? STATUS_OK : xhr.status; // XDR has no `.status`, assume 200.
+
+	        // responseText is accessible only if responseType is '' or 'text' and on older browsers
+	        if (xhr.responseType === '' || xhr.responseType === 'text' || typeof xhr.responseType === 'undefined') {
+	            text = xhr.responseText;
+	        }
+
+	        // status can be 0 when using the `file://` protocol so we also check if a response is set.
+	        // If it has a response, we assume 200; otherwise a 0 status code with no contents is an aborted request.
+	        if (status === STATUS_NONE && (text.length > 0 || xhr.responseType === Resource.XHR_RESPONSE_TYPE.BUFFER)) {
+	            status = STATUS_OK;
+	        }
+	        // handle IE9 bug: http://stackoverflow.com/questions/10046972/msie-returns-status-code-of-1223-for-ajax-request
+	        else if (status === STATUS_IE_BUG_EMPTY) {
+	                status = STATUS_EMPTY;
+	            }
+
+	        var statusType = status / 100 | 0;
+
+	        if (statusType === STATUS_TYPE_OK) {
+	            // if text, just return it
+	            if (this.xhrType === Resource.XHR_RESPONSE_TYPE.TEXT) {
+	                this.data = text;
+	                this.type = Resource.TYPE.TEXT;
+	            }
+	            // if json, parse into json object
+	            else if (this.xhrType === Resource.XHR_RESPONSE_TYPE.JSON) {
+	                    try {
+	                        this.data = JSON.parse(text);
+	                        this.type = Resource.TYPE.JSON;
+	                    } catch (e) {
+	                        this.abort('Error trying to parse loaded json: ' + e);
+
+	                        return;
+	                    }
+	                }
+	                // if xml, parse into an xml document or div element
+	                else if (this.xhrType === Resource.XHR_RESPONSE_TYPE.DOCUMENT) {
+	                        try {
+	                            if (window.DOMParser) {
+	                                var domparser = new DOMParser();
+
+	                                this.data = domparser.parseFromString(text, 'text/xml');
+	                            } else {
+	                                var div = document.createElement('div');
+
+	                                div.innerHTML = text;
+
+	                                this.data = div;
+	                            }
+
+	                            this.type = Resource.TYPE.XML;
+	                        } catch (e) {
+	                            this.abort('Error trying to parse loaded xml: ' + e);
+
+	                            return;
+	                        }
+	                    }
+	                    // other types just return the response
+	                    else {
+	                            this.data = xhr.response || text;
+	                        }
+	        } else {
+	            this.abort('[' + xhr.status + '] ' + xhr.statusText + ': ' + xhr.responseURL);
+
+	            return;
+	        }
+
+	        this.complete();
+	    };
+
+	    /**
+	     * Sets the `crossOrigin` property for this resource based on if the url
+	     * for this resource is cross-origin. If crossOrigin was manually set, this
+	     * function does nothing.
+	     *
+	     * @private
+	     * @param {string} url - The url to test.
+	     * @param {object} [loc=window.location] - The location object to test against.
+	     * @return {string} The crossOrigin value to use (or empty string for none).
+	     */
+
+
+	    Resource.prototype._determineCrossOrigin = function _determineCrossOrigin(url, loc) {
+	        // data: and javascript: urls are considered same-origin
+	        if (url.indexOf('data:') === 0) {
+	            return '';
+	        }
+
+	        // A sandboxed iframe without the 'allow-same-origin' attribute will have a special
+	        // origin designed not to match window.location.origin, and will always require
+	        // crossOrigin requests regardless of whether the location matches.
+	        if (window.origin !== window.location.origin) {
+	            return 'anonymous';
+	        }
+
+	        // default is window.location
+	        loc = loc || window.location;
+
+	        if (!tempAnchor) {
+	            tempAnchor = document.createElement('a');
+	        }
+
+	        // let the browser determine the full href for the url of this resource and then
+	        // parse with the node url lib, we can't use the properties of the anchor element
+	        // because they don't work in IE9 :(
+	        tempAnchor.href = url;
+	        url = (0, _parseUri2.default)(tempAnchor.href, { strictMode: true });
+
+	        var samePort = !url.port && loc.port === '' || url.port === loc.port;
+	        var protocol = url.protocol ? url.protocol + ':' : '';
+
+	        // if cross origin
+	        if (url.host !== loc.hostname || !samePort || protocol !== loc.protocol) {
+	            return 'anonymous';
+	        }
+
+	        return '';
+	    };
+
+	    /**
+	     * Determines the responseType of an XHR request based on the extension of the
+	     * resource being loaded.
+	     *
+	     * @private
+	     * @return {Resource.XHR_RESPONSE_TYPE} The responseType to use.
+	     */
+
+
+	    Resource.prototype._determineXhrType = function _determineXhrType() {
+	        return Resource._xhrTypeMap[this.extension] || Resource.XHR_RESPONSE_TYPE.TEXT;
+	    };
+
+	    /**
+	     * Determines the loadType of a resource based on the extension of the
+	     * resource being loaded.
+	     *
+	     * @private
+	     * @return {Resource.LOAD_TYPE} The loadType to use.
+	     */
+
+
+	    Resource.prototype._determineLoadType = function _determineLoadType() {
+	        return Resource._loadTypeMap[this.extension] || Resource.LOAD_TYPE.XHR;
+	    };
+
+	    /**
+	     * Extracts the extension (sans '.') of the file being loaded by the resource.
+	     *
+	     * @private
+	     * @return {string} The extension.
+	     */
+
+
+	    Resource.prototype._getExtension = function _getExtension() {
+	        var url = this.url;
+	        var ext = '';
+
+	        if (this.isDataUrl) {
+	            var slashIndex = url.indexOf('/');
+
+	            ext = url.substring(slashIndex + 1, url.indexOf(';', slashIndex));
+	        } else {
+	            var queryStart = url.indexOf('?');
+	            var hashStart = url.indexOf('#');
+	            var index = Math.min(queryStart > -1 ? queryStart : url.length, hashStart > -1 ? hashStart : url.length);
+
+	            url = url.substring(0, index);
+	            ext = url.substring(url.lastIndexOf('.') + 1);
+	        }
+
+	        return ext.toLowerCase();
+	    };
+
+	    /**
+	     * Determines the mime type of an XHR request based on the responseType of
+	     * resource being loaded.
+	     *
+	     * @private
+	     * @param {Resource.XHR_RESPONSE_TYPE} type - The type to get a mime type for.
+	     * @return {string} The mime type to use.
+	     */
+
+
+	    Resource.prototype._getMimeFromXhrType = function _getMimeFromXhrType(type) {
+	        switch (type) {
+	            case Resource.XHR_RESPONSE_TYPE.BUFFER:
+	                return 'application/octet-binary';
+
+	            case Resource.XHR_RESPONSE_TYPE.BLOB:
+	                return 'application/blob';
+
+	            case Resource.XHR_RESPONSE_TYPE.DOCUMENT:
+	                return 'application/xml';
+
+	            case Resource.XHR_RESPONSE_TYPE.JSON:
+	                return 'application/json';
+
+	            case Resource.XHR_RESPONSE_TYPE.DEFAULT:
+	            case Resource.XHR_RESPONSE_TYPE.TEXT:
+	            /* falls through */
+	            default:
+	                return 'text/plain';
+	        }
+	    };
+
+	    _createClass(Resource, [{
+	        key: 'isDataUrl',
+	        get: function get() {
+	            return this._hasFlag(Resource.STATUS_FLAGS.DATA_URL);
+	        }
+
+	        /**
+	         * Describes if this resource has finished loading. Is true when the resource has completely
+	         * loaded.
+	         *
+	         * @readonly
+	         * @member {boolean}
+	         */
+
+	    }, {
+	        key: 'isComplete',
+	        get: function get() {
+	            return this._hasFlag(Resource.STATUS_FLAGS.COMPLETE);
+	        }
+
+	        /**
+	         * Describes if this resource is currently loading. Is true when the resource starts loading,
+	         * and is false again when complete.
+	         *
+	         * @readonly
+	         * @member {boolean}
+	         */
+
+	    }, {
+	        key: 'isLoading',
+	        get: function get() {
+	            return this._hasFlag(Resource.STATUS_FLAGS.LOADING);
+	        }
+	    }]);
+
+	    return Resource;
 	}();
+
 	/**
 	 * The types of resources a resource could represent.
 	 *
@@ -34463,12 +33037,13 @@ var PIXI = (function (exports) {
 	 */
 
 
-	Resource$1.STATUS_FLAGS = {
-	  NONE: 0,
-	  DATA_URL: 1 << 0,
-	  COMPLETE: 1 << 1,
-	  LOADING: 1 << 2
+	Resource.STATUS_FLAGS = {
+	    NONE: 0,
+	    DATA_URL: 1 << 0,
+	    COMPLETE: 1 << 1,
+	    LOADING: 1 << 2
 	};
+
 	/**
 	 * The types of resources a resource could represent.
 	 *
@@ -34476,16 +33051,16 @@ var PIXI = (function (exports) {
 	 * @readonly
 	 * @enum {number}
 	 */
-
-	Resource$1.TYPE = {
-	  UNKNOWN: 0,
-	  JSON: 1,
-	  XML: 2,
-	  IMAGE: 3,
-	  AUDIO: 4,
-	  VIDEO: 5,
-	  TEXT: 6
+	Resource.TYPE = {
+	    UNKNOWN: 0,
+	    JSON: 1,
+	    XML: 2,
+	    IMAGE: 3,
+	    AUDIO: 4,
+	    VIDEO: 5,
+	    TEXT: 6
 	};
+
 	/**
 	 * The types of loading a resource can use.
 	 *
@@ -34493,20 +33068,17 @@ var PIXI = (function (exports) {
 	 * @readonly
 	 * @enum {number}
 	 */
-
-	Resource$1.LOAD_TYPE = {
-	  /** Uses XMLHttpRequest to load the resource. */
-	  XHR: 1,
-
-	  /** Uses an `Image` object to load the resource. */
-	  IMAGE: 2,
-
-	  /** Uses an `Audio` object to load the resource. */
-	  AUDIO: 3,
-
-	  /** Uses a `Video` object to load the resource. */
-	  VIDEO: 4
+	Resource.LOAD_TYPE = {
+	    /** Uses XMLHttpRequest to load the resource. */
+	    XHR: 1,
+	    /** Uses an `Image` object to load the resource. */
+	    IMAGE: 2,
+	    /** Uses an `Audio` object to load the resource. */
+	    AUDIO: 3,
+	    /** Uses a `Video` object to load the resource. */
+	    VIDEO: 4
 	};
+
 	/**
 	 * The XHR ready states, used internally.
 	 *
@@ -34514,81 +33086,85 @@ var PIXI = (function (exports) {
 	 * @readonly
 	 * @enum {string}
 	 */
-
-	Resource$1.XHR_RESPONSE_TYPE = {
-	  /** string */
-	  DEFAULT: 'text',
-
-	  /** ArrayBuffer */
-	  BUFFER: 'arraybuffer',
-
-	  /** Blob */
-	  BLOB: 'blob',
-
-	  /** Document */
-	  DOCUMENT: 'document',
-
-	  /** Object */
-	  JSON: 'json',
-
-	  /** String */
-	  TEXT: 'text'
+	Resource.XHR_RESPONSE_TYPE = {
+	    /** string */
+	    DEFAULT: 'text',
+	    /** ArrayBuffer */
+	    BUFFER: 'arraybuffer',
+	    /** Blob */
+	    BLOB: 'blob',
+	    /** Document */
+	    DOCUMENT: 'document',
+	    /** Object */
+	    JSON: 'json',
+	    /** String */
+	    TEXT: 'text'
 	};
-	Resource$1._loadTypeMap = {
-	  // images
-	  gif: Resource$1.LOAD_TYPE.IMAGE,
-	  png: Resource$1.LOAD_TYPE.IMAGE,
-	  bmp: Resource$1.LOAD_TYPE.IMAGE,
-	  jpg: Resource$1.LOAD_TYPE.IMAGE,
-	  jpeg: Resource$1.LOAD_TYPE.IMAGE,
-	  tif: Resource$1.LOAD_TYPE.IMAGE,
-	  tiff: Resource$1.LOAD_TYPE.IMAGE,
-	  webp: Resource$1.LOAD_TYPE.IMAGE,
-	  tga: Resource$1.LOAD_TYPE.IMAGE,
-	  svg: Resource$1.LOAD_TYPE.IMAGE,
-	  'svg+xml': Resource$1.LOAD_TYPE.IMAGE,
-	  // for SVG data urls
-	  // audio
-	  mp3: Resource$1.LOAD_TYPE.AUDIO,
-	  ogg: Resource$1.LOAD_TYPE.AUDIO,
-	  wav: Resource$1.LOAD_TYPE.AUDIO,
-	  // videos
-	  mp4: Resource$1.LOAD_TYPE.VIDEO,
-	  webm: Resource$1.LOAD_TYPE.VIDEO
-	};
-	Resource$1._xhrTypeMap = {
-	  // xml
-	  xhtml: Resource$1.XHR_RESPONSE_TYPE.DOCUMENT,
-	  html: Resource$1.XHR_RESPONSE_TYPE.DOCUMENT,
-	  htm: Resource$1.XHR_RESPONSE_TYPE.DOCUMENT,
-	  xml: Resource$1.XHR_RESPONSE_TYPE.DOCUMENT,
-	  tmx: Resource$1.XHR_RESPONSE_TYPE.DOCUMENT,
-	  svg: Resource$1.XHR_RESPONSE_TYPE.DOCUMENT,
-	  // This was added to handle Tiled Tileset XML, but .tsx is also a TypeScript React Component.
-	  // Since it is way less likely for people to be loading TypeScript files instead of Tiled files,
-	  // this should probably be fine.
-	  tsx: Resource$1.XHR_RESPONSE_TYPE.DOCUMENT,
-	  // images
-	  gif: Resource$1.XHR_RESPONSE_TYPE.BLOB,
-	  png: Resource$1.XHR_RESPONSE_TYPE.BLOB,
-	  bmp: Resource$1.XHR_RESPONSE_TYPE.BLOB,
-	  jpg: Resource$1.XHR_RESPONSE_TYPE.BLOB,
-	  jpeg: Resource$1.XHR_RESPONSE_TYPE.BLOB,
-	  tif: Resource$1.XHR_RESPONSE_TYPE.BLOB,
-	  tiff: Resource$1.XHR_RESPONSE_TYPE.BLOB,
-	  webp: Resource$1.XHR_RESPONSE_TYPE.BLOB,
-	  tga: Resource$1.XHR_RESPONSE_TYPE.BLOB,
-	  // json
-	  json: Resource$1.XHR_RESPONSE_TYPE.JSON,
-	  // text
-	  text: Resource$1.XHR_RESPONSE_TYPE.TEXT,
-	  txt: Resource$1.XHR_RESPONSE_TYPE.TEXT,
-	  // fonts
-	  ttf: Resource$1.XHR_RESPONSE_TYPE.BUFFER,
-	  otf: Resource$1.XHR_RESPONSE_TYPE.BUFFER
-	}; // We can't set the `src` attribute to empty string, so on abort we set it to this 1px transparent gif
 
-	Resource$1.EMPTY_GIF = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+	Resource._loadTypeMap = {
+	    // images
+	    gif: Resource.LOAD_TYPE.IMAGE,
+	    png: Resource.LOAD_TYPE.IMAGE,
+	    bmp: Resource.LOAD_TYPE.IMAGE,
+	    jpg: Resource.LOAD_TYPE.IMAGE,
+	    jpeg: Resource.LOAD_TYPE.IMAGE,
+	    tif: Resource.LOAD_TYPE.IMAGE,
+	    tiff: Resource.LOAD_TYPE.IMAGE,
+	    webp: Resource.LOAD_TYPE.IMAGE,
+	    tga: Resource.LOAD_TYPE.IMAGE,
+	    svg: Resource.LOAD_TYPE.IMAGE,
+	    'svg+xml': Resource.LOAD_TYPE.IMAGE, // for SVG data urls
+
+	    // audio
+	    mp3: Resource.LOAD_TYPE.AUDIO,
+	    ogg: Resource.LOAD_TYPE.AUDIO,
+	    wav: Resource.LOAD_TYPE.AUDIO,
+
+	    // videos
+	    mp4: Resource.LOAD_TYPE.VIDEO,
+	    webm: Resource.LOAD_TYPE.VIDEO
+	};
+
+	Resource._xhrTypeMap = {
+	    // xml
+	    xhtml: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+	    html: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+	    htm: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+	    xml: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+	    tmx: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+	    svg: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+
+	    // This was added to handle Tiled Tileset XML, but .tsx is also a TypeScript React Component.
+	    // Since it is way less likely for people to be loading TypeScript files instead of Tiled files,
+	    // this should probably be fine.
+	    tsx: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+
+	    // images
+	    gif: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    png: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    bmp: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    jpg: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    jpeg: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    tif: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    tiff: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    webp: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    tga: Resource.XHR_RESPONSE_TYPE.BLOB,
+
+	    // json
+	    json: Resource.XHR_RESPONSE_TYPE.JSON,
+
+	    // text
+	    text: Resource.XHR_RESPONSE_TYPE.TEXT,
+	    txt: Resource.XHR_RESPONSE_TYPE.TEXT,
+
+	    // fonts
+	    ttf: Resource.XHR_RESPONSE_TYPE.BUFFER,
+	    otf: Resource.XHR_RESPONSE_TYPE.BUFFER
+	};
+
+	// We can't set the `src` attribute to empty string, so on abort we set it to this 1px transparent gif
+	Resource.EMPTY_GIF = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+
 	/**
 	 * Quick helper to set a value on one of the extension maps. Ensures there is no
 	 * dot at the start of the extension.
@@ -34598,18 +33174,18 @@ var PIXI = (function (exports) {
 	 * @param {string} extname - The extension (or key) to set.
 	 * @param {number} val - The value to set.
 	 */
-
 	function setExtMap(map, extname, val) {
-	  if (extname && extname.indexOf('.') === 0) {
-	    extname = extname.substring(1);
-	  }
+	    if (extname && extname.indexOf('.') === 0) {
+	        extname = extname.substring(1);
+	    }
 
-	  if (!extname) {
-	    return;
-	  }
+	    if (!extname) {
+	        return;
+	    }
 
-	  map[extname] = val;
+	    map[extname] = val;
 	}
+
 	/**
 	 * Quick helper to get string xhr type.
 	 *
@@ -34617,841 +33193,733 @@ var PIXI = (function (exports) {
 	 * @param {XMLHttpRequest|XDomainRequest} xhr - The request to check.
 	 * @return {string} The type.
 	 */
-
-
 	function reqType(xhr) {
-	  return xhr.toString().replace('object ', '');
+	    return xhr.toString().replace('object ', '');
 	}
 
-	var _keyStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
-	/**
-	 * Encodes binary into base64.
-	 *
-	 * @function encodeBinary
-	 * @param {string} input The input data to encode.
-	 * @returns {string} The encoded base64 string
-	 */
-
-	function encodeBinary(input) {
-	  var output = '';
-	  var inx = 0;
-
-	  while (inx < input.length) {
-	    // Fill byte buffer array
-	    var bytebuffer = [0, 0, 0];
-	    var encodedCharIndexes = [0, 0, 0, 0];
-
-	    for (var jnx = 0; jnx < bytebuffer.length; ++jnx) {
-	      if (inx < input.length) {
-	        // throw away high-order byte, as documented at:
-	        // https://developer.mozilla.org/En/Using_XMLHttpRequest#Handling_binary_data
-	        bytebuffer[jnx] = input.charCodeAt(inx++) & 0xff;
-	      } else {
-	        bytebuffer[jnx] = 0;
-	      }
-	    } // Get each encoded character, 6 bits at a time
-	    // index 1: first 6 bits
-
-
-	    encodedCharIndexes[0] = bytebuffer[0] >> 2; // index 2: second 6 bits (2 least significant bits from input byte 1 + 4 most significant bits from byte 2)
-
-	    encodedCharIndexes[1] = (bytebuffer[0] & 0x3) << 4 | bytebuffer[1] >> 4; // index 3: third 6 bits (4 least significant bits from input byte 2 + 2 most significant bits from byte 3)
-
-	    encodedCharIndexes[2] = (bytebuffer[1] & 0x0f) << 2 | bytebuffer[2] >> 6; // index 3: forth 6 bits (6 least significant bits from input byte 3)
-
-	    encodedCharIndexes[3] = bytebuffer[2] & 0x3f; // Determine whether padding happened, and adjust accordingly
-
-	    var paddingBytes = inx - (input.length - 1);
-
-	    switch (paddingBytes) {
-	      case 2:
-	        // Set last 2 characters to padding char
-	        encodedCharIndexes[3] = 64;
-	        encodedCharIndexes[2] = 64;
-	        break;
-
-	      case 1:
-	        // Set last character to padding char
-	        encodedCharIndexes[3] = 64;
-	        break;
-
-	      default:
-	        break;
-	      // No padding - proceed
-	    } // Now we will grab each appropriate character out of our keystring
-	    // based on our index array and append it to the output string
-
-
-	    for (var _jnx = 0; _jnx < encodedCharIndexes.length; ++_jnx) {
-	      output += _keyStr.charAt(encodedCharIndexes[_jnx]);
-	    }
-	  }
-
-	  return output;
+	// Backwards compat
+	if ('object' !== 'undefined') {
+	    module.exports.default = Resource; // eslint-disable-line no-undef
 	}
 
-	var Url$1 = window.URL || window.webkitURL;
-	/**
-	 * A middleware for transforming XHR loaded Blobs into more useful objects
-	 *
-	 * @memberof middleware
-	 * @function parsing
-	 * @example
-	 * import { Loader, middleware } from 'resource-loader';
-	 * const loader = new Loader();
-	 * loader.use(middleware.parsing);
-	 * @param {Resource} resource - Current Resource
-	 * @param {function} next - Callback when complete
-	 */
-
-	function parsing(resource, next) {
-	  if (!resource.data) {
-	    next();
-	    return;
-	  } // if this was an XHR load of a blob
-
-
-	  if (resource.xhr && resource.xhrType === Resource$1.XHR_RESPONSE_TYPE.BLOB) {
-	    // if there is no blob support we probably got a binary string back
-	    if (!window.Blob || typeof resource.data === 'string') {
-	      var type = resource.xhr.getResponseHeader('content-type'); // this is an image, convert the binary string into a data url
-
-	      if (type && type.indexOf('image') === 0) {
-	        resource.data = new Image();
-	        resource.data.src = "data:" + type + ";base64," + encodeBinary(resource.xhr.responseText);
-	        resource.type = Resource$1.TYPE.IMAGE; // wait until the image loads and then callback
-
-	        resource.data.onload = function () {
-	          resource.data.onload = null;
-	          next();
-	        }; // next will be called on load
-
-
-	        return;
-	      }
-	    } // if content type says this is an image, then we should transform the blob into an Image object
-	    else if (resource.data.type.indexOf('image') === 0) {
-	        var src = Url$1.createObjectURL(resource.data);
-	        resource.blob = resource.data;
-	        resource.data = new Image();
-	        resource.data.src = src;
-	        resource.type = Resource$1.TYPE.IMAGE; // cleanup the no longer used blob after the image loads
-	        // TODO: Is this correct? Will the image be invalid after revoking?
-
-	        resource.data.onload = function () {
-	          Url$1.revokeObjectURL(src);
-	          resource.data.onload = null;
-	          next();
-	        }; // next will be called on load.
-
-
-	        return;
-	      }
-	  }
-
-	  next();
-	}
-
-	/**
-	 * @namespace middleware
-	 */
-
-	var index$1 = ({
-	    caching: caching,
-	    parsing: parsing
 	});
 
+	var Resource$1 = unwrapExports(Resource_1);
+	var Resource_2 = Resource_1.Resource;
+
+	var Loader_1 = createCommonjsModule(function (module, exports) {
+	'use strict';
+
+	exports.__esModule = true;
+	exports.Loader = undefined;
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) { descriptor.writable = true; } Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) { defineProperties(Constructor.prototype, protoProps); } if (staticProps) { defineProperties(Constructor, staticProps); } return Constructor; }; }();
+
+
+
+	var _miniSignals2 = _interopRequireDefault(miniSignals);
+
+
+
+	var _parseUri2 = _interopRequireDefault(parseUri);
+
+
+
+	var async$1 = _interopRequireWildcard(async);
+
+
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { newObj[key] = obj[key]; } } } newObj.default = obj; return newObj; } }
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	// some constants
 	var MAX_PROGRESS = 100;
 	var rgxExtractUrlHash = /(#[\w-]+)?$/;
+
 	/**
 	 * Manages the state and loading of multiple resources to load.
 	 *
 	 * @class
 	 */
 
-	var Loader =
-	/*#__PURE__*/
-	function () {
-	  /**
-	   * @param {string} [baseUrl=''] - The base url for all resources loaded by this loader.
-	   * @param {number} [concurrency=10] - The number of resources to load concurrently.
-	   */
-	  function Loader(baseUrl, concurrency) {
-	    var _this = this;
-
-	    if (baseUrl === void 0) {
-	      baseUrl = '';
-	    }
-
-	    if (concurrency === void 0) {
-	      concurrency = 10;
-	    }
-
+	var Loader = exports.Loader = function () {
 	    /**
-	     * The base url for all resources loaded by this loader.
-	     *
-	     * @member {string}
+	     * @param {string} [baseUrl=''] - The base url for all resources loaded by this loader.
+	     * @param {number} [concurrency=10] - The number of resources to load concurrently.
 	     */
-	    this.baseUrl = baseUrl;
+	    function Loader() {
+	        var _this = this;
+
+	        var baseUrl = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+	        var concurrency = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
+
+	        _classCallCheck(this, Loader);
+
+	        /**
+	         * The base url for all resources loaded by this loader.
+	         *
+	         * @member {string}
+	         */
+	        this.baseUrl = baseUrl;
+
+	        /**
+	         * The progress percent of the loader going through the queue.
+	         *
+	         * @member {number}
+	         */
+	        this.progress = 0;
+
+	        /**
+	         * Loading state of the loader, true if it is currently loading resources.
+	         *
+	         * @member {boolean}
+	         */
+	        this.loading = false;
+
+	        /**
+	         * A querystring to append to every URL added to the loader.
+	         *
+	         * This should be a valid query string *without* the question-mark (`?`). The loader will
+	         * also *not* escape values for you. Make sure to escape your parameters with
+	         * [`encodeURIComponent`](https://mdn.io/encodeURIComponent) before assigning this property.
+	         *
+	         * @example
+	         * const loader = new Loader();
+	         *
+	         * loader.defaultQueryString = 'user=me&password=secret';
+	         *
+	         * // This will request 'image.png?user=me&password=secret'
+	         * loader.add('image.png').load();
+	         *
+	         * loader.reset();
+	         *
+	         * // This will request 'image.png?v=1&user=me&password=secret'
+	         * loader.add('iamge.png?v=1').load();
+	         *
+	         * @member {string}
+	         */
+	        this.defaultQueryString = '';
+
+	        /**
+	         * The middleware to run before loading each resource.
+	         *
+	         * @private
+	         * @member {function[]}
+	         */
+	        this._beforeMiddleware = [];
+
+	        /**
+	         * The middleware to run after loading each resource.
+	         *
+	         * @private
+	         * @member {function[]}
+	         */
+	        this._afterMiddleware = [];
+
+	        /**
+	         * The tracks the resources we are currently completing parsing for.
+	         *
+	         * @private
+	         * @member {Resource[]}
+	         */
+	        this._resourcesParsing = [];
+
+	        /**
+	         * The `_loadResource` function bound with this object context.
+	         *
+	         * @private
+	         * @member {function}
+	         * @param {Resource} r - The resource to load
+	         * @param {Function} d - The dequeue function
+	         * @return {undefined}
+	         */
+	        this._boundLoadResource = function (r, d) {
+	            return _this._loadResource(r, d);
+	        };
+
+	        /**
+	         * The resources waiting to be loaded.
+	         *
+	         * @private
+	         * @member {Resource[]}
+	         */
+	        this._queue = async$1.queue(this._boundLoadResource, concurrency);
+
+	        this._queue.pause();
+
+	        /**
+	         * All the resources for this loader keyed by name.
+	         *
+	         * @member {object<string, Resource>}
+	         */
+	        this.resources = {};
+
+	        /**
+	         * Dispatched once per loaded or errored resource.
+	         *
+	         * The callback looks like {@link Loader.OnProgressSignal}.
+	         *
+	         * @member {Signal<Loader.OnProgressSignal>}
+	         */
+	        this.onProgress = new _miniSignals2.default();
+
+	        /**
+	         * Dispatched once per errored resource.
+	         *
+	         * The callback looks like {@link Loader.OnErrorSignal}.
+	         *
+	         * @member {Signal<Loader.OnErrorSignal>}
+	         */
+	        this.onError = new _miniSignals2.default();
+
+	        /**
+	         * Dispatched once per loaded resource.
+	         *
+	         * The callback looks like {@link Loader.OnLoadSignal}.
+	         *
+	         * @member {Signal<Loader.OnLoadSignal>}
+	         */
+	        this.onLoad = new _miniSignals2.default();
+
+	        /**
+	         * Dispatched when the loader begins to process the queue.
+	         *
+	         * The callback looks like {@link Loader.OnStartSignal}.
+	         *
+	         * @member {Signal<Loader.OnStartSignal>}
+	         */
+	        this.onStart = new _miniSignals2.default();
+
+	        /**
+	         * Dispatched when the queued resources all load.
+	         *
+	         * The callback looks like {@link Loader.OnCompleteSignal}.
+	         *
+	         * @member {Signal<Loader.OnCompleteSignal>}
+	         */
+	        this.onComplete = new _miniSignals2.default();
+
+	        // Add default before middleware
+	        for (var i = 0; i < Loader._defaultBeforeMiddleware.length; ++i) {
+	            this.pre(Loader._defaultBeforeMiddleware[i]);
+	        }
+
+	        // Add default after middleware
+	        for (var _i = 0; _i < Loader._defaultAfterMiddleware.length; ++_i) {
+	            this.use(Loader._defaultAfterMiddleware[_i]);
+	        }
+	    }
+
 	    /**
-	     * The progress percent of the loader going through the queue.
+	     * When the progress changes the loader and resource are disaptched.
+	     *
+	     * @memberof Loader
+	     * @callback OnProgressSignal
+	     * @param {Loader} loader - The loader the progress is advancing on.
+	     * @param {Resource} resource - The resource that has completed or failed to cause the progress to advance.
+	     */
+
+	    /**
+	     * When an error occurrs the loader and resource are disaptched.
+	     *
+	     * @memberof Loader
+	     * @callback OnErrorSignal
+	     * @param {Loader} loader - The loader the error happened in.
+	     * @param {Resource} resource - The resource that caused the error.
+	     */
+
+	    /**
+	     * When a load completes the loader and resource are disaptched.
+	     *
+	     * @memberof Loader
+	     * @callback OnLoadSignal
+	     * @param {Loader} loader - The loader that laoded the resource.
+	     * @param {Resource} resource - The resource that has completed loading.
+	     */
+
+	    /**
+	     * When the loader starts loading resources it dispatches this callback.
+	     *
+	     * @memberof Loader
+	     * @callback OnStartSignal
+	     * @param {Loader} loader - The loader that has started loading resources.
+	     */
+
+	    /**
+	     * When the loader completes loading resources it dispatches this callback.
+	     *
+	     * @memberof Loader
+	     * @callback OnCompleteSignal
+	     * @param {Loader} loader - The loader that has finished loading resources.
+	     */
+
+	    /**
+	     * Options for a call to `.add()`.
+	     *
+	     * @see Loader#add
+	     *
+	     * @typedef {object} IAddOptions
+	     * @property {string} [name] - The name of the resource to load, if not passed the url is used.
+	     * @property {string} [key] - Alias for `name`.
+	     * @property {string} [url] - The url for this resource, relative to the baseUrl of this loader.
+	     * @property {string|boolean} [crossOrigin] - Is this request cross-origin? Default is to
+	     *      determine automatically.
+	     * @property {number} [timeout=0] - A timeout in milliseconds for the load. If the load takes
+	     *      longer than this time it is cancelled and the load is considered a failure. If this value is
+	     *      set to `0` then there is no explicit timeout.
+	     * @property {Resource.LOAD_TYPE} [loadType=Resource.LOAD_TYPE.XHR] - How should this resource
+	     *      be loaded?
+	     * @property {Resource.XHR_RESPONSE_TYPE} [xhrType=Resource.XHR_RESPONSE_TYPE.DEFAULT] - How
+	     *      should the data being loaded be interpreted when using XHR?
+	     * @property {Resource.OnCompleteSignal} [onComplete] - Callback to add an an onComplete signal istener.
+	     * @property {Resource.OnCompleteSignal} [callback] - Alias for `onComplete`.
+	     * @property {Resource.IMetadata} [metadata] - Extra configuration for middleware and the Resource object.
+	     */
+
+	    /* eslint-disable require-jsdoc,valid-jsdoc */
+	    /**
+	     * Adds a resource (or multiple resources) to the loader queue.
+	     *
+	     * This function can take a wide variety of different parameters. The only thing that is always
+	     * required the url to load. All the following will work:
+	     *
+	     * ```js
+	     * loader
+	     *     // normal param syntax
+	     *     .add('key', 'http://...', function () {})
+	     *     .add('http://...', function () {})
+	     *     .add('http://...')
+	     *
+	     *     // object syntax
+	     *     .add({
+	     *         name: 'key2',
+	     *         url: 'http://...'
+	     *     }, function () {})
+	     *     .add({
+	     *         url: 'http://...'
+	     *     }, function () {})
+	     *     .add({
+	     *         name: 'key3',
+	     *         url: 'http://...'
+	     *         onComplete: function () {}
+	     *     })
+	     *     .add({
+	     *         url: 'https://...',
+	     *         onComplete: function () {},
+	     *         crossOrigin: true
+	     *     })
+	     *
+	     *     // you can also pass an array of objects or urls or both
+	     *     .add([
+	     *         { name: 'key4', url: 'http://...', onComplete: function () {} },
+	     *         { url: 'http://...', onComplete: function () {} },
+	     *         'http://...'
+	     *     ])
+	     *
+	     *     // and you can use both params and options
+	     *     .add('key', 'http://...', { crossOrigin: true }, function () {})
+	     *     .add('http://...', { crossOrigin: true }, function () {});
+	     * ```
+	     *
+	     * @function
+	     * @variation 1
+	     * @param {string} name - The name of the resource to load.
+	     * @param {string} url - The url for this resource, relative to the baseUrl of this loader.
+	     * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
+	     * @return {this} Returns itself.
+	     */ /**
+	        * @function
+	        * @variation 2
+	        * @param {string} name - The name of the resource to load.
+	        * @param {string} url - The url for this resource, relative to the baseUrl of this loader.
+	        * @param {IAddOptions} [options] - The options for the load.
+	        * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
+	        * @return {this} Returns itself.
+	        */ /**
+	           * @function
+	           * @variation 3
+	           * @param {string} url - The url for this resource, relative to the baseUrl of this loader.
+	           * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
+	           * @return {this} Returns itself.
+	           */ /**
+	              * @function
+	              * @variation 4
+	              * @param {string} url - The url for this resource, relative to the baseUrl of this loader.
+	              * @param {IAddOptions} [options] - The options for the load.
+	              * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
+	              * @return {this} Returns itself.
+	              */ /**
+	                 * @function
+	                 * @variation 5
+	                 * @param {IAddOptions} options - The options for the load. This object must contain a `url` property.
+	                 * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
+	                 * @return {this} Returns itself.
+	                 */ /**
+	                    * @function
+	                    * @variation 6
+	                    * @param {Array<IAddOptions|string>} resources - An array of resources to load, where each is
+	                    *      either an object with the options or a string url. If you pass an object, it must contain a `url` property.
+	                    * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
+	                    * @return {this} Returns itself.
+	                    */
+
+
+	    Loader.prototype.add = function add(name, url, options, cb) {
+	        // special case of an array of objects or urls
+	        if (Array.isArray(name)) {
+	            for (var i = 0; i < name.length; ++i) {
+	                this.add(name[i]);
+	            }
+
+	            return this;
+	        }
+
+	        // if an object is passed instead of params
+	        if ((typeof name === 'undefined' ? 'undefined' : _typeof(name)) === 'object') {
+	            cb = url || name.callback || name.onComplete;
+	            options = name;
+	            url = name.url;
+	            name = name.name || name.key || name.url;
+	        }
+
+	        // case where no name is passed shift all args over by one.
+	        if (typeof url !== 'string') {
+	            cb = options;
+	            options = url;
+	            url = name;
+	        }
+
+	        // now that we shifted make sure we have a proper url.
+	        if (typeof url !== 'string') {
+	            throw new Error('No url passed to add resource to loader.');
+	        }
+
+	        // options are optional so people might pass a function and no options
+	        if (typeof options === 'function') {
+	            cb = options;
+	            options = null;
+	        }
+
+	        // if loading already you can only add resources that have a parent.
+	        if (this.loading && (!options || !options.parentResource)) {
+	            throw new Error('Cannot add resources while the loader is running.');
+	        }
+
+	        // check if resource already exists.
+	        if (this.resources[name]) {
+	            throw new Error('Resource named "' + name + '" already exists.');
+	        }
+
+	        // add base url if this isn't an absolute url
+	        url = this._prepareUrl(url);
+
+	        // create the store the resource
+	        this.resources[name] = new Resource_1.Resource(name, url, options);
+
+	        if (typeof cb === 'function') {
+	            this.resources[name].onAfterMiddleware.once(cb);
+	        }
+
+	        // if actively loading, make sure to adjust progress chunks for that parent and its children
+	        if (this.loading) {
+	            var parent = options.parentResource;
+	            var incompleteChildren = [];
+
+	            for (var _i2 = 0; _i2 < parent.children.length; ++_i2) {
+	                if (!parent.children[_i2].isComplete) {
+	                    incompleteChildren.push(parent.children[_i2]);
+	                }
+	            }
+
+	            var fullChunk = parent.progressChunk * (incompleteChildren.length + 1); // +1 for parent
+	            var eachChunk = fullChunk / (incompleteChildren.length + 2); // +2 for parent & new child
+
+	            parent.children.push(this.resources[name]);
+	            parent.progressChunk = eachChunk;
+
+	            for (var _i3 = 0; _i3 < incompleteChildren.length; ++_i3) {
+	                incompleteChildren[_i3].progressChunk = eachChunk;
+	            }
+
+	            this.resources[name].progressChunk = eachChunk;
+	        }
+
+	        // add the resource to the queue
+	        this._queue.push(this.resources[name]);
+
+	        return this;
+	    };
+	    /* eslint-enable require-jsdoc,valid-jsdoc */
+
+	    /**
+	     * Sets up a middleware function that will run *before* the
+	     * resource is loaded.
+	     *
+	     * @param {function} fn - The middleware function to register.
+	     * @return {this} Returns itself.
+	     */
+
+
+	    Loader.prototype.pre = function pre(fn) {
+	        this._beforeMiddleware.push(fn);
+
+	        return this;
+	    };
+
+	    /**
+	     * Sets up a middleware function that will run *after* the
+	     * resource is loaded.
+	     *
+	     * @param {function} fn - The middleware function to register.
+	     * @return {this} Returns itself.
+	     */
+
+
+	    Loader.prototype.use = function use(fn) {
+	        this._afterMiddleware.push(fn);
+
+	        return this;
+	    };
+
+	    /**
+	     * Resets the queue of the loader to prepare for a new load.
+	     *
+	     * @return {this} Returns itself.
+	     */
+
+
+	    Loader.prototype.reset = function reset() {
+	        this.progress = 0;
+	        this.loading = false;
+
+	        this._queue.kill();
+	        this._queue.pause();
+
+	        // abort all resource loads
+	        for (var k in this.resources) {
+	            var res = this.resources[k];
+
+	            if (res._onLoadBinding) {
+	                res._onLoadBinding.detach();
+	            }
+
+	            if (res.isLoading) {
+	                res.abort();
+	            }
+	        }
+
+	        this.resources = {};
+
+	        return this;
+	    };
+
+	    /**
+	     * Starts loading the queued resources.
+	     *
+	     * @param {function} [cb] - Optional callback that will be bound to the `complete` event.
+	     * @return {this} Returns itself.
+	     */
+
+
+	    Loader.prototype.load = function load(cb) {
+	        // register complete callback if they pass one
+	        if (typeof cb === 'function') {
+	            this.onComplete.once(cb);
+	        }
+
+	        // if the queue has already started we are done here
+	        if (this.loading) {
+	            return this;
+	        }
+
+	        if (this._queue.idle()) {
+	            this._onStart();
+	            this._onComplete();
+	        } else {
+	            // distribute progress chunks
+	            var numTasks = this._queue._tasks.length;
+	            var chunk = MAX_PROGRESS / numTasks;
+
+	            for (var i = 0; i < this._queue._tasks.length; ++i) {
+	                this._queue._tasks[i].data.progressChunk = chunk;
+	            }
+
+	            // notify we are starting
+	            this._onStart();
+
+	            // start loading
+	            this._queue.resume();
+	        }
+
+	        return this;
+	    };
+
+	    /**
+	     * The number of resources to load concurrently.
 	     *
 	     * @member {number}
-	     * @default 0
+	     * @default 10
 	     */
 
-	    this.progress = 0;
-	    /**
-	     * Loading state of the loader, true if it is currently loading resources.
-	     *
-	     * @member {boolean}
-	     * @default false
-	     */
 
-	    this.loading = false;
 	    /**
-	     * A querystring to append to every URL added to the loader.
-	     *
-	     * This should be a valid query string *without* the question-mark (`?`). The loader will
-	     * also *not* escape values for you. Make sure to escape your parameters with
-	     * [`encodeURIComponent`](https://mdn.io/encodeURIComponent) before assigning this property.
-	     *
-	     * @example
-	     * const loader = new Loader();
-	     *
-	     * loader.defaultQueryString = 'user=me&password=secret';
-	     *
-	     * // This will request 'image.png?user=me&password=secret'
-	     * loader.add('image.png').load();
-	     *
-	     * loader.reset();
-	     *
-	     * // This will request 'image.png?v=1&user=me&password=secret'
-	     * loader.add('iamge.png?v=1').load();
-	     *
-	     * @member {string}
-	     * @default ''
-	     */
-
-	    this.defaultQueryString = '';
-	    /**
-	     * The middleware to run before loading each resource.
+	     * Prepares a url for usage based on the configuration of this object
 	     *
 	     * @private
-	     * @member {function[]}
+	     * @param {string} url - The url to prepare.
+	     * @return {string} The prepared url.
 	     */
+	    Loader.prototype._prepareUrl = function _prepareUrl(url) {
+	        var parsedUrl = (0, _parseUri2.default)(url, { strictMode: true });
+	        var result = void 0;
 
-	    this._beforeMiddleware = [];
-	    /**
-	     * The middleware to run after loading each resource.
-	     *
-	     * @private
-	     * @member {function[]}
-	     */
-
-	    this._afterMiddleware = [];
-	    /**
-	     * The tracks the resources we are currently completing parsing for.
-	     *
-	     * @private
-	     * @member {Resource[]}
-	     */
-
-	    this._resourcesParsing = [];
-	    /**
-	     * The `_loadResource` function bound with this object context.
-	     *
-	     * @private
-	     * @member {function}
-	     * @param {Resource} r - The resource to load
-	     * @param {Function} d - The dequeue function
-	     * @return {undefined}
-	     */
-
-	    this._boundLoadResource = function (r, d) {
-	      return _this._loadResource(r, d);
-	    };
-	    /**
-	     * The resources waiting to be loaded.
-	     *
-	     * @private
-	     * @member {Resource[]}
-	     */
-
-
-	    this._queue = queue(this._boundLoadResource, concurrency);
-
-	    this._queue.pause();
-	    /**
-	     * All the resources for this loader keyed by name.
-	     *
-	     * @member {object<string, Resource>}
-	     */
-
-
-	    this.resources = {};
-	    /**
-	     * Dispatched once per loaded or errored resource.
-	     *
-	     * The callback looks like {@link Loader.OnProgressSignal}.
-	     *
-	     * @member {Signal<Loader.OnProgressSignal>}
-	     */
-
-	    this.onProgress = new Signal();
-	    /**
-	     * Dispatched once per errored resource.
-	     *
-	     * The callback looks like {@link Loader.OnErrorSignal}.
-	     *
-	     * @member {Signal<Loader.OnErrorSignal>}
-	     */
-
-	    this.onError = new Signal();
-	    /**
-	     * Dispatched once per loaded resource.
-	     *
-	     * The callback looks like {@link Loader.OnLoadSignal}.
-	     *
-	     * @member {Signal<Loader.OnLoadSignal>}
-	     */
-
-	    this.onLoad = new Signal();
-	    /**
-	     * Dispatched when the loader begins to process the queue.
-	     *
-	     * The callback looks like {@link Loader.OnStartSignal}.
-	     *
-	     * @member {Signal<Loader.OnStartSignal>}
-	     */
-
-	    this.onStart = new Signal();
-	    /**
-	     * Dispatched when the queued resources all load.
-	     *
-	     * The callback looks like {@link Loader.OnCompleteSignal}.
-	     *
-	     * @member {Signal<Loader.OnCompleteSignal>}
-	     */
-
-	    this.onComplete = new Signal(); // Add default before middleware
-
-	    for (var i = 0; i < Loader._defaultBeforeMiddleware.length; ++i) {
-	      this.pre(Loader._defaultBeforeMiddleware[i]);
-	    } // Add default after middleware
-
-
-	    for (var _i = 0; _i < Loader._defaultAfterMiddleware.length; ++_i) {
-	      this.use(Loader._defaultAfterMiddleware[_i]);
-	    }
-	  }
-	  /**
-	   * When the progress changes the loader and resource are disaptched.
-	   *
-	   * @memberof Loader
-	   * @callback OnProgressSignal
-	   * @param {Loader} loader - The loader the progress is advancing on.
-	   * @param {Resource} resource - The resource that has completed or failed to cause the progress to advance.
-	   */
-
-	  /**
-	   * When an error occurrs the loader and resource are disaptched.
-	   *
-	   * @memberof Loader
-	   * @callback OnErrorSignal
-	   * @param {Loader} loader - The loader the error happened in.
-	   * @param {Resource} resource - The resource that caused the error.
-	   */
-
-	  /**
-	   * When a load completes the loader and resource are disaptched.
-	   *
-	   * @memberof Loader
-	   * @callback OnLoadSignal
-	   * @param {Loader} loader - The loader that laoded the resource.
-	   * @param {Resource} resource - The resource that has completed loading.
-	   */
-
-	  /**
-	   * When the loader starts loading resources it dispatches this callback.
-	   *
-	   * @memberof Loader
-	   * @callback OnStartSignal
-	   * @param {Loader} loader - The loader that has started loading resources.
-	   */
-
-	  /**
-	   * When the loader completes loading resources it dispatches this callback.
-	   *
-	   * @memberof Loader
-	   * @callback OnCompleteSignal
-	   * @param {Loader} loader - The loader that has finished loading resources.
-	   */
-
-	  /**
-	   * Options for a call to `.add()`.
-	   *
-	   * @see Loader#add
-	   *
-	   * @typedef {object} IAddOptions
-	   * @property {string} [name] - The name of the resource to load, if not passed the url is used.
-	   * @property {string} [key] - Alias for `name`.
-	   * @property {string} [url] - The url for this resource, relative to the baseUrl of this loader.
-	   * @property {string|boolean} [crossOrigin] - Is this request cross-origin? Default is to
-	   *      determine automatically.
-	   * @property {number} [timeout=0] - A timeout in milliseconds for the load. If the load takes
-	   *      longer than this time it is cancelled and the load is considered a failure. If this value is
-	   *      set to `0` then there is no explicit timeout.
-	   * @property {Resource.LOAD_TYPE} [loadType=Resource.LOAD_TYPE.XHR] - How should this resource
-	   *      be loaded?
-	   * @property {Resource.XHR_RESPONSE_TYPE} [xhrType=Resource.XHR_RESPONSE_TYPE.DEFAULT] - How
-	   *      should the data being loaded be interpreted when using XHR?
-	   * @property {Resource.OnCompleteSignal} [onComplete] - Callback to add an an onComplete signal istener.
-	   * @property {Resource.OnCompleteSignal} [callback] - Alias for `onComplete`.
-	   * @property {Resource.IMetadata} [metadata] - Extra configuration for middleware and the Resource object.
-	   */
-
-	  /* eslint-disable require-jsdoc,valid-jsdoc */
-
-	  /**
-	   * Adds a resource (or multiple resources) to the loader queue.
-	   *
-	   * This function can take a wide variety of different parameters. The only thing that is always
-	   * required the url to load. All the following will work:
-	   *
-	   * ```js
-	   * loader
-	   *     // normal param syntax
-	   *     .add('key', 'http://...', function () {})
-	   *     .add('http://...', function () {})
-	   *     .add('http://...')
-	   *
-	   *     // object syntax
-	   *     .add({
-	   *         name: 'key2',
-	   *         url: 'http://...'
-	   *     }, function () {})
-	   *     .add({
-	   *         url: 'http://...'
-	   *     }, function () {})
-	   *     .add({
-	   *         name: 'key3',
-	   *         url: 'http://...'
-	   *         onComplete: function () {}
-	   *     })
-	   *     .add({
-	   *         url: 'https://...',
-	   *         onComplete: function () {},
-	   *         crossOrigin: true
-	   *     })
-	   *
-	   *     // you can also pass an array of objects or urls or both
-	   *     .add([
-	   *         { name: 'key4', url: 'http://...', onComplete: function () {} },
-	   *         { url: 'http://...', onComplete: function () {} },
-	   *         'http://...'
-	   *     ])
-	   *
-	   *     // and you can use both params and options
-	   *     .add('key', 'http://...', { crossOrigin: true }, function () {})
-	   *     .add('http://...', { crossOrigin: true }, function () {});
-	   * ```
-	   *
-	   * @function
-	   * @variation 1
-	   * @param {string} name - The name of the resource to load.
-	   * @param {string} url - The url for this resource, relative to the baseUrl of this loader.
-	   * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
-	   * @return {this} Returns itself.
-	   */
-
-	  /**
-	  * @function
-	  * @variation 2
-	  * @param {string} name - The name of the resource to load.
-	  * @param {string} url - The url for this resource, relative to the baseUrl of this loader.
-	  * @param {IAddOptions} [options] - The options for the load.
-	  * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
-	  * @return {this} Returns itself.
-	  */
-
-	  /**
-	  * @function
-	  * @variation 3
-	  * @param {string} url - The url for this resource, relative to the baseUrl of this loader.
-	  * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
-	  * @return {this} Returns itself.
-	  */
-
-	  /**
-	  * @function
-	  * @variation 4
-	  * @param {string} url - The url for this resource, relative to the baseUrl of this loader.
-	  * @param {IAddOptions} [options] - The options for the load.
-	  * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
-	  * @return {this} Returns itself.
-	  */
-
-	  /**
-	  * @function
-	  * @variation 5
-	  * @param {IAddOptions} options - The options for the load. This object must contain a `url` property.
-	  * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
-	  * @return {this} Returns itself.
-	  */
-
-	  /**
-	  * @function
-	  * @variation 6
-	  * @param {Array<IAddOptions|string>} resources - An array of resources to load, where each is
-	  *      either an object with the options or a string url. If you pass an object, it must contain a `url` property.
-	  * @param {Resource.OnCompleteSignal} [callback] - Function to call when this specific resource completes loading.
-	  * @return {this} Returns itself.
-	  */
-
-
-	  var _proto = Loader.prototype;
-
-	  _proto.add = function add(name, url, options, cb) {
-	    // special case of an array of objects or urls
-	    if (Array.isArray(name)) {
-	      for (var i = 0; i < name.length; ++i) {
-	        this.add(name[i]);
-	      }
-
-	      return this;
-	    } // if an object is passed instead of params
-
-
-	    if (typeof name === 'object') {
-	      cb = url || name.callback || name.onComplete;
-	      options = name;
-	      url = name.url;
-	      name = name.name || name.key || name.url;
-	    } // case where no name is passed shift all args over by one.
-
-
-	    if (typeof url !== 'string') {
-	      cb = options;
-	      options = url;
-	      url = name;
-	    } // now that we shifted make sure we have a proper url.
-
-
-	    if (typeof url !== 'string') {
-	      throw new Error('No url passed to add resource to loader.');
-	    } // options are optional so people might pass a function and no options
-
-
-	    if (typeof options === 'function') {
-	      cb = options;
-	      options = null;
-	    } // if loading already you can only add resources that have a parent.
-
-
-	    if (this.loading && (!options || !options.parentResource)) {
-	      throw new Error('Cannot add resources while the loader is running.');
-	    } // check if resource already exists.
-
-
-	    if (this.resources[name]) {
-	      throw new Error("Resource named \"" + name + "\" already exists.");
-	    } // add base url if this isn't an absolute url
-
-
-	    url = this._prepareUrl(url); // create the store the resource
-
-	    this.resources[name] = new Resource$1(name, url, options);
-
-	    if (typeof cb === 'function') {
-	      this.resources[name].onAfterMiddleware.once(cb);
-	    } // if actively loading, make sure to adjust progress chunks for that parent and its children
-
-
-	    if (this.loading) {
-	      var parent = options.parentResource;
-	      var incompleteChildren = [];
-
-	      for (var _i2 = 0; _i2 < parent.children.length; ++_i2) {
-	        if (!parent.children[_i2].isComplete) {
-	          incompleteChildren.push(parent.children[_i2]);
+	        // absolute url, just use it as is.
+	        if (parsedUrl.protocol || !parsedUrl.path || url.indexOf('//') === 0) {
+	            result = url;
 	        }
-	      }
+	        // if baseUrl doesn't end in slash and url doesn't start with slash, then add a slash inbetween
+	        else if (this.baseUrl.length && this.baseUrl.lastIndexOf('/') !== this.baseUrl.length - 1 && url.charAt(0) !== '/') {
+	                result = this.baseUrl + '/' + url;
+	            } else {
+	                result = this.baseUrl + url;
+	            }
 
-	      var fullChunk = parent.progressChunk * (incompleteChildren.length + 1); // +1 for parent
+	        // if we need to add a default querystring, there is a bit more work
+	        if (this.defaultQueryString) {
+	            var hash = rgxExtractUrlHash.exec(result)[0];
 
-	      var eachChunk = fullChunk / (incompleteChildren.length + 2); // +2 for parent & new child
+	            result = result.substr(0, result.length - hash.length);
 
-	      parent.children.push(this.resources[name]);
-	      parent.progressChunk = eachChunk;
+	            if (result.indexOf('?') !== -1) {
+	                result += '&' + this.defaultQueryString;
+	            } else {
+	                result += '?' + this.defaultQueryString;
+	            }
 
-	      for (var _i3 = 0; _i3 < incompleteChildren.length; ++_i3) {
-	        incompleteChildren[_i3].progressChunk = eachChunk;
-	      }
+	            result += hash;
+	        }
 
-	      this.resources[name].progressChunk = eachChunk;
-	    } // add the resource to the queue
+	        return result;
+	    };
 
-
-	    this._queue.push(this.resources[name]);
-
-	    return this;
-	  }
-	  /* eslint-enable require-jsdoc,valid-jsdoc */
-
-	  /**
-	   * Sets up a middleware function that will run *before* the
-	   * resource is loaded.
-	   *
-	   * @param {function} fn - The middleware function to register.
-	   * @return {this} Returns itself.
-	   */
-	  ;
-
-	  _proto.pre = function pre(fn) {
-	    this._beforeMiddleware.push(fn);
-
-	    return this;
-	  }
-	  /**
-	   * Sets up a middleware function that will run *after* the
-	   * resource is loaded.
-	   *
-	   * @param {function} fn - The middleware function to register.
-	   * @return {this} Returns itself.
-	   */
-	  ;
-
-	  _proto.use = function use(fn) {
-	    this._afterMiddleware.push(fn);
-
-	    return this;
-	  }
-	  /**
-	   * Resets the queue of the loader to prepare for a new load.
-	   *
-	   * @return {this} Returns itself.
-	   */
-	  ;
-
-	  _proto.reset = function reset() {
-	    this.progress = 0;
-	    this.loading = false;
-
-	    this._queue.kill();
-
-	    this._queue.pause(); // abort all resource loads
+	    /**
+	     * Loads a single resource.
+	     *
+	     * @private
+	     * @param {Resource} resource - The resource to load.
+	     * @param {function} dequeue - The function to call when we need to dequeue this item.
+	     */
 
 
-	    for (var k in this.resources) {
-	      var res = this.resources[k];
+	    Loader.prototype._loadResource = function _loadResource(resource, dequeue) {
+	        var _this2 = this;
 
-	      if (res._onLoadBinding) {
-	        res._onLoadBinding.detach();
-	      }
+	        resource._dequeue = dequeue;
 
-	      if (res.isLoading) {
-	        res.abort();
-	      }
-	    }
+	        // run before middleware
+	        async$1.eachSeries(this._beforeMiddleware, function (fn, next) {
+	            fn.call(_this2, resource, function () {
+	                // if the before middleware marks the resource as complete,
+	                // break and don't process any more before middleware
+	                next(resource.isComplete ? {} : null);
+	            });
+	        }, function () {
+	            if (resource.isComplete) {
+	                _this2._onLoad(resource);
+	            } else {
+	                resource._onLoadBinding = resource.onComplete.once(_this2._onLoad, _this2);
+	                resource.load();
+	            }
+	        }, true);
+	    };
 
-	    this.resources = {};
-	    return this;
-	  }
-	  /**
-	   * Starts loading the queued resources.
-	   *
-	   * @param {function} [cb] - Optional callback that will be bound to the `complete` event.
-	   * @return {this} Returns itself.
-	   */
-	  ;
-
-	  _proto.load = function load(cb) {
-	    // register complete callback if they pass one
-	    if (typeof cb === 'function') {
-	      this.onComplete.once(cb);
-	    } // if the queue has already started we are done here
-
-
-	    if (this.loading) {
-	      return this;
-	    }
-
-	    if (this._queue.idle()) {
-	      this._onStart();
-
-	      this._onComplete();
-	    } else {
-	      // distribute progress chunks
-	      var numTasks = this._queue._tasks.length;
-	      var chunk = MAX_PROGRESS / numTasks;
-
-	      for (var i = 0; i < this._queue._tasks.length; ++i) {
-	        this._queue._tasks[i].data.progressChunk = chunk;
-	      } // notify we are starting
+	    /**
+	     * Called once loading has started.
+	     *
+	     * @private
+	     */
 
 
-	      this._onStart(); // start loading
+	    Loader.prototype._onStart = function _onStart() {
+	        this.progress = 0;
+	        this.loading = true;
+	        this.onStart.dispatch(this);
+	    };
+
+	    /**
+	     * Called once each resource has loaded.
+	     *
+	     * @private
+	     */
 
 
-	      this._queue.resume();
-	    }
+	    Loader.prototype._onComplete = function _onComplete() {
+	        this.progress = MAX_PROGRESS;
+	        this.loading = false;
+	        this.onComplete.dispatch(this, this.resources);
+	    };
 
-	    return this;
-	  }
-	  /**
-	   * The number of resources to load concurrently.
-	   *
-	   * @member {number}
-	   * @default 10
-	   */
-	  ;
-
-	  /**
-	   * Prepares a url for usage based on the configuration of this object
-	   *
-	   * @private
-	   * @param {string} url - The url to prepare.
-	   * @return {string} The prepared url.
-	   */
-	  _proto._prepareUrl = function _prepareUrl(url) {
-	    var parsedUrl = parseUri(url, {
-	      strictMode: true
-	    });
-	    var result; // absolute url, just use it as is.
-
-	    if (parsedUrl.protocol || !parsedUrl.path || url.indexOf('//') === 0) {
-	      result = url;
-	    } // if baseUrl doesn't end in slash and url doesn't start with slash, then add a slash inbetween
-	    else if (this.baseUrl.length && this.baseUrl.lastIndexOf('/') !== this.baseUrl.length - 1 && url.charAt(0) !== '/') {
-	        result = this.baseUrl + "/" + url;
-	      } else {
-	        result = this.baseUrl + url;
-	      } // if we need to add a default querystring, there is a bit more work
+	    /**
+	     * Called each time a resources is loaded.
+	     *
+	     * @private
+	     * @param {Resource} resource - The resource that was loaded
+	     */
 
 
-	    if (this.defaultQueryString) {
-	      var hash = rgxExtractUrlHash.exec(result)[0];
-	      result = result.substr(0, result.length - hash.length);
+	    Loader.prototype._onLoad = function _onLoad(resource) {
+	        var _this3 = this;
 
-	      if (result.indexOf('?') !== -1) {
-	        result += "&" + this.defaultQueryString;
-	      } else {
-	        result += "?" + this.defaultQueryString;
-	      }
+	        resource._onLoadBinding = null;
 
-	      result += hash;
-	    }
+	        // remove this resource from the async queue, and add it to our list of resources that are being parsed
+	        this._resourcesParsing.push(resource);
+	        resource._dequeue();
 
-	    return result;
-	  }
-	  /**
-	   * Loads a single resource.
-	   *
-	   * @private
-	   * @param {Resource} resource - The resource to load.
-	   * @param {function} dequeue - The function to call when we need to dequeue this item.
-	   */
-	  ;
+	        // run all the after middleware for this resource
+	        async$1.eachSeries(this._afterMiddleware, function (fn, next) {
+	            fn.call(_this3, resource, next);
+	        }, function () {
+	            resource.onAfterMiddleware.dispatch(resource);
 
-	  _proto._loadResource = function _loadResource(resource, dequeue) {
-	    var _this2 = this;
+	            _this3.progress = Math.min(MAX_PROGRESS, _this3.progress + resource.progressChunk);
+	            _this3.onProgress.dispatch(_this3, resource);
 
-	    resource._dequeue = dequeue; // run before middleware
+	            if (resource.error) {
+	                _this3.onError.dispatch(resource.error, _this3, resource);
+	            } else {
+	                _this3.onLoad.dispatch(_this3, resource);
+	            }
 
-	    eachSeries(this._beforeMiddleware, function (fn, next) {
-	      fn.call(_this2, resource, function () {
-	        // if the before middleware marks the resource as complete,
-	        // break and don't process any more before middleware
-	        next(resource.isComplete ? {} : null);
-	      });
-	    }, function () {
-	      if (resource.isComplete) {
-	        _this2._onLoad(resource);
-	      } else {
-	        resource._onLoadBinding = resource.onComplete.once(_this2._onLoad, _this2);
-	        resource.load();
-	      }
-	    }, true);
-	  }
-	  /**
-	   * Called once loading has started.
-	   *
-	   * @private
-	   */
-	  ;
+	            _this3._resourcesParsing.splice(_this3._resourcesParsing.indexOf(resource), 1);
 
-	  _proto._onStart = function _onStart() {
-	    this.progress = 0;
-	    this.loading = true;
-	    this.onStart.dispatch(this);
-	  }
-	  /**
-	   * Called once each resource has loaded.
-	   *
-	   * @private
-	   */
-	  ;
+	            // do completion check
+	            if (_this3._queue.idle() && _this3._resourcesParsing.length === 0) {
+	                _this3._onComplete();
+	            }
+	        }, true);
+	    };
 
-	  _proto._onComplete = function _onComplete() {
-	    this.progress = MAX_PROGRESS;
-	    this.loading = false;
-	    this.onComplete.dispatch(this, this.resources);
-	  }
-	  /**
-	   * Called each time a resources is loaded.
-	   *
-	   * @private
-	   * @param {Resource} resource - The resource that was loaded
-	   */
-	  ;
+	    _createClass(Loader, [{
+	        key: 'concurrency',
+	        get: function get() {
+	            return this._queue.concurrency;
+	        }
+	        // eslint-disable-next-line require-jsdoc
+	        ,
+	        set: function set(concurrency) {
+	            this._queue.concurrency = concurrency;
+	        }
+	    }]);
 
-	  _proto._onLoad = function _onLoad(resource) {
-	    var _this3 = this;
-
-	    resource._onLoadBinding = null; // remove this resource from the async queue, and add it to our list of resources that are being parsed
-
-	    this._resourcesParsing.push(resource);
-
-	    resource._dequeue(); // run all the after middleware for this resource
-
-
-	    eachSeries(this._afterMiddleware, function (fn, next) {
-	      fn.call(_this3, resource, next);
-	    }, function () {
-	      resource.onAfterMiddleware.dispatch(resource);
-	      _this3.progress = Math.min(MAX_PROGRESS, _this3.progress + resource.progressChunk);
-
-	      _this3.onProgress.dispatch(_this3, resource);
-
-	      if (resource.error) {
-	        _this3.onError.dispatch(resource.error, _this3, resource);
-	      } else {
-	        _this3.onLoad.dispatch(_this3, resource);
-	      }
-
-	      _this3._resourcesParsing.splice(_this3._resourcesParsing.indexOf(resource), 1); // do completion check
-
-
-	      if (_this3._queue.idle() && _this3._resourcesParsing.length === 0) {
-	        _this3._onComplete();
-	      }
-	    }, true);
-	  };
-
-	  _createClass(Loader, [{
-	    key: "concurrency",
-	    get: function get() {
-	      return this._queue.concurrency;
-	    } // eslint-disable-next-line require-jsdoc
-	    ,
-	    set: function set(concurrency) {
-	      this._queue.concurrency = concurrency;
-	    }
-	  }]);
-
-	  return Loader;
+	    return Loader;
 	}();
+
 	/**
 	 * A default array of middleware to run before loading each resource.
 	 * Each of these middlewares are added to any new Loader instances when they are created.
@@ -35462,6 +33930,7 @@ var PIXI = (function (exports) {
 
 
 	Loader._defaultBeforeMiddleware = [];
+
 	/**
 	 * A default array of middleware to run after loading each resource.
 	 * Each of these middlewares are added to any new Loader instances when they are created.
@@ -35469,8 +33938,8 @@ var PIXI = (function (exports) {
 	 * @private
 	 * @member {function[]}
 	 */
-
 	Loader._defaultAfterMiddleware = [];
+
 	/**
 	 * Sets up a middleware function that will run *before* the
 	 * resource is loaded.
@@ -35479,12 +33948,12 @@ var PIXI = (function (exports) {
 	 * @param {function} fn - The middleware function to register.
 	 * @return {Loader} Returns itself.
 	 */
-
 	Loader.pre = function LoaderPreStatic(fn) {
-	  Loader._defaultBeforeMiddleware.push(fn);
+	    Loader._defaultBeforeMiddleware.push(fn);
 
-	  return Loader;
+	    return Loader;
 	};
+
 	/**
 	 * Sets up a middleware function that will run *after* the
 	 * resource is loaded.
@@ -35493,21 +33962,1788 @@ var PIXI = (function (exports) {
 	 * @param {function} fn - The middleware function to register.
 	 * @return {Loader} Returns itself.
 	 */
-
-
 	Loader.use = function LoaderUseStatic(fn) {
-	  Loader._defaultAfterMiddleware.push(fn);
+	    Loader._defaultAfterMiddleware.push(fn);
 
-	  return Loader;
+	    return Loader;
 	};
 
+	});
+
+	var Loader = unwrapExports(Loader_1);
+	var Loader_2 = Loader_1.Loader;
+
+	var b64 = createCommonjsModule(function (module, exports) {
+	'use strict';
+
+	exports.__esModule = true;
+	exports.encodeBinary = encodeBinary;
+	var _keyStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+	/**
+	 * Encodes binary into base64.
+	 *
+	 * @param {string} input The input data to encode.
+	 * @returns {string} The encoded base64 string
+	 */
+	function encodeBinary(input) {
+	    var output = '';
+	    var inx = 0;
+
+	    while (inx < input.length) {
+	        // Fill byte buffer array
+	        var bytebuffer = [0, 0, 0];
+	        var encodedCharIndexes = [0, 0, 0, 0];
+
+	        for (var jnx = 0; jnx < bytebuffer.length; ++jnx) {
+	            if (inx < input.length) {
+	                // throw away high-order byte, as documented at:
+	                // https://developer.mozilla.org/En/Using_XMLHttpRequest#Handling_binary_data
+	                bytebuffer[jnx] = input.charCodeAt(inx++) & 0xff;
+	            } else {
+	                bytebuffer[jnx] = 0;
+	            }
+	        }
+
+	        // Get each encoded character, 6 bits at a time
+	        // index 1: first 6 bits
+	        encodedCharIndexes[0] = bytebuffer[0] >> 2;
+
+	        // index 2: second 6 bits (2 least significant bits from input byte 1 + 4 most significant bits from byte 2)
+	        encodedCharIndexes[1] = (bytebuffer[0] & 0x3) << 4 | bytebuffer[1] >> 4;
+
+	        // index 3: third 6 bits (4 least significant bits from input byte 2 + 2 most significant bits from byte 3)
+	        encodedCharIndexes[2] = (bytebuffer[1] & 0x0f) << 2 | bytebuffer[2] >> 6;
+
+	        // index 3: forth 6 bits (6 least significant bits from input byte 3)
+	        encodedCharIndexes[3] = bytebuffer[2] & 0x3f;
+
+	        // Determine whether padding happened, and adjust accordingly
+	        var paddingBytes = inx - (input.length - 1);
+
+	        switch (paddingBytes) {
+	            case 2:
+	                // Set last 2 characters to padding char
+	                encodedCharIndexes[3] = 64;
+	                encodedCharIndexes[2] = 64;
+	                break;
+
+	            case 1:
+	                // Set last character to padding char
+	                encodedCharIndexes[3] = 64;
+	                break;
+
+	            default:
+	                break; // No padding - proceed
+	        }
+
+	        // Now we will grab each appropriate character out of our keystring
+	        // based on our index array and append it to the output string
+	        for (var _jnx = 0; _jnx < encodedCharIndexes.length; ++_jnx) {
+	            output += _keyStr.charAt(encodedCharIndexes[_jnx]);
+	        }
+	    }
+
+	    return output;
+	}
+
+	// Backwards compat
+	if ('object' !== 'undefined') {
+	    module.exports.default = encodeBinary; // eslint-disable-line no-undef
+	}
+
+	});
+
+	var b64$1 = unwrapExports(b64);
+	var b64_1 = b64.encodeBinary;
+
+	'use strict';
+
+	// import Loader from './Loader';
+	// import Resource from './Resource';
+	// import * as async from './async';
+	// import * as b64 from './b64';
+
+	/* eslint-disable no-undef */
+
+	var Loader$1 = Loader_1.Loader;
+	var Resource$2 = Resource_1.Resource;
+
+
+
+	/**
+	 *
+	 * @static
+	 * @memberof Loader
+	 * @member {Class<Resource>}
+	 */
+	Loader$1.Resource = Resource$2;
+
+	/**
+	 *
+	 * @static
+	 * @memberof Loader
+	 * @member {Class<async>}
+	 */
+	Loader$1.async = async;
+
+	/**
+	 *
+	 * @static
+	 * @memberof Loader
+	 * @member {Class<encodeBinary>}
+	 */
+	Loader$1.encodeBinary = b64;
+
+	/**
+	 *
+	 * @deprecated
+	 * @see Loader.encodeBinary
+	 *
+	 * @static
+	 * @memberof Loader
+	 * @member {Class<encodeBinary>}
+	 */
+	Loader$1.base64 = b64;
+
+	// export manually, and also as default
+	var lib = Loader$1;
+
+	// default & named export
+	var Loader_1$1 = Loader$1;
+	var default_1$1 = Loader$1;
+	var lib_1 = lib.Resource;
+	lib.Loader = Loader_1$1;
+	lib.default = default_1$1;
+
 	/*!
-	 * @pixi/loaders - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/loaders - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/loaders is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
 	 */
+
+	function unwrapExports$1 (x) {
+		return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+	}
+
+	function createCommonjsModule$1(fn, module) {
+		return module = { exports: {} }, fn(module, module.exports), module.exports;
+	}
+
+	var parseUri$1 = function parseURI (str, opts) {
+	  opts = opts || {};
+
+	  var o = {
+	    key: ['source', 'protocol', 'authority', 'userInfo', 'user', 'password', 'host', 'port', 'relative', 'path', 'directory', 'file', 'query', 'anchor'],
+	    q: {
+	      name: 'queryKey',
+	      parser: /(?:^|&)([^&=]*)=?([^&]*)/g
+	    },
+	    parser: {
+	      strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,
+	      loose: /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/
+	    }
+	  };
+
+	  var m = o.parser[opts.strictMode ? 'strict' : 'loose'].exec(str);
+	  var uri = {};
+	  var i = 14;
+
+	  while (i--) { uri[o.key[i]] = m[i] || ''; }
+
+	  uri[o.q.name] = {};
+	  uri[o.key[12]].replace(o.q.parser, function ($0, $1, $2) {
+	    if ($1) { uri[o.q.name][$1] = $2; }
+	  });
+
+	  return uri
+	};
+
+	var miniSignals$2 = createCommonjsModule$1(function (module, exports) {
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) { descriptor.writable = true; } Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) { defineProperties(Constructor.prototype, protoProps); } if (staticProps) { defineProperties(Constructor, staticProps); } return Constructor; }; })();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	var MiniSignalBinding = (function () {
+	  function MiniSignalBinding(fn, once, thisArg) {
+	    if (once === undefined) { once = false; }
+
+	    _classCallCheck(this, MiniSignalBinding);
+
+	    this._fn = fn;
+	    this._once = once;
+	    this._thisArg = thisArg;
+	    this._next = this._prev = this._owner = null;
+	  }
+
+	  _createClass(MiniSignalBinding, [{
+	    key: 'detach',
+	    value: function detach() {
+	      if (this._owner === null) { return false; }
+	      this._owner.detach(this);
+	      return true;
+	    }
+	  }]);
+
+	  return MiniSignalBinding;
+	})();
+
+	function _addMiniSignalBinding(self, node) {
+	  if (!self._head) {
+	    self._head = node;
+	    self._tail = node;
+	  } else {
+	    self._tail._next = node;
+	    node._prev = self._tail;
+	    self._tail = node;
+	  }
+
+	  node._owner = self;
+
+	  return node;
+	}
+
+	var MiniSignal = (function () {
+	  function MiniSignal() {
+	    _classCallCheck(this, MiniSignal);
+
+	    this._head = this._tail = undefined;
+	  }
+
+	  _createClass(MiniSignal, [{
+	    key: 'handlers',
+	    value: function handlers() {
+	      var exists = arguments.length <= 0 || arguments[0] === undefined ? false : arguments[0];
+
+	      var node = this._head;
+
+	      if (exists) { return !!node; }
+
+	      var ee = [];
+
+	      while (node) {
+	        ee.push(node);
+	        node = node._next;
+	      }
+
+	      return ee;
+	    }
+	  }, {
+	    key: 'has',
+	    value: function has(node) {
+	      if (!(node instanceof MiniSignalBinding)) {
+	        throw new Error('MiniSignal#has(): First arg must be a MiniSignalBinding object.');
+	      }
+
+	      return node._owner === this;
+	    }
+	  }, {
+	    key: 'dispatch',
+	    value: function dispatch() {
+	      var arguments$1 = arguments;
+
+	      var node = this._head;
+
+	      if (!node) { return false; }
+
+	      while (node) {
+	        if (node._once) { this.detach(node); }
+	        node._fn.apply(node._thisArg, arguments$1);
+	        node = node._next;
+	      }
+
+	      return true;
+	    }
+	  }, {
+	    key: 'add',
+	    value: function add(fn) {
+	      var thisArg = arguments.length <= 1 || arguments[1] === undefined ? null : arguments[1];
+
+	      if (typeof fn !== 'function') {
+	        throw new Error('MiniSignal#add(): First arg must be a Function.');
+	      }
+	      return _addMiniSignalBinding(this, new MiniSignalBinding(fn, false, thisArg));
+	    }
+	  }, {
+	    key: 'once',
+	    value: function once(fn) {
+	      var thisArg = arguments.length <= 1 || arguments[1] === undefined ? null : arguments[1];
+
+	      if (typeof fn !== 'function') {
+	        throw new Error('MiniSignal#once(): First arg must be a Function.');
+	      }
+	      return _addMiniSignalBinding(this, new MiniSignalBinding(fn, true, thisArg));
+	    }
+	  }, {
+	    key: 'detach',
+	    value: function detach(node) {
+	      if (!(node instanceof MiniSignalBinding)) {
+	        throw new Error('MiniSignal#detach(): First arg must be a MiniSignalBinding object.');
+	      }
+	      if (node._owner !== this) { return this; }
+
+	      if (node._prev) { node._prev._next = node._next; }
+	      if (node._next) { node._next._prev = node._prev; }
+
+	      if (node === this._head) {
+	        this._head = node._next;
+	        if (node._next === null) {
+	          this._tail = null;
+	        }
+	      } else if (node === this._tail) {
+	        this._tail = node._prev;
+	        this._tail._next = null;
+	      }
+
+	      node._owner = null;
+	      return this;
+	    }
+	  }, {
+	    key: 'detachAll',
+	    value: function detachAll() {
+	      var node = this._head;
+	      if (!node) { return this; }
+
+	      this._head = this._tail = null;
+
+	      while (node) {
+	        node._owner = null;
+	        node = node._next;
+	      }
+	      return this;
+	    }
+	  }]);
+
+	  return MiniSignal;
+	})();
+
+	MiniSignal.MiniSignalBinding = MiniSignalBinding;
+
+	exports['default'] = MiniSignal;
+	module.exports = exports['default'];
+	});
+
+	unwrapExports$1(miniSignals$2);
+
+	var Resource_1$1 = createCommonjsModule$1(function (module, exports) {
+
+	exports.__esModule = true;
+	exports.Resource = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) { descriptor.writable = true; } Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) { defineProperties(Constructor.prototype, protoProps); } if (staticProps) { defineProperties(Constructor, staticProps); } return Constructor; }; }();
+
+
+
+	var _parseUri2 = _interopRequireDefault(parseUri$1);
+
+
+
+	var _miniSignals2 = _interopRequireDefault(miniSignals$2);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	// tests if CORS is supported in XHR, if not we need to use XDR
+	var useXdr = !!(window.XDomainRequest && !('withCredentials' in new XMLHttpRequest()));
+	var tempAnchor = null;
+
+	// some status constants
+	var STATUS_NONE = 0;
+	var STATUS_OK = 200;
+	var STATUS_EMPTY = 204;
+	var STATUS_IE_BUG_EMPTY = 1223;
+	var STATUS_TYPE_OK = 2;
+
+	// noop
+	function _noop() {} /* empty */
+
+	/**
+	 * Manages the state and loading of a resource and all child resources.
+	 *
+	 * @class
+	 */
+
+	var Resource = exports.Resource = function () {
+	    /**
+	     * Sets the load type to be used for a specific extension.
+	     *
+	     * @static
+	     * @param {string} extname - The extension to set the type for, e.g. "png" or "fnt"
+	     * @param {Resource.LOAD_TYPE} loadType - The load type to set it to.
+	     */
+	    Resource.setExtensionLoadType = function setExtensionLoadType(extname, loadType) {
+	        setExtMap(Resource._loadTypeMap, extname, loadType);
+	    };
+
+	    /**
+	     * Sets the load type to be used for a specific extension.
+	     *
+	     * @static
+	     * @param {string} extname - The extension to set the type for, e.g. "png" or "fnt"
+	     * @param {Resource.XHR_RESPONSE_TYPE} xhrType - The xhr type to set it to.
+	     */
+
+
+	    Resource.setExtensionXhrType = function setExtensionXhrType(extname, xhrType) {
+	        setExtMap(Resource._xhrTypeMap, extname, xhrType);
+	    };
+
+	    /**
+	     * @param {string} name - The name of the resource to load.
+	     * @param {string|string[]} url - The url for this resource, for audio/video loads you can pass
+	     *      an array of sources.
+	     * @param {object} [options] - The options for the load.
+	     * @param {string|boolean} [options.crossOrigin] - Is this request cross-origin? Default is to
+	     *      determine automatically.
+	     * @param {number} [options.timeout=0] - A timeout in milliseconds for the load. If the load takes
+	     *      longer than this time it is cancelled and the load is considered a failure. If this value is
+	     *      set to `0` then there is no explicit timeout.
+	     * @param {Resource.LOAD_TYPE} [options.loadType=Resource.LOAD_TYPE.XHR] - How should this resource
+	     *      be loaded?
+	     * @param {Resource.XHR_RESPONSE_TYPE} [options.xhrType=Resource.XHR_RESPONSE_TYPE.DEFAULT] - How
+	     *      should the data being loaded be interpreted when using XHR?
+	     * @param {Resource.IMetadata} [options.metadata] - Extra configuration for middleware and the Resource object.
+	     */
+
+
+	    function Resource(name, url, options) {
+	        _classCallCheck(this, Resource);
+
+	        if (typeof name !== 'string' || typeof url !== 'string') {
+	            throw new Error('Both name and url are required for constructing a resource.');
+	        }
+
+	        options = options || {};
+
+	        /**
+	         * The state flags of this resource.
+	         *
+	         * @private
+	         * @member {number}
+	         */
+	        this._flags = 0;
+
+	        // set data url flag, needs to be set early for some _determineX checks to work.
+	        this._setFlag(Resource.STATUS_FLAGS.DATA_URL, url.indexOf('data:') === 0);
+
+	        /**
+	         * The name of this resource.
+	         *
+	         * @readonly
+	         * @member {string}
+	         */
+	        this.name = name;
+
+	        /**
+	         * The url used to load this resource.
+	         *
+	         * @readonly
+	         * @member {string}
+	         */
+	        this.url = url;
+
+	        /**
+	         * The extension used to load this resource.
+	         *
+	         * @readonly
+	         * @member {string}
+	         */
+	        this.extension = this._getExtension();
+
+	        /**
+	         * The data that was loaded by the resource.
+	         *
+	         * @member {any}
+	         */
+	        this.data = null;
+
+	        /**
+	         * Is this request cross-origin? If unset, determined automatically.
+	         *
+	         * @member {string}
+	         */
+	        this.crossOrigin = options.crossOrigin === true ? 'anonymous' : options.crossOrigin;
+
+	        /**
+	         * A timeout in milliseconds for the load. If the load takes longer than this time
+	         * it is cancelled and the load is considered a failure. If this value is set to `0`
+	         * then there is no explicit timeout.
+	         *
+	         * @member {number}
+	         */
+	        this.timeout = options.timeout || 0;
+
+	        /**
+	         * The method of loading to use for this resource.
+	         *
+	         * @member {Resource.LOAD_TYPE}
+	         */
+	        this.loadType = options.loadType || this._determineLoadType();
+
+	        /**
+	         * The type used to load the resource via XHR. If unset, determined automatically.
+	         *
+	         * @member {string}
+	         */
+	        this.xhrType = options.xhrType;
+
+	        /**
+	         * Extra info for middleware, and controlling specifics about how the resource loads.
+	         *
+	         * Note that if you pass in a `loadElement`, the Resource class takes ownership of it.
+	         * Meaning it will modify it as it sees fit.
+	         *
+	         * @member {Resource.IMetadata}
+	         */
+	        this.metadata = options.metadata || {};
+
+	        /**
+	         * The error that occurred while loading (if any).
+	         *
+	         * @readonly
+	         * @member {Error}
+	         */
+	        this.error = null;
+
+	        /**
+	         * The XHR object that was used to load this resource. This is only set
+	         * when `loadType` is `Resource.LOAD_TYPE.XHR`.
+	         *
+	         * @readonly
+	         * @member {XMLHttpRequest}
+	         */
+	        this.xhr = null;
+
+	        /**
+	         * The child resources this resource owns.
+	         *
+	         * @readonly
+	         * @member {Resource[]}
+	         */
+	        this.children = [];
+
+	        /**
+	         * The resource type.
+	         *
+	         * @readonly
+	         * @member {Resource.TYPE}
+	         */
+	        this.type = Resource.TYPE.UNKNOWN;
+
+	        /**
+	         * The progress chunk owned by this resource.
+	         *
+	         * @readonly
+	         * @member {number}
+	         */
+	        this.progressChunk = 0;
+
+	        /**
+	         * The `dequeue` method that will be used a storage place for the async queue dequeue method
+	         * used privately by the loader.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._dequeue = _noop;
+
+	        /**
+	         * Used a storage place for the on load binding used privately by the loader.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._onLoadBinding = null;
+
+	        /**
+	         * The timer for element loads to check if they timeout.
+	         *
+	         * @private
+	         * @member {number}
+	         */
+	        this._elementTimer = 0;
+
+	        /**
+	         * The `complete` function bound to this resource's context.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._boundComplete = this.complete.bind(this);
+
+	        /**
+	         * The `_onError` function bound to this resource's context.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._boundOnError = this._onError.bind(this);
+
+	        /**
+	         * The `_onProgress` function bound to this resource's context.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._boundOnProgress = this._onProgress.bind(this);
+
+	        /**
+	         * The `_onTimeout` function bound to this resource's context.
+	         *
+	         * @private
+	         * @member {function}
+	         */
+	        this._boundOnTimeout = this._onTimeout.bind(this);
+
+	        // xhr callbacks
+	        this._boundXhrOnError = this._xhrOnError.bind(this);
+	        this._boundXhrOnTimeout = this._xhrOnTimeout.bind(this);
+	        this._boundXhrOnAbort = this._xhrOnAbort.bind(this);
+	        this._boundXhrOnLoad = this._xhrOnLoad.bind(this);
+
+	        /**
+	         * Dispatched when the resource beings to load.
+	         *
+	         * The callback looks like {@link Resource.OnStartSignal}.
+	         *
+	         * @member {Signal<Resource.OnStartSignal>}
+	         */
+	        this.onStart = new _miniSignals2.default();
+
+	        /**
+	         * Dispatched each time progress of this resource load updates.
+	         * Not all resources types and loader systems can support this event
+	         * so sometimes it may not be available. If the resource
+	         * is being loaded on a modern browser, using XHR, and the remote server
+	         * properly sets Content-Length headers, then this will be available.
+	         *
+	         * The callback looks like {@link Resource.OnProgressSignal}.
+	         *
+	         * @member {Signal<Resource.OnProgressSignal>}
+	         */
+	        this.onProgress = new _miniSignals2.default();
+
+	        /**
+	         * Dispatched once this resource has loaded, if there was an error it will
+	         * be in the `error` property.
+	         *
+	         * The callback looks like {@link Resource.OnCompleteSignal}.
+	         *
+	         * @member {Signal<Resource.OnCompleteSignal>}
+	         */
+	        this.onComplete = new _miniSignals2.default();
+
+	        /**
+	         * Dispatched after this resource has had all the *after* middleware run on it.
+	         *
+	         * The callback looks like {@link Resource.OnCompleteSignal}.
+	         *
+	         * @member {Signal<Resource.OnCompleteSignal>}
+	         */
+	        this.onAfterMiddleware = new _miniSignals2.default();
+	    }
+
+	    /**
+	     * When the resource starts to load.
+	     *
+	     * @memberof Resource
+	     * @callback OnStartSignal
+	     * @param {Resource} resource - The resource that the event happened on.
+	     */
+
+	    /**
+	     * When the resource reports loading progress.
+	     *
+	     * @memberof Resource
+	     * @callback OnProgressSignal
+	     * @param {Resource} resource - The resource that the event happened on.
+	     * @param {number} percentage - The progress of the load in the range [0, 1].
+	     */
+
+	    /**
+	     * When the resource finishes loading.
+	     *
+	     * @memberof Resource
+	     * @callback OnCompleteSignal
+	     * @param {Resource} resource - The resource that the event happened on.
+	     */
+
+	    /**
+	     * @memberof Resource
+	     * @typedef {object} IMetadata
+	     * @property {HTMLImageElement|HTMLAudioElement|HTMLVideoElement} [loadElement=null] - The
+	     *      element to use for loading, instead of creating one.
+	     * @property {boolean} [skipSource=false] - Skips adding source(s) to the load element. This
+	     *      is useful if you want to pass in a `loadElement` that you already added load sources to.
+	     * @property {string|string[]} [mimeType] - The mime type to use for the source element
+	     *      of a video/audio elment. If the urls are an array, you can pass this as an array as well
+	     *      where each index is the mime type to use for the corresponding url index.
+	     */
+
+	    /**
+	     * Stores whether or not this url is a data url.
+	     *
+	     * @readonly
+	     * @member {boolean}
+	     */
+
+
+	    /**
+	     * Marks the resource as complete.
+	     *
+	     */
+	    Resource.prototype.complete = function complete() {
+	        this._clearEvents();
+	        this._finish();
+	    };
+
+	    /**
+	     * Aborts the loading of this resource, with an optional message.
+	     *
+	     * @param {string} message - The message to use for the error
+	     */
+
+
+	    Resource.prototype.abort = function abort(message) {
+	        // abort can be called multiple times, ignore subsequent calls.
+	        if (this.error) {
+	            return;
+	        }
+
+	        // store error
+	        this.error = new Error(message);
+
+	        // clear events before calling aborts
+	        this._clearEvents();
+
+	        // abort the actual loading
+	        if (this.xhr) {
+	            this.xhr.abort();
+	        } else if (this.xdr) {
+	            this.xdr.abort();
+	        } else if (this.data) {
+	            // single source
+	            if (this.data.src) {
+	                this.data.src = Resource.EMPTY_GIF;
+	            }
+	            // multi-source
+	            else {
+	                    while (this.data.firstChild) {
+	                        this.data.removeChild(this.data.firstChild);
+	                    }
+	                }
+	        }
+
+	        // done now.
+	        this._finish();
+	    };
+
+	    /**
+	     * Kicks off loading of this resource. This method is asynchronous.
+	     *
+	     * @param {Resource.OnCompleteSignal} [cb] - Optional callback to call once the resource is loaded.
+	     */
+
+
+	    Resource.prototype.load = function load(cb) {
+	        var _this = this;
+
+	        if (this.isLoading) {
+	            return;
+	        }
+
+	        if (this.isComplete) {
+	            if (cb) {
+	                setTimeout(function () {
+	                    return cb(_this);
+	                }, 1);
+	            }
+
+	            return;
+	        } else if (cb) {
+	            this.onComplete.once(cb);
+	        }
+
+	        this._setFlag(Resource.STATUS_FLAGS.LOADING, true);
+
+	        this.onStart.dispatch(this);
+
+	        // if unset, determine the value
+	        if (this.crossOrigin === false || typeof this.crossOrigin !== 'string') {
+	            this.crossOrigin = this._determineCrossOrigin(this.url);
+	        }
+
+	        switch (this.loadType) {
+	            case Resource.LOAD_TYPE.IMAGE:
+	                this.type = Resource.TYPE.IMAGE;
+	                this._loadElement('image');
+	                break;
+
+	            case Resource.LOAD_TYPE.AUDIO:
+	                this.type = Resource.TYPE.AUDIO;
+	                this._loadSourceElement('audio');
+	                break;
+
+	            case Resource.LOAD_TYPE.VIDEO:
+	                this.type = Resource.TYPE.VIDEO;
+	                this._loadSourceElement('video');
+	                break;
+
+	            case Resource.LOAD_TYPE.XHR:
+	            /* falls through */
+	            default:
+	                if (useXdr && this.crossOrigin) {
+	                    this._loadXdr();
+	                } else {
+	                    this._loadXhr();
+	                }
+	                break;
+	        }
+	    };
+
+	    /**
+	     * Checks if the flag is set.
+	     *
+	     * @private
+	     * @param {number} flag - The flag to check.
+	     * @return {boolean} True if the flag is set.
+	     */
+
+
+	    Resource.prototype._hasFlag = function _hasFlag(flag) {
+	        return (this._flags & flag) !== 0;
+	    };
+
+	    /**
+	     * (Un)Sets the flag.
+	     *
+	     * @private
+	     * @param {number} flag - The flag to (un)set.
+	     * @param {boolean} value - Whether to set or (un)set the flag.
+	     */
+
+
+	    Resource.prototype._setFlag = function _setFlag(flag, value) {
+	        this._flags = value ? this._flags | flag : this._flags & ~flag;
+	    };
+
+	    /**
+	     * Clears all the events from the underlying loading source.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._clearEvents = function _clearEvents() {
+	        clearTimeout(this._elementTimer);
+
+	        if (this.data && this.data.removeEventListener) {
+	            this.data.removeEventListener('error', this._boundOnError, false);
+	            this.data.removeEventListener('load', this._boundComplete, false);
+	            this.data.removeEventListener('progress', this._boundOnProgress, false);
+	            this.data.removeEventListener('canplaythrough', this._boundComplete, false);
+	        }
+
+	        if (this.xhr) {
+	            if (this.xhr.removeEventListener) {
+	                this.xhr.removeEventListener('error', this._boundXhrOnError, false);
+	                this.xhr.removeEventListener('timeout', this._boundXhrOnTimeout, false);
+	                this.xhr.removeEventListener('abort', this._boundXhrOnAbort, false);
+	                this.xhr.removeEventListener('progress', this._boundOnProgress, false);
+	                this.xhr.removeEventListener('load', this._boundXhrOnLoad, false);
+	            } else {
+	                this.xhr.onerror = null;
+	                this.xhr.ontimeout = null;
+	                this.xhr.onprogress = null;
+	                this.xhr.onload = null;
+	            }
+	        }
+	    };
+
+	    /**
+	     * Finalizes the load.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._finish = function _finish() {
+	        if (this.isComplete) {
+	            throw new Error('Complete called again for an already completed resource.');
+	        }
+
+	        this._setFlag(Resource.STATUS_FLAGS.COMPLETE, true);
+	        this._setFlag(Resource.STATUS_FLAGS.LOADING, false);
+
+	        this.onComplete.dispatch(this);
+	    };
+
+	    /**
+	     * Loads this resources using an element that has a single source,
+	     * like an HTMLImageElement.
+	     *
+	     * @private
+	     * @param {string} type - The type of element to use.
+	     */
+
+
+	    Resource.prototype._loadElement = function _loadElement(type) {
+	        if (this.metadata.loadElement) {
+	            this.data = this.metadata.loadElement;
+	        } else if (type === 'image' && typeof window.Image !== 'undefined') {
+	            this.data = new Image();
+	        } else {
+	            this.data = document.createElement(type);
+	        }
+
+	        if (this.crossOrigin) {
+	            this.data.crossOrigin = this.crossOrigin;
+	        }
+
+	        if (!this.metadata.skipSource) {
+	            this.data.src = this.url;
+	        }
+
+	        this.data.addEventListener('error', this._boundOnError, false);
+	        this.data.addEventListener('load', this._boundComplete, false);
+	        this.data.addEventListener('progress', this._boundOnProgress, false);
+
+	        if (this.timeout) {
+	            this._elementTimer = setTimeout(this._boundOnTimeout, this.timeout);
+	        }
+	    };
+
+	    /**
+	     * Loads this resources using an element that has multiple sources,
+	     * like an HTMLAudioElement or HTMLVideoElement.
+	     *
+	     * @private
+	     * @param {string} type - The type of element to use.
+	     */
+
+
+	    Resource.prototype._loadSourceElement = function _loadSourceElement(type) {
+	        if (this.metadata.loadElement) {
+	            this.data = this.metadata.loadElement;
+	        } else if (type === 'audio' && typeof window.Audio !== 'undefined') {
+	            this.data = new Audio();
+	        } else {
+	            this.data = document.createElement(type);
+	        }
+
+	        if (this.data === null) {
+	            this.abort('Unsupported element: ' + type);
+
+	            return;
+	        }
+
+	        if (this.crossOrigin) {
+	            this.data.crossOrigin = this.crossOrigin;
+	        }
+
+	        if (!this.metadata.skipSource) {
+	            // support for CocoonJS Canvas+ runtime, lacks document.createElement('source')
+	            if (navigator.isCocoonJS) {
+	                this.data.src = Array.isArray(this.url) ? this.url[0] : this.url;
+	            } else if (Array.isArray(this.url)) {
+	                var mimeTypes = this.metadata.mimeType;
+
+	                for (var i = 0; i < this.url.length; ++i) {
+	                    this.data.appendChild(this._createSource(type, this.url[i], Array.isArray(mimeTypes) ? mimeTypes[i] : mimeTypes));
+	                }
+	            } else {
+	                var _mimeTypes = this.metadata.mimeType;
+
+	                this.data.appendChild(this._createSource(type, this.url, Array.isArray(_mimeTypes) ? _mimeTypes[0] : _mimeTypes));
+	            }
+	        }
+
+	        this.data.addEventListener('error', this._boundOnError, false);
+	        this.data.addEventListener('load', this._boundComplete, false);
+	        this.data.addEventListener('progress', this._boundOnProgress, false);
+	        this.data.addEventListener('canplaythrough', this._boundComplete, false);
+
+	        this.data.load();
+
+	        if (this.timeout) {
+	            this._elementTimer = setTimeout(this._boundOnTimeout, this.timeout);
+	        }
+	    };
+
+	    /**
+	     * Loads this resources using an XMLHttpRequest.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._loadXhr = function _loadXhr() {
+	        // if unset, determine the value
+	        if (typeof this.xhrType !== 'string') {
+	            this.xhrType = this._determineXhrType();
+	        }
+
+	        var xhr = this.xhr = new XMLHttpRequest();
+
+	        // set the request type and url
+	        xhr.open('GET', this.url, true);
+
+	        xhr.timeout = this.timeout;
+
+	        // load json as text and parse it ourselves. We do this because some browsers
+	        // *cough* safari *cough* can't deal with it.
+	        if (this.xhrType === Resource.XHR_RESPONSE_TYPE.JSON || this.xhrType === Resource.XHR_RESPONSE_TYPE.DOCUMENT) {
+	            xhr.responseType = Resource.XHR_RESPONSE_TYPE.TEXT;
+	        } else {
+	            xhr.responseType = this.xhrType;
+	        }
+
+	        xhr.addEventListener('error', this._boundXhrOnError, false);
+	        xhr.addEventListener('timeout', this._boundXhrOnTimeout, false);
+	        xhr.addEventListener('abort', this._boundXhrOnAbort, false);
+	        xhr.addEventListener('progress', this._boundOnProgress, false);
+	        xhr.addEventListener('load', this._boundXhrOnLoad, false);
+
+	        xhr.send();
+	    };
+
+	    /**
+	     * Loads this resources using an XDomainRequest. This is here because we need to support IE9 (gross).
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._loadXdr = function _loadXdr() {
+	        // if unset, determine the value
+	        if (typeof this.xhrType !== 'string') {
+	            this.xhrType = this._determineXhrType();
+	        }
+
+	        var xdr = this.xhr = new XDomainRequest(); // eslint-disable-line no-undef
+
+	        // XDomainRequest has a few quirks. Occasionally it will abort requests
+	        // A way to avoid this is to make sure ALL callbacks are set even if not used
+	        // More info here: http://stackoverflow.com/questions/15786966/xdomainrequest-aborts-post-on-ie-9
+	        xdr.timeout = this.timeout || 5000; // XDR needs a timeout value or it breaks in IE9
+
+	        xdr.onerror = this._boundXhrOnError;
+	        xdr.ontimeout = this._boundXhrOnTimeout;
+	        xdr.onprogress = this._boundOnProgress;
+	        xdr.onload = this._boundXhrOnLoad;
+
+	        xdr.open('GET', this.url, true);
+
+	        // Note: The xdr.send() call is wrapped in a timeout to prevent an
+	        // issue with the interface where some requests are lost if multiple
+	        // XDomainRequests are being sent at the same time.
+	        // Some info here: https://github.com/photonstorm/phaser/issues/1248
+	        setTimeout(function () {
+	            return xdr.send();
+	        }, 1);
+	    };
+
+	    /**
+	     * Creates a source used in loading via an element.
+	     *
+	     * @private
+	     * @param {string} type - The element type (video or audio).
+	     * @param {string} url - The source URL to load from.
+	     * @param {string} [mime] - The mime type of the video
+	     * @return {HTMLSourceElement} The source element.
+	     */
+
+
+	    Resource.prototype._createSource = function _createSource(type, url, mime) {
+	        if (!mime) {
+	            mime = type + '/' + this._getExtension(url);
+	        }
+
+	        var source = document.createElement('source');
+
+	        source.src = url;
+	        source.type = mime;
+
+	        return source;
+	    };
+
+	    /**
+	     * Called if a load errors out.
+	     *
+	     * @param {Event} event - The error event from the element that emits it.
+	     * @private
+	     */
+
+
+	    Resource.prototype._onError = function _onError(event) {
+	        this.abort('Failed to load element using: ' + event.target.nodeName);
+	    };
+
+	    /**
+	     * Called if a load progress event fires for an element or xhr/xdr.
+	     *
+	     * @private
+	     * @param {XMLHttpRequestProgressEvent|Event} event - Progress event.
+	     */
+
+
+	    Resource.prototype._onProgress = function _onProgress(event) {
+	        if (event && event.lengthComputable) {
+	            this.onProgress.dispatch(this, event.loaded / event.total);
+	        }
+	    };
+
+	    /**
+	     * Called if a timeout event fires for an element.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._onTimeout = function _onTimeout() {
+	        this.abort('Load timed out.');
+	    };
+
+	    /**
+	     * Called if an error event fires for xhr/xdr.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._xhrOnError = function _xhrOnError() {
+	        var xhr = this.xhr;
+
+	        this.abort(reqType(xhr) + ' Request failed. Status: ' + xhr.status + ', text: "' + xhr.statusText + '"');
+	    };
+
+	    /**
+	     * Called if an error event fires for xhr/xdr.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._xhrOnTimeout = function _xhrOnTimeout() {
+	        var xhr = this.xhr;
+
+	        this.abort(reqType(xhr) + ' Request timed out.');
+	    };
+
+	    /**
+	     * Called if an abort event fires for xhr/xdr.
+	     *
+	     * @private
+	     */
+
+
+	    Resource.prototype._xhrOnAbort = function _xhrOnAbort() {
+	        var xhr = this.xhr;
+
+	        this.abort(reqType(xhr) + ' Request was aborted by the user.');
+	    };
+
+	    /**
+	     * Called when data successfully loads from an xhr/xdr request.
+	     *
+	     * @private
+	     * @param {XMLHttpRequestLoadEvent|Event} event - Load event
+	     */
+
+
+	    Resource.prototype._xhrOnLoad = function _xhrOnLoad() {
+	        var xhr = this.xhr;
+	        var text = '';
+	        var status = typeof xhr.status === 'undefined' ? STATUS_OK : xhr.status; // XDR has no `.status`, assume 200.
+
+	        // responseText is accessible only if responseType is '' or 'text' and on older browsers
+	        if (xhr.responseType === '' || xhr.responseType === 'text' || typeof xhr.responseType === 'undefined') {
+	            text = xhr.responseText;
+	        }
+
+	        // status can be 0 when using the `file://` protocol so we also check if a response is set.
+	        // If it has a response, we assume 200; otherwise a 0 status code with no contents is an aborted request.
+	        if (status === STATUS_NONE && (text.length > 0 || xhr.responseType === Resource.XHR_RESPONSE_TYPE.BUFFER)) {
+	            status = STATUS_OK;
+	        }
+	        // handle IE9 bug: http://stackoverflow.com/questions/10046972/msie-returns-status-code-of-1223-for-ajax-request
+	        else if (status === STATUS_IE_BUG_EMPTY) {
+	                status = STATUS_EMPTY;
+	            }
+
+	        var statusType = status / 100 | 0;
+
+	        if (statusType === STATUS_TYPE_OK) {
+	            // if text, just return it
+	            if (this.xhrType === Resource.XHR_RESPONSE_TYPE.TEXT) {
+	                this.data = text;
+	                this.type = Resource.TYPE.TEXT;
+	            }
+	            // if json, parse into json object
+	            else if (this.xhrType === Resource.XHR_RESPONSE_TYPE.JSON) {
+	                    try {
+	                        this.data = JSON.parse(text);
+	                        this.type = Resource.TYPE.JSON;
+	                    } catch (e) {
+	                        this.abort('Error trying to parse loaded json: ' + e);
+
+	                        return;
+	                    }
+	                }
+	                // if xml, parse into an xml document or div element
+	                else if (this.xhrType === Resource.XHR_RESPONSE_TYPE.DOCUMENT) {
+	                        try {
+	                            if (window.DOMParser) {
+	                                var domparser = new DOMParser();
+
+	                                this.data = domparser.parseFromString(text, 'text/xml');
+	                            } else {
+	                                var div = document.createElement('div');
+
+	                                div.innerHTML = text;
+
+	                                this.data = div;
+	                            }
+
+	                            this.type = Resource.TYPE.XML;
+	                        } catch (e) {
+	                            this.abort('Error trying to parse loaded xml: ' + e);
+
+	                            return;
+	                        }
+	                    }
+	                    // other types just return the response
+	                    else {
+	                            this.data = xhr.response || text;
+	                        }
+	        } else {
+	            this.abort('[' + xhr.status + '] ' + xhr.statusText + ': ' + xhr.responseURL);
+
+	            return;
+	        }
+
+	        this.complete();
+	    };
+
+	    /**
+	     * Sets the `crossOrigin` property for this resource based on if the url
+	     * for this resource is cross-origin. If crossOrigin was manually set, this
+	     * function does nothing.
+	     *
+	     * @private
+	     * @param {string} url - The url to test.
+	     * @param {object} [loc=window.location] - The location object to test against.
+	     * @return {string} The crossOrigin value to use (or empty string for none).
+	     */
+
+
+	    Resource.prototype._determineCrossOrigin = function _determineCrossOrigin(url, loc) {
+	        // data: and javascript: urls are considered same-origin
+	        if (url.indexOf('data:') === 0) {
+	            return '';
+	        }
+
+	        // A sandboxed iframe without the 'allow-same-origin' attribute will have a special
+	        // origin designed not to match window.location.origin, and will always require
+	        // crossOrigin requests regardless of whether the location matches.
+	        if (window.origin !== window.location.origin) {
+	            return 'anonymous';
+	        }
+
+	        // default is window.location
+	        loc = loc || window.location;
+
+	        if (!tempAnchor) {
+	            tempAnchor = document.createElement('a');
+	        }
+
+	        // let the browser determine the full href for the url of this resource and then
+	        // parse with the node url lib, we can't use the properties of the anchor element
+	        // because they don't work in IE9 :(
+	        tempAnchor.href = url;
+	        url = (0, _parseUri2.default)(tempAnchor.href, { strictMode: true });
+
+	        var samePort = !url.port && loc.port === '' || url.port === loc.port;
+	        var protocol = url.protocol ? url.protocol + ':' : '';
+
+	        // if cross origin
+	        if (url.host !== loc.hostname || !samePort || protocol !== loc.protocol) {
+	            return 'anonymous';
+	        }
+
+	        return '';
+	    };
+
+	    /**
+	     * Determines the responseType of an XHR request based on the extension of the
+	     * resource being loaded.
+	     *
+	     * @private
+	     * @return {Resource.XHR_RESPONSE_TYPE} The responseType to use.
+	     */
+
+
+	    Resource.prototype._determineXhrType = function _determineXhrType() {
+	        return Resource._xhrTypeMap[this.extension] || Resource.XHR_RESPONSE_TYPE.TEXT;
+	    };
+
+	    /**
+	     * Determines the loadType of a resource based on the extension of the
+	     * resource being loaded.
+	     *
+	     * @private
+	     * @return {Resource.LOAD_TYPE} The loadType to use.
+	     */
+
+
+	    Resource.prototype._determineLoadType = function _determineLoadType() {
+	        return Resource._loadTypeMap[this.extension] || Resource.LOAD_TYPE.XHR;
+	    };
+
+	    /**
+	     * Extracts the extension (sans '.') of the file being loaded by the resource.
+	     *
+	     * @private
+	     * @return {string} The extension.
+	     */
+
+
+	    Resource.prototype._getExtension = function _getExtension() {
+	        var url = this.url;
+	        var ext = '';
+
+	        if (this.isDataUrl) {
+	            var slashIndex = url.indexOf('/');
+
+	            ext = url.substring(slashIndex + 1, url.indexOf(';', slashIndex));
+	        } else {
+	            var queryStart = url.indexOf('?');
+	            var hashStart = url.indexOf('#');
+	            var index = Math.min(queryStart > -1 ? queryStart : url.length, hashStart > -1 ? hashStart : url.length);
+
+	            url = url.substring(0, index);
+	            ext = url.substring(url.lastIndexOf('.') + 1);
+	        }
+
+	        return ext.toLowerCase();
+	    };
+
+	    /**
+	     * Determines the mime type of an XHR request based on the responseType of
+	     * resource being loaded.
+	     *
+	     * @private
+	     * @param {Resource.XHR_RESPONSE_TYPE} type - The type to get a mime type for.
+	     * @return {string} The mime type to use.
+	     */
+
+
+	    Resource.prototype._getMimeFromXhrType = function _getMimeFromXhrType(type) {
+	        switch (type) {
+	            case Resource.XHR_RESPONSE_TYPE.BUFFER:
+	                return 'application/octet-binary';
+
+	            case Resource.XHR_RESPONSE_TYPE.BLOB:
+	                return 'application/blob';
+
+	            case Resource.XHR_RESPONSE_TYPE.DOCUMENT:
+	                return 'application/xml';
+
+	            case Resource.XHR_RESPONSE_TYPE.JSON:
+	                return 'application/json';
+
+	            case Resource.XHR_RESPONSE_TYPE.DEFAULT:
+	            case Resource.XHR_RESPONSE_TYPE.TEXT:
+	            /* falls through */
+	            default:
+	                return 'text/plain';
+	        }
+	    };
+
+	    _createClass(Resource, [{
+	        key: 'isDataUrl',
+	        get: function get() {
+	            return this._hasFlag(Resource.STATUS_FLAGS.DATA_URL);
+	        }
+
+	        /**
+	         * Describes if this resource has finished loading. Is true when the resource has completely
+	         * loaded.
+	         *
+	         * @readonly
+	         * @member {boolean}
+	         */
+
+	    }, {
+	        key: 'isComplete',
+	        get: function get() {
+	            return this._hasFlag(Resource.STATUS_FLAGS.COMPLETE);
+	        }
+
+	        /**
+	         * Describes if this resource is currently loading. Is true when the resource starts loading,
+	         * and is false again when complete.
+	         *
+	         * @readonly
+	         * @member {boolean}
+	         */
+
+	    }, {
+	        key: 'isLoading',
+	        get: function get() {
+	            return this._hasFlag(Resource.STATUS_FLAGS.LOADING);
+	        }
+	    }]);
+
+	    return Resource;
+	}();
+
+	/**
+	 * The types of resources a resource could represent.
+	 *
+	 * @static
+	 * @readonly
+	 * @enum {number}
+	 */
+
+
+	Resource.STATUS_FLAGS = {
+	    NONE: 0,
+	    DATA_URL: 1 << 0,
+	    COMPLETE: 1 << 1,
+	    LOADING: 1 << 2
+	};
+
+	/**
+	 * The types of resources a resource could represent.
+	 *
+	 * @static
+	 * @readonly
+	 * @enum {number}
+	 */
+	Resource.TYPE = {
+	    UNKNOWN: 0,
+	    JSON: 1,
+	    XML: 2,
+	    IMAGE: 3,
+	    AUDIO: 4,
+	    VIDEO: 5,
+	    TEXT: 6
+	};
+
+	/**
+	 * The types of loading a resource can use.
+	 *
+	 * @static
+	 * @readonly
+	 * @enum {number}
+	 */
+	Resource.LOAD_TYPE = {
+	    /** Uses XMLHttpRequest to load the resource. */
+	    XHR: 1,
+	    /** Uses an `Image` object to load the resource. */
+	    IMAGE: 2,
+	    /** Uses an `Audio` object to load the resource. */
+	    AUDIO: 3,
+	    /** Uses a `Video` object to load the resource. */
+	    VIDEO: 4
+	};
+
+	/**
+	 * The XHR ready states, used internally.
+	 *
+	 * @static
+	 * @readonly
+	 * @enum {string}
+	 */
+	Resource.XHR_RESPONSE_TYPE = {
+	    /** string */
+	    DEFAULT: 'text',
+	    /** ArrayBuffer */
+	    BUFFER: 'arraybuffer',
+	    /** Blob */
+	    BLOB: 'blob',
+	    /** Document */
+	    DOCUMENT: 'document',
+	    /** Object */
+	    JSON: 'json',
+	    /** String */
+	    TEXT: 'text'
+	};
+
+	Resource._loadTypeMap = {
+	    // images
+	    gif: Resource.LOAD_TYPE.IMAGE,
+	    png: Resource.LOAD_TYPE.IMAGE,
+	    bmp: Resource.LOAD_TYPE.IMAGE,
+	    jpg: Resource.LOAD_TYPE.IMAGE,
+	    jpeg: Resource.LOAD_TYPE.IMAGE,
+	    tif: Resource.LOAD_TYPE.IMAGE,
+	    tiff: Resource.LOAD_TYPE.IMAGE,
+	    webp: Resource.LOAD_TYPE.IMAGE,
+	    tga: Resource.LOAD_TYPE.IMAGE,
+	    svg: Resource.LOAD_TYPE.IMAGE,
+	    'svg+xml': Resource.LOAD_TYPE.IMAGE, // for SVG data urls
+
+	    // audio
+	    mp3: Resource.LOAD_TYPE.AUDIO,
+	    ogg: Resource.LOAD_TYPE.AUDIO,
+	    wav: Resource.LOAD_TYPE.AUDIO,
+
+	    // videos
+	    mp4: Resource.LOAD_TYPE.VIDEO,
+	    webm: Resource.LOAD_TYPE.VIDEO
+	};
+
+	Resource._xhrTypeMap = {
+	    // xml
+	    xhtml: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+	    html: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+	    htm: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+	    xml: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+	    tmx: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+	    svg: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+
+	    // This was added to handle Tiled Tileset XML, but .tsx is also a TypeScript React Component.
+	    // Since it is way less likely for people to be loading TypeScript files instead of Tiled files,
+	    // this should probably be fine.
+	    tsx: Resource.XHR_RESPONSE_TYPE.DOCUMENT,
+
+	    // images
+	    gif: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    png: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    bmp: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    jpg: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    jpeg: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    tif: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    tiff: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    webp: Resource.XHR_RESPONSE_TYPE.BLOB,
+	    tga: Resource.XHR_RESPONSE_TYPE.BLOB,
+
+	    // json
+	    json: Resource.XHR_RESPONSE_TYPE.JSON,
+
+	    // text
+	    text: Resource.XHR_RESPONSE_TYPE.TEXT,
+	    txt: Resource.XHR_RESPONSE_TYPE.TEXT,
+
+	    // fonts
+	    ttf: Resource.XHR_RESPONSE_TYPE.BUFFER,
+	    otf: Resource.XHR_RESPONSE_TYPE.BUFFER
+	};
+
+	// We can't set the `src` attribute to empty string, so on abort we set it to this 1px transparent gif
+	Resource.EMPTY_GIF = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+
+	/**
+	 * Quick helper to set a value on one of the extension maps. Ensures there is no
+	 * dot at the start of the extension.
+	 *
+	 * @ignore
+	 * @param {object} map - The map to set on.
+	 * @param {string} extname - The extension (or key) to set.
+	 * @param {number} val - The value to set.
+	 */
+	function setExtMap(map, extname, val) {
+	    if (extname && extname.indexOf('.') === 0) {
+	        extname = extname.substring(1);
+	    }
+
+	    if (!extname) {
+	        return;
+	    }
+
+	    map[extname] = val;
+	}
+
+	/**
+	 * Quick helper to get string xhr type.
+	 *
+	 * @ignore
+	 * @param {XMLHttpRequest|XDomainRequest} xhr - The request to check.
+	 * @return {string} The type.
+	 */
+	function reqType(xhr) {
+	    return xhr.toString().replace('object ', '');
+	}
+
+	// Backwards compat
+	{
+	    module.exports.default = Resource; // eslint-disable-line no-undef
+	}
+
+	});
+
+	unwrapExports$1(Resource_1$1);
+	var Resource_2$1 = Resource_1$1.Resource;
+
+	var b64$2 = createCommonjsModule$1(function (module, exports) {
+
+	exports.__esModule = true;
+	exports.encodeBinary = encodeBinary;
+	var _keyStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+	/**
+	 * Encodes binary into base64.
+	 *
+	 * @param {string} input The input data to encode.
+	 * @returns {string} The encoded base64 string
+	 */
+	function encodeBinary(input) {
+	    var output = '';
+	    var inx = 0;
+
+	    while (inx < input.length) {
+	        // Fill byte buffer array
+	        var bytebuffer = [0, 0, 0];
+	        var encodedCharIndexes = [0, 0, 0, 0];
+
+	        for (var jnx = 0; jnx < bytebuffer.length; ++jnx) {
+	            if (inx < input.length) {
+	                // throw away high-order byte, as documented at:
+	                // https://developer.mozilla.org/En/Using_XMLHttpRequest#Handling_binary_data
+	                bytebuffer[jnx] = input.charCodeAt(inx++) & 0xff;
+	            } else {
+	                bytebuffer[jnx] = 0;
+	            }
+	        }
+
+	        // Get each encoded character, 6 bits at a time
+	        // index 1: first 6 bits
+	        encodedCharIndexes[0] = bytebuffer[0] >> 2;
+
+	        // index 2: second 6 bits (2 least significant bits from input byte 1 + 4 most significant bits from byte 2)
+	        encodedCharIndexes[1] = (bytebuffer[0] & 0x3) << 4 | bytebuffer[1] >> 4;
+
+	        // index 3: third 6 bits (4 least significant bits from input byte 2 + 2 most significant bits from byte 3)
+	        encodedCharIndexes[2] = (bytebuffer[1] & 0x0f) << 2 | bytebuffer[2] >> 6;
+
+	        // index 3: forth 6 bits (6 least significant bits from input byte 3)
+	        encodedCharIndexes[3] = bytebuffer[2] & 0x3f;
+
+	        // Determine whether padding happened, and adjust accordingly
+	        var paddingBytes = inx - (input.length - 1);
+
+	        switch (paddingBytes) {
+	            case 2:
+	                // Set last 2 characters to padding char
+	                encodedCharIndexes[3] = 64;
+	                encodedCharIndexes[2] = 64;
+	                break;
+
+	            case 1:
+	                // Set last character to padding char
+	                encodedCharIndexes[3] = 64;
+	                break;
+
+	            default:
+	                break; // No padding - proceed
+	        }
+
+	        // Now we will grab each appropriate character out of our keystring
+	        // based on our index array and append it to the output string
+	        for (var _jnx = 0; _jnx < encodedCharIndexes.length; ++_jnx) {
+	            output += _keyStr.charAt(encodedCharIndexes[_jnx]);
+	        }
+	    }
+
+	    return output;
+	}
+
+	// Backwards compat
+	{
+	    module.exports.default = encodeBinary; // eslint-disable-line no-undef
+	}
+
+	});
+
+	unwrapExports$1(b64$2);
+	var b64_1$1 = b64$2.encodeBinary;
+
+	var blob = createCommonjsModule$1(function (module, exports) {
+
+	exports.__esModule = true;
+	exports.blobMiddlewareFactory = blobMiddlewareFactory;
+
+
+
+
+
+	var Url = window.URL || window.webkitURL;
+
+	// a middleware for transforming XHR loaded Blobs into more useful objects
+	function blobMiddlewareFactory() {
+	    return function blobMiddleware(resource, next) {
+	        if (!resource.data) {
+	            next();
+
+	            return;
+	        }
+
+	        // if this was an XHR load of a blob
+	        if (resource.xhr && resource.xhrType === Resource_1$1.Resource.XHR_RESPONSE_TYPE.BLOB) {
+	            // if there is no blob support we probably got a binary string back
+	            if (!window.Blob || typeof resource.data === 'string') {
+	                var type = resource.xhr.getResponseHeader('content-type');
+
+	                // this is an image, convert the binary string into a data url
+	                if (type && type.indexOf('image') === 0) {
+	                    resource.data = new Image();
+	                    resource.data.src = 'data:' + type + ';base64,' + (0, b64$2.encodeBinary)(resource.xhr.responseText);
+
+	                    resource.type = Resource_1$1.Resource.TYPE.IMAGE;
+
+	                    // wait until the image loads and then callback
+	                    resource.data.onload = function () {
+	                        resource.data.onload = null;
+
+	                        next();
+	                    };
+
+	                    // next will be called on load
+	                    return;
+	                }
+	            }
+	            // if content type says this is an image, then we should transform the blob into an Image object
+	            else if (resource.data.type.indexOf('image') === 0) {
+	                    var src = Url.createObjectURL(resource.data);
+
+	                    resource.blob = resource.data;
+	                    resource.data = new Image();
+	                    resource.data.src = src;
+
+	                    resource.type = Resource_1$1.Resource.TYPE.IMAGE;
+
+	                    // cleanup the no longer used blob after the image loads
+	                    // TODO: Is this correct? Will the image be invalid after revoking?
+	                    resource.data.onload = function () {
+	                        Url.revokeObjectURL(src);
+	                        resource.data.onload = null;
+
+	                        next();
+	                    };
+
+	                    // next will be called on load.
+	                    return;
+	                }
+	        }
+
+	        next();
+	    };
+	}
+
+	});
+
+	unwrapExports$1(blob);
+	var blob_1 = blob.blobMiddlewareFactory;
 
 	/**
 	 * Loader plugin for handling Texture resources.
@@ -35520,7 +35756,7 @@ var PIXI = (function (exports) {
 	TextureLoader.use = function use (resource, next)
 	{
 	    // create a new texture if the data is an Image object
-	    if (resource.data && resource.type === Resource$1.TYPE.IMAGE)
+	    if (resource.data && resource.type === lib_1.TYPE.IMAGE)
 	    {
 	        resource.texture = Texture.fromLoader(
 	            resource.data,
@@ -35582,7 +35818,7 @@ var PIXI = (function (exports) {
 	 * @param {string} [baseUrl=''] - The base url for all resources loaded by this loader.
 	 * @param {number} [concurrency=10] - The number of resources to load concurrently.
 	 */
-	var Loader$1 = /*@__PURE__*/(function (ResourceLoader) {
+	var Loader$2 = /*@__PURE__*/(function (ResourceLoader) {
 	    function Loader(baseUrl, concurrency)
 	    {
 	        var this$1 = this;
@@ -35666,10 +35902,10 @@ var PIXI = (function (exports) {
 	    Object.defineProperties( Loader, staticAccessors );
 
 	    return Loader;
-	}(Loader));
+	}(lib));
 
 	// Copy EE3 prototype (mixin)
-	Object.assign(Loader$1.prototype, eventemitter3.prototype);
+	Object.assign(Loader$2.prototype, eventemitter3.prototype);
 
 	/**
 	 * Collection of all installed `use` middleware for Loader.
@@ -35679,7 +35915,7 @@ var PIXI = (function (exports) {
 	 * @memberof PIXI.Loader
 	 * @private
 	 */
-	Loader$1._plugins = [];
+	Loader$2._plugins = [];
 
 	/**
 	 * Adds a Loader plugin for the global shared loader and all
@@ -35691,23 +35927,23 @@ var PIXI = (function (exports) {
 	 * @param {PIXI.ILoaderPlugin} plugin - The plugin to add
 	 * @return {PIXI.Loader} Reference to PIXI.Loader for chaining
 	 */
-	Loader$1.registerPlugin = function registerPlugin(plugin)
+	Loader$2.registerPlugin = function registerPlugin(plugin)
 	{
-	    Loader$1._plugins.push(plugin);
+	    Loader$2._plugins.push(plugin);
 
 	    if (plugin.add)
 	    {
 	        plugin.add();
 	    }
 
-	    return Loader$1;
+	    return Loader$2;
 	};
 
 	// parse any blob into more usable objects (e.g. Image)
-	Loader$1.registerPlugin({ use: index$1.parsing });
+	Loader$2.registerPlugin({ use: blob_1() });
 
 	// parse any Image objects into textures
-	Loader$1.registerPlugin(TextureLoader);
+	Loader$2.registerPlugin(TextureLoader);
 
 	/**
 	 * Plugin to be installed for handling specific Loader resources.
@@ -35777,7 +36013,7 @@ var PIXI = (function (exports) {
 	     * @type {PIXI.Loader}
 	     * @readonly
 	     */
-	    this.loader = options.sharedLoader ? Loader$1.shared : new Loader$1();
+	    this.loader = options.sharedLoader ? Loader$2.shared : new Loader$2();
 	};
 
 	/**
@@ -35800,11 +36036,11 @@ var PIXI = (function (exports) {
 	 * @class LoaderResource
 	 * @memberof PIXI
 	 */
-	var LoaderResource = Resource$1;
+	var LoaderResource = lib_1;
 
 	/*!
-	 * @pixi/particles - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/particles - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/particles is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -35826,7 +36062,7 @@ var PIXI = (function (exports) {
 	 *
 	 * for (let i = 0; i < 100; ++i)
 	 * {
-	 *     let sprite = PIXI.Sprite.from("myImage.png");
+	 *     let sprite = new PIXI.Sprite.from("myImage.png");
 	 *     container.addChild(sprite);
 	 * }
 	 * ```
@@ -35854,6 +36090,11 @@ var PIXI = (function (exports) {
 	        if (batchSize > maxBatchSize)
 	        {
 	            batchSize = maxBatchSize;
+	        }
+
+	        if (batchSize > maxSize)
+	        {
+	            batchSize = maxSize;
 	        }
 
 	        /**
@@ -36338,7 +36579,7 @@ var PIXI = (function (exports) {
 	    this.geometry.destroy();
 	};
 
-	var vertex$1 = "attribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\nattribute vec4 aColor;\n\nattribute vec2 aPositionCoord;\nattribute float aRotation;\n\nuniform mat3 translationMatrix;\nuniform vec4 uColor;\n\nvarying vec2 vTextureCoord;\nvarying vec4 vColor;\n\nvoid main(void){\n    float x = (aVertexPosition.x) * cos(aRotation) - (aVertexPosition.y) * sin(aRotation);\n    float y = (aVertexPosition.x) * sin(aRotation) + (aVertexPosition.y) * cos(aRotation);\n\n    vec2 v = vec2(x, y);\n    v = v + aPositionCoord;\n\n    gl_Position = vec4((translationMatrix * vec3(v, 1.0)).xy, 0.0, 1.0);\n\n    vTextureCoord = aTextureCoord;\n    vColor = aColor * uColor;\n}\n";
+	var vertex$2 = "attribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\nattribute vec4 aColor;\n\nattribute vec2 aPositionCoord;\nattribute float aRotation;\n\nuniform mat3 translationMatrix;\nuniform vec4 uColor;\n\nvarying vec2 vTextureCoord;\nvarying vec4 vColor;\n\nvoid main(void){\n    float x = (aVertexPosition.x) * cos(aRotation) - (aVertexPosition.y) * sin(aRotation);\n    float y = (aVertexPosition.x) * sin(aRotation) + (aVertexPosition.y) * cos(aRotation);\n\n    vec2 v = vec2(x, y);\n    v = v + aPositionCoord;\n\n    gl_Position = vec4((translationMatrix * vec3(v, 1.0)).xy, 0.0, 1.0);\n\n    vTextureCoord = aTextureCoord;\n    vColor = aColor * uColor;\n}\n";
 
 	var fragment$1 = "varying vec2 vTextureCoord;\nvarying vec4 vColor;\n\nuniform sampler2D uSampler;\n\nvoid main(void){\n    vec4 color = texture2D(uSampler, vTextureCoord) * vColor;\n    gl_FragColor = color;\n}";
 
@@ -36420,7 +36661,7 @@ var PIXI = (function (exports) {
 	                offset: 0,
 	            } ];
 
-	        this.shader = Shader.from(vertex$1, fragment$1, {});
+	        this.shader = Shader.from(vertex$2, fragment$1, {});
 	    }
 
 	    if ( ObjectRenderer ) { ParticleRenderer.__proto__ = ObjectRenderer; }
@@ -36444,7 +36685,7 @@ var PIXI = (function (exports) {
 	        {
 	            return;
 	        }
-	        else if (totalChildren > maxSize && !container.autoResize)
+	        else if (totalChildren > maxSize)
 	        {
 	            totalChildren = maxSize;
 	        }
@@ -36490,6 +36731,10 @@ var PIXI = (function (exports) {
 
 	            if (j >= buffers.length)
 	            {
+	                if (!container.autoResize)
+	                {
+	                    break;
+	                }
 	                buffers.push(this._generateOneMoreBuffer(container));
 	            }
 
@@ -36771,8 +37016,8 @@ var PIXI = (function (exports) {
 	}(ObjectRenderer));
 
 	/*!
-	 * @pixi/spritesheet - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/spritesheet - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/spritesheet is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -37179,8 +37424,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/sprite-tiling - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/sprite-tiling - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/sprite-tiling is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -37323,7 +37568,7 @@ var PIXI = (function (exports) {
 	        {
 	            this.uvMatrix.texture = this._texture;
 	        }
-	        this._cachedTint = 0xFFFFFF;
+	        this.cachedTint = 0xFFFFFF;
 	    };
 
 	    /**
@@ -37540,7 +37785,7 @@ var PIXI = (function (exports) {
 	    return TilingSprite;
 	}(Sprite));
 
-	var vertex$2 = "attribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\n\nuniform mat3 projectionMatrix;\nuniform mat3 translationMatrix;\nuniform mat3 uTransform;\n\nvarying vec2 vTextureCoord;\n\nvoid main(void)\n{\n    gl_Position = vec4((projectionMatrix * translationMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n\n    vTextureCoord = (uTransform * vec3(aTextureCoord, 1.0)).xy;\n}\n";
+	var vertex$3 = "attribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\n\nuniform mat3 projectionMatrix;\nuniform mat3 translationMatrix;\nuniform mat3 uTransform;\n\nvarying vec2 vTextureCoord;\n\nvoid main(void)\n{\n    gl_Position = vec4((projectionMatrix * translationMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n\n    vTextureCoord = (uTransform * vec3(aTextureCoord, 1.0)).xy;\n}\n";
 
 	var fragment$2 = "varying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform vec4 uColor;\nuniform mat3 uMapCoord;\nuniform vec4 uClampFrame;\nuniform vec2 uClampOffset;\n\nvoid main(void)\n{\n    vec2 coord = mod(vTextureCoord - uClampOffset, vec2(1.0, 1.0)) + uClampOffset;\n    coord = (uMapCoord * vec3(coord, 1.0)).xy;\n    coord = clamp(coord, uClampFrame.xy, uClampFrame.zw);\n\n    vec4 sample = texture2D(uSampler, coord);\n    gl_FragColor = sample * uColor;\n}\n";
 
@@ -37562,9 +37807,9 @@ var PIXI = (function (exports) {
 
 	        var uniforms = { globals: this.renderer.globalUniforms };
 
-	        this.shader = Shader.from(vertex$2, fragment$2, uniforms);
+	        this.shader = Shader.from(vertex$3, fragment$2, uniforms);
 
-	        this.simpleShader = Shader.from(vertex$2, fragmentSimple, uniforms);
+	        this.simpleShader = Shader.from(vertex$3, fragmentSimple, uniforms);
 
 	        this.quad = new QuadUv();
 	    }
@@ -37675,8 +37920,8 @@ var PIXI = (function (exports) {
 	}(ObjectRenderer));
 
 	/*!
-	 * @pixi/text-bitmap - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/text-bitmap - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/text-bitmap is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -38500,8 +38745,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/filter-alpha - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/filter-alpha - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/filter-alpha is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -38564,8 +38809,8 @@ var PIXI = (function (exports) {
 	}(Filter));
 
 	/*!
-	 * @pixi/filter-blur - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/filter-blur - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/filter-blur is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -38624,7 +38869,7 @@ var PIXI = (function (exports) {
 	    15: [0.000489, 0.002403, 0.009246, 0.02784, 0.065602, 0.120999, 0.174697, 0.197448],
 	};
 
-	var fragTemplate$1 = [
+	var fragTemplate$2 = [
 	    'varying vec2 vBlurTexCoords[%size%];',
 	    'uniform sampler2D uSampler;',
 
@@ -38639,7 +38884,7 @@ var PIXI = (function (exports) {
 	    var kernel = GAUSSIAN_VALUES[kernelSize];
 	    var halfLength = kernel.length;
 
-	    var fragSource = fragTemplate$1;
+	    var fragSource = fragTemplate$2;
 
 	    var blurLoop = '';
 	    var template = 'gl_FragColor += texture2D(uSampler, vBlurTexCoords[%index%]) * %value%;';
@@ -38989,8 +39234,8 @@ var PIXI = (function (exports) {
 	}(Filter));
 
 	/*!
-	 * @pixi/filter-color-matrix - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/filter-color-matrix - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/filter-color-matrix is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -39587,14 +39832,14 @@ var PIXI = (function (exports) {
 	ColorMatrixFilter.prototype.grayscale = ColorMatrixFilter.prototype.greyscale;
 
 	/*!
-	 * @pixi/filter-displacement - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/filter-displacement - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/filter-displacement is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
 	 */
 
-	var vertex$3 = "attribute vec2 aVertexPosition;\n\nuniform mat3 projectionMatrix;\nuniform mat3 filterMatrix;\n\nvarying vec2 vTextureCoord;\nvarying vec2 vFilterCoord;\n\nuniform vec4 inputSize;\nuniform vec4 outputFrame;\n\nvec4 filterVertexPosition( void )\n{\n    vec2 position = aVertexPosition * max(outputFrame.zw, vec2(0.)) + outputFrame.xy;\n\n    return vec4((projectionMatrix * vec3(position, 1.0)).xy, 0.0, 1.0);\n}\n\nvec2 filterTextureCoord( void )\n{\n    return aVertexPosition * (outputFrame.zw * inputSize.zw);\n}\n\nvoid main(void)\n{\n\tgl_Position = filterVertexPosition();\n\tvTextureCoord = filterTextureCoord();\n\tvFilterCoord = ( filterMatrix * vec3( vTextureCoord, 1.0)  ).xy;\n}\n";
+	var vertex$4 = "attribute vec2 aVertexPosition;\n\nuniform mat3 projectionMatrix;\nuniform mat3 filterMatrix;\n\nvarying vec2 vTextureCoord;\nvarying vec2 vFilterCoord;\n\nuniform vec4 inputSize;\nuniform vec4 outputFrame;\n\nvec4 filterVertexPosition( void )\n{\n    vec2 position = aVertexPosition * max(outputFrame.zw, vec2(0.)) + outputFrame.xy;\n\n    return vec4((projectionMatrix * vec3(position, 1.0)).xy, 0.0, 1.0);\n}\n\nvec2 filterTextureCoord( void )\n{\n    return aVertexPosition * (outputFrame.zw * inputSize.zw);\n}\n\nvoid main(void)\n{\n\tgl_Position = filterVertexPosition();\n\tvTextureCoord = filterTextureCoord();\n\tvFilterCoord = ( filterMatrix * vec3( vTextureCoord, 1.0)  ).xy;\n}\n";
 
 	var fragment$5 = "varying vec2 vFilterCoord;\nvarying vec2 vTextureCoord;\n\nuniform vec2 scale;\nuniform mat2 rotation;\nuniform sampler2D uSampler;\nuniform sampler2D mapSampler;\n\nuniform highp vec4 inputSize;\nuniform vec4 inputClamp;\n\nvoid main(void)\n{\n  vec4 map =  texture2D(mapSampler, vFilterCoord);\n\n  map -= 0.5;\n  map.xy = scale * inputSize.zw * (rotation * map.xy);\n\n  gl_FragColor = texture2D(uSampler, clamp(vec2(vTextureCoord.x + map.x, vTextureCoord.y + map.y), inputClamp.xy, inputClamp.zw));\n}\n";
 
@@ -39623,7 +39868,7 @@ var PIXI = (function (exports) {
 
 	        sprite.renderable = false;
 
-	        Filter.call(this, vertex$3, fragment$5, {
+	        Filter.call(this, vertex$4, fragment$5, {
 	            mapSampler: sprite._texture,
 	            filterMatrix: maskMatrix,
 	            scale: { x: 1, y: 1 },
@@ -39704,14 +39949,14 @@ var PIXI = (function (exports) {
 	}(Filter));
 
 	/*!
-	 * @pixi/filter-fxaa - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/filter-fxaa - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/filter-fxaa is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
 	 */
 
-	var vertex$4 = "\nattribute vec2 aVertexPosition;\n\nuniform mat3 projectionMatrix;\n\nvarying vec2 v_rgbNW;\nvarying vec2 v_rgbNE;\nvarying vec2 v_rgbSW;\nvarying vec2 v_rgbSE;\nvarying vec2 v_rgbM;\n\nvarying vec2 vFragCoord;\n\nuniform vec4 inputPixel;\nuniform vec4 outputFrame;\n\nvec4 filterVertexPosition( void )\n{\n    vec2 position = aVertexPosition * max(outputFrame.zw, vec2(0.)) + outputFrame.xy;\n\n    return vec4((projectionMatrix * vec3(position, 1.0)).xy, 0.0, 1.0);\n}\n\nvoid texcoords(vec2 fragCoord, vec2 inverseVP,\n               out vec2 v_rgbNW, out vec2 v_rgbNE,\n               out vec2 v_rgbSW, out vec2 v_rgbSE,\n               out vec2 v_rgbM) {\n    v_rgbNW = (fragCoord + vec2(-1.0, -1.0)) * inverseVP;\n    v_rgbNE = (fragCoord + vec2(1.0, -1.0)) * inverseVP;\n    v_rgbSW = (fragCoord + vec2(-1.0, 1.0)) * inverseVP;\n    v_rgbSE = (fragCoord + vec2(1.0, 1.0)) * inverseVP;\n    v_rgbM = vec2(fragCoord * inverseVP);\n}\n\nvoid main(void) {\n\n   gl_Position = filterVertexPosition();\n\n   vFragCoord = aVertexPosition * outputFrame.zw;\n\n   texcoords(vFragCoord, inputPixel.zw, v_rgbNW, v_rgbNE, v_rgbSW, v_rgbSE, v_rgbM);\n}\n";
+	var vertex$5 = "\nattribute vec2 aVertexPosition;\n\nuniform mat3 projectionMatrix;\n\nvarying vec2 v_rgbNW;\nvarying vec2 v_rgbNE;\nvarying vec2 v_rgbSW;\nvarying vec2 v_rgbSE;\nvarying vec2 v_rgbM;\n\nvarying vec2 vFragCoord;\n\nuniform vec4 inputPixel;\nuniform vec4 outputFrame;\n\nvec4 filterVertexPosition( void )\n{\n    vec2 position = aVertexPosition * max(outputFrame.zw, vec2(0.)) + outputFrame.xy;\n\n    return vec4((projectionMatrix * vec3(position, 1.0)).xy, 0.0, 1.0);\n}\n\nvoid texcoords(vec2 fragCoord, vec2 inverseVP,\n               out vec2 v_rgbNW, out vec2 v_rgbNE,\n               out vec2 v_rgbSW, out vec2 v_rgbSE,\n               out vec2 v_rgbM) {\n    v_rgbNW = (fragCoord + vec2(-1.0, -1.0)) * inverseVP;\n    v_rgbNE = (fragCoord + vec2(1.0, -1.0)) * inverseVP;\n    v_rgbSW = (fragCoord + vec2(-1.0, 1.0)) * inverseVP;\n    v_rgbSE = (fragCoord + vec2(1.0, 1.0)) * inverseVP;\n    v_rgbM = vec2(fragCoord * inverseVP);\n}\n\nvoid main(void) {\n\n   gl_Position = filterVertexPosition();\n\n   vFragCoord = aVertexPosition * outputFrame.zw;\n\n   texcoords(vFragCoord, inputPixel.zw, v_rgbNW, v_rgbNE, v_rgbSW, v_rgbSE, v_rgbM);\n}\n";
 
 	var fragment$6 = "varying vec2 v_rgbNW;\nvarying vec2 v_rgbNE;\nvarying vec2 v_rgbSW;\nvarying vec2 v_rgbSE;\nvarying vec2 v_rgbM;\n\nvarying vec2 vFragCoord;\nuniform sampler2D uSampler;\nuniform highp vec4 inputPixel;\n\n\n/**\n Basic FXAA implementation based on the code on geeks3d.com with the\n modification that the texture2DLod stuff was removed since it's\n unsupported by WebGL.\n\n --\n\n From:\n https://github.com/mitsuhiko/webgl-meincraft\n\n Copyright (c) 2011 by Armin Ronacher.\n\n Some rights reserved.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions are\n met:\n\n * Redistributions of source code must retain the above copyright\n notice, this list of conditions and the following disclaimer.\n\n * Redistributions in binary form must reproduce the above\n copyright notice, this list of conditions and the following\n disclaimer in the documentation and/or other materials provided\n with the distribution.\n\n * The names of the contributors may not be used to endorse or\n promote products derived from this software without specific\n prior written permission.\n\n THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\n OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\n LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\n DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\n THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n */\n\n#ifndef FXAA_REDUCE_MIN\n#define FXAA_REDUCE_MIN   (1.0/ 128.0)\n#endif\n#ifndef FXAA_REDUCE_MUL\n#define FXAA_REDUCE_MUL   (1.0 / 8.0)\n#endif\n#ifndef FXAA_SPAN_MAX\n#define FXAA_SPAN_MAX     8.0\n#endif\n\n//optimized version for mobile, where dependent\n//texture reads can be a bottleneck\nvec4 fxaa(sampler2D tex, vec2 fragCoord, vec2 inverseVP,\n          vec2 v_rgbNW, vec2 v_rgbNE,\n          vec2 v_rgbSW, vec2 v_rgbSE,\n          vec2 v_rgbM) {\n    vec4 color;\n    vec3 rgbNW = texture2D(tex, v_rgbNW).xyz;\n    vec3 rgbNE = texture2D(tex, v_rgbNE).xyz;\n    vec3 rgbSW = texture2D(tex, v_rgbSW).xyz;\n    vec3 rgbSE = texture2D(tex, v_rgbSE).xyz;\n    vec4 texColor = texture2D(tex, v_rgbM);\n    vec3 rgbM  = texColor.xyz;\n    vec3 luma = vec3(0.299, 0.587, 0.114);\n    float lumaNW = dot(rgbNW, luma);\n    float lumaNE = dot(rgbNE, luma);\n    float lumaSW = dot(rgbSW, luma);\n    float lumaSE = dot(rgbSE, luma);\n    float lumaM  = dot(rgbM,  luma);\n    float lumaMin = min(lumaM, min(min(lumaNW, lumaNE), min(lumaSW, lumaSE)));\n    float lumaMax = max(lumaM, max(max(lumaNW, lumaNE), max(lumaSW, lumaSE)));\n\n    mediump vec2 dir;\n    dir.x = -((lumaNW + lumaNE) - (lumaSW + lumaSE));\n    dir.y =  ((lumaNW + lumaSW) - (lumaNE + lumaSE));\n\n    float dirReduce = max((lumaNW + lumaNE + lumaSW + lumaSE) *\n                          (0.25 * FXAA_REDUCE_MUL), FXAA_REDUCE_MIN);\n\n    float rcpDirMin = 1.0 / (min(abs(dir.x), abs(dir.y)) + dirReduce);\n    dir = min(vec2(FXAA_SPAN_MAX, FXAA_SPAN_MAX),\n              max(vec2(-FXAA_SPAN_MAX, -FXAA_SPAN_MAX),\n                  dir * rcpDirMin)) * inverseVP;\n\n    vec3 rgbA = 0.5 * (\n                       texture2D(tex, fragCoord * inverseVP + dir * (1.0 / 3.0 - 0.5)).xyz +\n                       texture2D(tex, fragCoord * inverseVP + dir * (2.0 / 3.0 - 0.5)).xyz);\n    vec3 rgbB = rgbA * 0.5 + 0.25 * (\n                                     texture2D(tex, fragCoord * inverseVP + dir * -0.5).xyz +\n                                     texture2D(tex, fragCoord * inverseVP + dir * 0.5).xyz);\n\n    float lumaB = dot(rgbB, luma);\n    if ((lumaB < lumaMin) || (lumaB > lumaMax))\n        color = vec4(rgbA, texColor.a);\n    else\n        color = vec4(rgbB, texColor.a);\n    return color;\n}\n\nvoid main() {\n\n      vec4 color;\n\n      color = fxaa(uSampler, vFragCoord, inputPixel.zw, v_rgbNW, v_rgbNE, v_rgbSW, v_rgbSE, v_rgbM);\n\n      gl_FragColor = color;\n}\n";
 
@@ -39730,7 +39975,7 @@ var PIXI = (function (exports) {
 	    function FXAAFilter()
 	    {
 	        // TODO - needs work
-	        Filter.call(this, vertex$4, fragment$6);
+	        Filter.call(this, vertex$5, fragment$6);
 	    }
 
 	    if ( Filter ) { FXAAFilter.__proto__ = Filter; }
@@ -39741,8 +39986,8 @@ var PIXI = (function (exports) {
 	}(Filter));
 
 	/*!
-	 * @pixi/filter-noise - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/filter-noise - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/filter-noise is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -39820,8 +40065,8 @@ var PIXI = (function (exports) {
 	}(Filter));
 
 	/*!
-	 * @pixi/mixin-cache-as-bitmap - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/mixin-cache-as-bitmap - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/mixin-cache-as-bitmap is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -40003,10 +40248,7 @@ var PIXI = (function (exports) {
 
 	    // for now we cache the current renderTarget that the WebGL renderer is currently using.
 	    // this could be more elegant..
-	    var cachedRenderTexture = renderer.renderTexture.current;
-	    var cachedSourceFrame = renderer.renderTexture.sourceFrame;
-	    var cachedProjectionTransform = renderer.projection.transform;
-
+	    var cachedRenderTarget = renderer._activeRenderTarget;
 	    // We also store the filter stack - I will definitely look to change how this works a little later down the line.
 	    // const stack = renderer.filterManager.filterStack;
 
@@ -40033,10 +40275,9 @@ var PIXI = (function (exports) {
 	    this.render = this._cacheData.originalRender;
 
 	    renderer.render(this, renderTexture, true, m, true);
-
 	    // now restore the state be setting the new properties
-	    renderer.projection.transform = cachedProjectionTransform;
-	    renderer.renderTexture.bind(cachedRenderTexture, cachedSourceFrame);
+
+	    renderer.renderTexture.bind(cachedRenderTarget);
 
 	    // renderer.filterManager.filterStack = stack;
 
@@ -40245,8 +40486,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/mixin-get-child-by-name - v5.1.3
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/mixin-get-child-by-name - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/mixin-get-child-by-name is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -40282,8 +40523,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/mixin-get-global-position - v5.1.3
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/mixin-get-global-position - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/mixin-get-global-position is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -40960,24 +41201,15 @@ var PIXI = (function (exports) {
 	         * @name PIXI.BaseTexture#imageUrl
 	         * @type {string}
 	         * @deprecated since 5.0.0
+	         * @readonly
 	         * @see PIXI.resource.ImageResource#url
 	         */
 	        imageUrl: {
 	            get: function get()
 	            {
-	                deprecation(v5, 'PIXI.BaseTexture.imageUrl property has been removed, use PIXI.BaseTexture.resource.url');
+	                deprecation(v5, 'PIXI.BaseTexture.imageUrl property has been removed, use resource.url');
 
 	                return this.resource && this.resource.url;
-	            },
-
-	            set: function set(imageUrl)
-	            {
-	                deprecation(v5, 'PIXI.BaseTexture.imageUrl property has been removed, use PIXI.BaseTexture.resource.url');
-
-	                if (this.resource)
-	                {
-	                    this.resource.url = imageUrl;
-	                }
 	            },
 	        },
 	        /**
@@ -40990,13 +41222,13 @@ var PIXI = (function (exports) {
 	        source: {
 	            get: function get()
 	            {
-	                deprecation(v5, 'PIXI.BaseTexture.source property has been moved, use `PIXI.BaseTexture.resource.source`');
+	                deprecation(v5, 'PIXI.BaseTexture.source property has been moved, use `resource.source`');
 
 	                return this.resource && this.resource.source;
 	            },
 	            set: function set(source)
 	            {
-	                deprecation(v5, 'PIXI.BaseTexture.source property has been moved, use `PIXI.BaseTexture.resource.source` '
+	                deprecation(v5, 'PIXI.BaseTexture.source property has been moved, use `resource.source` '
 	                    + 'if you want to set HTMLCanvasElement. Otherwise, create new BaseTexture.');
 
 	                if (this.resource)
@@ -41099,18 +41331,6 @@ var PIXI = (function (exports) {
 	        deprecation(v5, 'PIXI.Matrix.copy method has been replaced with PIXI.Matrix.copyTo');
 
 	        return this.copyTo(p);
-	    };
-
-	    /**
-	     * @method PIXI.systems.StateSystem#setState
-	     * @deprecated since 5.1.0
-	     * @see PIXI.systems.StateSystem#set
-	     */
-	    PIXI.systems.StateSystem.prototype.setState = function setState(s)
-	    {
-	        deprecation('v5.1.0', 'StateSystem.setState has been renamed to StateSystem.set');
-
-	        return this.set(s);
 	    };
 
 	    Object.assign(PIXI.systems.FilterSystem.prototype, {
@@ -41284,21 +41504,6 @@ var PIXI = (function (exports) {
 	        };
 	    }
 
-	    /**
-	     * @deprecated since 5.0.0
-	     * @member {PIXI.Graphics} PIXI.Graphics#graphicsData
-	     * @see PIXI.Graphics#geometry
-	     * @readonly
-	     */
-	    Object.defineProperty(PIXI.Graphics.prototype, 'graphicsData', {
-	        get: function get()
-	        {
-	            deprecation(v5, 'PIXI.Graphics.graphicsData property is deprecated, use PIXI.Graphics.geometry.graphicsData');
-
-	            return this.geometry.graphicsData;
-	        },
-	    });
-
 	    // Use these to deprecate all the Sprite from* methods
 	    function spriteFrom(name, source, crossorigin, scaleMode)
 	    {
@@ -41413,31 +41618,15 @@ var PIXI = (function (exports) {
 	    Object.defineProperty(PIXI.AbstractRenderer.prototype, 'autoResize', {
 	        get: function get()
 	        {
-	            deprecation(v5, 'PIXI.AbstractRenderer.autoResize property is deprecated, '
-	                + 'use PIXI.AbstractRenderer.autoDensity');
+	            deprecation(v5, 'PIXI.AbstractRenderer.autoResize property is deprecated, use autoDensity');
 
 	            return this.autoDensity;
 	        },
 	        set: function set(value)
 	        {
-	            deprecation(v5, 'PIXI.AbstractRenderer.autoResize property is deprecated, '
-	                + 'use PIXI.AbstractRenderer.autoDensity');
+	            deprecation(v5, 'PIXI.AbstractRenderer.autoResize property is deprecated, use autoDensity');
 
 	            this.autoDensity = value;
-	        },
-	    });
-
-	    /**
-	     * @deprecated since 5.0.0
-	     * @member {PIXI.systems.TextureSystem} PIXI.Renderer#textureManager
-	     * @see PIXI.Renderer#texture
-	     */
-	    Object.defineProperty(PIXI.Renderer.prototype, 'textureManager', {
-	        get: function get()
-	        {
-	            deprecation(v5, 'PIXI.Renderer.textureManager property is deprecated, use PIXI.Renderer.texture');
-
-	            return this.texture;
 	        },
 	    });
 
@@ -41477,8 +41666,8 @@ var PIXI = (function (exports) {
 	}
 
 	/*!
-	 * @pixi/mesh - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/mesh - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/mesh is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -41790,7 +41979,6 @@ var PIXI = (function (exports) {
 	    /**
 	     * Standard renderer draw.
 	     * @protected
-	     * @param {PIXI.Renderer} renderer - Instance to renderer.
 	     */
 	    Mesh.prototype._render = function _render (renderer)
 	    {
@@ -41835,7 +42023,7 @@ var PIXI = (function (exports) {
 	        renderer.shader.bind(shader);
 
 	        // set state..
-	        renderer.state.set(this.state);
+	        renderer.state.setState(this.state);
 
 	        // bind the geometry...
 	        renderer.geometry.bind(this.geometry, shader);
@@ -42039,7 +42227,7 @@ var PIXI = (function (exports) {
 	 */
 	Mesh.BATCHABLE_SIZE = 100;
 
-	var vertex$5 = "attribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\n\nuniform mat3 projectionMatrix;\nuniform mat3 translationMatrix;\nuniform mat3 uTextureMatrix;\n\nvarying vec2 vTextureCoord;\n\nvoid main(void)\n{\n    gl_Position = vec4((projectionMatrix * translationMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n\n    vTextureCoord = (uTextureMatrix * vec3(aTextureCoord, 1.0)).xy;\n}\n";
+	var vertex$6 = "attribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\n\nuniform mat3 projectionMatrix;\nuniform mat3 translationMatrix;\nuniform mat3 uTextureMatrix;\n\nvarying vec2 vTextureCoord;\n\nvoid main(void)\n{\n    gl_Position = vec4((projectionMatrix * translationMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n\n    vTextureCoord = (uTextureMatrix * vec3(aTextureCoord, 1.0)).xy;\n}\n";
 
 	var fragment$8 = "varying vec2 vTextureCoord;\nuniform vec4 uColor;\n\nuniform sampler2D uSampler;\n\nvoid main(void)\n{\n    gl_FragColor = texture2D(uSampler, vTextureCoord) * uColor;\n}\n";
 
@@ -42071,7 +42259,7 @@ var PIXI = (function (exports) {
 	            Object.assign(uniforms, options.uniforms);
 	        }
 
-	        Shader.call(this, options.program || Program.from(vertex$5, fragment$8), uniforms);
+	        Shader.call(this, options.program || Program.from(vertex$6, fragment$8), uniforms);
 
 	        /**
 	         * Only do update if tint or alpha changes.
@@ -42255,8 +42443,8 @@ var PIXI = (function (exports) {
 	}(Geometry));
 
 	/*!
-	 * @pixi/mesh-extras - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/mesh-extras - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/mesh-extras is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -42533,7 +42721,7 @@ var PIXI = (function (exports) {
 	 * for (let i = 0; i < 20; i++) {
 	 *     points.push(new PIXI.Point(i * 50, 0));
 	 * };
-	 * let rope = new PIXI.SimpleRope(PIXI.Texture.from("snake.png"), points);
+	 * let rope = new PIXI.Rope(PIXI.Texture.from("snake.png"), points);
 	 *  ```
 	 *
 	 * @class
@@ -43010,8 +43198,8 @@ var PIXI = (function (exports) {
 	}(SimplePlane));
 
 	/*!
-	 * @pixi/sprite-animated - v5.1.5
-	 * Compiled Tue, 24 Sep 2019 04:11:46 UTC
+	 * @pixi/sprite-animated - v5.0.3
+	 * Compiled Sun, 19 May 2019 19:07:10 UTC
 	 *
 	 * @pixi/sprite-animated is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -43311,12 +43499,12 @@ var PIXI = (function (exports) {
 	        this._texture = this._textures[this.currentFrame];
 	        this._textureID = -1;
 	        this._textureTrimmedID = -1;
-	        this._cachedTint = 0xFFFFFF;
+	        this.cachedTint = 0xFFFFFF;
 	        this.uvs = this._texture._uvs.uvsFloat32;
 
 	        if (this.updateAnchor)
 	        {
-	            this._anchor.copyFrom(this._texture.defaultAnchor);
+	            this._anchor.copy(this._texture.defaultAnchor);
 	        }
 
 	        if (this.onFrameChange)
@@ -43460,8 +43648,8 @@ var PIXI = (function (exports) {
 	Renderer.registerPlugin('batch', BatchRenderer);
 	Renderer.registerPlugin('tilingSprite', TilingSpriteRenderer);
 
-	Loader$1.registerPlugin(BitmapFontLoader);
-	Loader$1.registerPlugin(SpritesheetLoader);
+	Loader$2.registerPlugin(BitmapFontLoader);
+	Loader$2.registerPlugin(SpritesheetLoader);
 
 	Application.registerPlugin(TickerPlugin);
 	Application.registerPlugin(AppLoaderPlugin);
@@ -43475,7 +43663,7 @@ var PIXI = (function (exports) {
 	 * @name VERSION
 	 * @type {string}
 	 */
-	var VERSION$1 = '5.1.5';
+	var VERSION$1 = '5.0.3';
 
 	/**
 	 * @namespace PIXI
@@ -43518,7 +43706,6 @@ var PIXI = (function (exports) {
 	    NoiseFilter: NoiseFilter,
 	};
 
-	exports.AbstractBatchRenderer = AbstractBatchRenderer;
 	exports.AbstractRenderer = AbstractRenderer;
 	exports.AnimatedSprite = AnimatedSprite;
 	exports.AppLoaderPlugin = AppLoaderPlugin;
@@ -43529,9 +43716,7 @@ var PIXI = (function (exports) {
 	exports.BaseTexture = BaseTexture;
 	exports.BatchDrawCall = BatchDrawCall;
 	exports.BatchGeometry = BatchGeometry;
-	exports.BatchPluginFactory = BatchPluginFactory;
 	exports.BatchRenderer = BatchRenderer;
-	exports.BatchShaderGenerator = BatchShaderGenerator;
 	exports.BitmapFontLoader = BitmapFontLoader;
 	exports.BitmapText = BitmapText;
 	exports.Bounds = Bounds;
@@ -43558,7 +43743,7 @@ var PIXI = (function (exports) {
 	exports.GraphicsGeometry = GraphicsGeometry;
 	exports.GroupD8 = GroupD8;
 	exports.LineStyle = LineStyle;
-	exports.Loader = Loader$1;
+	exports.Loader = Loader$2;
 	exports.LoaderResource = LoaderResource;
 	exports.MIPMAP_MODES = MIPMAP_MODES;
 	exports.Matrix = Matrix;
@@ -43583,7 +43768,6 @@ var PIXI = (function (exports) {
 	exports.RENDERER_TYPE = RENDERER_TYPE;
 	exports.Rectangle = Rectangle;
 	exports.RenderTexture = RenderTexture;
-	exports.RenderTexturePool = RenderTexturePool;
 	exports.Renderer = Renderer;
 	exports.RopeGeometry = RopeGeometry;
 	exports.RoundedRectangle = RoundedRectangle;
@@ -43618,7 +43802,6 @@ var PIXI = (function (exports) {
 	exports.UPDATE_PRIORITY = UPDATE_PRIORITY;
 	exports.UniformGroup = UniformGroup;
 	exports.VERSION = VERSION$1;
-	exports.ViewableBuffer = ViewableBuffer;
 	exports.WRAP_MODES = WRAP_MODES;
 	exports.accessibility = accessibility_es;
 	exports.autoDetectRenderer = autoDetectRenderer;
@@ -43627,6 +43810,7 @@ var PIXI = (function (exports) {
 	exports.defaultVertex = _default;
 	exports.extract = extract_es;
 	exports.filters = filters;
+	exports.generateMultiTextureShader = generateMultiTextureShader;
 	exports.interaction = interaction_es;
 	exports.isMobile = isMobile_min;
 	exports.prepare = prepare_es;
