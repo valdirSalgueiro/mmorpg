@@ -4,10 +4,10 @@ let seed = 0;
 
 
 const app = new PIXI.Application({
-	//width: w / 2,
-	//height: h / 2
-	width: w,
-	height: h
+	width: w / 2,
+	height: h / 2
+	//width: w,
+	//height: h
 });
 
 const container = document.querySelector(".container");
@@ -63,22 +63,24 @@ class Tilemap extends PIXI.Container {
 		this.tileTextures = [
             /* U L D R DIRECTION */
             // NONE
-			/* 0 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w1, w, w)),
+			/* 0 */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w * 2, w, w)),
             /* 1 */ null,
-			/* 2 */ null,
+			/* 2 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w0, w, w)),
             /* 3 */ new PIXI.Texture(auto, new PIXI.Rectangle(w0, w0, w, w)),
-            /* 4 */ null,
+            /* 4 */ new PIXI.Texture(auto, new PIXI.Rectangle(w2, w1, w, w)),
 			/* 5 */ null,
             /* 6 */ new PIXI.Texture(auto, new PIXI.Rectangle(w2, w0, w, w)),
             /* 7 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w0, w, w)),
-			/* 8 */ null,
+			/* 8 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w2, w, w)),
 			/* 9 */ new PIXI.Texture(auto, new PIXI.Rectangle(w0, w2, w, w)),
 			/* 10 */ null,
             /* 11 */ new PIXI.Texture(auto, new PIXI.Rectangle(w0, w1, w, w)),
             /* 12 */ new PIXI.Texture(auto, new PIXI.Rectangle(w2, w2, w, w)),
             /* 13 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w2, w, w)),
             /* 14 */ new PIXI.Texture(auto, new PIXI.Rectangle(w2, w1, w, w)),
-			/* 15 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w1, w, w))
+			/* 15 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w1, w, w)),
+			/* DR */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w0, w, w)),
+			/* DL */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w1, w, w))
 		];
 	}
 
@@ -120,7 +122,12 @@ class Tilemap extends PIXI.Container {
 
 					// diagonals
 					let downright = field[(tileY + 1) % rows][(tileX + 1) % cols];
-					if ((down && right) && !downright) {						
+					let downleft = field[(tileY + 1) % rows][(tileX - 1) % cols];
+					if ((down && right) && !downright) {
+						mask = 16;
+					}
+					else if (i != 0 && (down && left) && !downleft) {
+						mask = 17;
 					}
 
 					inner.beginTextureFill(this.tileTextures[0]);

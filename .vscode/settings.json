@@ -12,5 +12,5 @@
     "**/.hg": true,
     "**/.DS_Store": true
   },
-  "eslint.autoFixOnSave": true
+  "eslint.enable": false
 }
