@@ -80,7 +80,9 @@ class Tilemap extends PIXI.Container {
             /* 14 */ new PIXI.Texture(auto, new PIXI.Rectangle(w2, w1, w, w)),
 			/* 15 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w1, w, w)),
 			/* DR */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w0, w, w)),
-			/* DL */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w1, w, w))
+			/* DL */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w1, w, w)),
+			/* UR */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w * 3, w, w)),
+			/* UL */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 4, w * 3, w, w))
 		];
 	}
 
@@ -122,12 +124,20 @@ class Tilemap extends PIXI.Container {
 
 					// diagonals
 					let downright = field[(tileY + 1) % rows][(tileX + 1) % cols];
-					let downleft = field[(tileY + 1) % rows][(tileX - 1) % cols];
-					if ((down && right) && !downright) {
+					let downleft = tileX == 0 ? true : field[(tileY + 1) % rows][(tileX - 1) % cols];
+					let upright = tileY == 0 ? true : field[(tileY - 1) % rows][(tileX + 1) % cols];
+					let upleft = tileX == 0 || tileY == 0 ? true : field[(tileY - 1) % rows][(tileX - 1) % cols];
+					if (down && right && !downright) {
 						mask = 16;
 					}
-					else if (i != 0 && (down && left) && !downleft) {
+					else if (down && left && !downleft) {
 						mask = 17;
+					}
+					else if (up && right && !upright) {
+						mask = 19;
+					}
+					else if (up && left && !upleft) {
+						mask = 18;
 					}
 
 					inner.beginTextureFill(this.tileTextures[0]);
