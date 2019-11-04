@@ -18,7 +18,7 @@ app.loader.baseUrl = "./assets";
 app.loader.add("autotile", "autotile.png").load(initLevel);
 
 function createTilemap() {
-	let obj = new Tilemap(app.loader.resources, w, h);
+	let obj = new Tilemap(app.loader.resources, w / 4, h / 4);
 	obj.position.set(0, 0);
 	app.stage.addChild(obj);
 	return obj;
@@ -30,6 +30,10 @@ function initLevel() {
 	app.ticker.add(updateLevel);
 
 	function updateLevel(delta) {
+		//console.log(delta);
+		tilemap.offset.x += delta * 0.5;
+		//tilemap.offset.x += delta;
+		//tilemap.offset.y += tileSpeedY * delta;
 		tilemap.updateView();
 	}
 }
@@ -101,6 +105,7 @@ class Tilemap extends PIXI.Container {
 		inner.position.set(i1 * tileSize, j1 * tileSize);
 		inner.roundPixels = true;
 		inner.clear();
+		//console.log(i2);
 
 		const field = this.field;
 
@@ -177,6 +182,8 @@ class Tilemap extends PIXI.Container {
 		if (!isInside(this.viewRect, this.filledRect, this.offset)) {
 			this.fill();
 		}
+		console.log(Math.round(this.offset.x));
+		this.inner.pivot.copyFrom(this.offset);
 	}
 }
 
