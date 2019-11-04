@@ -1,198 +1,295 @@
-const w = 1280;
-const h = 720;
-let seed = 0;
 
+function treatMap(map) {
+	const w = 16;
+	const w2 = w << 1;
+	const w1 = w;
+	const w0 = 0;
+	let newMap = Create2DArray(45);
+	this.tileTextures = [
+		/* U L D R DIRECTION */
+		// NONE
+		/* 0 */ new Point(w * 3, w * 2),
+		/* 1 */ null,
+		/* 2 */ new Point(w1, w0),
+		/* 3 */ new Point(w0, w0),
+		/* 4 */ new Point(w2, w1),
+		/* 5 */ null,
+		/* 6 */ new Point(w2, w0),
+		/* 7 */ new Point(w1, w0),
+		/* 8 */ new Point(w1, w2),
+		/* 9 */ new Point(w0, w2),
+		/* 10 */ null,
+		/* 11 */ new Point(w0, w1),
+		/* 12 */ new Point(w2, w2),
+		/* 13 */ new Point(w1, w2),
+		/* 14 */ new Point(w2, w1),
+		/* 15 */ new Point(w1, w1),
+		/* DR */ new Point(w * 3, w0),
+		/* DL */ new Point(w * 3, w1),
+		/* UR */ new Point(w * 3, w * 3),
+		/* UL */ new Point(w * 4, w * 3)
+	];
+	let endCol = 79;
+	let endRow = 44;
+	for (let c = 0; c <= endCol; c++) {
+		for (let r = 0; r <= endRow; r++) {
+			let mask = 0;
+			let tile = map[r][c];
+			if (tile !== 0) { // 0 => empty tile
+				let down = r + 1 < endRow ? map[r + 1][c] : true;
+				let left = c - 1 > 0 ? map[r][c - 1] : true;
+				let up = r - 1 > 0 ? map[r - 1][c] : true;
+				let right = c + 1 < endCol ? map[r][c + 1] : true;
+				mask = right | (down << 1) | (left << 2) | (up << 3);
 
-const app = new PIXI.Application({
-	width: w / 2,
-	height: h / 2
-	//width: w,
-	//height: h
-});
-
-const container = document.querySelector(".container");
-container.appendChild(app.view);
-let shots = [];
-
-app.loader.baseUrl = "./assets";
-app.loader.add("autotile", "autotile.png").load(initLevel);
-
-function createTilemap() {
-	let obj = new Tilemap(app.loader.resources, w / 4, h / 4);
-	obj.position.set(0, 0);
-	app.stage.addChild(obj);
-	return obj;
-}
-
-function initLevel() {
-	let tilemap = createTilemap();
-
-	app.ticker.add(updateLevel);
-
-	function updateLevel(delta) {
-		//console.log(delta);
-		tilemap.offset.x += delta * 0.5;
-		//tilemap.offset.x += delta;
-		//tilemap.offset.y += tileSpeedY * delta;
-		tilemap.updateView();
-	}
-}
-
-class Tilemap extends PIXI.Container {
-	constructor(resources, width, height) {
-		super();
-		this.initTiles(resources);
-		this.inner = new PIXI.Graphics();
-		this.viewRect = new PIXI.Rectangle(0, 0, width, height);
-		this.filledRect = new PIXI.Rectangle();
-		this.padding = 0;
-		this.offset = new PIXI.Point();
-		this.addChild(this.inner);
-
-		let direction = LEFT | RIGHT | UP | DOWN;
-		do {
-			//console.log('seed ' + seed);
-			this.field = mapGenerator(seed++, direction);
-			console.log('try');
-		}
-		while (this.fill());
-	}
-
-	initTiles(resources) {
-		const w = 16;
-		const w2 = w << 1;
-		const w1 = w;
-		const w0 = 0;
-		const auto = resources["autotile"].texture.baseTexture;
-		this.tileTextures = [
-            /* U L D R DIRECTION */
-            // NONE
-			/* 0 */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w * 2, w, w)),
-            /* 1 */ null,
-			/* 2 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w0, w, w)),
-            /* 3 */ new PIXI.Texture(auto, new PIXI.Rectangle(w0, w0, w, w)),
-            /* 4 */ new PIXI.Texture(auto, new PIXI.Rectangle(w2, w1, w, w)),
-			/* 5 */ null,
-            /* 6 */ new PIXI.Texture(auto, new PIXI.Rectangle(w2, w0, w, w)),
-            /* 7 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w0, w, w)),
-			/* 8 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w2, w, w)),
-			/* 9 */ new PIXI.Texture(auto, new PIXI.Rectangle(w0, w2, w, w)),
-			/* 10 */ null,
-            /* 11 */ new PIXI.Texture(auto, new PIXI.Rectangle(w0, w1, w, w)),
-            /* 12 */ new PIXI.Texture(auto, new PIXI.Rectangle(w2, w2, w, w)),
-            /* 13 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w2, w, w)),
-            /* 14 */ new PIXI.Texture(auto, new PIXI.Rectangle(w2, w1, w, w)),
-			/* 15 */ new PIXI.Texture(auto, new PIXI.Rectangle(w1, w1, w, w)),
-			/* DR */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w0, w, w)),
-			/* DL */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w1, w, w)),
-			/* UR */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 3, w * 3, w, w)),
-			/* UL */ new PIXI.Texture(auto, new PIXI.Rectangle(w * 4, w * 3, w, w))
-		];
-	}
-
-	fill() {
-		const tileSize = 16;
-		const viewRect = this.viewRect;
-		const offset = this.offset;
-		const inner = this.inner;
-		const padding = this.padding;
-
-		let i1 = Math.floor((offset.x + viewRect.x - padding) / tileSize);
-		let j1 = Math.floor((offset.y + viewRect.y - padding) / tileSize);
-		let i2 = Math.ceil((offset.x + viewRect.x + viewRect.width + padding) / tileSize);
-		let j2 = Math.ceil((offset.y + viewRect.y + viewRect.height + padding) / tileSize);
-
-		inner.position.set(i1 * tileSize, j1 * tileSize);
-		inner.roundPixels = true;
-		inner.clear();
-		//console.log(i2);
-
-		const field = this.field;
-
-		const rows = field.length, cols = field[0].length;
-		let error = false;
-
-		for (let i = i1; i <= i2; i++) {
-			for (let j = j1; j <= j2; j++) {
-				let xx = (i - i1) * tileSize, yy = (j - j1) * tileSize;
-
-				let tileX = i - Math.floor(i / cols) * cols;
-				let tileY = j - Math.floor(j / rows) * rows;
-				let tile = field[tileY][tileX];
-				let mask = 0;
-				if (tile) {
-					let right = field[tileY][(tileX + 1) % cols];
-					let down = field[(tileY + 1) % rows][tileX];
-					let left = field[tileY][(tileX + cols - 1) % cols];
-					let up = field[(tileY + rows - 1) % rows][tileX];
-					mask = right | (down << 1) | (left << 2) | (up << 3);
-
-					// diagonals
-					let downright = field[(tileY + 1) % rows][(tileX + 1) % cols];
-					let downleft = tileX == 0 ? true : field[(tileY + 1) % rows][(tileX - 1) % cols];
-					let upright = tileY == 0 ? true : field[(tileY - 1) % rows][(tileX + 1) % cols];
-					let upleft = tileX == 0 || tileY == 0 ? true : field[(tileY - 1) % rows][(tileX - 1) % cols];
-					if (down && right && !downright) {
-						mask = 16;
-					}
-					else if (down && left && !downleft) {
-						mask = 17;
-					}
-					else if (up && right && !upright) {
-						mask = 19;
-					}
-					else if (up && left && !upleft) {
-						mask = 18;
-					}
-
-					inner.beginTextureFill(this.tileTextures[0]);
-					inner.drawRect(xx, yy, tileSize, tileSize);
-					inner.endFill();
+				// diagonals
+				let downright = c + 1 < endCol && r + 1 < endRow ? map[r + 1][c + 1] : true;
+				let downleft = c - 1 > 0 && r + 1 < endRow ? map[r + 1][c - 1] : true;
+				let upright = c + 1 < endCol && r - 1 > 0 ? map[r - 1][c + 1] : true;
+				let upleft = c - 1 > 0 && r - 1 > 0 ? map[r - 1][c - 1] : true;
+				if (down && right && !downright) {
+					mask = 16;
 				}
-				var drawTexture = this.tileTextures[mask];
-				if (this.tileTextures[mask] != null) {
-					inner.beginTextureFill(drawTexture);
-					inner.drawRect(xx, yy, tileSize, tileSize);
-					inner.endFill();
+				else if (down && left && !downleft) {
+					mask = 17;
 				}
-				else {
-					var buttonText = new PIXI.Text(mask,
-						{
-							fontFamily: 'Arial',
-							fontSize: 12,
-							fill: "white"
-						});
-					buttonText.anchor.set(0, 0);
-					buttonText.position.set(xx, yy);
-					inner.addChild(buttonText);
+				else if (up && right && !upright) {
+					mask = 19;
+				}
+				else if (up && left && !upleft) {
+					mask = 18;
 				}
 			}
+			newMap[r][c] = tileTextures[mask];
 		}
-
-		this.filledRect.x = i1 * tileSize;
-		this.filledRect.y = j1 * tileSize;
-		this.filledRect.width = (i2 - i1 + 1) * tileSize;
-		this.filledRect.height = (j2 - j1 + 1) * tileSize;
-		//console.log(error);
-		return error;
 	}
-
-
-	updateView() {
-		if (!isInside(this.viewRect, this.filledRect, this.offset)) {
-			this.fill();
-		}
-		console.log(Math.round(this.offset.x));
-		this.inner.pivot.copyFrom(this.offset);
-	}
+	return newMap;
 }
 
-let tempRect = new PIXI.Rectangle();
+var map = {
+	cols: 80,
+	rows: 45,
+	tsize: 16,
+	layers: [],
+	getTile: function (layer, col, row) {
+		return this.layers[layer][row][col];
+	},
+	isSolidTileAtXY: function (x, y) {
+		var col = Math.floor(x / this.tsize);
+		var row = Math.floor(y / this.tsize);
+		return this.collision[row][col];
+	},
+	getCol: function (x) {
+		return Math.floor(x / this.tsize);
+	},
+	getRow: function (y) {
+		return Math.floor(y / this.tsize);
+	},
+	getX: function (col) {
+		return col * this.tsize;
+	},
+	getY: function (row) {
+		return row * this.tsize;
+	}
+};
 
-function isInside(rect1, rect2, offset) {
-	tempRect.copyFrom(rect1);
-	tempRect.x += offset.x;
-	tempRect.y += offset.y;
-	tempRect.enlarge(rect2);
-	return tempRect.width === rect2.width && tempRect.height === rect2.height;
+function Camera(map, width, height) {
+	this.x = 0;
+	this.y = 0;
+	this.width = width;
+	this.height = height;
+	this.maxX = map.cols * map.tsize - width;
+	this.maxY = map.rows * map.tsize - height;
 }
+
+Camera.prototype.follow = function (sprite) {
+	this.following = sprite;
+	sprite.screenX = 0;
+	sprite.screenY = 0;
+};
+
+Camera.prototype.update = function () {
+	// assume followed sprite should be placed at the center of the screen
+	// whenever possible
+	this.following.screenX = this.width / 2;
+	this.following.screenY = this.height / 2;
+
+	// make the camera follow the sprite
+	this.x = this.following.x - this.width / 2;
+	this.y = this.following.y - this.height / 2;
+	// clamp values
+	this.x = Math.max(0, Math.min(this.x, this.maxX));
+	this.y = Math.max(0, Math.min(this.y, this.maxY));
+
+	// in map corners, the sprite cannot be placed in the center of the screen
+	// and we have to change its screen coordinates
+
+	// left and right sides
+	if (this.following.x < this.width / 2 ||
+		this.following.x > this.maxX + this.width / 2) {
+		this.following.screenX = this.following.x - this.x;
+	}
+	// top and bottom sides
+	if (this.following.y < this.height / 2 ||
+		this.following.y > this.maxY + this.height / 2) {
+		this.following.screenY = this.following.y - this.y;
+	}
+};
+
+function Hero(map, x, y) {
+	this.map = map;
+	this.x = x;
+	this.y = y;
+	this.width = map.tsize;
+	this.height = map.tsize;
+
+	this.image = Loader.getImage('hero');
+}
+
+Hero.SPEED = 96; // pixels per second
+
+Hero.prototype.move = function (delta, dirx, diry) {
+	// move hero
+	this.x += dirx * Hero.SPEED * delta;
+	this.y += diry * Hero.SPEED * delta;
+
+	// check if we walked into a non-walkable tile
+	this._collide(dirx, diry);
+
+	// clamp values
+	var maxX = this.map.cols * this.map.tsize;
+	var maxY = this.map.rows * this.map.tsize;
+	this.x = Math.max(0, Math.min(this.x, maxX));
+	this.y = Math.max(0, Math.min(this.y, maxY));
+};
+
+Hero.prototype._collide = function (dirx, diry) {
+	var row, col;
+	// -1 in right and bottom is because image ranges from 0..63
+	// and not up to 64
+	var left = this.x - this.width / 2;
+	var right = this.x + this.width / 2 - 1;
+	var top = this.y - this.height / 2;
+	var bottom = this.y + this.height / 2 - 1;
+
+	// check for collisions on sprite sides
+	var collision =
+		this.map.isSolidTileAtXY(left, top) ||
+		this.map.isSolidTileAtXY(right, top) ||
+		this.map.isSolidTileAtXY(right, bottom) ||
+		this.map.isSolidTileAtXY(left, bottom);
+	if (!collision) { return; }
+
+	if (diry > 0) {
+		row = this.map.getRow(bottom);
+		this.y = -this.height / 2 + this.map.getY(row);
+	}
+	else if (diry < 0) {
+		row = this.map.getRow(top);
+		this.y = this.height / 2 + this.map.getY(row + 1);
+	}
+	else if (dirx > 0) {
+		col = this.map.getCol(right);
+		this.x = -this.width / 2 + this.map.getX(col);
+	}
+	else if (dirx < 0) {
+		col = this.map.getCol(left);
+		this.x = this.width / 2 + this.map.getX(col + 1);
+	}
+};
+
+Game.load = function () {
+	return [
+		Loader.loadImage('tiles', './assets/autotile.png'),
+		Loader.loadImage('hero', './assets/char/Idle/Char_idle_left.png')
+	];
+};
+
+Game.init = function () {
+	Keyboard.listenForEvents(
+		[Keyboard.LEFT, Keyboard.RIGHT, Keyboard.UP, Keyboard.DOWN]);
+	this.tileAtlas = Loader.getImage('tiles');
+
+	map.collision = mapGenerator(0, RIGHT | DOWN | UP | LEFT);
+	map.layers = [treatMap(map.collision)];
+	this.hero = new Hero(map, 2 * 16, 23 * 16);
+	this.camera = new Camera(map, 800, 450);
+	this.camera.follow(this.hero);
+	this.ctx.imageSmoothingEnabled = false;
+
+};
+
+Game.update = function (delta) {
+	// handle hero movement with arrow keys
+	var dirx = 0;
+	var diry = 0;
+	if (Keyboard.isDown(Keyboard.LEFT)) { dirx = -1; }
+	else if (Keyboard.isDown(Keyboard.RIGHT)) { dirx = 1; }
+	else if (Keyboard.isDown(Keyboard.UP)) { diry = -1; }
+	else if (Keyboard.isDown(Keyboard.DOWN)) { diry = 1; }
+
+	this.hero.move(delta, dirx, diry);
+	this.camera.update();
+};
+
+Game._drawLayer = function (layer) {
+	var startCol = Math.floor(this.camera.x / map.tsize);
+	var endCol = startCol + (this.camera.width / map.tsize);
+	var startRow = Math.floor(this.camera.y / map.tsize);
+	var endRow = startRow + (this.camera.height / map.tsize);
+	var offsetX = -this.camera.x + startCol * map.tsize;
+	var offsetY = -this.camera.y + startRow * map.tsize;
+
+	for (var c = startCol; c <= endCol && c < map.cols; c++) {
+		for (var r = startRow; r <= endRow && r < map.rows; r++) {
+			var tile = map.getTile(layer, c, r);
+			var x = (c - startCol) * map.tsize + offsetX;
+			var y = (r - startRow) * map.tsize + offsetY;
+			this.ctx.drawImage(
+				this.tileAtlas, // image
+				48, // source x
+				32, // source y
+				map.tsize, // source width
+				map.tsize, // source height
+				Math.round(x),  // target x
+				Math.round(y), // target y
+				map.tsize, // target width
+				map.tsize // target height
+			);
+
+			this.ctx.drawImage(
+				this.tileAtlas, // image
+				tile.x, // source x
+				tile.y, // source y
+				map.tsize, // source width
+				map.tsize, // source height
+				Math.round(x),  // target x
+				Math.round(y), // target y
+				map.tsize, // target width
+				map.tsize // target height
+			);
+		}
+
+	}
+};
+
+Game.render = function () {
+	// draw map background layer
+	this._drawLayer(0);
+
+	// draw main character
+	this.ctx.drawImage(
+		this.hero.image,
+		0, // source x
+		0, // source y
+		map.tsize, // source width
+		map.tsize, // source height
+		this.hero.screenX - this.hero.width / 2,
+		this.hero.screenY - this.hero.height / 2,
+		map.tsize, // target width
+		map.tsize// target height
+	);
+
+	// draw map top layer
+	//this._drawLayer(1);
+};

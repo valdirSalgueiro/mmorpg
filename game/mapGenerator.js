@@ -11,16 +11,6 @@ function mapGenerator(seed, direction) {
 
     let map = Create2DArray(height);
 
-    function Create2DArray(rows) {
-        var arr = [];
-
-        for (var i = 0; i < rows; i++) {
-            arr[i] = [];
-        }
-
-        return arr;
-    }
-
     function Start() {
         GenerateMap();
     }
@@ -42,8 +32,8 @@ function mapGenerator(seed, direction) {
                 }
                 x++;
             } while (!scavated && x < width - 1);
-		}
-		if (direction & RIGHT) {
+        }
+        if (direction & RIGHT) {
             let x = width - 1;
             let scavated;
             do {
@@ -54,26 +44,26 @@ function mapGenerator(seed, direction) {
                 }
                 x--;
             } while (!scavated && x > 0);
-		}
-		if (direction & UP) {
+        }
+        if (direction & UP) {
             let y = 0;
             let scavated;
             do {
                 scavated = true;
                 for (let x = halfWidth - entranceThickness; x <= halfWidth + entranceThickness; x++) {
-					scavated &= map[y + 1][x] == 0
+                    scavated &= map[y + 1][x] == 0
                     map[y][x] = 0;
                 }
                 y++;
             } while (!scavated && y < height - 1);
-		}		
-		if (direction & DOWN) {
+        }
+        if (direction & DOWN) {
             let y = height - 1;
             let scavated;
             do {
                 scavated = true;
                 for (let x = halfWidth - entranceThickness; x <= halfWidth + entranceThickness; x++) {
-					scavated &= map[y - 1][x] == 0
+                    scavated &= map[y - 1][x] == 0
                     map[y][x] = 0;
                 }
                 y--;
@@ -82,7 +72,7 @@ function mapGenerator(seed, direction) {
 
         for (let i = 0; i < 10; i++) {
             SmoothMap();
-		}
+        }
 
     }
 
