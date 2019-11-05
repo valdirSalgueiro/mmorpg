@@ -162,15 +162,9 @@ Hero.prototype.move = function (delta, dirx, diry) {
 	currentMapX = Math.floor(this.x / mapPixelWidth);
 	currentMapY = Math.floor(this.y / mapPixelHeight);
 
-	let left = currentMapX < oldMapX;
-	let right = currentMapX > oldMapX;
-	let up = currentMapY < oldMapY;
-	let down = currentMapY > oldMapY;
-	if (left || right || up || down) {
-		console.log(currentMapX);
-		console.log(currentMapY);
-		for (let xx = currentMapX - 2; xx < currentMapX + 2; xx++) {
-			for (let yy = currentMapY - 2; yy < currentMapY + 2; yy++) {
+	if (currentMapX != oldMapX || currentMapY != oldMapY) {
+		for (let xx = currentMapX - 1; xx <= currentMapX + 1; xx++) {
+			for (let yy = currentMapY - 1; yy <= currentMapY + 1; yy++) {
 				const result = mapGenerator(xx, yy, RIGHT | DOWN | UP | LEFT);
 				if (result) {
 					let mapTileX = xx * mapWidth;
@@ -237,31 +231,10 @@ Game.init = function () {
 	Keyboard.listenForEvents(
 		[Keyboard.LEFT, Keyboard.RIGHT, Keyboard.UP, Keyboard.DOWN]);
 	this.tileAtlas = Loader.getImage('tiles');
-
-	var maps = Create2DArray(3);
-	for (let i = 0; i < 3; i++) {
-		for (let j = 0; j < 3; j++) {
-			maps[j][i] = mapGenerator(i, j, RIGHT | DOWN | UP | LEFT);
-		}
-	}
-
-	map.collision = Create2DArray(mapHeight * 3);
-	for (let i = 0; i < mapWidth * 3; i++) {
-		for (let j = 0; j < mapHeight * 3; j++) {
-			const row = Math.floor(j / mapHeight);
-			const col = Math.floor(i / mapWidth);
-			var currentMap = maps[row][col];
-			map.collision[j][i] = currentMap[j % mapHeight][i % mapWidth];
-		}
-	}
-
-	map.layers = [treatMap(map.collision)];
-	//console.log(map.layers[0]);
-	//this.hero = new Hero(map, 2 * 16, 23 * 16);
 	this.hero = new Hero(map, 100 * 16, 50 * 16);
-	currentMapX = oldMapX = Math.floor(this.hero.x / mapPixelWidth);
-	currentMapY = oldMapY = Math.floor(this.hero.y / mapPixelHeight);
 
+	map.layers = [];
+	map.layers[0] = [];
 	this.camera = new Camera(map, cameraWidth, cameraHeight);
 	this.camera.follow(this.hero);
 	this.ctx.imageSmoothingEnabled = false;

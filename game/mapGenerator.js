@@ -79,9 +79,6 @@ function mapGenerator(mapX, mapY, direction) {
         for (let i = 0; i < 10; i++) {
             SmoothMap();
         }
-
-        totalX += mapPixelWidth;
-        totalY += mapPixelHeight;
     }
 
     function getRandomInt(min, max) {
@@ -139,6 +136,6 @@ function mapGenerator(mapX, mapY, direction) {
     if (!mapCache[mapY]) {
         mapCache[mapY] = [];
     }
-    mapCache[mapY][mapX] = map;
+    mapCache[mapY][mapX] = true;
     return map;
 }

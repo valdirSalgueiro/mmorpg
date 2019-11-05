@@ -10,16 +10,10 @@ const mapPixelHeight = mapHeight * 16;
 const cameraWidth = 800;
 const cameraHeight = 450;
 
-let totalX = 0;
-let totalY = 0;
-
 let currentMapX = 0;
 let currentMapY = 0;
-let oldMapX = 0;
-let oldMapY = 0;
-
-
-
+let oldMapX = 999;
+let oldMapY = 999;
 
 function Create2DArray(rows) {
     var arr = [];
