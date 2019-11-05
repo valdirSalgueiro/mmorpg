@@ -1,15 +1,11 @@
 function mapGenerator(seed, direction) {
-    let width = 80;
-    let height = 45;
     let smooth = 4;
-    //let width = 120;
-    //let height = 68;
     //var rng = new Math.seedrandom(seed);
     var rng = Math.random;
 
     let randomFillPercent = 44;
 
-    let map = Create2DArray(height);
+    let map = Create2DArray(mapHeight);
 
     function Start() {
         GenerateMap();
@@ -18,8 +14,8 @@ function mapGenerator(seed, direction) {
     function GenerateMap() {
         RandomFillMap();
 
-        let halfHeight = Math.round(height / 2);
-        let halfWidth = Math.round(width / 2);
+        let halfHeight = Math.round(mapHeight / 2);
+        let halfWidth = Math.round(mapWidth / 2);
         let entranceThickness = smooth - 2;
         if (direction & LEFT) {
             let x = 0;
@@ -31,10 +27,10 @@ function mapGenerator(seed, direction) {
                     map[y][x] = 0;
                 }
                 x++;
-            } while (!scavated && x < width - 1);
+            } while (!scavated && x < mapWidth - 1);
         }
         if (direction & RIGHT) {
-            let x = width - 1;
+            let x = mapWidth - 1;
             let scavated;
             do {
                 scavated = true;
@@ -55,10 +51,10 @@ function mapGenerator(seed, direction) {
                     map[y][x] = 0;
                 }
                 y++;
-            } while (!scavated && y < height - 1);
+            } while (!scavated && y < mapHeight - 1);
         }
         if (direction & DOWN) {
-            let y = height - 1;
+            let y = mapHeight - 1;
             let scavated;
             do {
                 scavated = true;
@@ -83,9 +79,9 @@ function mapGenerator(seed, direction) {
     }
 
     function RandomFillMap() {
-        for (let x = 0; x < width; x++) {
-            for (let y = 0; y < height; y++) {
-                if (x == 0 || x == width - 1 || y == 0 || y == height - 1) {
+        for (let x = 0; x < mapWidth; x++) {
+            for (let y = 0; y < mapHeight; y++) {
+                if (x == 0 || x == mapWidth - 1 || y == 0 || y == mapHeight - 1) {
                     map[y][x] = 1;
                 }
                 else {
@@ -96,8 +92,8 @@ function mapGenerator(seed, direction) {
     }
 
     function SmoothMap() {
-        for (let x = 0; x < width; x++) {
-            for (let y = 0; y < height; y++) {
+        for (let x = 0; x < mapWidth; x++) {
+            for (let y = 0; y < mapHeight; y++) {
                 let neighbourWallTiles = GetSurroundingWallCount(x, y);
                 if (neighbourWallTiles > smooth)
                     map[y][x] = 1;
@@ -112,7 +108,7 @@ function mapGenerator(seed, direction) {
         let wallCount = 0;
         for (let neighbourX = gridX - 1; neighbourX <= gridX + 1; neighbourX++) {
             for (let neighbourY = gridY - 1; neighbourY <= gridY + 1; neighbourY++) {
-                if (neighbourX >= 0 && neighbourX < width && neighbourY >= 0 && neighbourY < height) {
+                if (neighbourX >= 0 && neighbourX < mapWidth && neighbourY >= 0 && neighbourY < mapHeight) {
                     if (neighbourX != gridX || neighbourY != gridY) {
                         wallCount += map[neighbourY][neighbourX];
                     }

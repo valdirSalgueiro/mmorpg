@@ -2,6 +2,10 @@ const RIGHT = 1 << 0;
 const DOWN = 1 << 1;
 const LEFT = 1 << 2;
 const UP = 1 << 3;
+const mapWidth = 80;
+const mapHeight = 45;
+const mapPixelWidth = mapWidth * 16;
+const mapPixelHeight = mapHeight * 16;
 
 function Create2DArray(rows) {
     var arr = [];
