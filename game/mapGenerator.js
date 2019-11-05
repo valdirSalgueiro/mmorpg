@@ -25,10 +25,6 @@ function mapGenerator(mapX, mapY, direction) {
     function GenerateMap() {
         RandomFillMap();
 
-        for (let i = 0; i < 10; i++) {
-            SmoothMap();
-        }
-
         let halfHeight = Math.round(mapHeight / 2);
         let halfWidth = Math.round(mapWidth / 2);
         let entranceThickness = smooth - 2;
@@ -81,24 +77,8 @@ function mapGenerator(mapX, mapY, direction) {
             } while (!scavated && y > 0);
         }
 
-
-        mapWall = [];
-        //console.log(map[0]);
-        for (let x = 0; x < mapWidth; x++) {
-            for (let y = 0; y < mapHeight; y++) {
-                let wallCount = 0;
-                wallCount += x == 0 || map[y][x - 1];
-                wallCount += y == 0 || map[y - 1][x];
-                wallCount += x == mapWidth - 1 || map[y][x + 1];
-                wallCount += y == mapHeight - 1 || map[y + 1][x];
-                if (!mapWall[y]) {
-                    mapWall[y] = [];
-                }
-                mapWall[y][x] = wallCount;
-                if (wallCount == 1) {
-                    map[y][x] = 0;
-                }
-            }
+        for (let i = 0; i < 10; i++) {
+            SmoothMap();
         }
     }
 
@@ -122,8 +102,8 @@ function mapGenerator(mapX, mapY, direction) {
     }
 
     function SmoothMap() {
-        for (let x = 0; x < mapWidth; x++) {
-            for (let y = 0; y < mapHeight; y++) {
+        for (let x = 1; x < mapWidth - 1; x++) {
+            for (let y = 1; y < mapHeight - 1; y++) {
                 let neighbourWallTiles = GetSurroundingWallCount(x, y);
                 if (neighbourWallTiles > smooth)
                     map[y][x] = 1;

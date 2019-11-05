@@ -66,28 +66,8 @@ function treatMap(map) {
 			let mask = 0;
 			let tile = map[r][c];
 			if (tile !== 0) { // 0 => empty tile
-				//mask = calculateMask(map, r, c, endCol, endRow);
-				mask = 1;
-				// if (mask == 5) {
-				// 	mask = 0;
-				// 	map[r][c] = 0;
-				// 	if (c > 0) {
-				// 		var maskL = calculateMask(map, r, c - 1, endCol, endRow);
-				// 		newMap[r][c - 1] = tileTextures[maskL];
-				// 	}
-				// 	if (c <= endCol) {
-				// 		var maskL = calculateMask(map, r, c + 1, endCol, endRow);
-				// 		newMap[r][c + 1] = tileTextures[maskL];
-				// 	}
-				// 	if (r > 0) {
-				// 		var maskL = calculateMask(map, r - 1, c, endCol, endRow);
-				// 		newMap[r - 1][c] = tileTextures[maskL];
-				// 	}
-				// 	if (r <= endRow) {
-				// 		var maskL = calculateMask(map, r + 1, c, endCol, endRow);
-				// 		newMap[r + 1][c] = tileTextures[maskL];
-				// 	}
-				// }
+				mask = calculateMask(map, r, c, endCol, endRow);
+				//mask = 1;
 			}
 			newMap[r][c] = tileTextures[mask];
 		}
