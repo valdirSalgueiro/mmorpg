@@ -167,17 +167,21 @@ Hero.prototype.move = function (delta, dirx, diry) {
 	let up = currentMapY < oldMapY;
 	let down = currentMapY > oldMapY;
 	if (left || right || up || down) {
-		if (left) {
-			const result = mapGenerator(currentMapX - 1, currentMapY, RIGHT | DOWN | UP | LEFT);
-			let mapTileX = (currentMapX - 1) * mapWidth;
-			let mapTileY = (currentMapY) * mapHeight;
-			if (result.new) {
-				var newMap = treatMap(result.map);
-				for (let i = 0; i < mapWidth; i++) {
-					for (let j = 0; j < mapHeight; j++) {
-						if (!this.map.layers[0][mapTileY + j])
-							this.map.layers[0][mapTileY + j] = [];
-						this.map.layers[0][mapTileY + j][mapTileX + i] = newMap[j][i];
+		console.log(currentMapX);
+		console.log(currentMapY);
+		for (let xx = currentMapX - 2; xx < currentMapX + 2; xx++) {
+			for (let yy = currentMapY - 2; yy < currentMapY + 2; yy++) {
+				const result = mapGenerator(xx, yy, RIGHT | DOWN | UP | LEFT);
+				if (result) {
+					let mapTileX = xx * mapWidth;
+					let mapTileY = yy * mapHeight;
+					let newMap = treatMap(result);
+					for (let i = 0; i < mapWidth; i++) {
+						for (let j = 0; j < mapHeight; j++) {
+							if (!this.map.layers[0][mapTileY + j])
+								this.map.layers[0][mapTileY + j] = [];
+							this.map.layers[0][mapTileY + j][mapTileX + i] = newMap[j][i];
+						}
 					}
 				}
 			}
@@ -237,7 +241,7 @@ Game.init = function () {
 	var maps = Create2DArray(3);
 	for (let i = 0; i < 3; i++) {
 		for (let j = 0; j < 3; j++) {
-			maps[j][i] = mapGenerator(i, j, RIGHT | DOWN | UP | LEFT).map;
+			maps[j][i] = mapGenerator(i, j, RIGHT | DOWN | UP | LEFT);
 		}
 	}
 
@@ -254,7 +258,7 @@ Game.init = function () {
 	map.layers = [treatMap(map.collision)];
 	//console.log(map.layers[0]);
 	//this.hero = new Hero(map, 2 * 16, 23 * 16);
-	this.hero = new Hero(map, 100 * 16, 23 * 16);
+	this.hero = new Hero(map, 100 * 16, 50 * 16);
 	currentMapX = oldMapX = Math.floor(this.hero.x / mapPixelWidth);
 	currentMapY = oldMapY = Math.floor(this.hero.y / mapPixelHeight);
 
