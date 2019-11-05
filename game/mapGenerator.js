@@ -1,6 +1,15 @@
-function mapGenerator(seed, direction) {
+var mapCache = [];
+
+function mapGenerator(mapX, mapY, direction) {
+    if (mapCache[mapY] && mapCache[mapY][mapX]) {
+        console.log('cached ' + mapX + ',' + mapY);
+        return { new: false, map: mapCache[mapY][mapX] };
+    }
+    else {
+        console.log('new map ' + mapX + ',' + mapY);
+    }
     let smooth = 4;
-    //var rng = new Math.seedrandom(seed);
+    //var rng = new Math.seedrandom(mapX + mapY);
     var rng = Math.random;
 
     let randomFillPercent = 44;
@@ -70,6 +79,8 @@ function mapGenerator(seed, direction) {
             SmoothMap();
         }
 
+        totalX += mapPixelWidth;
+        totalY += mapPixelHeight;
     }
 
     function getRandomInt(min, max) {
@@ -123,5 +134,10 @@ function mapGenerator(seed, direction) {
     }
 
     Start();
-    return map;
+
+    if (!mapCache[mapY]) {
+        mapCache[mapY] = [];
+    }
+    mapCache[mapY][mapX] = map;
+    return { new: true, map };
 }

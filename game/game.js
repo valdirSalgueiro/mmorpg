@@ -1,5 +1,8 @@
 
 function treatMap(map) {
+	if (!map)
+		return false;
+
 	const w = 16;
 	const w2 = w << 1;
 	const w1 = w;
@@ -156,48 +159,32 @@ Hero.prototype.move = function (delta, dirx, diry) {
 
 	// check if we walked into a non-walkable tile
 	this._collide(dirx, diry);
-	let currentMapX = Math.round(this.x / mapPixelWidth);
-	let currentMapY = Math.round(this.y / mapPixelHeight);
-	if (currentMapX < 1 || currentMapX > 1 || currentMapY < 1 || currentMapY > 1) {
-		let newMapX = Math.round(this.x / mapWidth);
-		let newMapY = Math.round(this.y / mapHeight);
-		var newMap = mapGenerator(newMapY + newMapX, RIGHT | DOWN | UP | LEFT);
-		if (currentMapX < 1) {
-			console.log('left');
-			for (let j = 0; j < mapHeight; j++) {
-				this.map.layers[0][j].unshift(...newMap[j]);
-			}
-			this.x += mapPixelWidth;
+	currentMapX = Math.floor(this.x / mapPixelWidth);
+	currentMapY = Math.floor(this.y / mapPixelHeight);
 
-		}
-		else if (currentMapX > 1) {
-			console.log('right');
-			for (let j = 0; j < mapHeight; j++) {
-				this.map.layers[0][j].push(...newMap[j]);
+	let left = currentMapX < oldMapX;
+	let right = currentMapX > oldMapX;
+	let up = currentMapY < oldMapY;
+	let down = currentMapY > oldMapY;
+	if (left || right || up || down) {
+		if (left) {
+			const result = mapGenerator(currentMapX - 1, currentMapY, RIGHT | DOWN | UP | LEFT);
+			let mapTileX = (currentMapX - 1) * mapWidth;
+			let mapTileY = (currentMapY) * mapHeight;
+			if (result.new) {
+				var newMap = treatMap(result.map);
+				for (let i = 0; i < mapWidth; i++) {
+					for (let j = 0; j < mapHeight; j++) {
+						if (!this.map.layers[0][mapTileY + j])
+							this.map.layers[0][mapTileY + j] = [];
+						this.map.layers[0][mapTileY + j][mapTileX + i] = newMap[j][i];
+					}
+				}
 			}
-			this.x -= mapPixelWidth;
 		}
-		else if (currentMapY < 1) {
-			console.log('up');
-			for (let j = 0; j < mapHeight; j++) {
-				this.map.layers[0].unshift(newMap[j]);
-			}
-			this.y += mapPixelHeight;
-		}
-		else if (currentMapY > 1) {
-			console.log('down');
-			for (let j = 0; j < mapHeight; j++) {
-				this.map.layers[0].push(newMap[j]);
-			}
-			this.y -= mapPixelHeight;
-		}
-		console.log(this.map.layers[0]);
+		currentMapX = oldMapX = Math.floor(this.x / mapPixelWidth);
+		currentMapY = oldMapY = Math.floor(this.y / mapPixelHeight);
 	}
-	// clamp values
-	// var maxX = this.map.cols * 3 * this.map.tsize;
-	// var maxY = this.map.rows * 3 * this.map.tsize;
-	// this.x = Math.max(0, Math.min(this.x, maxX));
-	// this.y = Math.max(0, Math.min(this.y, maxY));
 };
 
 Hero.prototype._collide = function (dirx, diry) {
@@ -250,7 +237,7 @@ Game.init = function () {
 	var maps = Create2DArray(3);
 	for (let i = 0; i < 3; i++) {
 		for (let j = 0; j < 3; j++) {
-			maps[j][i] = mapGenerator(j + i, RIGHT | DOWN | UP | LEFT);
+			maps[j][i] = mapGenerator(i, j, RIGHT | DOWN | UP | LEFT).map;
 		}
 	}
 
@@ -268,7 +255,10 @@ Game.init = function () {
 	//console.log(map.layers[0]);
 	//this.hero = new Hero(map, 2 * 16, 23 * 16);
 	this.hero = new Hero(map, 100 * 16, 23 * 16);
-	this.camera = new Camera(map, 800, 450);
+	currentMapX = oldMapX = Math.floor(this.hero.x / mapPixelWidth);
+	currentMapY = oldMapY = Math.floor(this.hero.y / mapPixelHeight);
+
+	this.camera = new Camera(map, cameraWidth, cameraHeight);
 	this.camera.follow(this.hero);
 	this.ctx.imageSmoothingEnabled = false;
 
