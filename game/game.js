@@ -1,4 +1,31 @@
 
+function calculateMask(map, r, c, endCol, endRow) {
+	let down = r + 1 <= endRow ? map[r + 1][c] : true;
+	let left = c - 1 > 0 ? map[r][c - 1] : true;
+	let up = r - 1 > 0 ? map[r - 1][c] : true;
+	let right = c + 1 <= endCol ? map[r][c + 1] : true;
+	mask = right | (down << 1) | (left << 2) | (up << 3);
+
+	// diagonals
+	let downright = c + 1 <= endCol && r + 1 <= endRow ? map[r + 1][c + 1] : true;
+	let downleft = c - 1 > 0 && r + 1 <= endRow ? map[r + 1][c - 1] : true;
+	let upright = c + 1 <= endCol && r - 1 > 0 ? map[r - 1][c + 1] : true;
+	let upleft = c - 1 > 0 && r - 1 > 0 ? map[r - 1][c - 1] : true;
+	if (down && right && !downright) {
+		mask = 16;
+	}
+	else if (down && left && !downleft) {
+		mask = 17;
+	}
+	else if (up && right && !upright) {
+		mask = 19;
+	}
+	else if (up && left && !upleft) {
+		mask = 18;
+	}
+	return mask;
+}
+
 function treatMap(map) {
 	if (!map)
 		return false;
@@ -11,26 +38,26 @@ function treatMap(map) {
 	this.tileTextures = [
 		/* U L D R DIRECTION */
 		// NONE
-		/* 0 */ new Point(w * 3, w * 2),
-		/* 1 */ new Point(w * 3, w * 2), //null,
-		/* 2 */ new Point(w1, w0),
-		/* 3 */ new Point(w0, w0),
-		/* 4 */ new Point(w2, w1),
-		/* 5 */ new Point(w * 3, w * 2), //null,
-		/* 6 */ new Point(w2, w0),
-		/* 7 */ new Point(w1, w0),
-		/* 8 */ new Point(w1, w2),
-		/* 9 */ new Point(w0, w2),
-		/* 10 */ new Point(w * 3, w * 2), //null,
-		/* 11 */ new Point(w0, w1),
-		/* 12 */ new Point(w2, w2),
-		/* 13 */ new Point(w1, w2),
-		/* 14 */ new Point(w2, w1),
-		/* 15 */ new Point(w1, w1),
-		/* DR */ new Point(w * 3, w0),
-		/* DL */ new Point(w * 3, w1),
-		/* UR */ new Point(w * 3, w * 3),
-		/* UL */ new Point(w * 4, w * 3)
+		/* 0 */ new PointTexture(w * 3, w * 2, 0),
+		/* 1 */ new PointTexture(w2, w2, 1), //null,
+		/* 2 */ new PointTexture(w1, w0, 2),
+		/* 3 */ new PointTexture(w0, w0, 3),
+		/* 4 */ new PointTexture(w2, w1, 4),
+		/* 5 */ new PointTexture(w * 3, w * 2, 5), //null,
+		/* 6 */ new PointTexture(w2, w0, 6),
+		/* 7 */ new PointTexture(w1, w0, 7),
+		/* 8 */ new PointTexture(w1, w2, 8),
+		/* 9 */ new PointTexture(w0, w2, 9),
+		/* 10 */ new PointTexture(w * 3, w * 2, 10), //null,
+		/* 11 */ new PointTexture(w0, w1, 11),
+		/* 12 */ new PointTexture(w2, w2, 12),
+		/* 13 */ new PointTexture(w1, w2, 13),
+		/* 14 */ new PointTexture(w2, w1, 14),
+		/* 15 */ new PointTexture(w1, w1, 15),
+		/* DR */ new PointTexture(w * 3, w0, 16),
+		/* DL */ new PointTexture(w * 3, w1, 17),
+		/* UR */ new PointTexture(w * 3, w * 3, 18),
+		/* UL */ new PointTexture(w * 4, w * 3, 19)
 	];
 	let endRow = map.length - 1;
 	let endCol = map[0].length - 1;
@@ -39,29 +66,28 @@ function treatMap(map) {
 			let mask = 0;
 			let tile = map[r][c];
 			if (tile !== 0) { // 0 => empty tile
-				let down = r + 1 < endRow ? map[r + 1][c] : true;
-				let left = c - 1 > 0 ? map[r][c - 1] : true;
-				let up = r - 1 > 0 ? map[r - 1][c] : true;
-				let right = c + 1 < endCol ? map[r][c + 1] : true;
-				mask = right | (down << 1) | (left << 2) | (up << 3);
-
-				// diagonals
-				let downright = c + 1 < endCol && r + 1 < endRow ? map[r + 1][c + 1] : true;
-				let downleft = c - 1 > 0 && r + 1 < endRow ? map[r + 1][c - 1] : true;
-				let upright = c + 1 < endCol && r - 1 > 0 ? map[r - 1][c + 1] : true;
-				let upleft = c - 1 > 0 && r - 1 > 0 ? map[r - 1][c - 1] : true;
-				if (down && right && !downright) {
-					mask = 16;
-				}
-				else if (down && left && !downleft) {
-					mask = 17;
-				}
-				else if (up && right && !upright) {
-					mask = 19;
-				}
-				else if (up && left && !upleft) {
-					mask = 18;
-				}
+				//mask = calculateMask(map, r, c, endCol, endRow);
+				mask = 1;
+				// if (mask == 5) {
+				// 	mask = 0;
+				// 	map[r][c] = 0;
+				// 	if (c > 0) {
+				// 		var maskL = calculateMask(map, r, c - 1, endCol, endRow);
+				// 		newMap[r][c - 1] = tileTextures[maskL];
+				// 	}
+				// 	if (c <= endCol) {
+				// 		var maskL = calculateMask(map, r, c + 1, endCol, endRow);
+				// 		newMap[r][c + 1] = tileTextures[maskL];
+				// 	}
+				// 	if (r > 0) {
+				// 		var maskL = calculateMask(map, r - 1, c, endCol, endRow);
+				// 		newMap[r - 1][c] = tileTextures[maskL];
+				// 	}
+				// 	if (r <= endRow) {
+				// 		var maskL = calculateMask(map, r + 1, c, endCol, endRow);
+				// 		newMap[r + 1][c] = tileTextures[maskL];
+				// 	}
+				// }
 			}
 			newMap[r][c] = tileTextures[mask];
 		}
@@ -75,7 +101,7 @@ var map = {
 	tsize: 16,
 	layers: [],
 	getTile: function (layer, col, row) {
-		return this.layers[layer][row][col];
+		return this.layers[layer][row] && this.layers[layer][row][col];
 	},
 	isSolidTileAtXY: function (x, y) {
 		// var col = Math.floor(x / this.tsize);
@@ -121,23 +147,6 @@ Camera.prototype.update = function () {
 	// make the camera follow the sprite
 	this.x = this.following.x - this.width / 2;
 	this.y = this.following.y - this.height / 2;
-	// clamp values
-	// this.x = Math.max(0, Math.min(this.x, this.maxX));
-	// this.y = Math.max(0, Math.min(this.y, this.maxY));
-
-	// // in map corners, the sprite cannot be placed in the center of the screen
-	// // and we have to change its screen coordinates
-
-	// // left and right sides
-	// if (this.following.x < this.width / 2 ||
-	// 	this.following.x > this.maxX + this.width / 2) {
-	// 	this.following.screenX = this.following.x - this.x;
-	// }
-	// // top and bottom sides
-	// if (this.following.y < this.height / 2 ||
-	// 	this.following.y > this.maxY + this.height / 2) {
-	// 	this.following.screenY = this.following.y - this.y;
-	// }
 };
 
 function Hero(map, x, y) {
@@ -156,15 +165,18 @@ Hero.prototype.move = function (delta, dirx, diry) {
 	// move hero
 	this.x += dirx * Hero.SPEED * delta;
 	this.y += diry * Hero.SPEED * delta;
+	//this.x += dirx;
+	//this.y += diry;
 
 	// check if we walked into a non-walkable tile
 	this._collide(dirx, diry);
 	currentMapX = Math.floor(this.x / mapPixelWidth);
 	currentMapY = Math.floor(this.y / mapPixelHeight);
+	var surrounding = 0;
 
 	if (currentMapX != oldMapX || currentMapY != oldMapY) {
-		for (let xx = currentMapX - 1; xx <= currentMapX + 1; xx++) {
-			for (let yy = currentMapY - 1; yy <= currentMapY + 1; yy++) {
+		for (let xx = currentMapX - surrounding; xx <= currentMapX + surrounding; xx++) {
+			for (let yy = currentMapY - surrounding; yy <= currentMapY + surrounding; yy++) {
 				const result = mapGenerator(xx, yy, RIGHT | DOWN | UP | LEFT);
 				if (result) {
 					let mapTileX = xx * mapWidth;
@@ -183,6 +195,8 @@ Hero.prototype.move = function (delta, dirx, diry) {
 		currentMapX = oldMapX = Math.floor(this.x / mapPixelWidth);
 		currentMapY = oldMapY = Math.floor(this.y / mapPixelHeight);
 	}
+
+	//console.log(`${Math.floor(this.x / 16)},${Math.floor(this.y / 16)}`)
 };
 
 Hero.prototype._collide = function (dirx, diry) {
@@ -229,9 +243,14 @@ Game.load = function () {
 
 Game.init = function () {
 	Keyboard.listenForEvents(
-		[Keyboard.LEFT, Keyboard.RIGHT, Keyboard.UP, Keyboard.DOWN]);
+		[Keyboard.LEFT, Keyboard.RIGHT, Keyboard.UP, Keyboard.DOWN, Keyboard.D, Keyboard.E]);
+
+	this.ctx.font = "9px Arial";
+	this.ctx.textAlign = "left";
+	this.ctx.textBaseline = "top";
+	this.ctx.fillStyle = "black";
 	this.tileAtlas = Loader.getImage('tiles');
-	this.hero = new Hero(map, 100 * 16, 50 * 16);
+	this.hero = new Hero(map, 2 * 16, 21 * 16);
 
 	map.layers = [];
 	map.layers[0] = [];
@@ -250,6 +269,9 @@ Game.update = function (delta) {
 	else if (Keyboard.isDown(Keyboard.UP)) { diry = -1; }
 	else if (Keyboard.isDown(Keyboard.DOWN)) { diry = 1; }
 
+	if (Keyboard.isDown(Keyboard.D)) { debug = true; }
+	if (Keyboard.isDown(Keyboard.E)) { debug = false; }
+
 	this.hero.move(delta, dirx, diry);
 	this.camera.update();
 };
@@ -262,34 +284,63 @@ Game._drawLayer = function (layer) {
 	var offsetX = -this.camera.x + startCol * map.tsize;
 	var offsetY = -this.camera.y + startRow * map.tsize;
 
+	var xx, yy;
 	for (var c = startCol; c <= endCol; c++) {
-		for (var r = startRow; r <= endRow; r++) {
-			var tile = map.getTile(layer, c, r);
-			var x = (c - startCol) * map.tsize + offsetX;
-			var y = (r - startRow) * map.tsize + offsetY;
-			this.ctx.drawImage(
-				this.tileAtlas, // image
-				48, // source x
-				32, // source y
-				map.tsize, // source width
-				map.tsize, // source height
-				Math.round(x),  // target x
-				Math.round(y), // target y
-				map.tsize, // target width
-				map.tsize // target height
-			);
+		if (debug) {
+			xx = c * 16 - this.camera.x;
+			yy = 0;
+			this.ctx.beginPath();
+			this.ctx.moveTo(xx, yy);
+			this.ctx.lineTo(xx, (endRow + 1) * 16 - this.camera.y);
+			this.ctx.stroke();
+		}
 
-			this.ctx.drawImage(
-				this.tileAtlas, // image
-				tile.x, // source x
-				tile.y, // source y
-				map.tsize, // source width
-				map.tsize, // source height
-				Math.round(x),  // target x
-				Math.round(y), // target y
-				map.tsize, // target width
-				map.tsize // target height
-			);
+		for (var r = startRow; r <= endRow; r++) {
+			if (debug) {
+				xx = 0;
+				yy = r * 16 - this.camera.y;
+				this.ctx.beginPath();
+				this.ctx.moveTo(xx, yy);
+				this.ctx.lineTo((endCol + 1) * 16 - this.camera.x, yy);
+				this.ctx.stroke();
+			}
+
+			var tile = map.getTile(layer, c, r);
+			if (tile) {
+				var x = (c - startCol) * map.tsize + offsetX;
+				var y = (r - startRow) * map.tsize + offsetY;
+				if (tile.t) {
+					this.ctx.drawImage(
+						this.tileAtlas, // image
+						48, // source x
+						32, // source y
+						map.tsize, // source width
+						map.tsize, // source height
+						Math.round(x),  // target x
+						Math.round(y), // target y
+						map.tsize, // target width
+						map.tsize // target height
+					);
+				}
+
+				this.ctx.drawImage(
+					this.tileAtlas, // image
+					tile.x, // source x
+					tile.y, // source y
+					map.tsize, // source width
+					map.tsize, // source height
+					Math.round(x),  // target x
+					Math.round(y), // target y
+					map.tsize, // target width
+					map.tsize // target height
+				);
+
+				if (debug) {
+					//this.ctx.fillText(c, Math.round(x), Math.round(y));
+					//this.ctx.fillText(r, Math.round(x), Math.round(y + 8));
+					this.ctx.fillText(tile.t, Math.round(x), Math.round(y + 8));
+				}
+			}
 		}
 
 	}

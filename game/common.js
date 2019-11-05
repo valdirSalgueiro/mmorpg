@@ -7,6 +7,8 @@ const mapHeight = 45;
 const mapPixelWidth = mapWidth * 16;
 const mapPixelHeight = mapHeight * 16;
 
+let debug = false;
+
 const cameraWidth = 800;
 const cameraHeight = 450;
 
@@ -32,9 +34,10 @@ function Rectangle(x, y, width, height) {
     this.height = height;
 }
 
-function Point(x, y) {
+function PointTexture(x, y, t) {
     this.x = x;
     this.y = y;
+    this.t = t;
 }
 
 //
@@ -77,6 +80,8 @@ Keyboard.LEFT = 37;
 Keyboard.RIGHT = 39;
 Keyboard.UP = 38;
 Keyboard.DOWN = 40;
+Keyboard.D = 68;
+Keyboard.E = 69;
 
 Keyboard._keys = {};
 

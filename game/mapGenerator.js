@@ -1,4 +1,5 @@
-var mapCache = [];
+const mapCache = [];
+let mapWall = [];
 
 function mapGenerator(mapX, mapY, direction) {
     if (mapCache[mapY] && mapCache[mapY][mapX]) {
@@ -10,8 +11,8 @@ function mapGenerator(mapX, mapY, direction) {
     }
 
     let smooth = 4;
-    //var rng = new Math.seedrandom(mapX + mapY);
-    var rng = Math.random;
+    var rng = new Math.seedrandom(mapX + mapY - 1);
+    //var rng = Math.random;
 
     let randomFillPercent = 44;
 
@@ -23,6 +24,10 @@ function mapGenerator(mapX, mapY, direction) {
 
     function GenerateMap() {
         RandomFillMap();
+
+        for (let i = 0; i < 10; i++) {
+            SmoothMap();
+        }
 
         let halfHeight = Math.round(mapHeight / 2);
         let halfWidth = Math.round(mapWidth / 2);
@@ -76,8 +81,24 @@ function mapGenerator(mapX, mapY, direction) {
             } while (!scavated && y > 0);
         }
 
-        for (let i = 0; i < 10; i++) {
-            SmoothMap();
+
+        mapWall = [];
+        //console.log(map[0]);
+        for (let x = 0; x < mapWidth; x++) {
+            for (let y = 0; y < mapHeight; y++) {
+                let wallCount = 0;
+                wallCount += x == 0 || map[y][x - 1];
+                wallCount += y == 0 || map[y - 1][x];
+                wallCount += x == mapWidth - 1 || map[y][x + 1];
+                wallCount += y == mapHeight - 1 || map[y + 1][x];
+                if (!mapWall[y]) {
+                    mapWall[y] = [];
+                }
+                mapWall[y][x] = wallCount;
+                if (wallCount == 1) {
+                    map[y][x] = 0;
+                }
+            }
         }
     }
 
@@ -127,7 +148,6 @@ function mapGenerator(mapX, mapY, direction) {
                 }
             }
         }
-
         return wallCount;
     }
 
@@ -136,6 +156,7 @@ function mapGenerator(mapX, mapY, direction) {
     if (!mapCache[mapY]) {
         mapCache[mapY] = [];
     }
-    mapCache[mapY][mapX] = true;
+    //mapCache[mapY][mapX] = mapWall;
+    mapCache[mapY][mapX] = map;
     return map;
 }
