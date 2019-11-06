@@ -1,7 +1,10 @@
 Game.load = function () {
 	return [
 		Loader.loadImage('tiles', './assets/autotile.png'),
-		Loader.loadImage('hero', './assets/char/Idle/Char_idle_left.png')
+		Loader.loadImage('hero_idle_left', './assets/char/Idle/Char_idle_left.png'),
+		Loader.loadImage('hero_idle_right', './assets/char/Idle/Char_idle_right.png'),
+		Loader.loadImage('hero_idle_up', './assets/char/Idle/Char_idle_up.png'),
+		Loader.loadImage('hero_idle_down', './assets/char/Idle/Char_idle_down.png')
 	];
 };
 

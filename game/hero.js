@@ -4,8 +4,10 @@ function Hero(map, x, y) {
     this.y = y;
     this.width = map.tsize;
     this.height = map.tsize;
+    this.frame = 0;
+    this.direction = RIGHT;
 
-    this.image = Loader.getImage('hero');
+    this.image = Loader.getImage('hero_idle_right');
 }
 
 Hero.SPEED = 96 * 2; // pixels per second
@@ -13,39 +15,43 @@ Hero.SPEED = 96 * 2; // pixels per second
 Hero.prototype.move = function (delta, dirx, diry) {
     this.x += dirx * Hero.SPEED * delta;
     this.y += diry * Hero.SPEED * delta;
+    var idle = false;
+    if (dirx < 0) {
+        this.direction = LEFT;
+    }
+    else if (dirx > 0) {
+        this.direction = RIGHT;
+    }
+    else if (diry < 0) {
+        this.direction = UP;
+    }
+    else if (diry > 0) {
+        this.direction = DOWN;
+    }
+    else {
+        idle = true;
+    }
+
+    switch (this.direction) {
+        case LEFT:
+            this.image = idle ? Loader.getImage('hero_idle_left') : Loader.getImage('hero_idle_left');
+            break;
+        case RIGHT:
+            this.image = idle ? Loader.getImage('hero_idle_right') : Loader.getImage('hero_idle_right');
+            break;
+        case UP:
+            break;
+        case DOWN:
+            break;
+    }
 
     this._collide(dirx, diry);
     currentMapX = Math.floor(this.x / mapPixelWidth);
     currentMapY = Math.floor(this.y / mapPixelHeight);
-    var surrounding = 0;
 
     if (currentMapX != oldMapX || currentMapY != oldMapY) {
-        for (let xx = currentMapX - surrounding; xx <= currentMapX + surrounding; xx++) {
-            for (let yy = currentMapY - surrounding; yy <= currentMapY + surrounding; yy++) {
-                const result = mapGenerator(xx, yy, RIGHT | DOWN | UP | LEFT);
-                if (result) {
-                    let mapTileX = xx * mapWidth;
-                    let mapTileY = yy * mapHeight;
-                    let newMap = treatMap(result);
-                    for (let i = 0; i < mapWidth; i++) {
-                        for (let j = 0; j < mapHeight; j++) {
-                            if (!this.map.layers[0][mapTileY + j]) {
-                                this.map.layers[0][mapTileY + j] = [];
-                            }
-                            if (!this.map.collision[mapTileY + j]) {
-                                this.map.collision[mapTileY + j] = [];
-                            }
-                            this.map.layers[0][mapTileY + j][mapTileX + i] = newMap[j][i];
-                            this.map.collision[mapTileY + j][mapTileX + i] = result[j][i];
-                        }
-                    }
-                }
-            }
-        }
-        currentMapX = oldMapX = Math.floor(this.x / mapPixelWidth);
-        currentMapY = oldMapY = Math.floor(this.y / mapPixelHeight);
+        generateMap(this.map, this.x, this.y);
     }
-    //console.log(`${Math.floor(this.x / 16)},${Math.floor(this.y / 16)}`)
 };
 
 Hero.prototype._collide = function (dirx, diry) {

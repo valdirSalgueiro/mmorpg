@@ -73,6 +73,34 @@ function treatMap(map) {
     return newMap;
 }
 
+function generateMap(map, x, y) {
+    var surrounding = 0;
+    for (let xx = currentMapX - surrounding; xx <= currentMapX + surrounding; xx++) {
+        for (let yy = currentMapY - surrounding; yy <= currentMapY + surrounding; yy++) {
+            const result = mapGenerator(xx, yy, RIGHT | DOWN | UP | LEFT);
+            if (result) {
+                let mapTileX = xx * mapWidth;
+                let mapTileY = yy * mapHeight;
+                let newMap = treatMap(result);
+                for (let i = 0; i < mapWidth; i++) {
+                    for (let j = 0; j < mapHeight; j++) {
+                        if (!map.layers[0][mapTileY + j]) {
+                            map.layers[0][mapTileY + j] = [];
+                        }
+                        if (!map.collision[mapTileY + j]) {
+                            map.collision[mapTileY + j] = [];
+                        }
+                        map.layers[0][mapTileY + j][mapTileX + i] = newMap[j][i];
+                        map.collision[mapTileY + j][mapTileX + i] = result[j][i];
+                    }
+                }
+            }
+        }
+    }
+    currentMapX = oldMapX = Math.floor(x / mapPixelWidth);
+    currentMapY = oldMapY = Math.floor(y / mapPixelHeight);
+}
+
 var map = {
     cols: mapWidth,
     rows: mapHeight,
