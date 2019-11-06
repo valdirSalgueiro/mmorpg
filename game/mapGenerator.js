@@ -11,7 +11,7 @@ function mapGenerator(mapX, mapY, direction) {
     }
 
     let smooth = 4;
-    var rng = new Math.seedrandom(mapX + mapY - 1);
+    var rng = new Math.seedrandom(`${mapX, mapY}`);
     //var rng = Math.random;
 
     let randomFillPercent = 44;

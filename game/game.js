@@ -1,4 +1,3 @@
-
 function calculateMask(map, r, c, endCol, endRow) {
 	let down = r + 1 <= endRow ? map[r + 1][c] : true;
 	let left = c - 1 > 0 ? map[r][c - 1] : true;
@@ -65,9 +64,8 @@ function treatMap(map) {
 		for (let r = 0; r <= endRow; r++) {
 			let mask = 0;
 			let tile = map[r][c];
-			if (tile !== 0) { // 0 => empty tile
+			if (tile !== 0) {
 				mask = calculateMask(map, r, c, endCol, endRow);
-				//mask = 1;
 			}
 			newMap[r][c] = tileTextures[mask];
 		}
@@ -80,14 +78,14 @@ var map = {
 	rows: mapHeight,
 	tsize: 16,
 	layers: [],
+	collision: [],
 	getTile: function (layer, col, row) {
 		return this.layers[layer][row] && this.layers[layer][row][col];
 	},
 	isSolidTileAtXY: function (x, y) {
-		// var col = Math.floor(x / this.tsize);
-		// var row = Math.floor(y / this.tsize);
-		// return this.collision[row][col];
-		return false;
+		var col = Math.floor(x / this.tsize);
+		var row = Math.floor(y / this.tsize);
+		return this.collision[row] && this.collision[row][col];
 	},
 	getCol: function (x) {
 		return Math.floor(x / this.tsize);
@@ -142,13 +140,9 @@ function Hero(map, x, y) {
 Hero.SPEED = 96 * 2; // pixels per second
 
 Hero.prototype.move = function (delta, dirx, diry) {
-	// move hero
 	this.x += dirx * Hero.SPEED * delta;
 	this.y += diry * Hero.SPEED * delta;
-	//this.x += dirx;
-	//this.y += diry;
 
-	// check if we walked into a non-walkable tile
 	this._collide(dirx, diry);
 	currentMapX = Math.floor(this.x / mapPixelWidth);
 	currentMapY = Math.floor(this.y / mapPixelHeight);
@@ -164,9 +158,14 @@ Hero.prototype.move = function (delta, dirx, diry) {
 					let newMap = treatMap(result);
 					for (let i = 0; i < mapWidth; i++) {
 						for (let j = 0; j < mapHeight; j++) {
-							if (!this.map.layers[0][mapTileY + j])
+							if (!this.map.layers[0][mapTileY + j]) {
 								this.map.layers[0][mapTileY + j] = [];
+							}
+							if (!this.map.collision[mapTileY + j]) {
+								this.map.collision[mapTileY + j] = [];
+							}
 							this.map.layers[0][mapTileY + j][mapTileX + i] = newMap[j][i];
+							this.map.collision[mapTileY + j][mapTileX + i] = result[j][i];
 						}
 					}
 				}
@@ -175,7 +174,6 @@ Hero.prototype.move = function (delta, dirx, diry) {
 		currentMapX = oldMapX = Math.floor(this.x / mapPixelWidth);
 		currentMapY = oldMapY = Math.floor(this.y / mapPixelHeight);
 	}
-
 	//console.log(`${Math.floor(this.x / 16)},${Math.floor(this.y / 16)}`)
 };
 
