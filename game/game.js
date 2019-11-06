@@ -4,7 +4,15 @@ Game.load = function () {
 		Loader.loadImage('hero_idle_left', './assets/char/Idle/Char_idle_left.png'),
 		Loader.loadImage('hero_idle_right', './assets/char/Idle/Char_idle_right.png'),
 		Loader.loadImage('hero_idle_up', './assets/char/Idle/Char_idle_up.png'),
-		Loader.loadImage('hero_idle_down', './assets/char/Idle/Char_idle_down.png')
+		Loader.loadImage('hero_idle_down', './assets/char/Idle/Char_idle_down.png'),
+		Loader.loadImage('hero_left', './assets/char/Walk/Char_walk_left.png'),
+		Loader.loadImage('hero_right', './assets/char/Walk/Char_walk_right.png'),
+		Loader.loadImage('hero_up', './assets/char/Walk/Char_walk_up.png'),
+		Loader.loadImage('hero_down', './assets/char/Walk/Char_walk_down.png'),
+		Loader.loadImage('hero_attack_left', './assets/char/Attack/Char_atk_left.png'),
+		Loader.loadImage('hero_attack_right', './assets/char/Attack/Char_atk_right.png'),
+		Loader.loadImage('hero_attack_up', './assets/char/Attack/Char_atk_up.png'),
+		Loader.loadImage('hero_attack_down', './assets/char/Attack/Char_atk_down.png'),
 	];
 };
 
@@ -17,7 +25,7 @@ Game.resize = function (width, height) {
 
 Game.init = function () {
 	Keyboard.listenForEvents(
-		[Keyboard.LEFT, Keyboard.RIGHT, Keyboard.UP, Keyboard.DOWN, Keyboard.D, Keyboard.E]);
+		[Keyboard.LEFT, Keyboard.RIGHT, Keyboard.UP, Keyboard.DOWN, Keyboard.A, Keyboard.D, Keyboard.E]);
 
 	this.ctx.font = "9px Arial";
 	this.ctx.textAlign = "left";
@@ -43,6 +51,8 @@ Game.update = function (delta) {
 
 	if (Keyboard.isDown(Keyboard.D)) { debug = true; }
 	if (Keyboard.isDown(Keyboard.E)) { debug = false; }
+
+	if (Keyboard.isDown(Keyboard.A)) { this.hero.attack(); }
 
 	this.hero.move(delta, dirx, diry);
 	this.camera.update();
@@ -122,17 +132,18 @@ Game.render = function () {
 	// draw map background layer
 	this._drawLayer(0);
 
+	const size = this.hero.idle ? map.tsize : map.tsize + 1;
 	// draw main character
 	this.ctx.drawImage(
 		this.hero.image,
-		0, // source x
-		0, // source y
+		this.hero.frameX * 16, // source x
+		this.hero.frameY * 16, // source y
 		map.tsize, // source width
-		map.tsize, // source height
+		size, // source height
 		this.hero.screenX - this.hero.width / 2,
 		this.hero.screenY - this.hero.height / 2,
 		map.tsize, // target width
-		map.tsize// target height
+		size// target height
 	);
 
 	// draw map top layer

@@ -6,16 +6,28 @@ function Hero(map, x, y) {
     this.height = map.tsize;
     this.frame = 0;
     this.direction = RIGHT;
-
+    this.frameX = this.frameY = 0;
+    this.animationTimer = 0;
+    this.idle = true;
+    this.attacking = false;
     this.image = Loader.getImage('hero_idle_right');
 }
 
 Hero.SPEED = 96 * 2; // pixels per second
 
+Hero.prototype.attack = function () {
+    if (!this.attacking) {
+        this.attacking = true;
+        this.frameX = 0;
+        this.animationTimer = 0;
+    }
+}
+
 Hero.prototype.move = function (delta, dirx, diry) {
     this.x += dirx * Hero.SPEED * delta;
     this.y += diry * Hero.SPEED * delta;
-    var idle = false;
+
+    this.idle = false;
     if (dirx < 0) {
         this.direction = LEFT;
     }
@@ -29,19 +41,22 @@ Hero.prototype.move = function (delta, dirx, diry) {
         this.direction = DOWN;
     }
     else {
-        idle = true;
+        if (!this.attacking)
+            this.idle = true;
     }
 
     switch (this.direction) {
         case LEFT:
-            this.image = idle ? Loader.getImage('hero_idle_left') : Loader.getImage('hero_idle_left');
+            this.image = this.idle ? Loader.getImage('hero_idle_left') : this.attacking ? Loader.getImage('hero_attack_left') : Loader.getImage('hero_left');
             break;
         case RIGHT:
-            this.image = idle ? Loader.getImage('hero_idle_right') : Loader.getImage('hero_idle_right');
+            this.image = this.idle ? Loader.getImage('hero_idle_right') : this.attacking ? Loader.getImage('hero_attack_right') : Loader.getImage('hero_right');
             break;
         case UP:
+            this.image = this.idle ? Loader.getImage('hero_idle_up') : this.attacking ? Loader.getImage('hero_attack_up') : Loader.getImage('hero_up');
             break;
         case DOWN:
+            this.image = this.idle ? Loader.getImage('hero_idle_down') : this.attacking ? Loader.getImage('hero_attack_down') : Loader.getImage('hero_down');
             break;
     }
 
@@ -52,12 +67,22 @@ Hero.prototype.move = function (delta, dirx, diry) {
     if (currentMapX != oldMapX || currentMapY != oldMapY) {
         generateMap(this.map, this.x, this.y);
     }
+
+    this.animationTimer += delta;
+    if (this.animationTimer > 0.05) {
+        this.animationTimer = 0;
+        this.frameX++;
+        if (this.frameX > 5) {
+            this.frameX = 0;
+            this.attacking = false;
+        }
+    }
 };
 
 Hero.prototype._collide = function (dirx, diry) {
     var row, col;
-    // -1 in right and bottom is because image ranges from 0..63
-    // and not up to 64
+    // -1 in right and bottom is because image ranges from 0..15
+    // and not up to 16
     var left = this.x - this.width / 2;
     var right = this.x + this.width / 2 - 1;
     var top = this.y - this.height / 2;

@@ -77,6 +77,7 @@ Keyboard.LEFT = 37;
 Keyboard.RIGHT = 39;
 Keyboard.UP = 38;
 Keyboard.DOWN = 40;
+Keyboard.A = 65;
 Keyboard.D = 68;
 Keyboard.E = 69;
 
