@@ -74,7 +74,7 @@ function treatMap(map) {
 }
 
 function generateMap(map, x, y) {
-    var surrounding = 0;
+    var surrounding = 1;
     for (let xx = currentMapX - surrounding; xx <= currentMapX + surrounding; xx++) {
         for (let yy = currentMapY - surrounding; yy <= currentMapY + surrounding; yy++) {
             const result = mapGenerator(xx, yy, RIGHT | DOWN | UP | LEFT);
