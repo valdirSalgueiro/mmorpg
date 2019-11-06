@@ -8,6 +8,13 @@ Game.load = function () {
 	];
 };
 
+Game.resize = function (width, height) {
+	if (!this.camera)
+		this.camera = new Camera(width, height);
+	this.camera.width = width;
+	this.camera.height = height;
+};
+
 Game.init = function () {
 	Keyboard.listenForEvents(
 		[Keyboard.LEFT, Keyboard.RIGHT, Keyboard.UP, Keyboard.DOWN, Keyboard.D, Keyboard.E]);
@@ -21,7 +28,6 @@ Game.init = function () {
 
 	map.layers = [];
 	map.layers[0] = [];
-	this.camera = new Camera(map, cameraWidth, cameraHeight);
 	this.camera.follow(this.hero);
 	this.ctx.imageSmoothingEnabled = false;
 };
@@ -46,7 +52,7 @@ Game._drawLayer = function (layer) {
 	var startCol = Math.floor(this.camera.x / map.tsize);
 	var endCol = startCol + (this.camera.width / map.tsize);
 	var startRow = Math.floor(this.camera.y / map.tsize);
-	var endRow = startRow + (this.camera.height / map.tsize);
+	var endRow = startRow + (this.camera.height / map.tsize) + 1;
 	var offsetX = -this.camera.x + startCol * map.tsize;
 	var offsetY = -this.camera.y + startRow * map.tsize;
 

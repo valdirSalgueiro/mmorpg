@@ -9,9 +9,6 @@ const mapPixelHeight = mapHeight * 16;
 
 let debug = false;
 
-const cameraWidth = 800;
-const cameraHeight = 450;
-
 let currentMapX = 0;
 let currentMapY = 0;
 let oldMapX = 999;
@@ -138,7 +135,7 @@ Game.tick = function (elapsed) {
     window.requestAnimationFrame(this.tick);
 
     // clear previous frame
-    this.ctx.clearRect(0, 0, 800, 450);
+    this.ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
     // compute delta time in seconds -- also cap it
     var delta = (elapsed - this._previousElapsed) / 1000.0;
@@ -149,16 +146,25 @@ Game.tick = function (elapsed) {
     this.render();
 }.bind(Game);
 
-// override these methods to create the demo
 Game.init = function () { };
 Game.update = function (delta) { };
 Game.render = function () { };
-
 //
 // start up function
 //
 
 window.onload = function () {
-    var context = document.getElementById('demo').getContext('2d');
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+    onResize();
     Game.run(context);
 };
+
+function onResize() {
+    var canvas = document.getElementById('canvas');
+    canvas.setAttribute('width', window.innerWidth / 3);
+    canvas.setAttribute('height', window.innerHeight / 3);
+    Game.resize(window.innerWidth / 3, window.innerHeight / 3);
+}
+
+window.onresize = onResize;
