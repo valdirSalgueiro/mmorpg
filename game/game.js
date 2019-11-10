@@ -1,3 +1,31 @@
+var Game = {};
+
+Game.run = function (context) {
+	this.ctx = context;
+	this._previousElapsed = 0;
+
+	var p = this.load();
+	Promise.all(p).then(function (loaded) {
+		this.init();
+		window.requestAnimationFrame(this.tick);
+	}.bind(this));
+};
+
+Game.tick = function (elapsed) {
+	window.requestAnimationFrame(this.tick);
+
+	// clear previous frame
+	this.ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+	// compute delta time in seconds -- also cap it
+	var delta = (elapsed - this._previousElapsed) / 1000.0;
+	delta = Math.min(delta, 0.25); // maximum delta of 250 ms
+	this._previousElapsed = elapsed;
+
+	this.update(delta);
+	this.render();
+}.bind(Game);
+
 Game.load = function () {
 	return [
 		Loader.loadImage('tiles', './assets/autotile.png'),
@@ -13,6 +41,7 @@ Game.load = function () {
 		Loader.loadImage('hero_attack_right', './assets/char/Attack/Char_atk_right.png'),
 		Loader.loadImage('hero_attack_up', './assets/char/Attack/Char_atk_up.png'),
 		Loader.loadImage('hero_attack_down', './assets/char/Attack/Char_atk_down.png'),
+		Loader.loadImage('dialog', './assets/font.png'),
 	];
 };
 
@@ -49,13 +78,13 @@ Game.update = function (delta) {
 	else if (Keyboard.isDown(Keyboard.UP)) { diry = -1; }
 	else if (Keyboard.isDown(Keyboard.DOWN)) { diry = 1; }
 
-	if (Keyboard.isDown(Keyboard.D)) { debug = true; }
+	if (Keyboard.isDown(Keyboard.D) && debuggable) { debug = true; }
 	if (Keyboard.isDown(Keyboard.E)) { debug = false; }
-
 	if (Keyboard.isDown(Keyboard.A)) { this.hero.attack(); }
 
 	this.hero.move(delta, dirx, diry);
 	this.camera.update();
+	Keyboard.update(delta);
 };
 
 Game._drawLayer = function (layer) {
@@ -146,6 +175,49 @@ Game.render = function () {
 		size// target height
 	);
 
+	if (Keyboard.typing) {
+		this.ctx.drawImage(
+			Loader.getImage('dialog'),
+			0, // source x
+			48, // source y
+			240, // source width
+			72, // source height
+			this.camera.width / 2 - 120,
+			this.camera.height - 72,
+			240, // target width
+			72// target height
+		);
+		for (let i = 0; i < Keyboard.typingText.length; i++) {
+			if (Keyboard.typingText[i] === 32)
+				continue;
+			let x = i % 25;
+			let y = Math.floor(i / 25);
+			let letter = Keyboard.typingText[i];
+			let lowercase = false;
+			let digit = letter < 58;
+			if (!digit) {
+				lowercase = letter > 96;
+				if (lowercase)
+					letter -= 97;
+				else
+					letter -= 65;
+			}
+			else {
+				letter -= 48;
+			}
+			this.ctx.drawImage(
+				Loader.getImage('dialog'),
+				letter * 8, // source x
+				digit * 16 + lowercase * 8, // source y
+				8, // source width
+				8, // source height
+				this.camera.width / 2 - 110 + x * 9,
+				this.camera.height - 58 + (y * 10),
+				8, // target width
+				8// target height
+			);
+		}
+	}
 	// draw map top layer
 	//this._drawLayer(1);
 };
